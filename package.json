@@ -2,11 +2,12 @@
   "name": "with-mongodb",
   "version": "0.1.0",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 8888",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "mongodb": "^3.5.9",
     "next": "latest",
     "react": "^17.0.2",

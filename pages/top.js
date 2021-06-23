@@ -1,25 +1,23 @@
-import { connectToDatabase } from "../util/mongodb";
-
-export default function Top({ books }) {
+export default function Top({ weather }) {
   return (
-    <ul>
-      {books.map((book) => (
-        <li>
-          <h2>{book.title}</h2>
-        </li>
-      ))}
-    </ul>
+    weather && (
+      <div>
+        <h1>{weather.name}</h1>
+        <h2>{(weather.main.temp - 273.15).toFixed(2)}</h2>
+      </div>
+    )
   );
 }
 
-export async function getStaticProps() {
-  const { db } = await connectToDatabase();
-
-  const books = await db.collection("books").find({}).limit(1000).toArray();
+export const getServerSideProps = async () => {
+  const res = await fetch(
+    `https://api.openweathermap.org/data/2.5/weather?q=Helsinki&appid=${process.env.API_KEY}`
+  );
+  const weather = await res.json();
 
   return {
     props: {
-      books: JSON.parse(JSON.stringify(books)),
+      weather,
     },
   };
-}
+};
