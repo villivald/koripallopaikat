@@ -1,9 +1,9 @@
 import Head from "next/head";
 import { connectToDatabase } from "../util/mongodb";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import SiteIntro from "./components/SiteIntro";
-import Court from "./components/Court";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import SiteIntro from "../components/SiteIntro";
+import Court from "../components/Court";
 
 export default function Home({ books }) {
   return (
