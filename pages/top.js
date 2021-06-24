@@ -1,11 +1,18 @@
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+
 export default function Top({ weather }) {
   return (
-    weather && (
-      <div>
-        <h1>{weather.name}</h1>
-        <h2>{(weather.main.temp - 273.15).toFixed(2)}</h2>
-      </div>
-    )
+    <div>
+      <Header />
+      {weather && (
+        <div>
+          <h1>{weather.name}</h1>
+          <h2>{(weather.main.temp - 273.15).toFixed(2)}</h2>
+        </div>
+      )}
+      <Footer />
+    </div>
   );
 }
 
