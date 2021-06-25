@@ -153,6 +153,23 @@ footer {
   height: clamp(90%, 95%, 100%);
 }
 
+.map-container {
+  height: 81vh;
+}
+
+.sidebar {
+  background-color: rgba(35, 55, 75, 0.9);
+  color: #ffffff;
+  padding: 6px 12px;
+  font-family: monospace;
+  z-index: 1;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  margin: 12px;
+  border-radius: 4px;
+}
+
 @font-face {
   font-family: "Mate";
   font-style: normal;
