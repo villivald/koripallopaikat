@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "@material-ui/core/Card";
-import { makeStyles } from "@material-ui/core/styles";
 import CardMedia from "@material-ui/core/CardMedia";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
@@ -9,20 +8,12 @@ import Typography from "@material-ui/core/Typography";
 import Image from "next/image";
 import PIC from "../public/vercel.svg";
 
-const useStyles = makeStyles({
-  media: {
-    height: 140,
-  },
-});
-
 const Court = ({ book }) => {
-  const classes = useStyles();
-
   return (
     <Card className="basketballField">
       <CardMedia
-        className={classes.media}
-        image="http://placekitten.com/400/400"
+        style={{ height: 140 }}
+        image="https://placekitten.com/400/400"
         title="Paella dish"
       />
       <CardContent>

@@ -1,21 +1,45 @@
 import React from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import HomeIcon from "@material-ui/icons/Home";
+import MapIcon from "@material-ui/icons/Map";
+import InfoIcon from "@material-ui/icons/Info";
+import PanToolIcon from "@material-ui/icons/PanTool";
 
 const Header = () => {
+  const router = useRouter();
   return (
     <header>
       <nav>
         <Link href="/">
-          <a>Home</a>
+          <a className={router.pathname == "/" ? "active" : "linkContainer"}>
+            <HomeIcon />
+            Home
+          </a>
         </Link>
         <Link href="/map">
-          <a>Map</a>
+          <a className={router.pathname == "/map" ? "active" : "linkContainer"}>
+            <MapIcon />
+            Map
+          </a>
         </Link>
         <Link href="/about">
-          <a>About</a>
+          <a
+            className={router.pathname == "/about" ? "active" : "linkContainer"}
+          >
+            <InfoIcon />
+            About
+          </a>
         </Link>
         <Link href="/contact">
-          <a>Contact</a>
+          <a
+            className={
+              router.pathname == "/contact" ? "active" : "linkContainer"
+            }
+          >
+            <PanToolIcon />
+            Contact
+          </a>
         </Link>
       </nav>
     </header>

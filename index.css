@@ -97,18 +97,35 @@ header {
   padding: 20px;
 }
 
+.linkContainer {
+  display: flex;
+  gap: 5px;
+}
+
+.active {
+  background-color: rgb(255, 0, 0);
+  display: flex;
+  gap: 5px;
+}
+
 .intro {
   display: flex;
   justify-content: space-evenly;
   gap: 15px;
-  background-color: #c6c924;
+  background-color: #82c99c;
   padding: 20px;
   font-size: 2rem;
 }
 
 .intro:hover {
-  text-decoration: underline wavy crimson;
+  text-decoration: underline wavy #1b4f55;
   text-underline-offset: 8px;
+}
+
+.introText {
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: bold;
 }
 
 nav {
@@ -120,9 +137,11 @@ nav > a {
   color: white;
   text-decoration-line: none;
   text-transform: uppercase;
+  text-align: center;
   padding: 10px;
   border: 1px solid white;
   border-radius: 3px;
+  min-width: 100px;
 }
 
 nav > a:hover {
@@ -195,5 +214,20 @@ footer {
 @media (max-width: 500px) {
   .container {
     grid-template-columns: 1fr;
+  }
+  header {
+    padding: 10px;
+  }
+  nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  nav > a {
+    min-width: 100px;
+    text-align: center;
+  }
+  .intro {
+    padding: 10px;
   }
 }
