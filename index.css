@@ -190,6 +190,20 @@ footer {
   border-radius: 4px;
 }
 
+.aboutContainer {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.errorPage {
+  display: grid;
+  place-items: center;
+}
+
 @font-face {
   font-family: "Mate";
   font-style: normal;
