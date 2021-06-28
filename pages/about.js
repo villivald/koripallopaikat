@@ -1,6 +1,7 @@
-import Header from "../components/Header";
-
 import Link from "@material-ui/core/Link";
+import Image from "next/image";
+import Header from "../components/Header";
+import lighthouse from "../public/lighthouse.gif";
 
 export default function Books({ books }) {
   return (
@@ -51,6 +52,7 @@ export default function Books({ books }) {
             </Link>
           </p>
         </div>
+        <Image src={lighthouse} alt="404 page" width={300} height={148} />
       </div>
     </div>
   );
