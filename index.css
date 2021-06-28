@@ -103,7 +103,8 @@ header {
 }
 
 .active {
-  background-color: rgb(255, 0, 0);
+  background-color: #dbca2e;
+  color: black;
   display: flex;
   gap: 5px;
 }
