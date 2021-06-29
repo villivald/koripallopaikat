@@ -1,4 +1,13 @@
-### Run Next.js in development mode
+## App live on [Vercel](https://koripallopaikat.vercel.app)
+
+### Made with:
+ - [Next.js](https://nextjs.org/)
+ - [Material UI](https://material-ui.com/)
+ - [MongoDB](https://www.mongodb.com/)
+ - [Mapbox GL JS](https://www.mapbox.com/mapbox-gljs)
+
+
+### Run locally
 
 ```bash
 npm install
