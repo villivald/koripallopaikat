@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import SiteIntro from "../components/SiteIntro";
 import Court from "../components/Court";
 
-export default function Home({ books }) {
+export default function Home({ courts }) {
   return (
     <div>
       <Head>
@@ -18,8 +18,8 @@ export default function Home({ books }) {
       <Header />
       <SiteIntro />
       <div className="container">
-        {books.map((book) => (
-          <Court book={book} key={book._id} />
+        {courts.map((court) => (
+          <Court court={court} key={court._id} />
         ))}
       </div>
       <Footer />
@@ -30,11 +30,11 @@ export default function Home({ books }) {
 export async function getServerSideProps() {
   const { db } = await connectToDatabase();
 
-  const books = await db.collection("books").find({}).toArray();
+  const courts = await db.collection("paikat").find({}).toArray();
 
   return {
     props: {
-      books: JSON.parse(JSON.stringify(books)),
+      courts: JSON.parse(JSON.stringify(courts)),
     },
   };
 }

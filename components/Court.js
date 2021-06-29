@@ -8,31 +8,31 @@ import Typography from "@material-ui/core/Typography";
 import Image from "next/image";
 import PIC from "../public/vercel.svg";
 
-const Court = ({ book }) => {
+const Court = ({ court }) => {
   return (
     <Card className="basketballField">
       <CardMedia
         style={{ height: 140 }}
-        image="https://placekitten.com/400/400"
-        title="Paella dish"
+        image={court.pic}
+        title="basketball court"
       />
       <CardContent>
         <Image src={PIC} alt="Picture of the author" width={50} height={50} />
         <Typography color="textPrimary" gutterBottom>
-          Adress: {book.title}
+          Address: {court.address}
         </Typography>
         <Typography color="textSecondary">
-          Court surface: {book.author}
+          Court surface: {court.surface}
         </Typography>
         <Typography color="textSecondary">
-          Type of place: {book.author}
+          Type of place: {court.type}
         </Typography>
         <Typography color="textSecondary">
-          Number of baskets: {book.author}
+          Number of baskets: {court.baskets}
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" href="http://google.com">
+        <Button size="small" href={court.link}>
           Link
         </Button>
       </CardActions>
