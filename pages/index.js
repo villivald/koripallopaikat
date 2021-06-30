@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { connectToDatabase } from "../util/mongodb";
 import Header from "../components/Header";
-import Footer from "../components/Footer";
+// import Footer from "../components/Footer";
 import SiteIntro from "../components/SiteIntro";
 import Court from "../components/Court";
 
@@ -22,7 +22,6 @@ export default function Home({ courts }) {
           <Court court={court} key={court._id} />
         ))}
       </div>
-      <Footer />
     </div>
   );
 }
