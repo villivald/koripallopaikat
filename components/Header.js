@@ -5,6 +5,7 @@ import HomeIcon from "@material-ui/icons/Home";
 import MapIcon from "@material-ui/icons/Map";
 import InfoIcon from "@material-ui/icons/Info";
 import PanToolIcon from "@material-ui/icons/PanTool";
+import AddCircleIcon from "@material-ui/icons/AddCircle";
 
 const Header = () => {
   const router = useRouter();
@@ -29,6 +30,12 @@ const Header = () => {
           >
             <InfoIcon />
             About
+          </a>
+        </Link>
+        <Link href="/add">
+          <a className={router.pathname == "/add" ? "active" : "linkContainer"}>
+            <AddCircleIcon />
+            Add
           </a>
         </Link>
         <Link href="/contact">
