@@ -105,9 +105,11 @@ header {
 }
 
 .active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #dbca2e;
   color: black;
-  display: flex;
   gap: 5px;
 }
 
@@ -240,10 +242,23 @@ input {
   .container {
     grid-template-columns: repeat(3, 1fr);
   }
+  nav {
+    gap: 30px;
+  }
+}
+@media (max-width: 800px) {
+  nav {
+    gap: 10px;
+  }
 }
 @media (max-width: 700px) {
   .container {
     grid-template-columns: repeat(2, 1fr);
+  }
+  nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
   }
 }
 @media (max-width: 500px) {
@@ -254,9 +269,7 @@ input {
     padding: 10px;
   }
   nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    padding: 10px;
   }
   nav > a {
     min-width: 100px;
