@@ -206,6 +206,24 @@ footer {
   place-items: center;
 }
 
+input {
+  display: block;
+  min-width: 300px;
+  margin-bottom: 20px;
+}
+
+.inputRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 15px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
 @font-face {
   font-family: "Mate";
   font-style: normal;
