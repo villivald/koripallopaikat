@@ -36,7 +36,7 @@ export default function Add() {
 
       console.log("New Court is successfully added");
     } catch (error) {
-      console.log("Failed to add pet");
+      console.log("Failed to add court");
     }
   };
 
@@ -49,8 +49,6 @@ export default function Add() {
       pic: data.pic,
       link: data.link,
     };
-    console.log(data);
-    console.log(form);
     postData(form);
   };
 
