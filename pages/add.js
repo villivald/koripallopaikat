@@ -34,7 +34,7 @@ export default function Add() {
         router.push("/");
       }, 10000);
 
-      console.log("New Court is successfully added");
+      console.log("New court is successfully added");
     } catch (error) {
       console.log("Failed to add court");
     }
