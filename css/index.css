@@ -226,6 +226,12 @@ input {
   justify-content: center;
 }
 
+.hoverPicture {
+  position: absolute;
+  transform: translateX(150px);
+  z-index: 1;
+}
+
 @font-face {
   font-family: "Mate";
   font-style: normal;
