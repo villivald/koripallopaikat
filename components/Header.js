@@ -1,11 +1,11 @@
 import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import HomeIcon from "@material-ui/icons/Home";
-import MapIcon from "@material-ui/icons/Map";
-import InfoIcon from "@material-ui/icons/Info";
-import PanToolIcon from "@material-ui/icons/PanTool";
-import AddCircleIcon from "@material-ui/icons/AddCircle";
+import HomeOutlinedIcon from "@material-ui/icons/HomeOutlined";
+import MapOutlinedIcon from "@material-ui/icons/MapOutlined";
+import InfoOutlinedIcon from "@material-ui/icons/InfoOutlined";
+import PanToolOutlinedIcon from "@material-ui/icons/PanToolOutlined";
+import AddCircleOutlineIcon from "@material-ui/icons/AddCircleOutline";
 import ListIcon from "@material-ui/icons/List";
 
 const Header = () => {
@@ -15,19 +15,19 @@ const Header = () => {
       <nav>
         <Link href="/">
           <a className={router.pathname == "/" ? "active" : "linkContainer"}>
-            <HomeIcon />
+            <HomeOutlinedIcon />
             Home
           </a>
         </Link>
         <Link href="/map">
           <a className={router.pathname == "/map" ? "active" : "linkContainer"}>
-            <MapIcon />
+            <MapOutlinedIcon />
             Map
           </a>
         </Link>
         <Link href="/add">
           <a className={router.pathname == "/add" ? "active" : "linkContainer"}>
-            <AddCircleIcon />
+            <AddCircleOutlineIcon />
             Add
           </a>
         </Link>
@@ -43,7 +43,7 @@ const Header = () => {
           <a
             className={router.pathname == "/about" ? "active" : "linkContainer"}
           >
-            <InfoIcon />
+            <InfoOutlinedIcon />
             About
           </a>
         </Link>
@@ -53,7 +53,7 @@ const Header = () => {
               router.pathname == "/contact" ? "active" : "linkContainer"
             }
           >
-            <PanToolIcon />
+            <PanToolOutlinedIcon />
             Contact
           </a>
         </Link>
