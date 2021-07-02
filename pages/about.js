@@ -3,7 +3,7 @@ import Image from "next/image";
 import Header from "../components/Header";
 import lighthouse from "../public/lighthouse.gif";
 
-export default function Books({ books }) {
+export default function Books() {
   return (
     <div>
       <Header />
@@ -23,14 +23,7 @@ export default function Books({ books }) {
         </h2>
 
         <h2>Made with:</h2>
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr 1fr",
-            justifyItems: "center",
-            gap: "15px",
-          }}
-        >
+        <div className="aboutLinks">
           <p>
             <Link href="https://nextjs.org/">Next.js</Link>
           </p>

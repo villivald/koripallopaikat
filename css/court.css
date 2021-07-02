@@ -1,0 +1,13 @@
+.basketballField {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: clamp(200px, 100%, 400px);
+  height: clamp(90%, 95%, 100%);
+}
+
+.hoverPicture {
+  position: absolute;
+  transform: translateX(150px);
+  z-index: 1;
+}

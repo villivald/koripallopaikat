@@ -1,0 +1,25 @@
+.intro {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 15px;
+  background-color: #82c99c;
+  padding: 20px;
+  font-size: 2rem;
+}
+
+.intro:hover {
+  text-decoration: underline wavy #1b4f55;
+  text-underline-offset: 8px;
+}
+
+.introText {
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: bold;
+}
+
+@media (max-width: 500px) {
+  .intro {
+    padding: 10px;
+  }
+}

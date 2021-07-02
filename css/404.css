@@ -1,0 +1,4 @@
+.errorPage {
+  display: grid;
+  place-items: center;
+}

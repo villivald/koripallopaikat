@@ -1,0 +1,22 @@
+input {
+  display: block;
+  min-width: 300px;
+  margin-bottom: 20px;
+}
+
+.inputRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 15px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.addHeader {
+  text-align: center;
+  margin: 20px 20px;
+}

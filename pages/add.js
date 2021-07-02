@@ -55,10 +55,7 @@ export default function Add() {
   return (
     <div>
       <Header />
-      <h1 style={{ textAlign: "center", margin: "20px 20px" }}>
-        Add a new basketball court
-      </h1>
-
+      <h1 className="addHeader">Add a new basketball court</h1>
       <div className="form">
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="inputRow">

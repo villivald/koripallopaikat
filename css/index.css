@@ -85,151 +85,12 @@ select {
   }
 }
 
-p {
-  font-family: "Mate";
-}
-
-header {
-  display: flex;
-  justify-content: space-evenly;
-  gap: 15px;
-  background-color: #1b4e55;
-  padding: 20px;
-}
-
-.linkContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-}
-
-.active {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #dbca2e;
-  color: black;
-  gap: 5px;
-}
-
-.intro {
-  display: flex;
-  justify-content: space-evenly;
-  gap: 15px;
-  background-color: #82c99c;
-  padding: 20px;
-  font-size: 2rem;
-}
-
-.intro:hover {
-  text-decoration: underline wavy #1b4f55;
-  text-underline-offset: 8px;
-}
-
-.introText {
-  text-transform: uppercase;
-  letter-spacing: 6px;
-  font-weight: bold;
-}
-
-nav {
-  display: flex;
-  gap: 50px;
-}
-
-nav > a {
-  color: white;
-  text-decoration-line: none;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 10px;
-  border: 1px solid white;
-  border-radius: 3px;
-  min-width: 100px;
-}
-
-nav > a:hover {
-  transform: scale(1.1);
-}
-nav > a:active {
-  transform: scale(1);
-}
-
-footer {
-  height: 50px;
-  background-color: #1b4e55;
-}
-
 .container {
   display: grid;
   place-items: center;
   grid-template-columns: repeat(4, 1fr);
   gap: 50px;
   margin: 20px 40px;
-}
-
-.basketballField {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: clamp(200px, 100%, 400px);
-  height: clamp(90%, 95%, 100%);
-}
-
-.map-container {
-  height: 81vh;
-}
-
-.sidebar {
-  background-color: rgba(35, 55, 75, 0.9);
-  color: #ffffff;
-  padding: 6px 12px;
-  font-family: monospace;
-  z-index: 1;
-  position: absolute;
-  top: 15px;
-  left: 0;
-  margin: 12px;
-  border-radius: 4px;
-}
-
-.aboutContainer {
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.errorPage {
-  display: grid;
-  place-items: center;
-}
-
-input {
-  display: block;
-  min-width: 300px;
-  margin-bottom: 20px;
-}
-
-.inputRow {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 15px;
-}
-
-.form {
-  display: flex;
-  justify-content: center;
-}
-
-.hoverPicture {
-  position: absolute;
-  transform: translateX(150px);
-  z-index: 1;
 }
 
 @font-face {
@@ -248,40 +109,16 @@ input {
   .container {
     grid-template-columns: repeat(3, 1fr);
   }
-  nav {
-    gap: 30px;
-  }
 }
-@media (max-width: 800px) {
-  nav {
-    gap: 10px;
-  }
-}
+
 @media (max-width: 700px) {
   .container {
     grid-template-columns: repeat(2, 1fr);
   }
-  nav {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-  }
 }
+
 @media (max-width: 500px) {
   .container {
     grid-template-columns: 1fr;
-  }
-  header {
-    padding: 10px;
-  }
-  nav {
-    padding: 10px;
-  }
-  nav > a {
-    min-width: 100px;
-    text-align: center;
-  }
-  .intro {
-    padding: 10px;
   }
 }
