@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Image from "next/image";
 import Card from "@material-ui/core/Card";
 import CardMedia from "@material-ui/core/CardMedia";
 import CardActions from "@material-ui/core/CardActions";
@@ -9,7 +8,6 @@ import Typography from "@material-ui/core/Typography";
 import ReportOutlinedIcon from "@material-ui/icons/ReportOutlined";
 import ImageOutlinedIcon from "@material-ui/icons/ImageOutlined";
 import LinkIcon from "@material-ui/icons/Link";
-import PIC from "../public/vercel.svg";
 
 const Court = ({ court }) => {
   const [isShown, setIsShown] = useState(false);
@@ -36,7 +34,12 @@ const Court = ({ court }) => {
         </Typography>
         {isShown && (
           <div className="hoverPicture">
-            <Image src={PIC} alt="court surface" width={100} height={100} />
+            <img
+              src={court.surfacePic}
+              alt="court surface"
+              width={150}
+              height={150}
+            />
           </div>
         )}
         <Typography color="textSecondary">Place: {court.type}</Typography>

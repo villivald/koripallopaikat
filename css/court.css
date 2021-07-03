@@ -11,3 +11,7 @@
   transform: translateX(150px);
   z-index: 1;
 }
+
+.hoverPicture > img {
+  border-radius: 5px;
+}
