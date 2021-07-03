@@ -1,0 +1,16 @@
+.contactsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 5%;
+}
+
+.link {
+  display: flex;
+}
+
+.linkContainer {
+  display: flex;
+  gap: 3px;
+}

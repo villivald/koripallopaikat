@@ -7,6 +7,7 @@ import "../css/404.css";
 import "../css/about.css";
 import "../css/add.css";
 import "../css/map.css";
+import "../css/contact.css";
 import "mapbox-gl/dist/mapbox-gl.css";
 
 export default function MyApp({ Component, pageProps }) {
