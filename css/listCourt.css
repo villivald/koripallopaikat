@@ -1,0 +1,15 @@
+.listCourt {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 50px;
+  margin: 20px 40px 40px 40px;
+}
+
+.capital {
+  text-transform: capitalize;
+}
+
+.cardMedia {
+  height: 140px;
+}

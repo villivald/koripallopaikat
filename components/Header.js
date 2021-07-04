@@ -31,9 +31,11 @@ const Header = () => {
             Add
           </a>
         </Link>
-        <Link href="/list">
+        <Link href="/courts">
           <a
-            className={router.pathname == "/list" ? "active" : "linkContainer"}
+            className={
+              router.pathname == "/courts" ? "active" : "linkContainer"
+            }
           >
             <ListIcon />
             List
