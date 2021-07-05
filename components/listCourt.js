@@ -7,7 +7,7 @@ import Typography from "@material-ui/core/Typography";
 
 const ListCourt = ({ court }) => {
   return (
-    <Card className="basketballField">
+    <Card className="basketballFieldList">
       <CardMedia
         className="cardMedia"
         image={court.pic}

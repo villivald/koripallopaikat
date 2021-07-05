@@ -13,3 +13,40 @@
 .cardMedia {
   height: 140px;
 }
+
+.basketballFieldList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: clamp(200px, 100%, 400px);
+  height: clamp(90%, 95%, 100%);
+}
+
+@media (max-width: 1250px) {
+  .listCourt {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media (max-width: 1050px) {
+  .listCourt {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 850px) {
+  .listCourt {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 650px) {
+  .listCourt {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 450px) {
+  .listCourt {
+    margin: 10px 20px 20px 20px;
+  }
+  .basketballFieldList {
+    width: clamp(170px, 50%, 400px);
+  }
+}
