@@ -1,11 +1,24 @@
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 import { useRouter } from "next/router";
+import Snackbar from "@material-ui/core/Snackbar";
+import MuiAlert from "@material-ui/lab/Alert";
 import Header from "../components/Header";
+
+function Alert(props) {
+  return <MuiAlert elevation={6} variant="filled" {...props} />;
+}
 
 export default function Add() {
   const router = useRouter();
   const [visible, setVisible] = useState(false);
+
+  const handleClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+    setVisible(false);
+  };
 
   const {
     register,
@@ -31,7 +44,7 @@ export default function Add() {
       setVisible(true);
       setTimeout(() => {
         setVisible(false);
-        router.push("/");
+        router.reload("/add");
       }, 10000);
 
       console.log("New court is successfully added");
@@ -79,6 +92,7 @@ export default function Add() {
           <div className="inputRow">
             Baskets:
             <input
+              type="number"
               placeholder="4"
               {...register("baskets", { required: true })}
             />
@@ -95,17 +109,30 @@ export default function Add() {
             <input placeholder="https://nba.com" {...register("link")} />
           </div>
           {(errors.address || errors.baskets || errors.pic) && (
-            <span style={{ color: "red" }}>This field is required</span>
+            <Snackbar open={open}>
+              <Alert severity="error">
+                Address, Baskets and Picture fields are required
+              </Alert>
+            </Snackbar>
           )}
           <div style={{ display: "flex", justifyContent: "flex-end" }}>
             <input type="submit" style={{ marginTop: "30px" }} />
           </div>
         </form>
       </div>
-      <h2 style={{ textAlign: "center" }}>
-        {visible &&
-          "Thank you for contribution. New Court is successfully added to a database and will be reviewed soon 👋."}
-      </h2>
+      {visible && (
+        <>
+          <h2 style={{ textAlign: "center" }}>
+            Thank you for contribution. New Court is successfully added to a
+            database and will be reviewed soon 👋.
+          </h2>
+          <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+            <Alert onClose={handleClose} severity="success">
+              Success!
+            </Alert>
+          </Snackbar>
+        </>
+      )}
     </div>
   );
 }
