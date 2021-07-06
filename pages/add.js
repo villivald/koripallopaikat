@@ -3,13 +3,27 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import Snackbar from "@material-ui/core/Snackbar";
 import MuiAlert from "@material-ui/lab/Alert";
+import TextField from "@material-ui/core/TextField";
+import { makeStyles } from "@material-ui/core/styles";
+import Button from "@material-ui/core/Button";
 import Header from "../components/Header";
+
+const useStyles = makeStyles(() => ({
+  input: {
+    minWidth: "300px",
+  },
+
+  submit: {
+    margin: "10px 0 10px 0",
+  },
+}));
 
 function Alert(props) {
   return <MuiAlert elevation={6} variant="filled" {...props} />;
 }
 
 export default function Add() {
+  const classes = useStyles();
   const router = useRouter();
   const [visible, setVisible] = useState(false);
 
@@ -71,42 +85,53 @@ export default function Add() {
       <h1 className="addHeader">Add a new basketball court</h1>
       <div className="form">
         <form onSubmit={handleSubmit(onSubmit)}>
-          <div className="inputRow">
-            Address:{" "}
-            <input
+          <div className="input">
+            <TextField
+              required
+              className={classes.input}
+              id="outlined-basic"
+              label="Address"
               placeholder="Mannerheimintie, 100"
               {...register("address", { required: true })}
             />
-          </div>
-          <div className="inputRow">
-            Surface:
-            <input placeholder="Asphalt" {...register("surface")} />
-          </div>
-          <div className="inputRow">
-            Place type:
-            <input
+            <TextField
+              className={classes.input}
+              id="outlined-basic"
+              label="Surface"
+              placeholder="Asphalt"
+              {...register("surface")}
+            />
+            <TextField
+              className={classes.input}
+              id="outlined-basic"
+              label="Place type"
               placeholder="Outdoor basketball court"
               {...register("type")}
             />
-          </div>
-          <div className="inputRow">
-            Baskets:
-            <input
+            <TextField
+              required
+              className={classes.input}
+              id="outlined-basic"
+              label="Baskets"
               type="number"
               placeholder="4"
               {...register("baskets", { required: true })}
             />
-          </div>
-          <div className="inputRow">
-            Picture:
-            <input
+            <TextField
+              required
+              className={classes.input}
+              id="outlined-basic"
+              label="Image"
               placeholder="https://imgur.com/mI1dZ8i"
               {...register("pic", { required: true })}
             />
-          </div>
-          <div className="inputRow">
-            Link:
-            <input placeholder="https://nba.com" {...register("link")} />
+            <TextField
+              className={classes.input}
+              id="outlined-basic"
+              label="Link"
+              placeholder="https://nba.com"
+              {...register("link")}
+            />
           </div>
           {(errors.address || errors.baskets || errors.pic) && (
             <Snackbar open={open}>
@@ -115,9 +140,14 @@ export default function Add() {
               </Alert>
             </Snackbar>
           )}
-          <div style={{ display: "flex", justifyContent: "flex-end" }}>
-            <input type="submit" style={{ marginTop: "30px" }} />
-          </div>
+          <Button
+            variant="contained"
+            color="primary"
+            type="submit"
+            className={classes.submit}
+          >
+            Submit
+          </Button>
         </form>
       </div>
       {visible && (

@@ -1,14 +1,7 @@
-input {
-  display: block;
-  min-width: 300px;
-  margin-bottom: 20px;
-}
-
-.inputRow {
+.input {
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 15px;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .form {
