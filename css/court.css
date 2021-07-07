@@ -15,3 +15,44 @@
 .hoverPicture > img {
   border-radius: 5px;
 }
+
+.cardMedia {
+  height: 140px;
+}
+
+.listCourt {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  margin: 20px 40px 40px 40px;
+}
+
+@media (max-width: 1250px) {
+  .listCourt {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media (max-width: 1050px) {
+  .listCourt {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 850px) {
+  .listCourt {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 650px) {
+  .listCourt {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 450px) {
+  .listCourt {
+    margin: 10px 20px 20px 20px;
+  }
+  .basketballField {
+    width: clamp(170px, 50%, 400px);
+  }
+}

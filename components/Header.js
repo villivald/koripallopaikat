@@ -25,12 +25,6 @@ const Header = () => {
             Map
           </a>
         </Link>
-        <Link href="/add">
-          <a className={router.pathname == "/add" ? "active" : "linkContainer"}>
-            <AddCircleOutlineIcon />
-            Add
-          </a>
-        </Link>
         <Link href="/courts">
           <a
             className={
@@ -39,6 +33,12 @@ const Header = () => {
           >
             <ListIcon />
             List
+          </a>
+        </Link>
+        <Link href="/add">
+          <a className={router.pathname == "/add" ? "active" : "linkContainer"}>
+            <AddCircleOutlineIcon />
+            Add
           </a>
         </Link>
         <Link href="/about">

@@ -1,9 +1,7 @@
 import Head from "next/head";
-import { connectToDatabase } from "../util/mongodb";
 import Header from "../components/Header";
-// import Footer from "../components/Footer";
 import SiteIntro from "../components/SiteIntro";
-import Court from "../components/Court";
+import Main from "../components/Main";
 
 export default function Home({ courts }) {
   return (
@@ -17,23 +15,7 @@ export default function Home({ courts }) {
       </Head>
       <Header />
       <SiteIntro />
-      <div className="container">
-        {courts.map((court) => (
-          <Court court={court} key={court._id} />
-        ))}
-      </div>
+      <Main />
     </div>
   );
-}
-
-export async function getServerSideProps() {
-  const { db } = await connectToDatabase();
-
-  const courts = await db.collection("paikat").find({}).toArray();
-
-  return {
-    props: {
-      courts: JSON.parse(JSON.stringify(courts)),
-    },
-  };
 }

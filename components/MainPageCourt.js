@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
 import Card from "@material-ui/core/Card";
-import CardMedia from "@material-ui/core/CardMedia";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
@@ -12,15 +13,17 @@ import LinkIcon from "@material-ui/icons/Link";
 const Court = ({ court }) => {
   const [isShown, setIsShown] = useState(false);
   return (
-    <Card className="basketballField">
-      <CardMedia
-        style={{ height: 140 }}
-        image={court.pic}
-        title="basketball court"
-      />
+    <Card className="basketballFieldMain">
+      <Image className="cardMedia" src={court.pic} alt={court.address} />
       <CardContent>
         <Typography color="textPrimary" gutterBottom>
-          Address: {court.address}
+          <Link
+            key={court._id}
+            href="/courts/[id]"
+            as={`/courts/${court.address}`}
+          >
+            {court.address}
+          </Link>
         </Typography>
         <Typography color="textSecondary">
           Surface: {court.surface}{" "}
@@ -34,7 +37,7 @@ const Court = ({ court }) => {
         </Typography>
         {isShown && (
           <div className="hoverPicture">
-            <img
+            <Image
               src={court.surfacePic}
               alt="court surface"
               width={150}
@@ -46,13 +49,21 @@ const Court = ({ court }) => {
         <Typography color="textSecondary">Baskets: {court.baskets}</Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" href={court.link}>
+        <Button size="small" href={court.link} aria-label="court link">
           <LinkIcon />
         </Button>
-        <Button size="small" href={court.pic}>
+        <Button
+          size="small"
+          href={`https://villivald.com/koripallopaikat/${court._id}.webp`}
+          aria-label="court image"
+        >
           <ImageOutlinedIcon />
         </Button>
-        <Button size="small" href={"mailto:maxim@villivald.com"}>
+        <Button
+          size="small"
+          href={"mailto:maxim@villivald.com"}
+          aria-label="report"
+        >
           <ReportOutlinedIcon />
         </Button>
       </CardActions>

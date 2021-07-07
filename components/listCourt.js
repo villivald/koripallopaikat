@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Card from "@material-ui/core/Card";
 import CardMedia from "@material-ui/core/CardMedia";
+import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
+import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import ReportOutlinedIcon from "@material-ui/icons/ReportOutlined";
+import ImageOutlinedIcon from "@material-ui/icons/ImageOutlined";
+import LinkIcon from "@material-ui/icons/Link";
 
 const ListCourt = ({ court }) => {
+  const [isShown, setIsShown] = useState(false);
   return (
-    <Card className="basketballFieldList">
+    <Card className="basketballField">
       <CardMedia
         className="cardMedia"
         image={court.pic}
@@ -23,16 +29,40 @@ const ListCourt = ({ court }) => {
             {court.address}
           </Link>
         </Typography>
-        <Typography color="textSecondary" className="capital">
-          {court.surface}
+        <Typography color="textSecondary">
+          Surface: {court.surface}{" "}
+          <span
+            onMouseEnter={() => setIsShown(true)}
+            onMouseLeave={() => setIsShown(false)}
+            style={{ cursor: "pointer" }}
+          >
+            ❓
+          </span>
         </Typography>
-        <Typography color="textSecondary" className="capital">
-          {court.type}
-        </Typography>
-        <Typography color="textSecondary" className="capital">
-          {court.baskets} {court.baskets === 1 ? "basket" : "baskets"}
-        </Typography>
+        {isShown && (
+          <div className="hoverPicture">
+            <img
+              src={court.surfacePic}
+              alt="court surface"
+              width={150}
+              height={150}
+            />
+          </div>
+        )}
+        <Typography color="textSecondary">Place: {court.type}</Typography>
+        <Typography color="textSecondary">Baskets: {court.baskets}</Typography>
       </CardContent>
+      <CardActions>
+        <Button size="small" href={court.link}>
+          <LinkIcon />
+        </Button>
+        <Button size="small" href={court.pic}>
+          <ImageOutlinedIcon />
+        </Button>
+        <Button size="small" href={"mailto:maxim@villivald.com"}>
+          <ReportOutlinedIcon />
+        </Button>
+      </CardActions>
     </Card>
   );
 };

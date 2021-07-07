@@ -1,6 +1,6 @@
 import React from "react";
-import ListCourt from "../../components/listCourt";
 import { connectToDatabase } from "../../util/mongodb";
+import ListCourt from "../../components/ListCourt";
 import Header from "../../components/Header";
 
 const index = ({ courts }) => {
