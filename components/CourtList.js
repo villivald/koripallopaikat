@@ -10,7 +10,7 @@ import ReportOutlinedIcon from "@material-ui/icons/ReportOutlined";
 import ImageOutlinedIcon from "@material-ui/icons/ImageOutlined";
 import LinkIcon from "@material-ui/icons/Link";
 
-const ListCourt = ({ court }) => {
+const CourtList = ({ court }) => {
   const [isShown, setIsShown] = useState(false);
   return (
     <Card className="basketballField">
@@ -67,4 +67,4 @@ const ListCourt = ({ court }) => {
   );
 };
 
-export default ListCourt;
+export default CourtList;

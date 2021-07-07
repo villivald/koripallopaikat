@@ -1,6 +1,6 @@
 import React from "react";
 import { connectToDatabase } from "../../util/mongodb";
-import ListCourt from "../../components/ListCourt";
+import CourtList from "../../components/CourtList";
 import Header from "../../components/Header";
 
 const index = ({ courts }) => {
@@ -9,7 +9,7 @@ const index = ({ courts }) => {
       <Header />
       <div className="listCourt">
         {courts.map((court) => (
-          <ListCourt court={court} key={court._id} />
+          <CourtList court={court} key={court._id} />
         ))}
       </div>
     </div>
