@@ -18,7 +18,7 @@
   flex-direction: column;
   justify-content: space-between;
   width: clamp(200px, 100%, 400px);
-  height: clamp(90%, 95%, 100%);
+  height: clamp(90%, 125%, 100%);
 }
 
 @media (max-width: 1000px) {
