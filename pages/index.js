@@ -1,7 +1,9 @@
+import dynamic from "next/dynamic";
 import Head from "next/head";
-import Header from "../components/Header";
-import SiteIntro from "../components/SiteIntro";
-import Main from "../components/Main";
+
+const Header = dynamic(() => import("../components/Header"));
+const SiteIntro = dynamic(() => import("../components/SiteIntro"));
+const Main = dynamic(() => import("../components/Main"));
 
 export default function Home({ courts }) {
   return (
