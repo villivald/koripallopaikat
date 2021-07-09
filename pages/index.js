@@ -5,7 +5,7 @@ const Header = dynamic(() => import("../components/Header"));
 const SiteIntro = dynamic(() => import("../components/SiteIntro"));
 const Main = dynamic(() => import("../components/Main"));
 
-export default function Home({ courts }) {
+const Home = () => {
   return (
     <div>
       <Head>
@@ -20,4 +20,6 @@ export default function Home({ courts }) {
       <Main />
     </div>
   );
-}
+};
+
+export default Home;

@@ -1,7 +1,9 @@
 import React from "react";
+import dynamic from "next/dynamic";
 import { connectToDatabase } from "../../util/mongodb";
-import CourtList from "../../components/CourtList";
-import Header from "../../components/Header";
+
+const CourtList = dynamic(() => import("../../components/CourtList"));
+const Header = dynamic(() => import("../../components/Header"));
 
 const index = ({ courts }) => {
   return (
