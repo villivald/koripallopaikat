@@ -9,6 +9,7 @@ import "../css/about.css";
 import "../css/add.css";
 import "../css/map.css";
 import "../css/contact.css";
+import "../css/id.css";
 import "mapbox-gl/dist/mapbox-gl.css";
 
 import Router from "next/router";
