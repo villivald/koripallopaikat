@@ -54,13 +54,13 @@ const CourtList = ({ court }) => {
       </CardContent>
       <CardActions>
         <Button size="small" href={court.link}>
-          <LinkIcon />
+          <LinkIcon className="iconLink" />
         </Button>
         <Button size="small" href={court.pic}>
-          <ImageOutlinedIcon />
+          <ImageOutlinedIcon className="iconLink" />
         </Button>
         <Button size="small" href={"mailto:maxim@villivald.com"}>
-          <ReportOutlinedIcon />
+          <ReportOutlinedIcon className="iconLink" />
         </Button>
       </CardActions>
     </Card>

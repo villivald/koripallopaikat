@@ -50,21 +50,21 @@ const Court = ({ court }) => {
       </CardContent>
       <CardActions>
         <Button size="small" href={court.link} aria-label="court link">
-          <LinkIcon style={{ width: "24px" }} />
+          <LinkIcon className="iconLink" />
         </Button>
         <Button
           size="small"
           href={`https://villivald.com/koripallopaikat/${court._id}.webp`}
           aria-label="court image"
         >
-          <ImageOutlinedIcon style={{ width: "24px" }} />
+          <ImageOutlinedIcon className="iconLink" />
         </Button>
         <Button
           size="small"
           href={"mailto:maxim@villivald.com"}
           aria-label="report"
         >
-          <ReportOutlinedIcon style={{ width: "24px" }} />
+          <ReportOutlinedIcon className="iconLink" />
         </Button>
       </CardActions>
     </Card>

@@ -28,6 +28,10 @@
   margin: 20px 40px 40px 40px;
 }
 
+.iconLink {
+  width: 24px;
+}
+
 @media (max-width: 1250px) {
   .listCourt {
     grid-template-columns: repeat(5, 1fr);
