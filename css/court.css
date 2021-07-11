@@ -32,14 +32,28 @@
   width: 24px;
 }
 
+@media (max-width: 1300px) {
+  .MuiCardActions-spacing > :not(:first-child) {
+    margin-left: -10px !important;
+  }
+}
 @media (max-width: 1250px) {
   .listCourt {
     grid-template-columns: repeat(5, 1fr);
+  }
+  .iconLinks.MuiCardActions-spacing > :not(:first-child) {
+    margin-left: -20px !important;
+  }
+  .iconLinks.MuiCardActions-spacing > :first-child {
+    margin-left: -10px !important;
   }
 }
 @media (max-width: 1050px) {
   .listCourt {
     grid-template-columns: repeat(4, 1fr);
+  }
+  .MuiCardActions-spacing > :first-child {
+    margin-left: -10px !important;
   }
 }
 @media (max-width: 850px) {

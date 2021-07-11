@@ -45,7 +45,7 @@ const mainPageCourts = [
   {
     _id: 4,
     pic: pic4,
-    address: "Kansalaistori",
+    address: "Eero Erkon katu",
     surface: "soft outdoor surface",
     type: "sports field",
     baskets: 2,

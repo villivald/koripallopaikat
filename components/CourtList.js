@@ -9,6 +9,7 @@ import Typography from "@material-ui/core/Typography";
 import ReportOutlinedIcon from "@material-ui/icons/ReportOutlined";
 import ImageOutlinedIcon from "@material-ui/icons/ImageOutlined";
 import LinkIcon from "@material-ui/icons/Link";
+import RoomOutlinedIcon from "@material-ui/icons/RoomOutlined";
 
 const CourtList = ({ court }) => {
   const [isShown, setIsShown] = useState(false);
@@ -52,12 +53,19 @@ const CourtList = ({ court }) => {
         <Typography color="textSecondary">Place: {court.type}</Typography>
         <Typography color="textSecondary">Baskets: {court.baskets}</Typography>
       </CardContent>
-      <CardActions>
+      <CardActions className="iconLinks">
         <Button size="small" href={court.link}>
           <LinkIcon className="iconLink" />
         </Button>
         <Button size="small" href={court.pic}>
           <ImageOutlinedIcon className="iconLink" />
+        </Button>
+        <Button
+          size="small"
+          href={`https://www.google.com/maps/place/${court.address}+Helsinki`}
+          aria-label="report"
+        >
+          <RoomOutlinedIcon className="iconLink" />
         </Button>
         <Button size="small" href={"mailto:maxim@villivald.com"}>
           <ReportOutlinedIcon className="iconLink" />

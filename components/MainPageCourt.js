@@ -9,9 +9,11 @@ import Typography from "@material-ui/core/Typography";
 import ReportOutlinedIcon from "@material-ui/icons/ReportOutlined";
 import ImageOutlinedIcon from "@material-ui/icons/ImageOutlined";
 import LinkIcon from "@material-ui/icons/Link";
+import RoomOutlinedIcon from "@material-ui/icons/RoomOutlined";
 
 const Court = ({ court }) => {
   const [isShown, setIsShown] = useState(false);
+
   return (
     <Card className="basketballFieldMain">
       <Image className="cardMedia" src={court.pic} alt={court.address} />
@@ -58,6 +60,13 @@ const Court = ({ court }) => {
           aria-label="court image"
         >
           <ImageOutlinedIcon className="iconLink" />
+        </Button>
+        <Button
+          size="small"
+          href={`https://www.google.com/maps/place/${court.address}+Helsinki`}
+          aria-label="report"
+        >
+          <RoomOutlinedIcon className="iconLink" />
         </Button>
         <Button
           size="small"
