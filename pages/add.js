@@ -14,7 +14,7 @@ const useStyles = makeStyles(() => ({
   },
 
   submit: {
-    margin: "10px 0 10px 0",
+    margin: "20px 0 10px 0",
   },
 }));
 
@@ -26,6 +26,25 @@ export default function Add() {
   const classes = useStyles();
   const router = useRouter();
   const [visible, setVisible] = useState(false);
+
+  const [image, setImage] = useState("");
+  const [url, setUrl] = useState("");
+
+  const uploadImage = () => {
+    const data = new FormData();
+    data.append("file", image);
+    data.append("upload_preset", "villivald");
+    data.append("cloud_name", "villivald");
+    fetch("https://api.cloudinary.com/v1_1/villivald/image/upload", {
+      method: "post",
+      body: data,
+    })
+      .then((resp) => resp.json())
+      .then((data) => {
+        setUrl(data.url);
+      })
+      .catch((err) => console.log(err));
+  };
 
   const handleClose = (event, reason) => {
     if (reason === "clickaway") {
@@ -121,10 +140,18 @@ export default function Add() {
               required
               className={classes.input}
               id="outlined-basic"
-              label="Image"
+              label="Image link"
               placeholder="https://imgur.com/mI1dZ8i"
               {...register("pic", { required: true })}
             />
+            <div>
+              <input
+                type="file"
+                onChange={(e) => setImage(e.target.files[0])}
+              ></input>
+              <button onClick={uploadImage}>Upload</button>
+            </div>
+            <div>{url && `Paste this url above:  ${url}`}</div>
             <TextField
               className={classes.input}
               id="outlined-basic"
