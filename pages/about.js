@@ -19,7 +19,7 @@ export default function Books() {
           </Link>
         </h2>
         <h2>
-          <Link href="https://koripallopaikat.vercel.app/api/books">API</Link>
+          <Link href="/api/savedCourts">API</Link>
         </h2>
 
         <h2>Made with:</h2>
@@ -40,9 +40,7 @@ export default function Books() {
             <Link href="https://www.mapbox.com/mapbox-gljs">Mapbox GL JS</Link>
           </p>
           <p>
-            <Link href="https://www.mapbox.com/mapbox-gljs">
-              Alien Government
-            </Link>
+            <Link href="https://react-hook-form.com/">React Hook Form</Link>
           </p>
         </div>
         <Image src={lighthouse} alt="404 page" width={300} height={148} />

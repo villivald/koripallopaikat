@@ -13,3 +13,12 @@
   text-align: center;
   margin: 20px 20px;
 }
+
+.uploadedLink {
+  max-width: 320px;
+  word-wrap: break-word;
+}
+
+.imageUploading {
+  margin-bottom: -25px;
+}

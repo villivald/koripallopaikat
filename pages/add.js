@@ -6,11 +6,12 @@ import MuiAlert from "@material-ui/lab/Alert";
 import TextField from "@material-ui/core/TextField";
 import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
+import CloudUploadIcon from "@material-ui/icons/CloudUpload";
 import Header from "../components/Header";
 
 const useStyles = makeStyles(() => ({
   input: {
-    minWidth: "300px",
+    minWidth: "280px",
   },
 
   submit: {
@@ -144,14 +145,23 @@ export default function Add() {
               placeholder="https://imgur.com/mI1dZ8i"
               {...register("pic", { required: true })}
             />
-            <div>
+            <div className="imageUploading">
               <input
                 type="file"
                 onChange={(e) => setImage(e.target.files[0])}
               ></input>
-              <button onClick={uploadImage}>Upload</button>
+              <Button
+                variant="contained"
+                color="primary"
+                startIcon={<CloudUploadIcon />}
+                onClick={uploadImage}
+              >
+                Upload
+              </Button>
             </div>
-            <div>{url && `Paste this url above:  ${url}`}</div>
+            <div className="uploadedLink">
+              {url && `Paste this url to the Image Link ⬆ field:  ${url}`}
+            </div>
             <TextField
               className={classes.input}
               id="outlined-basic"
