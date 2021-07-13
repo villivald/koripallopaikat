@@ -64,7 +64,7 @@ const Court = ({ court }) => {
         <Button
           size="small"
           href={`https://www.google.com/maps/place/${court.address}+Helsinki`}
-          aria-label="report"
+          aria-label="google maps"
         >
           <RoomOutlinedIcon className="iconLink" />
         </Button>

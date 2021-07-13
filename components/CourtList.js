@@ -54,20 +54,24 @@ const CourtList = ({ court }) => {
         <Typography color="textSecondary">Baskets: {court.baskets}</Typography>
       </CardContent>
       <CardActions className="iconLinks">
-        <Button size="small" href={court.link}>
+        <Button size="small" href={court.link} aria-label="court link">
           <LinkIcon className="iconLink" />
         </Button>
-        <Button size="small" href={court.pic}>
+        <Button size="small" href={court.pic} aria-label="court image">
           <ImageOutlinedIcon className="iconLink" />
         </Button>
         <Button
           size="small"
           href={`https://www.google.com/maps/place/${court.address}+Helsinki`}
-          aria-label="report"
+          aria-label="google maps"
         >
           <RoomOutlinedIcon className="iconLink" />
         </Button>
-        <Button size="small" href={"mailto:maxim@villivald.com"}>
+        <Button
+          size="small"
+          href={"mailto:maxim@villivald.com"}
+          aria-label="report"
+        >
           <ReportOutlinedIcon className="iconLink" />
         </Button>
       </CardActions>

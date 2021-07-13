@@ -4,3 +4,13 @@
   justify-content: center;
   align-items: center;
 }
+
+.idHeader {
+  margin: 10px 0 10px 0;
+}
+
+.idPic {
+  margin-bottom: 10px;
+  width: clamp(100px, 538px, 100%);
+  height: clamp(100px, 403px, 100%);
+}

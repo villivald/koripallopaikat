@@ -1,6 +1,9 @@
 import React from "react";
-import Link from "next/link";
 import { useRouter } from "next/router";
+import Button from "@material-ui/core/Button";
+import ImageOutlinedIcon from "@material-ui/icons/ImageOutlined";
+import LinkIcon from "@material-ui/icons/Link";
+import RoomOutlinedIcon from "@material-ui/icons/RoomOutlined";
 import { connectToDatabase } from "../../util/mongodb";
 import Header from "../../components/Header";
 
@@ -13,18 +16,26 @@ const Page = ({ courts }) => {
     <div>
       <Header />
       <div className="idContainer">
-        <h1>{currentCourt.address}</h1>
-        <img src={currentCourt.pic} width={538} height={403} />
+        <h1 className="idHeader">{currentCourt.address}</h1>
+        <img src={currentCourt.pic} className="idPic" />
         <p>Baskets: {currentCourt.baskets}</p>
         <p>Surface: {currentCourt.surface}</p>
         <p>Type: {currentCourt.type}</p>
-        <Link
-          key={currentCourt._id}
-          href={`${currentCourt.link}`}
-          as={`${currentCourt.link}`}
-        >
-          Link
-        </Link>
+        <div className="idLinks">
+          <Button size="small" href={currentCourt.link} aria-label="court link">
+            <LinkIcon className="iconLink" />
+          </Button>
+          <Button size="small" href={currentCourt.pic} aria-label="court image">
+            <ImageOutlinedIcon className="iconLink" />
+          </Button>
+          <Button
+            size="small"
+            href={`https://www.google.com/maps/place/${currentCourt.address}+Helsinki`}
+            aria-label="google maps"
+          >
+            <RoomOutlinedIcon className="iconLink" />
+          </Button>
+        </div>
       </div>
     </div>
   );
