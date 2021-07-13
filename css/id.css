@@ -6,11 +6,30 @@
 }
 
 .idHeader {
-  margin: 10px 0 10px 0;
+  margin: 10px;
 }
 
 .idPic {
   margin-bottom: 10px;
   width: clamp(100px, 538px, 100%);
   height: clamp(100px, 403px, 100%);
+  border-radius: 5px;
+}
+
+.idLinks {
+  display: flex;
+  margin: 15px;
+  gap: 40px;
+}
+
+.idInfo {
+  display: flex;
+  gap: 40px;
+}
+
+.idInfo p {
+  background-color: #1b4f55;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
 }

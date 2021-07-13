@@ -18,9 +18,11 @@ const Page = ({ courts }) => {
       <div className="idContainer">
         <h1 className="idHeader">{currentCourt.address}</h1>
         <img src={currentCourt.pic} className="idPic" />
-        <p>Baskets: {currentCourt.baskets}</p>
-        <p>Surface: {currentCourt.surface}</p>
-        <p>Type: {currentCourt.type}</p>
+        <div className="idInfo">
+          <p className="idBaskets">Baskets: {currentCourt.baskets}</p>
+          <p className="idSurface">Surface: {currentCourt.surface}</p>
+          <p className="idType">Type: {currentCourt.type}</p>
+        </div>
         <div className="idLinks">
           <Button size="small" href={currentCourt.link} aria-label="court link">
             <LinkIcon className="iconLink" />
@@ -36,6 +38,13 @@ const Page = ({ courts }) => {
             <RoomOutlinedIcon className="iconLink" />
           </Button>
         </div>
+        <Button
+          variant="contained"
+          color="secondary"
+          onClick={() => router.back()}
+        >
+          Back
+        </Button>
       </div>
     </div>
   );
