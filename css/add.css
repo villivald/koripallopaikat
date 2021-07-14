@@ -14,11 +14,29 @@
   margin: 20px 20px;
 }
 
-.uploadedLink {
-  max-width: 320px;
-  word-wrap: break-word;
-}
-
 .imageUploading {
   margin-bottom: -25px;
+}
+
+.addChip {
+  margin-top: 15px;
+}
+
+.submitHeader {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 400px) {
+  .form {
+    margin-left: 10px;
+  }
+
+  .uploadButton {
+    margin-top: 15px !important;
+  }
+
+  .addChip {
+    margin-top: 30px;
+  }
 }

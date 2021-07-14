@@ -1,12 +1,15 @@
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 import { useRouter } from "next/router";
-import Snackbar from "@material-ui/core/Snackbar";
-import MuiAlert from "@material-ui/lab/Alert";
-import TextField from "@material-ui/core/TextField";
 import { makeStyles } from "@material-ui/core/styles";
+import Snackbar from "@material-ui/core/Snackbar";
+import TextField from "@material-ui/core/TextField";
+import InputLabel from "@material-ui/core/InputLabel";
 import Button from "@material-ui/core/Button";
+import MuiAlert from "@material-ui/lab/Alert";
+import Chip from "@material-ui/core/Chip";
 import CloudUploadIcon from "@material-ui/icons/CloudUpload";
+import CheckIcon from "@material-ui/icons/Check";
 import Header from "../components/Header";
 
 const useStyles = makeStyles(() => ({
@@ -93,7 +96,7 @@ export default function Add() {
       surface: data.surface,
       type: data.type,
       baskets: data.baskets,
-      pic: data.pic,
+      pic: url,
       link: data.link,
     };
     postData(form);
@@ -137,20 +140,16 @@ export default function Add() {
               placeholder="4"
               {...register("baskets", { required: true })}
             />
-            <TextField
-              required
-              className={classes.input}
-              id="outlined-basic"
-              label="Image link"
-              placeholder="https://imgur.com/mI1dZ8i"
-              {...register("pic", { required: true })}
-            />
             <div className="imageUploading">
+              <InputLabel required={true} style={{ margin: "10px 0" }}>
+                Image
+              </InputLabel>
               <input
                 type="file"
                 onChange={(e) => setImage(e.target.files[0])}
               ></input>
               <Button
+                className="uploadButton"
                 variant="contained"
                 color="primary"
                 startIcon={<CloudUploadIcon />}
@@ -159,8 +158,15 @@ export default function Add() {
                 Upload
               </Button>
             </div>
-            <div className="uploadedLink">
-              {url && `Paste this url to the Image Link ⬆ field:  ${url}`}
+            <div className="addChip">
+              {url && (
+                <Chip
+                  label="Image was successfully loaded"
+                  color="primary"
+                  icon={<CheckIcon />}
+                  variant="outlined"
+                />
+              )}
             </div>
             <TextField
               className={classes.input}
@@ -170,7 +176,7 @@ export default function Add() {
               {...register("link")}
             />
           </div>
-          {(errors.address || errors.baskets || errors.pic) && (
+          {(errors.address || errors.baskets || errors.url) && (
             <Snackbar open={open}>
               <Alert severity="error">
                 Address, Baskets and Picture fields are required
@@ -189,7 +195,7 @@ export default function Add() {
       </div>
       {visible && (
         <>
-          <h2 style={{ textAlign: "center" }}>
+          <h2 className="submitHeader">
             Thank you for contribution. New Court is successfully added to a
             database and will be reviewed soon 👋.
           </h2>
