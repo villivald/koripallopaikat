@@ -23,3 +23,13 @@
     padding: 10px;
   }
 }
+@media (max-width: 450px) {
+  .intro {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 400px) {
+  .intro {
+    font-size: 1.4rem;
+  }
+}
