@@ -1,6 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
 import Header from "../components/Header";
-import Footer from "../components/Footer";
 import mapboxgl from "!mapbox-gl";
 
 mapboxgl.accessToken =
@@ -17,7 +16,7 @@ const map = () => {
     if (map.current) return; // initialize map only once
     map.current = new mapboxgl.Map({
       container: mapContainer.current,
-      style: "mapbox://styles/mapbox/streets-v11",
+      style: "mapbox://styles/villivald/ckr6hzonv0ri517noo2zes5ru",
       center: [lng, lat],
       zoom: zoom,
     });
@@ -31,16 +30,39 @@ const map = () => {
       setZoom(map.current.getZoom().toFixed(2));
     });
   });
+
+  useEffect(() => {
+    map.current.on("click", function (e) {
+      var features = map.current.queryRenderedFeatures(e.point, {
+        layers: ["koripallopaikat"],
+      });
+      if (!features.length) {
+        return;
+      }
+      var feature = features[0];
+
+      new mapboxgl.Popup({ offset: [0, -15] })
+        .setLngLat(feature.geometry.coordinates)
+        .setHTML(
+          "<h3>" +
+            feature.properties.title +
+            "</h3>" +
+            "<p>" +
+            feature.properties.description +
+            "</p>"
+        )
+        .addTo(map.current);
+    });
+  });
   return (
     <div>
       <Header />
-      <div>
+      <div ref={mapContainer} className="map-container" />
+      <footer>
         <div className="sidebar">
           Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
         </div>
-        <div ref={mapContainer} className="map-container" />
-      </div>
-      <Footer />
+      </footer>
     </div>
   );
 };
