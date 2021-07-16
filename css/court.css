@@ -32,6 +32,12 @@
   width: 24px;
 }
 
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
 @media (max-width: 1300px) {
   .MuiCardActions-spacing > :not(:first-child) {
     margin-left: -10px !important;

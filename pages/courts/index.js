@@ -1,19 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 import dynamic from "next/dynamic";
+import Box from "@material-ui/core/Box";
+import Pagination from "@material-ui/lab/Pagination";
 import { connectToDatabase } from "../../util/mongodb";
 
 const CourtList = dynamic(() => import("../../components/CourtList"));
 const Header = dynamic(() => import("../../components/Header"));
 
 const index = ({ courts }) => {
+  const itemsPerPage = 8;
+  const [page, setPage] = useState(1);
+  const [numberOfPages] = useState(Math.ceil(courts.length / itemsPerPage));
+
+  const handleChange = (event, value) => {
+    event.preventDefault();
+    setPage(value);
+  };
   return (
     <div>
       <Header />
       <div className="listCourt">
-        {courts.map((court) => (
-          <CourtList court={court} key={court._id} />
-        ))}
+        {courts
+          .slice((page - 1) * itemsPerPage, page * itemsPerPage)
+          .map((court) => (
+            <CourtList court={court} key={court._id} />
+          ))}
       </div>
+      <Box component="span" className="pagination">
+        <Pagination
+          count={numberOfPages}
+          page={page}
+          onChange={handleChange}
+          defaultPage={1}
+          color="primary"
+          size="large"
+          showFirstButton
+          showLastButton
+        />
+      </Box>
     </div>
   );
 };
