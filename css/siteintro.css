@@ -4,7 +4,7 @@
   gap: 15px;
   background-color: #82c99c;
   padding: 20px;
-  font-size: 2rem;
+  font-size: clamp(1.8rem, 2.2vw, 2.8rem);
 }
 
 .intro:hover {
@@ -23,31 +23,13 @@
     padding: 10px;
   }
 }
-@media (max-width: 450px) {
-  .intro {
-    font-size: 1.7rem;
-  }
-}
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .intro {
     font-size: 1.4rem;
   }
 }
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @media (max-width: 500px) {
-    .intro {
-      padding: 10px;
-    }
-  }
-  @media (max-width: 450px) {
-    .intro {
-      font-size: 1.7rem;
-    }
-  }
-  @media (max-width: 400px) {
-    .intro {
-      font-size: 1.3rem;
-    }
+@media (max-width: 350px) {
+  .intro {
+    font-size: 1.2rem;
   }
 }
