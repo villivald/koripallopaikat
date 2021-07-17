@@ -32,6 +32,17 @@ const map = () => {
   });
 
   useEffect(() => {
+    map.current.addControl(
+      new mapboxgl.GeolocateControl({
+        positionOptions: {
+          enableHighAccuracy: true,
+        },
+        trackUserLocation: true,
+      })
+    );
+  }, []);
+
+  useEffect(() => {
     map.current.on("click", function (e) {
       var features = map.current.queryRenderedFeatures(e.point, {
         layers: ["koripallopaikat"],
