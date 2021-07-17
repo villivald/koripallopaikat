@@ -34,7 +34,7 @@ const map = () => {
   useEffect(() => {
     map.current.on("click", function (e) {
       var features = map.current.queryRenderedFeatures(e.point, {
-        layers: ["koripallopaikat-17-07-21"],
+        layers: ["koripallopaikat"],
       });
       if (!features.length) {
         return;
@@ -49,11 +49,12 @@ const map = () => {
             "</h3>" +
             "<p>" +
             feature.properties.description +
-            "</p>"
-          // +
-          // "<a href=" + feature.properties.link + ">" +
-          // "Link" +
-          // "</a>"
+            "</p>" +
+            "<a href=" +
+            feature.properties.link +
+            ">" +
+            "Link" +
+            "</a>"
         )
         .addTo(map.current);
     });
