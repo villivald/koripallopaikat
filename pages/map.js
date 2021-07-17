@@ -16,7 +16,7 @@ const map = () => {
     if (map.current) return; // initialize map only once
     map.current = new mapboxgl.Map({
       container: mapContainer.current,
-      style: "mapbox://styles/villivald/ckr6hzonv0ri517noo2zes5ru",
+      style: "mapbox://styles/villivald/ckr7gpk7i10kw17mx8gq5lwi6",
       center: [lng, lat],
       zoom: zoom,
     });
@@ -34,7 +34,7 @@ const map = () => {
   useEffect(() => {
     map.current.on("click", function (e) {
       var features = map.current.queryRenderedFeatures(e.point, {
-        layers: ["koripallopaikat"],
+        layers: ["koripallopaikat-17-07-21"],
       });
       if (!features.length) {
         return;
@@ -50,6 +50,10 @@ const map = () => {
             "<p>" +
             feature.properties.description +
             "</p>"
+          // +
+          // "<a href=" + feature.properties.link + ">" +
+          // "Link" +
+          // "</a>"
         )
         .addTo(map.current);
     });

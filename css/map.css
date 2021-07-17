@@ -10,3 +10,7 @@
   border-radius: 4px;
   width: clamp(350px, 70%, 450px);
 }
+
+h3 {
+  padding-top: 10px;
+}
