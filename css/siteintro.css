@@ -33,3 +33,21 @@
     font-size: 1.4rem;
   }
 }
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @media (max-width: 500px) {
+    .intro {
+      padding: 10px;
+    }
+  }
+  @media (max-width: 450px) {
+    .intro {
+      font-size: 1.7rem;
+    }
+  }
+  @media (max-width: 400px) {
+    .intro {
+      font-size: 1.3rem;
+    }
+  }
+}
