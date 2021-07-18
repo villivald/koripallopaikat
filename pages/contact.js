@@ -11,19 +11,10 @@ import github from "../public/icons/github-icon.svg";
 import dev from "../public/icons/dev-badge.svg";
 import eleventy from "../public/icons/11ty.webp";
 
-export default function Top({ weather }) {
+export default function Contact() {
   return (
-    <div>
+    <>
       <Header />
-      <div className="contactsContainer">
-        {weather && (
-          <div>
-            <h1>{weather.name}</h1>
-            <h2>{(weather.main.temp - 273.15).toFixed(2)} °​C</h2>
-          </div>
-        )}
-      </div>
-
       <div className="contactsContainer">
         <div className="link">
           <a href="https://villivald.com" className="linkContainer">
@@ -87,19 +78,6 @@ export default function Top({ weather }) {
           </a>
         </div>
       </div>
-    </div>
+    </>
   );
 }
-
-export const getServerSideProps = async () => {
-  const res = await fetch(
-    `https://api.openweathermap.org/data/2.5/weather?q=Helsinki&appid=${process.env.API_KEY}`
-  );
-  const weather = await res.json();
-
-  return {
-    props: {
-      weather,
-    },
-  };
-};

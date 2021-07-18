@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   gap: 15px;
-  margin-bottom: 5%;
+  margin-top: 5%;
 }
 
 .link {
@@ -13,4 +13,18 @@
 .linkContainer {
   display: flex;
   gap: 3px;
+}
+
+@media (max-width: 1000px) {
+  .contactsContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 50px;
+    place-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .contactsContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

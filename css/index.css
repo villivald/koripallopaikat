@@ -70,6 +70,15 @@ select {
   font: inherit;
 }
 
+.weather {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background-color: #dbca2e;
+  padding: 20px;
+}
+
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
