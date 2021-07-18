@@ -5,11 +5,13 @@ const Weather = ({ weather }) => {
     <div>
       {weather && (
         <div className="weather">
-          <h1>{weather.name}</h1>
+          <h2>{weather.name}</h2>
           <h2>{(weather.main.temp - 273.15).toFixed(2)} °​C</h2>
           <img
             alt={weather.weather[0].description}
-            src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}.png`}
+            src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}
+            height={50}
+            width={50}
           />
         </div>
       )}

@@ -1,0 +1,19 @@
+.weather {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background-color: #dbca2e;
+  padding: 20px;
+}
+
+@media (max-width: 500px) {
+  .weather {
+    padding: 6.5px;
+  }
+}
+@media (max-width: 420px) {
+  .weather {
+    padding: 1.5px;
+  }
+}
