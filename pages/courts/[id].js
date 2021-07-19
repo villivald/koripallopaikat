@@ -2,6 +2,7 @@ import React from "react";
 import { useRouter } from "next/router";
 import { useGeolocation } from "react-use";
 import Button from "@material-ui/core/Button";
+import CircularProgress from "@material-ui/core/CircularProgress";
 import ImageOutlinedIcon from "@material-ui/icons/ImageOutlined";
 import LinkIcon from "@material-ui/icons/Link";
 import RoomOutlinedIcon from "@material-ui/icons/RoomOutlined";
@@ -30,7 +31,7 @@ const Page = ({ courts }) => {
     Math.sin(y1 / 2) * Math.sin(y1 / 2) +
     Math.cos(x1) * Math.cos(x2) * Math.sin(y2 / 2) * Math.sin(y2 / 2);
   const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-  const d = (R * c) / 1000;
+  const d = ((R * c) / 1000).toFixed(2);
 
   return (
     <div>
@@ -43,7 +44,7 @@ const Page = ({ courts }) => {
           <p className="idSurface">Surface: {currentCourt.surface}</p>
           <p className="idType">Type: {currentCourt.type}</p>
         </div>
-        <h1>Distance: {d.toFixed(2)} km</h1>
+        <h2>Distance: {d > 1000 ? <CircularProgress /> : d} km</h2>
         <div className="idLinks">
           <Button size="small" href={currentCourt.link} aria-label="court link">
             <LinkIcon className="iconLink" />
