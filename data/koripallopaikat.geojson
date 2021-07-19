@@ -1,0 +1,425 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Harakkamyllyntie, 2",
+        "description": "Outdoor basketball court",
+        "link": "/courts/Harakkamyllyntie,%202"
+      },
+      "geometry": {
+        "coordinates": [25.05302863016064, 60.2245300682233],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Agronominkatu, 24",
+        "description": "Sports park",
+        "link": "/courts/Agronominkatu,%2024"
+      },
+      "geometry": {
+        "coordinates": [25.036438243606085, 60.231980501660246],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Kevätkatu, 2",
+        "description": "High school yard",
+        "link": "/courts/Kevätkatu,%202"
+      },
+      "geometry": {
+        "coordinates": [25.029012881437435, 60.22783644485196],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Eero Erkon katu",
+        "description": "Outdoor basketball court",
+        "link": "/courts/Eero%20Erkon%20katu"
+      },
+      "geometry": {
+        "coordinates": [24.93681488800558, 60.17292502732334],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Salpausseläntie, 3",
+        "description": "School yard",
+        "link": "/courts/Salpausseläntie,%203"
+      },
+      "geometry": {
+        "coordinates": [25.00225421212958, 60.23225260869468],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Ylästöntie, 3",
+        "description": "High school yard",
+        "link": "/courts/Ylästöntie,%203"
+      },
+      "geometry": {
+        "coordinates": [24.980883556314286, 60.28201701729289],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Vanha Helsingintie, 5",
+        "description": "Vocational school yard",
+        "link": "/courts/Vanha%20Helsingintie,%205"
+      },
+      "geometry": {
+        "coordinates": [25.014591769803143, 60.244651128981424],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Vanha Helsingintie, 2",
+        "description": "School yard",
+        "link": "/courts/Vanha%20Helsingintie,%202"
+      },
+      "geometry": {
+        "coordinates": [25.015370567947556, 60.242848556955614],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Berliininkatu, 4",
+        "description": "School yard",
+        "link": "/courts/Berliininkatu,%204"
+      },
+      "geometry": {
+        "coordinates": [24.974309983407625, 60.20478609921235],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Arabianpolku, 2",
+        "description": "Sports park",
+        "link": "/courts/Arabianpolku,%202"
+      },
+      "geometry": {
+        "coordinates": [24.97501215413642, 60.20539620136604],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Arabianpolku, 3",
+        "description": "Sports park",
+        "link": "/courts/Arabianpolku,%203"
+      },
+      "geometry": {
+        "coordinates": [24.97574453680576, 60.20500306430207],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Neljäs linja, 11",
+        "description": "Sports field",
+        "link": "/courts/Neljäs%20linja,%2011"
+      },
+      "geometry": {
+        "coordinates": [24.95110691212739, 60.18307797201659],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Sturenkatu, 6",
+        "description": "School yard",
+        "link": "/courts/Sturenkatu,%206"
+      },
+      "geometry": {
+        "coordinates": [24.94501164096415, 60.18930412001053],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Lastenkodinkatu, 2-10 (Baana)",
+        "description": "Sports field",
+        "link": "/courts/Lastenkodinkatu,%202-10%20(Baana)"
+      },
+      "geometry": {
+        "coordinates": [24.923345242147512, 60.165598435348954],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Mäkelänkatu, 72",
+        "description": "Sports park",
+        "link": "/courts/Mäkelänkatu,%2072"
+      },
+      "geometry": {
+        "coordinates": [24.943481969801425, 60.205379654970706],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Kullervonkatu, 11",
+        "description": "Vocational school yard",
+        "link": "/courts/Kullervonkatu,%2011"
+      },
+      "geometry": {
+        "coordinates": [24.94890841398453, 60.21919572995465],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Käskynhaltijantie, 11",
+        "description": "Sports park",
+        "link": "/courts/Käskynhaltijantie,%2011"
+      },
+      "geometry": {
+        "coordinates": [24.959387609971888, 60.234365986568676],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Lucina Hagmanin polku",
+        "description": "School yard",
+        "link": "/courts/Lucina%20Hagmanin%20polku"
+      },
+      "geometry": {
+        "coordinates": [24.998511569802915, 60.238842969286324],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Moreenitie, 2",
+        "description": "Youth center's yard",
+        "link": "/courts/Moreenitie,%202"
+      },
+      "geometry": {
+        "coordinates": [25.010993040966202, 60.2350484233855],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Moreenitie, 4",
+        "description": "Abandoned playground",
+        "link": "/courts/Moreenitie,%204"
+      },
+      "geometry": {
+        "coordinates": [25.012547598639188, 60.234061031189384],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Leikkikuja, 4",
+        "description": "Play park",
+        "link": "/courts/Leikkikuja,%204"
+      },
+      "geometry": {
+        "coordinates": [25.082225961529705, 60.24163700431044],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Kontulankaari, 15",
+        "description": "Sports park",
+        "link": "/courts/Kontulankaari,%2015"
+      },
+      "geometry": {
+        "coordinates": [25.08280388329361, 60.24451222811895],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Tanhuantie, 6",
+        "description": "Sports park",
+        "link": "/courts/Tanhuantie,%206"
+      },
+      "geometry": {
+        "coordinates": [25.09181542747568, 60.23504953354714],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Rintinpolku, 4",
+        "description": "School yard",
+        "link": "/courts/Rintinpolku,%204"
+      },
+      "geometry": {
+        "coordinates": [25.09093469863906, 60.23148674570727],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Rintinpolku, 5",
+        "description": "School yard",
+        "link": "/courts/Rintinpolku,%205"
+      },
+      "geometry": {
+        "coordinates": [25.091279240966024, 60.23040396831952],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Rintinpolku, 2",
+        "description": "High school yard",
+        "link": "/courts/Rintinpolku,%202"
+      },
+      "geometry": {
+        "coordinates": [25.089793898639023, 60.23114396615469],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Porttitie 5",
+        "description": "Sports park",
+        "link": "/courts/Porttitie%205"
+      },
+      "geometry": {
+        "coordinates": [25.08212226980247, 60.230045777713045],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Keinutie, 13",
+        "description": "School yard",
+        "link": "/courts/Keinutie,%2013"
+      },
+      "geometry": {
+        "coordinates": [25.071085756312215, 60.23500305998768],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Keinupolku",
+        "description": "School yard",
+        "link": "/courts/Keinupolku"
+      },
+      "geometry": {
+        "coordinates": [25.072032140966215, 60.23499395067157],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Kurkiusuontie, 20",
+        "description": "School yard",
+        "link": "/courts/Kurkiusuontie,%2020"
+      },
+      "geometry": {
+        "coordinates": [25.06822152747563, 60.23342790640507],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Kurkisuontie, 5",
+        "description": "Sports park",
+        "link": "/courts/Kurkisuontie,%205"
+      },
+      "geometry": {
+        "coordinates": [25.06781376980272, 60.233891163963456],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Merisatamanranta",
+        "description": "Sports field",
+        "link": "/courts/Merisatamanranta"
+      },
+      "geometry": {
+        "coordinates": [24.93950876073082, 60.153840623674554],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Hyväntoivonkatu, 5",
+        "description": "Sports park",
+        "link": "/courts/Hyväntoivonkatu,%205"
+      },
+      "geometry": {
+        "coordinates": [24.91731912381116, 60.15576481885504],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Messitytönkatu, 4",
+        "description": "Sports park",
+        "link": "/courts/Messitytönkatu,%204"
+      },
+      "geometry": {
+        "coordinates": [24.914788773510423, 60.15990272042478],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Santakatu, 6",
+        "description": "School yard",
+        "link": "/courts/Santakatu,%206"
+      },
+      "geometry": {
+        "coordinates": [24.91905883539655, 60.162531348254184],
+        "type": "Point"
+      }
+    }
+  ],
+  "type": "FeatureCollection"
+}
