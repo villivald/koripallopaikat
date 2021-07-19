@@ -61,7 +61,7 @@ const map = () => {
             "<p>" +
             feature.properties.description +
             "</p>" +
-            "<a href=" +
+            '<a title="Open in new tab" target="_blank" href=' +
             feature.properties.link +
             ">" +
             "Link" +

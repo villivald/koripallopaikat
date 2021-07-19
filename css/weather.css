@@ -7,6 +7,10 @@
   padding: 20px;
 }
 
+.weather img:hover {
+  transform: scale(1.1);
+}
+
 @media (max-width: 500px) {
   .weather {
     padding: 6.5px;

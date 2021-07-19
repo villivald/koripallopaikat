@@ -40,9 +40,9 @@ const Page = ({ courts }) => {
         <h1 className="idHeader">{currentCourt.address}</h1>
         <img src={currentCourt.pic} className="idPic" />
         <div className="idInfo">
-          <p className="idBaskets">Baskets: {currentCourt.baskets}</p>
-          <p className="idSurface">Surface: {currentCourt.surface}</p>
-          <p className="idType">Type: {currentCourt.type}</p>
+          <p>Baskets: {currentCourt.baskets}</p>
+          <p>Surface: {currentCourt.surface}</p>
+          <p>Type: {currentCourt.type}</p>
         </div>
         <h2>Distance: {d > 1000 ? <CircularProgress /> : d} km</h2>
         <div className="idLinks">

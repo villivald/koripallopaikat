@@ -51,13 +51,21 @@ const Court = ({ court }) => {
         <Typography color="textSecondary">Baskets: {court.baskets}</Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" href={court.link} aria-label="court link">
+        <Button
+          size="small"
+          href={court.link}
+          aria-label="court link"
+          title="Open in new tab"
+          target="_blank"
+        >
           <LinkIcon className="iconLink" />
         </Button>
         <Button
           size="small"
           href={`https://villivald.com/koripallopaikat/${court._id}.webp`}
           aria-label="court image"
+          title="Open in new tab"
+          target="_blank"
         >
           <ImageOutlinedIcon className="iconLink" />
         </Button>
@@ -65,6 +73,8 @@ const Court = ({ court }) => {
           size="small"
           href={`https://www.google.com/maps/place/${court.address}+Helsinki`}
           aria-label="google maps"
+          title="Open in new tab"
+          target="_blank"
         >
           <RoomOutlinedIcon className="iconLink" />
         </Button>
@@ -72,6 +82,8 @@ const Court = ({ court }) => {
           size="small"
           href={"mailto:maxim@villivald.com"}
           aria-label="report"
+          title="Open in new tab"
+          target="_blank"
         >
           <ReportOutlinedIcon className="iconLink" />
         </Button>
