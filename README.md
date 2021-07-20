@@ -5,6 +5,7 @@
  - [Material UI](https://material-ui.com/)
  - [MongoDB](https://www.mongodb.com/)
  - [Mapbox GL JS](https://www.mapbox.com/mapbox-gljs)
+ - [React Hook Form](https://react-hook-form.com/)
 
 
 ### Run locally
