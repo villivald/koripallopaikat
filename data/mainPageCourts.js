@@ -21,6 +21,8 @@ const mainPageCourts = [
     baskets: 1,
     surfacePic: gravel,
     link: "https://www.google.com/maps/place/Harakkamyllyntie+2,+00920+Helsinki/@60.2248521,25.0532789,3a,75y,328.9h,83t/data=!3m6!1e1!3m4!1s9Oc6sBs-nJ_CaqtTZfbNDw!2e0!7i13312!8i6656!4m5!3m4!1s0x469208db5f5c85df:0x64c9de446db611a!8m2!3d60.2245389!4d25.0530243",
+    lat: 60.224656096983466,
+    lon: 25.053045756427437,
   },
   {
     _id: 2,
@@ -31,6 +33,8 @@ const mainPageCourts = [
     baskets: 2,
     surfacePic: gravel,
     link: "https://www.hel.fi/helsinki/en/administration/participate/contact/search-address/toimipistekuvaus?id=40374",
+    lat: 60.2320971901178,
+    lon: 25.036502356427654,
   },
   {
     _id: 3,
@@ -41,6 +45,8 @@ const mainPageCourts = [
     baskets: 2,
     surfacePic: asphalt,
     link: "https://www.google.com/maps/place/Kev%C3%A4tkatu+2,+00790+Helsinki/@60.2279812,25.0277728,3a,75y,137.8h,79.84t/data=!3m6!1e1!3m4!1sGlcvSFWDXaPilUh0Wh6NIA!2e0!7i13312!8i6656!4m5!3m4!1s0x469208e43548c4bd:0x2317ac0e0f681107!8m2!3d60.2278631!4d25.0291309",
+    lat: 60.227948320653596,
+    lon: 25.029163085148415,
   },
   {
     _id: 4,
@@ -51,6 +57,8 @@ const mainPageCourts = [
     baskets: 2,
     surfacePic: soft,
     link: "https://www.hs.fi/kaupunki/art-2000006163098.html",
+    lat: 60.17296238175858,
+    lon: 24.93697582055306,
   },
   {
     _id: 5,
@@ -61,6 +69,8 @@ const mainPageCourts = [
     baskets: 2,
     surfacePic: soft,
     link: "",
+    lat: 60.23225260869468,
+    lon: 25.00225421212958,
   },
   {
     _id: 6,
@@ -71,6 +81,8 @@ const mainPageCourts = [
     baskets: 2,
     surfacePic: asphalt,
     link: "https://fi.wikipedia.org/wiki/Helsinge_gymnasium",
+    lat: 60.28201701729289,
+    lon: 24.980883556314286,
   },
   {
     _id: 7,
@@ -81,6 +93,8 @@ const mainPageCourts = [
     baskets: 1,
     surfacePic: asphalt,
     link: "https://www.google.com/maps/place/Vanha+Helsingintie+5,+00700+Helsinki/@60.2436329,25.0150938,3a,75y,31.26h,83.84t/data=!3m6!1e1!3m4!1sBOFDl68kLSQrF22iLrpm7A!2e0!7i13312!8i6656!4m5!3m4!1s0x469209e978b18da9:0x2ab8de7db2c1850e!8m2!3d60.2445979!4d25.0146025",
+    lat: 60.244651128981424,
+    lon: 25.014591769803143,
   },
   {
     _id: 8,
@@ -91,6 +105,8 @@ const mainPageCourts = [
     baskets: 1,
     surfacePic: asphalt,
     link: "https://www.kieloschool.fi/",
+    lat: 60.242848556955614,
+    lon: 25.015370567947556,
   },
 ];
 
