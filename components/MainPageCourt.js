@@ -31,7 +31,7 @@ const Court = ({ court }) => {
             {court.address}
           </Link>
         </Typography>
-        <Typography color="textSecondary">
+        <Typography component={"span"} color="textSecondary">
           Distance: {d > 1000 ? <CircularProgress size={15} /> : d} km
         </Typography>
         <Typography color="textSecondary">
