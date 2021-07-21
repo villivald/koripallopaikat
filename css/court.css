@@ -82,4 +82,7 @@
   .iconLinks {
     margin-left: -10px;
   }
+  .MuiPagination-root li {
+    max-width: 35px;
+  }
 }

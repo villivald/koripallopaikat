@@ -6,7 +6,7 @@ header {
   padding: 20px;
 }
 
-nav {
+header nav {
   display: flex;
   gap: 50px;
 }
@@ -46,17 +46,17 @@ nav > a:active {
 }
 
 @media (max-width: 1000px) {
-  nav {
+  header nav {
     gap: 30px;
   }
 }
 @media (max-width: 800px) {
-  nav {
+  header nav {
     gap: 10px;
   }
 }
 @media (max-width: 700px) {
-  nav {
+  header nav {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -66,10 +66,11 @@ nav > a:active {
   header {
     padding: 10px;
   }
-  nav {
+  header nav {
     padding: 10px;
+    gap: 15px;
   }
-  nav > a {
+  header nav > a {
     min-width: 100px;
     text-align: center;
   }
