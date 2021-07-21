@@ -79,4 +79,7 @@
   .basketballField {
     width: clamp(170px, 50%, 400px);
   }
+  .iconLinks {
+    margin-left: -10px;
+  }
 }
