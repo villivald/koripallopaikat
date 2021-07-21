@@ -60,6 +60,7 @@ const CourtList = ({ court }) => {
           aria-label="court link"
           title="Open in new tab"
           target="_blank"
+          rel="noopener"
         >
           <LinkIcon className="iconLink" />
         </Button>
@@ -69,6 +70,7 @@ const CourtList = ({ court }) => {
           aria-label="court image"
           title="Open in new tab"
           target="_blank"
+          rel="noopener"
         >
           <ImageOutlinedIcon className="iconLink" />
         </Button>
@@ -78,6 +80,7 @@ const CourtList = ({ court }) => {
           aria-label="google maps"
           title="Open in new tab"
           target="_blank"
+          rel="noopener"
         >
           <RoomOutlinedIcon className="iconLink" />
         </Button>
@@ -87,6 +90,7 @@ const CourtList = ({ court }) => {
           aria-label="report"
           title="Open in new tab"
           target="_blank"
+          rel="noopener"
         >
           <ReportOutlinedIcon className="iconLink" />
         </Button>
