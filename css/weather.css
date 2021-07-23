@@ -7,7 +7,7 @@
   padding: 20px;
 }
 
-.weather img:hover {
+.weatherPic:hover {
   transform: scale(1.1);
 }
 
