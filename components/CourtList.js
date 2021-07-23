@@ -6,13 +6,17 @@ import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import CircularProgress from "@material-ui/core/CircularProgress";
 import ReportOutlinedIcon from "@material-ui/icons/ReportOutlined";
 import ImageOutlinedIcon from "@material-ui/icons/ImageOutlined";
 import LinkIcon from "@material-ui/icons/Link";
 import RoomOutlinedIcon from "@material-ui/icons/RoomOutlined";
+import distance from "../util/distance";
 
 const CourtList = ({ court }) => {
   const [isShown, setIsShown] = useState(false);
+  const d = distance(court.lat, court.lon);
+
   return (
     <Card className="basketballField">
       <CardMedia
@@ -29,6 +33,9 @@ const CourtList = ({ court }) => {
           >
             {court.address}
           </Link>
+        </Typography>
+        <Typography component={"span"} color="textSecondary">
+          Distance: {d > 1000 ? <CircularProgress size={15} /> : d} km
         </Typography>
         <Typography color="textSecondary">
           Surface: {court.surface}{" "}
