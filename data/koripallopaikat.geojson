@@ -419,6 +419,18 @@
         "coordinates": [24.91905883539655, 60.162531348254184],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Hiirakkorinne, 5",
+        "description": "sports field",
+        "link": "/courts/Hiirakkorinne,%205"
+      },
+      "geometry": {
+        "coordinates": [25.097428741083515, 60.27499113785611],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
