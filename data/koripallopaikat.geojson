@@ -431,6 +431,54 @@
         "coordinates": [25.097428741083515, 60.27499113785611],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Merivalkama, 9",
+        "description": "sports field",
+        "link": "/courts/Merivalkama,%209"
+      },
+      "geometry": {
+        "coordinates": [24.630171446837377, 60.15376053496075],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Opettajantie, 3",
+        "description": "high school yard",
+        "link": "/courts/Opettajantie,%203"
+      },
+      "geometry": {
+        "coordinates": [24.664444, 60.144722],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Zaidankatu, 9",
+        "description": "sports park",
+        "link": "/courts/Zaidankatu,%209"
+      },
+      "geometry": {
+        "coordinates": [24.897887032344517, 60.18960227644837],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Zaidankatu, 7",
+        "description": "sports park",
+        "link": "/courts/Zaidankatu,%207"
+      },
+      "geometry": {
+        "coordinates": [24.897315536903935, 60.18963113480423],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
