@@ -45,7 +45,7 @@ const map = () => {
   useEffect(() => {
     map.current.on("click", function (e) {
       var features = map.current.queryRenderedFeatures(e.point, {
-        layers: ["koripallo_espoo"],
+        layers: ["koripallo-espoo"],
       });
       if (!features.length) {
         return;
