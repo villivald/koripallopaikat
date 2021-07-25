@@ -8,9 +8,12 @@ import InputLabel from "@material-ui/core/InputLabel";
 import Button from "@material-ui/core/Button";
 import MuiAlert from "@material-ui/lab/Alert";
 import Chip from "@material-ui/core/Chip";
+import MenuItem from "@material-ui/core/MenuItem";
 import CloudUploadIcon from "@material-ui/icons/CloudUpload";
 import CheckIcon from "@material-ui/icons/Check";
 import Header from "../components/Header";
+import surfaces from "../data/surfaces";
+import placeTypes from "../data/placeTypes";
 
 const useStyles = makeStyles(() => ({
   input: {
@@ -33,6 +36,16 @@ export default function Add() {
 
   const [image, setImage] = useState("");
   const [url, setUrl] = useState("");
+
+  const [surface, setSurface] = useState("");
+  const [placeType, setPlaceType] = useState("");
+
+  const handleSurfaceChange = (event) => {
+    setSurface(event.target.value);
+  };
+  const handlePlaceTypeChange = (event) => {
+    setPlaceType(event.target.value);
+  };
 
   const uploadImage = () => {
     const data = new FormData();
@@ -93,8 +106,8 @@ export default function Add() {
   const onSubmit = (data) => {
     const form = {
       address: data.address,
-      surface: data.surface,
-      type: data.type,
+      surface: surface,
+      type: placeType,
       baskets: data.baskets,
       pic: url,
       link: data.link,
@@ -112,29 +125,39 @@ export default function Add() {
             <TextField
               required
               className={classes.input}
-              id="outlined-basic"
               label="Address"
               placeholder="Mannerheimintie, 100"
               {...register("address", { required: true })}
             />
             <TextField
               className={classes.input}
-              id="outlined-basic"
+              select
               label="Surface"
-              placeholder="Asphalt"
-              {...register("surface")}
-            />
+              value={surface}
+              onChange={handleSurfaceChange}
+            >
+              {surfaces.map((option) => (
+                <MenuItem key={option.value} value={option.value}>
+                  {option.value}
+                </MenuItem>
+              ))}
+            </TextField>
             <TextField
               className={classes.input}
-              id="outlined-basic"
+              select
               label="Place type"
-              placeholder="Outdoor basketball court"
-              {...register("type")}
-            />
+              value={placeType}
+              onChange={handlePlaceTypeChange}
+            >
+              {placeTypes.map((option) => (
+                <MenuItem key={option.value} value={option.value}>
+                  {option.value}
+                </MenuItem>
+              ))}
+            </TextField>
             <TextField
               required
               className={classes.input}
-              id="outlined-basic"
               label="Baskets"
               type="number"
               placeholder="4"
@@ -170,7 +193,6 @@ export default function Add() {
             </div>
             <TextField
               className={classes.input}
-              id="outlined-basic"
               label="Link"
               placeholder="https://nba.com"
               {...register("link")}
