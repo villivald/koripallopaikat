@@ -1,6 +1,8 @@
 import React, { useRef, useEffect, useState } from "react";
 import Header from "../components/Header";
 import mapboxgl from "!mapbox-gl";
+import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
+import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css";
 
 mapboxgl.accessToken =
   "pk.eyJ1IjoidmlsbGl2YWxkIiwiYSI6ImNrcWNnYjRvdDFqaTUyd212NHQzdGN5cGkifQ.Y98cfsnc0_V4f1-6El0Mhw";
@@ -20,6 +22,12 @@ const map = () => {
       center: [lng, lat],
       zoom: zoom,
     });
+    map.current.addControl(
+      new MapboxGeocoder({
+        accessToken: mapboxgl.accessToken,
+        mapboxgl: mapboxgl,
+      })
+    );
     map.current.addControl(new mapboxgl.FullscreenControl());
   });
 

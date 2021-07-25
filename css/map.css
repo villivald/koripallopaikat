@@ -11,6 +11,10 @@
   width: clamp(350px, 70%, 450px);
 }
 
+.mapboxgl-ctrl-geocoder {
+  width: clamp(15vw, 25vw, 150%) !important;
+}
+
 h3 {
   padding-top: 10px;
 }
