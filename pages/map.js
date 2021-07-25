@@ -20,6 +20,7 @@ const map = () => {
       center: [lng, lat],
       zoom: zoom,
     });
+    map.current.addControl(new mapboxgl.FullscreenControl());
   });
 
   useEffect(() => {
