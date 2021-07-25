@@ -28,7 +28,7 @@
   margin-bottom: 120px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .form {
     margin-left: 10px;
   }
@@ -39,5 +39,21 @@
 
   .addChip {
     margin-top: 30px;
+  }
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @media (max-width: 500px) {
+    .form {
+      margin-left: 10px;
+    }
+
+    .uploadButton {
+      margin-top: 15px !important;
+    }
+
+    .addChip {
+      margin-top: 30px;
+    }
   }
 }
