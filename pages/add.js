@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { makeStyles } from "@material-ui/core/styles";
 import Snackbar from "@material-ui/core/Snackbar";
@@ -14,6 +14,9 @@ import CheckIcon from "@material-ui/icons/Check";
 import Header from "../components/Header";
 import surfaces from "../data/surfaces";
 import placeTypes from "../data/placeTypes";
+import mapboxgl from "!mapbox-gl";
+import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
+import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css";
 
 const useStyles = makeStyles(() => ({
   input: {
@@ -46,6 +49,8 @@ export default function Add() {
   const handlePlaceTypeChange = (event) => {
     setPlaceType(event.target.value);
   };
+
+  const [address, setAddress] = useState("");
 
   const uploadImage = () => {
     const data = new FormData();
@@ -105,7 +110,7 @@ export default function Add() {
 
   const onSubmit = (data) => {
     const form = {
-      address: data.address,
+      address: address,
       surface: surface,
       type: placeType,
       baskets: data.baskets,
@@ -115,6 +120,22 @@ export default function Add() {
     postData(form);
   };
 
+  mapboxgl.accessToken =
+    "pk.eyJ1IjoidmlsbGl2YWxkIiwiYSI6ImNrcWNnYjRvdDFqaTUyd212NHQzdGN5cGkifQ.Y98cfsnc0_V4f1-6El0Mhw";
+
+  useEffect(() => {
+    var geocoder = new MapboxGeocoder({
+      accessToken: mapboxgl.accessToken,
+      types: "country,region,place,postcode,locality,neighborhood,address,poi",
+    });
+
+    geocoder.addTo("#geocoder");
+
+    geocoder.on("result", function (e) {
+      setAddress(e.result.place_name);
+    });
+  }, []);
+
   return (
     <div>
       <Header />
@@ -122,13 +143,14 @@ export default function Add() {
       <div className="form">
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="input">
-            <TextField
+            <div id="geocoder">Address</div>
+            {/* <TextField
               required
               className={classes.input}
               label="Address"
               placeholder="Mannerheimintie, 100"
               {...register("address", { required: true })}
-            />
+            /> */}
             <TextField
               className={classes.input}
               select

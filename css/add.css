@@ -28,6 +28,19 @@
   margin-bottom: 120px;
 }
 
+#geocoder {
+  color: #747272;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+.mapboxgl-ctrl-geocoder.mapboxgl-ctrl {
+  width: 393.98px !important;
+  max-width: 460px !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid #747272;
+  border-radius: 0 !important;
+}
+
 @media (max-width: 500px) {
   .form {
     margin-left: 10px;
