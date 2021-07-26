@@ -479,6 +479,78 @@
         "coordinates": [24.897315536903935, 60.18963113480423],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Säterinpuistontie, 5",
+        "description": "Sports field",
+        "link": "/courts/Säterinpuistontie,%205"
+      },
+      "geometry": {
+        "coordinates": [24.798908008895935, 60.21506535338713],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Kellaritie, 14",
+        "description": "sports park",
+        "link": "/courts/Kellaritie,%2014"
+      },
+      "geometry": {
+        "coordinates": [25.023472165732894, 60.24816325484996],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Kenttäpolku, 3",
+        "description": "school yard",
+        "link": "/courts/Kenttäpolku,%203"
+      },
+      "geometry": {
+        "coordinates": [24.997347734162474, 60.24971126620919],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Kenttätie, 3",
+        "description": "sports park",
+        "link": "/courts/Kenttätie,%203"
+      },
+      "geometry": {
+        "coordinates": [24.994302452368085, 60.24889968328659],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Pakilan rantatie, 2",
+        "description": "sports field",
+        "link": "/courts/Pakilan%20rantatie,%202"
+      },
+      "geometry": {
+        "coordinates": [24.971683793775966, 60.24595561657727],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Jengipolku, 8",
+        "description": "sports park",
+        "link": "/courts/Jengipolku,%208"
+      },
+      "geometry": {
+        "coordinates": [24.99699476991836, 60.23602937797515],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
