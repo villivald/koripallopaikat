@@ -551,6 +551,78 @@
         "coordinates": [24.99699476991836, 60.23602937797515],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Ahmatie, 1",
+        "description": "school yard",
+        "link": "/courts/Ahmatie,%201"
+      },
+      "geometry": {
+        "coordinates": [25.035351183802632, 60.20346408984851],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Mäenlaskijantie, 2",
+        "description": "play park",
+        "link": "/courts/Mäenlaskijantie,%202"
+      },
+      "geometry": {
+        "coordinates": [25.03001152195023, 60.197166979797316],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Paasivaarankatu, 9",
+        "description": "sports park",
+        "link": "/courts/Paasivaarankatu,%209"
+      },
+      "geometry": {
+        "coordinates": [25.030038333963073, 60.190076789858665],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Ståhlbergintie, 2",
+        "description": "school yard",
+        "link": "/courts/Ståhlbergintie,%202"
+      },
+      "geometry": {
+        "coordinates": [25.001367982722073, 60.185926357558],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Mustikkamaantie, 8",
+        "description": "sports park",
+        "link": "/courts/Mustikkamaantie,%208"
+      },
+      "geometry": {
+        "coordinates": [24.990595258566664, 60.18133878265229],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Arcturuksenkatu, 3",
+        "description": "school yard",
+        "link": "/courts/Arcturuksenkatu,%203"
+      },
+      "geometry": {
+        "coordinates": [24.978266654110858, 60.18380677324287],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
