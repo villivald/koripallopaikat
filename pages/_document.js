@@ -1,9 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import ReactGA from "react-ga";
-
-ReactGA.initialize("UA-203458424-1");
-ReactGA.pageview(window.location.pathname + window.location.search);
-
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
@@ -14,6 +9,21 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=UA-203458424-1"
+        />
+
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'UA-203458424-1', { page_path: window.location.pathname });
+            `,
+          }}
+        />
         <body>
           <link
             rel="preload"
