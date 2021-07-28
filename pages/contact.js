@@ -3,7 +3,6 @@ import Image from "next/image";
 import react from "../public/icons/react.svg";
 import telegram from "../public/icons/telegram.svg";
 import twitter from "../public/icons/twitter.svg";
-import linkedin from "../public/icons/linkedin-icon.svg";
 import hashnode from "../public/icons/hashnode.svg";
 import hackernoon from "../public/icons/hackernoon.svg";
 import gmail from "../public/icons/gmail.svg";
@@ -60,20 +59,12 @@ export default function Contact() {
           </a>
         </div>
         <div className="link">
-          <a
-            href="https://www.linkedin.com/in/maxim-villivald-4b1b311a3/"
-            className="linkContainer"
-          >
-            <Image alt="linkedin logo" src={linkedin} width={58} height={58} />
-          </a>
-        </div>
-        <div className="link">
           <a href="https://t.me/create_react_app" className="linkContainer">
             <Image alt="telegram logo" src={telegram} width={58} height={58} />
           </a>
         </div>
         <div className="link">
-          <a href="mailto:maxim@villivald@com" className="linkContainer">
+          <a href="mailto:koripallopaikat@gmail.com" className="linkContainer">
             <Image alt="gmail logo" src={gmail} width={58} height={58} />
           </a>
         </div>

@@ -15,16 +15,11 @@
   gap: 3px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   .contactsContainer {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 50px;
     place-items: center;
-  }
-}
-@media (max-width: 500px) {
-  .contactsContainer {
-    grid-template-columns: repeat(4, 1fr);
   }
 }
