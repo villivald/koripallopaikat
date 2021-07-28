@@ -1,6 +1,17 @@
 .map-container {
   height: 81vh;
 }
+.map-container-small {
+  height: 41vh;
+  width: 60%;
+}
+
+.canvasContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 
 .sidebar {
   background-color: rgba(35, 55, 75, 0.9);
@@ -15,6 +26,27 @@
   width: clamp(15vw, 25vw, 150%) !important;
 }
 
+.or {
+  text-align: center;
+  font-weight: bold;
+}
+
 h3 {
   padding-top: 10px;
+}
+
+@media (max-width: 700px) {
+  .map-container-small {
+    width: 70%;
+  }
+}
+@media (max-width: 600px) {
+  .map-container-small {
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .map-container-small {
+    width: 90%;
+  }
 }

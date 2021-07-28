@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/router";
 import { makeStyles } from "@material-ui/core/styles";
 import Snackbar from "@material-ui/core/Snackbar";
@@ -11,11 +11,13 @@ import Chip from "@material-ui/core/Chip";
 import MenuItem from "@material-ui/core/MenuItem";
 import CloudUploadIcon from "@material-ui/icons/CloudUpload";
 import CheckIcon from "@material-ui/icons/Check";
+import RoomIcon from "@material-ui/icons/Room";
 import Header from "../components/Header";
 import surfaces from "../data/surfaces";
 import placeTypes from "../data/placeTypes";
 import mapboxgl from "!mapbox-gl";
 import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
+import MapboxClient from "@mapbox/mapbox-sdk/services/geocoding";
 import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css";
 
 const useStyles = makeStyles(() => ({
@@ -51,6 +53,7 @@ export default function Add() {
   };
 
   const [address, setAddress] = useState("");
+  const [reversedAddress, setReversedAddress] = useState("");
 
   const uploadImage = () => {
     const data = new FormData();
@@ -136,21 +139,82 @@ export default function Add() {
     });
   }, []);
 
+  const mapContainer = useRef(null);
+  const map = useRef(null);
+  const [lng, setLng] = useState(24.96);
+  const [lat, setLat] = useState(60.2);
+  const [zoom, setZoom] = useState(10);
+  const [coordinates, setCoordinates] = useState([]);
+  const [showMap, setShowMap] = useState("none");
+
+  useEffect(() => {
+    if (map.current) return; // initialize map only once
+    map.current = new mapboxgl.Map({
+      container: mapContainer.current,
+      style: "mapbox://styles/mapbox/streets-v11",
+      center: [lng, lat],
+      zoom: zoom,
+    });
+    var marker = new mapboxgl.Marker({
+      draggable: true,
+    })
+      .setLngLat([lng, lat])
+      .addTo(map.current);
+
+    function onDragEnd() {
+      var lngLat = marker.getLngLat();
+      setCoordinates([lngLat.lng, lngLat.lat]);
+    }
+
+    marker.on("dragend", onDragEnd);
+  });
+
+  useEffect(() => {
+    var geocoder123 = new MapboxClient({
+      accessToken: mapboxgl.accessToken,
+    });
+
+    geocoder123
+      .reverseGeocode({
+        query: [coordinates[0], coordinates[1]],
+      })
+      .send()
+      .then((response) => {
+        const match = response.body;
+        setReversedAddress(match.features[0].place_name);
+        if (!match.features[0].place_name.includes("Undefined")) {
+          setAddress(match.features[0].place_name);
+        }
+      });
+  });
+
   return (
     <div>
       <Header />
       <h1 className="addHeader">Add a new basketball court</h1>
+      <div className="canvasContainer">
+        <div
+          ref={mapContainer}
+          className="map-container-small"
+          style={{ display: showMap }}
+        />
+      </div>
       <div className="form">
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="input">
             <div id="geocoder">Address</div>
-            {/* <TextField
-              required
-              className={classes.input}
-              label="Address"
-              placeholder="Mannerheimintie, 100"
-              {...register("address", { required: true })}
-            /> */}
+            <p className="or">OR</p>
+            <Button
+              variant="contained"
+              color={showMap === "none" ? "primary" : "secondary"}
+              startIcon={<RoomIcon />}
+              onClick={() => setShowMap(showMap === "none" ? "" : "none")}
+            >
+              {showMap === "none" ? "Pick from the" : "Hide"} Map
+            </Button>
+            <h3>
+              {reversedAddress.includes("Undefined") ? "" : reversedAddress}
+            </h3>
             <TextField
               className={classes.input}
               select
