@@ -1,4 +1,4 @@
-## App live on [Vercel](https://koripallopaikat.vercel.app)
+## App live on [Vercel](https://koripallopaikat.com)
 
 ### Made with:
  - [Next.js](https://nextjs.org/)
