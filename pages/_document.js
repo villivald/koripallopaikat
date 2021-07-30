@@ -9,11 +9,6 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head />
-
-        <link rel="manifest" href="/manifest.json" />
-        <link rel="apple-touch-icon" href="/apple-icon.png"></link>
-        <meta name="theme-color" content="#317EFB" />
-
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=UA-203458424-1"
@@ -29,6 +24,7 @@ class MyDocument extends Document {
             `,
           }}
         />
+
         <body>
           <link
             rel="preload"
