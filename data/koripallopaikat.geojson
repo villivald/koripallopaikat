@@ -623,6 +623,18 @@
         "coordinates": [24.978266654110858, 60.18380677324287],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Merimiehenkatu, 9",
+        "description": "school yard",
+        "link": "/courts/Merimiehenkatu,%209"
+      },
+      "geometry": {
+        "coordinates": [24.942162378256747, 60.16224558193321],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
