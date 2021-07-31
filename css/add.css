@@ -41,6 +41,13 @@
   border-radius: 0 !important;
 }
 
+.addressString {
+  white-space: nowrap;
+  max-width: 390px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 @media (max-width: 500px) {
   .form {
     margin-left: 10px;

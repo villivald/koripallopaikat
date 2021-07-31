@@ -220,10 +220,7 @@ export default function Add() {
             >
               {showMap === "none" ? "Pick from the" : "Hide"} Map
             </Button>
-            <h3>
-              {/* {reversedAddress.includes("Undefined") ? "" : reversedAddress} */}
-              {address}
-            </h3>
+            <h3 className="addressString">{address}</h3>
             <TextField
               className={classes.input}
               select
