@@ -45,15 +45,15 @@ export default function Add() {
   const [surface, setSurface] = useState("");
   const [placeType, setPlaceType] = useState("");
 
+  const [address, setAddress] = useState("");
+  const [reversedAddress, setReversedAddress] = useState("");
+
   const handleSurfaceChange = (event) => {
     setSurface(event.target.value);
   };
   const handlePlaceTypeChange = (event) => {
     setPlaceType(event.target.value);
   };
-
-  const [address, setAddress] = useState("");
-  const [reversedAddress, setReversedAddress] = useState("");
 
   const uploadImage = () => {
     const data = new FormData();
@@ -127,23 +127,23 @@ export default function Add() {
     "pk.eyJ1IjoidmlsbGl2YWxkIiwiYSI6ImNrcWNnYjRvdDFqaTUyd212NHQzdGN5cGkifQ.Y98cfsnc0_V4f1-6El0Mhw";
 
   useEffect(() => {
-    var geocoder = new MapboxGeocoder({
+    let geocoder = new MapboxGeocoder({
       accessToken: mapboxgl.accessToken,
       types: "country,region,place,postcode,locality,neighborhood,address,poi",
     });
 
     geocoder.addTo("#geocoder");
 
-    geocoder.on("result", function (e) {
-      setAddress(e.result.place_name);
-    });
+    geocoder.on("result", (e) => setAddress(e.result.place_name));
+
+    geocoder.on("clear", () => setAddress(""));
   }, []);
 
   const mapContainer = useRef(null);
   const map = useRef(null);
-  const [lng, setLng] = useState(24.96);
-  const [lat, setLat] = useState(60.2);
-  const [zoom, setZoom] = useState(10);
+  const lng = 24.96;
+  const lat = 60.2;
+  const zoom = 10;
   const [coordinates, setCoordinates] = useState([]);
   const [showMap, setShowMap] = useState("none");
 
@@ -155,26 +155,26 @@ export default function Add() {
       center: [lng, lat],
       zoom: zoom,
     });
-    var marker = new mapboxgl.Marker({
+    let marker = new mapboxgl.Marker({
       draggable: true,
     })
       .setLngLat([lng, lat])
       .addTo(map.current);
 
-    function onDragEnd() {
-      var lngLat = marker.getLngLat();
+    const onDragEnd = () => {
+      let lngLat = marker.getLngLat();
       setCoordinates([lngLat.lng, lngLat.lat]);
-    }
+    };
 
     marker.on("dragend", onDragEnd);
   });
 
   useEffect(() => {
-    var geocoder123 = new MapboxClient({
+    let mapGeocoder = new MapboxClient({
       accessToken: mapboxgl.accessToken,
     });
 
-    geocoder123
+    mapGeocoder
       .reverseGeocode({
         query: [coordinates[0], coordinates[1]],
       })
@@ -182,11 +182,19 @@ export default function Add() {
       .then((response) => {
         const match = response.body;
         setReversedAddress(match.features[0].place_name);
-        if (!match.features[0].place_name.includes("Undefined")) {
+        if (
+          !match.features[0].place_name.includes("Undefined") &&
+          showMap !== "none"
+        ) {
           setAddress(match.features[0].place_name);
         }
       });
   });
+
+  const handleHideMap = () => {
+    setAddress("");
+    setShowMap(showMap === "none" ? "" : "none");
+  };
 
   return (
     <div>
@@ -208,12 +216,13 @@ export default function Add() {
               variant="contained"
               color={showMap === "none" ? "primary" : "secondary"}
               startIcon={<RoomIcon />}
-              onClick={() => setShowMap(showMap === "none" ? "" : "none")}
+              onClick={handleHideMap}
             >
               {showMap === "none" ? "Pick from the" : "Hide"} Map
             </Button>
             <h3>
-              {reversedAddress.includes("Undefined") ? "" : reversedAddress}
+              {/* {reversedAddress.includes("Undefined") ? "" : reversedAddress} */}
+              {address}
             </h3>
             <TextField
               className={classes.input}
