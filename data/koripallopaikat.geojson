@@ -635,6 +635,30 @@
         "coordinates": [24.942162378256747, 60.16224558193321],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Fabianinkatu, 1",
+        "description": "high school yard",
+        "link": "/courts/Fabianinkatu,%201"
+      },
+      "geometry": {
+        "coordinates": [24.95023327438638, 60.16311411469706],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Bernhardinkatu, 7",
+        "description": "high school yard",
+        "link": "/courts/Bernhardinkatu,%207"
+      },
+      "geometry": {
+        "coordinates": [24.95019832080212, 60.163474080762136],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
