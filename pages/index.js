@@ -10,7 +10,7 @@ const Home = ({ weather }) => {
   return (
     <div>
       <Head>
-        <title>Koripallopaikat</title>
+        <title>Koripallopaikat - Home page</title>
         <link rel="icon" href="favicons/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="monetization" content="$ilp.uphold.com/jzMkjAp8m9FZ" />

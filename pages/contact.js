@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Image from "next/image";
+import Head from "next/head";
 import react from "../public/icons/react.svg";
 import telegram from "../public/icons/telegram.svg";
 import twitter from "../public/icons/twitter.svg";
@@ -13,6 +14,10 @@ import eleventy from "../public/icons/11ty.webp";
 export default function Contact() {
   return (
     <>
+      <Head>
+        <title>Koripallopaikat - Contact</title>
+        <link rel="icon" href="favicons/favicon.ico" />
+      </Head>
       <Header />
       <div className="contactsContainer">
         <div className="link">

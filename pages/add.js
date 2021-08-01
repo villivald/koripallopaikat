@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/router";
+import Head from "next/head";
 import { makeStyles } from "@material-ui/core/styles";
 import Snackbar from "@material-ui/core/Snackbar";
 import TextField from "@material-ui/core/TextField";
@@ -198,6 +199,10 @@ export default function Add() {
 
   return (
     <div>
+      <Head>
+        <title>Koripallopaikat - Add new court</title>
+        <link rel="icon" href="favicons/favicon.ico" />
+      </Head>
       <Header />
       <h1 className="addHeader">Add a new basketball court</h1>
       <div className="canvasContainer">

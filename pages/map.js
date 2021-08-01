@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
+import Head from "next/head";
 import Header from "../components/Header";
 import mapboxgl from "!mapbox-gl";
 import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
@@ -81,6 +82,10 @@ const map = () => {
   });
   return (
     <div>
+      <Head>
+        <title>Koripallopaikat - Map</title>
+        <link rel="icon" href="favicons/favicon.ico" />
+      </Head>
       <Header />
       <div ref={mapContainer} className="map-container" />
       <footer>

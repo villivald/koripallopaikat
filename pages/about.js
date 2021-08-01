@@ -1,9 +1,14 @@
 import Link from "@material-ui/core/Link";
+import Head from "next/head";
 import Header from "../components/Header";
 
 export default function Books() {
   return (
     <div>
+      <Head>
+        <title>Koripallopaikat - About</title>
+        <link rel="icon" href="favicons/favicon.ico" />
+      </Head>
       <Header />
       <div className="aboutContainer">
         <h2>

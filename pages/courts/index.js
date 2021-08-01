@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import dynamic from "next/dynamic";
+import Head from "next/head";
 import Box from "@material-ui/core/Box";
 import Pagination from "@material-ui/lab/Pagination";
 import { connectToDatabase } from "../../util/mongodb";
@@ -18,6 +19,10 @@ const index = ({ courts }) => {
   };
   return (
     <div>
+      <Head>
+        <title>Koripallopaikat - Courts</title>
+        <link rel="icon" href="favicons/favicon.ico" />
+      </Head>
       <Header />
       <div className="listCourt">
         {courts

@@ -1,5 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
+import Head from "next/head";
 import Button from "@material-ui/core/Button";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import ImageOutlinedIcon from "@material-ui/icons/ImageOutlined";
@@ -18,6 +19,10 @@ const Page = ({ courts }) => {
 
   return (
     <div>
+      <Head>
+        <title>{currentCourt.address}</title>
+        <link rel="icon" href="../../favicons/favicon.ico" />
+      </Head>
       <Header />
       <div className="idContainer">
         <h1 className="idHeader">{currentCourt.address}</h1>
