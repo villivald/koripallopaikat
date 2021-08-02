@@ -45,9 +45,7 @@ export default function Add() {
 
   const [surface, setSurface] = useState("");
   const [placeType, setPlaceType] = useState("");
-
   const [address, setAddress] = useState("");
-  const [reversedAddress, setReversedAddress] = useState("");
 
   const handleSurfaceChange = (event) => {
     setSurface(event.target.value);
@@ -168,6 +166,15 @@ export default function Add() {
     };
 
     marker.on("dragend", onDragEnd);
+
+    map.current.addControl(
+      new mapboxgl.GeolocateControl({
+        positionOptions: {
+          enableHighAccuracy: true,
+        },
+        trackUserLocation: true,
+      })
+    );
   });
 
   useEffect(() => {
@@ -182,7 +189,6 @@ export default function Add() {
       .send()
       .then((response) => {
         const match = response.body;
-        setReversedAddress(match.features[0].place_name);
         if (
           !match.features[0].place_name.includes("Undefined") &&
           showMap !== "none"
