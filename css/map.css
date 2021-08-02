@@ -3,14 +3,7 @@
 }
 .map-container-small {
   height: 41vh;
-  width: 60%;
-}
-
-.canvasContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  width: 56vh;
 }
 
 .sidebar {

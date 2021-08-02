@@ -211,13 +211,14 @@ export default function Add() {
       </Head>
       <Header />
       <h1 className="addHeader">Add a new basketball court</h1>
-      <div className="canvasContainer">
+      <div className="canvas-container">
         <div
           ref={mapContainer}
           className="map-container-small"
           style={{ display: showMap }}
         />
       </div>
+
       <div className="form">
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="input">

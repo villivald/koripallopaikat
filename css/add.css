@@ -48,6 +48,11 @@
   text-overflow: ellipsis;
 }
 
+.canvas-container {
+  display: grid;
+  place-items: center;
+}
+
 @media (max-width: 500px) {
   .form {
     margin-left: 10px;
