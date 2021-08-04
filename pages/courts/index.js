@@ -47,7 +47,7 @@ const index = ({ courts }) => {
   );
 };
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const { db } = await connectToDatabase();
 
   const courts = await db.collection("paikat").find({}).toArray();
