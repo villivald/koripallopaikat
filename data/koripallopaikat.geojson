@@ -659,6 +659,18 @@
         "coordinates": [24.95019832080212, 60.163474080762136],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Anianpellontie, 5",
+        "description": "sports field",
+        "link": "/courts/Anianpellontie,%205"
+      },
+      "geometry": {
+        "coordinates": [25.00286539838719, 60.252436207582676],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
