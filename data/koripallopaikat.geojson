@@ -671,6 +671,90 @@
         "coordinates": [25.00286539838719, 60.252436207582676],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Myllyväenkatu, 6",
+        "description": "play park",
+        "link": "/courts/Myllyväenkatu,%206"
+      },
+      "geometry": {
+        "coordinates": [25.0636138, 60.216295],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Kastelholmantie, 3",
+        "description": "sports park",
+        "link": "/courts/Kastelholmantie,%203"
+      },
+      "geometry": {
+        "coordinates": [25.07755328053758, 60.21752479108565],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Mustapuronpolku, 4",
+        "description": "play park",
+        "link": "/courts/Mustapuronpolku,%204"
+      },
+      "geometry": {
+        "coordinates": [25.0803222, 60.2177717],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Jäätanssipolku, 1",
+        "description": "school yard",
+        "link": "/courts/Jäätanssipolku,%201"
+      },
+      "geometry": {
+        "coordinates": [25.0735417, 60.2150917],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Valkovuokonpolku, 20",
+        "description": "play park",
+        "link": "/courts/Valkovuokonpolku,%2020"
+      },
+      "geometry": {
+        "coordinates": [25.0835138, 60.2066083],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Yläkivenrinne, 4",
+        "description": "school yard",
+        "link": "/courts/Yläkivenrinne,%204"
+      },
+      "geometry": {
+        "coordinates": [25.0699917, 60.220255],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Yläkivenrinne, 6",
+        "description": "school yard",
+        "link": "/courts/Yläkivenrinne,%206"
+      },
+      "geometry": {
+        "coordinates": [25.0699333, 60.2202133],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
