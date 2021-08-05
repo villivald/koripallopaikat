@@ -38,6 +38,18 @@
   margin-bottom: 10px;
 }
 
+.sortFilter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.sortFilterTitle {
+  text-align: center;
+}
+
 @media (max-width: 1300px) {
   .MuiCardActions-spacing > :not(:first-child) {
     margin-left: -10px !important;

@@ -18,11 +18,10 @@
 }
 
 .spin {
-  animation-name: spin-animation;
-  animation-duration: 1.5s;
-  animation-iteration-count: 1;
+  animation: spin-animation 1.5s 1;
   cursor: pointer;
 }
+
 .spin:hover {
   animation-iteration-count: infinite;
 }
