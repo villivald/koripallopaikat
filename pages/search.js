@@ -56,7 +56,7 @@ export default function Search({ courts }) {
           .filter((court) =>
             court.address.toLowerCase().includes(filter.toLowerCase())
           )
-          .sort((max, min) => sortByDistance && max.distance - min.distance)
+          .sort((a, b) => sortByDistance && (a.distance > b.distance ? 1 : -1))
           .sort((max, min) => sortByBaskets && min.baskets - max.baskets)
           .sort((a, b) => sortBySurface && (a.surface > b.surface ? 1 : -1))
           .sort((a, b) => sortByAddress && (a.address > b.address ? 1 : -1))

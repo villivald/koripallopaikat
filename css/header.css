@@ -45,20 +45,20 @@ nav > a:active {
   gap: 5px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
   header nav {
-    gap: 30px;
+    gap: 20px;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   header nav {
     gap: 10px;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   header nav {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
   }
 }
@@ -68,10 +68,21 @@ nav > a:active {
   }
   header nav {
     padding: 10px;
-    gap: 15px;
+    gap: 10px;
   }
   header nav > a {
     min-width: 100px;
     text-align: center;
+  }
+}
+@media (max-width: 450px) {
+  header nav {
+    padding: 10px;
+    gap: 10px;
+  }
+  header nav > a {
+    min-width: 50px;
+    text-align: center;
+    font-size: 0.7rem;
   }
 }
