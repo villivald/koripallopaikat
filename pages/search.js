@@ -4,26 +4,24 @@ import Header from "../components/Header";
 import SearchObject from "../components/SearchObject";
 import { Switch, TextField } from "@material-ui/core";
 import { connectToDatabase } from "../util/mongodb";
+import distance from "../util/distance";
 
 export default function Search({ courts }) {
   const [filter, setFilter] = useState("");
   const [sortByBaskets, setSortByBaskets] = useState(false);
   const [sortBySurface, setSortBySurface] = useState(false);
   const [sortByAddress, setSortByAddress] = useState(false);
+  const [sortByDistance, setSortByDistance] = useState(false);
 
   const handleFilterChange = (event) => {
     setFilter(event.target.value);
   };
 
-  // useEffect(() => {
-  //   setNumberOfPages(
-  //     Math.ceil(
-  //       courts.filter((court) =>
-  //         court.address.toLowerCase().includes(filter.toLowerCase())
-  //       ).length / itemsPerPage
-  //     )
-  //   );
-  // }, [filter]);
+  courts = courts.map((court) => ({
+    ...court,
+    distance: distance(court.lat, court.lon) / 1000,
+  }));
+
   return (
     <div>
       <Head>
@@ -43,6 +41,8 @@ export default function Search({ courts }) {
         </div>
         <h2 className="sortFilterTitle">Sort by</h2>
         <div className="sortFilter">
+          Distance:
+          <Switch onChange={() => setSortByDistance(!sortByDistance)} />
           Baskets:
           <Switch onChange={() => setSortByBaskets(!sortByBaskets)} />
           Surface type:
@@ -56,6 +56,7 @@ export default function Search({ courts }) {
           .filter((court) =>
             court.address.toLowerCase().includes(filter.toLowerCase())
           )
+          .sort((max, min) => sortByDistance && max.distance - min.distance)
           .sort((max, min) => sortByBaskets && min.baskets - max.baskets)
           .sort((a, b) => sortBySurface && (a.surface > b.surface ? 1 : -1))
           .sort((a, b) => sortByAddress && (a.address > b.address ? 1 : -1))
@@ -69,7 +70,6 @@ export default function Search({ courts }) {
 
 export async function getStaticProps() {
   const { db } = await connectToDatabase();
-
   const courts = await db.collection("paikat").find({}).toArray();
 
   return {
