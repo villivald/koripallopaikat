@@ -7,6 +7,7 @@ import InfoOutlinedIcon from "@material-ui/icons/InfoOutlined";
 import PanToolOutlinedIcon from "@material-ui/icons/PanToolOutlined";
 import AddCircleOutlineIcon from "@material-ui/icons/AddCircleOutline";
 import ListIcon from "@material-ui/icons/List";
+import SearchIcon from "@material-ui/icons/Search";
 
 const Header = () => {
   const router = useRouter();
@@ -33,6 +34,16 @@ const Header = () => {
           >
             <ListIcon />
             List
+          </a>
+        </Link>
+        <Link href="/search">
+          <a
+            className={
+              router.pathname == "/search" ? "active" : "linkContainer"
+            }
+          >
+            <SearchIcon />
+            Search
           </a>
         </Link>
         <Link href="/add">

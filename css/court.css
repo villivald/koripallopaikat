@@ -28,6 +28,10 @@
   margin: 20px 40px 40px 40px;
 }
 
+.listCourt.search {
+  grid-template-columns: repeat(6, 1fr);
+}
+
 .iconLink {
   width: 24px;
 }
