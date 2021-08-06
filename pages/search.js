@@ -40,7 +40,7 @@ export default function Search({ courts }) {
           />
         </div>
         <h2 className="sortFilterTitle">Sort by</h2>
-        <div className="sortFilter">
+        <div className="sortFilter sort">
           Distance:
           <Switch onChange={() => setSortByDistance(!sortByDistance)} />
           Baskets:

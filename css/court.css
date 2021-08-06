@@ -63,6 +63,9 @@
   .listCourt {
     grid-template-columns: repeat(5, 1fr);
   }
+  .listCourt.search {
+    grid-template-columns: repeat(5, 1fr);
+  }
   .iconLinks.MuiCardActions-spacing > :not(:first-child) {
     margin-left: -20px !important;
   }
@@ -74,6 +77,9 @@
   .listCourt {
     grid-template-columns: repeat(4, 1fr);
   }
+  .listCourt.search {
+    grid-template-columns: repeat(4, 1fr);
+  }
   .MuiCardActions-spacing > :first-child {
     margin-left: -10px !important;
   }
@@ -82,10 +88,21 @@
   .listCourt {
     grid-template-columns: repeat(3, 1fr);
   }
+  .listCourt.search {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 @media (max-width: 650px) {
   .listCourt {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .listCourt.search {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sortFilter.sort {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 100px;
   }
 }
 @media (max-width: 450px) {
@@ -100,5 +117,8 @@
   }
   .MuiPagination-root li {
     max-width: 35px;
+  }
+  .sortFilter.sort {
+    margin-left: 50px;
   }
 }
