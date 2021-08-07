@@ -9,7 +9,7 @@ const SearchObject = ({ court }) => {
     <Card className="basketballField">
       <CardMedia
         className="cardMedia"
-        image={court.pic}
+        image={court.searchPic}
         title="basketball court"
       />
       <CardContent>
