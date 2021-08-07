@@ -755,6 +755,102 @@
         "coordinates": [25.0699333, 60.2202133],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Savikiekontie, 6",
+        "description": "Sports park",
+        "link": "/courts/Savikiekontie,%206"
+      },
+      "geometry": {
+        "coordinates": [25.05369278618434, 60.23780890403476],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Huokotie, 3",
+        "description": "School yard",
+        "link": "/courts/Huokotie,%203"
+      },
+      "geometry": {
+        "coordinates": [25.0794667, 60.2612883],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Huokopolku, 2",
+        "description": "Play park",
+        "link": "/courts/Huokopolku,%202"
+      },
+      "geometry": {
+        "coordinates": [25.0794833, 60.2608633],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Huokotie, 5",
+        "description": "Sports park",
+        "link": "/courts/Huokotie,%205"
+      },
+      "geometry": {
+        "coordinates": [25.0815862, 60.260375],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Somerikkopolku, 6",
+        "description": "Sports park",
+        "link": "/courts/Somerikkopolku,%206"
+      },
+      "geometry": {
+        "coordinates": [25.0820305, 60.2603417],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Kimnaasipolku, 5",
+        "description": "School yard",
+        "link": "/courts/Kimnaasipolku,%205"
+      },
+      "geometry": {
+        "coordinates": [25.0266695, 60.274445],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Parmaajantie, 3",
+        "description": "Sports park",
+        "link": "/courts/Parmaajantie,%203"
+      },
+      "geometry": {
+        "coordinates": [25.0190972, 60.273545],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Silkokuja, 2",
+        "description": "School yard",
+        "link": "/courts/Silkokuja,%202"
+      },
+      "geometry": {
+        "coordinates": [25.0148444, 60.2562217],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
