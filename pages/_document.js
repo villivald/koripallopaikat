@@ -11,16 +11,33 @@ class MyDocument extends Document {
         <Head>
           <meta
             name="description"
-            content="Helsingin koripallopaikat. Basketball courts."
+            content="A curated collection of public basketball courts in the Helsinki Metropolitan Area. Everyone is welcome to submit their local court."
           />
+
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://koripallopaikat.com/" />
+          <meta property="og:title" content="Koripallopaikat" />
           <meta
             property="og:description"
-            content="Helsingin koripallopaikat. Basketball courts."
+            content="A curated collection of public basketball courts in the Helsinki Metropolitan Area. Everyone is welcome to submit their local court."
           />
           <meta
-            property="twitter:description"
-            content="Helsingin koripallopaikat. Basketball courts."
+            property="og:image"
+            content="https://villivald.com/koripallopaikat/Brand/IMG_2626.jpg"
           />
+
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta property="twitter:url" content="https://koripallopaikat.com/" />
+          <meta property="twitter:title" content="Koripallopaikat" />
+          <meta
+            property="twitter:description"
+            content="A curated collection of public basketball courts in the Helsinki Metropolitan Area. Everyone is welcome to submit their local court."
+          />
+          <meta
+            property="twitter:image"
+            content="https://villivald.com/koripallopaikat/Brand/IMG_2626.jpg"
+          />
+
           <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=UA-203458424-1"
