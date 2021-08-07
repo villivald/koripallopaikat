@@ -6,14 +6,14 @@ import Typography from "@material-ui/core/Typography";
 
 const SearchObject = ({ court }) => {
   return (
-    <Card className="basketballField">
+    <Card className="searchObjectField" elevation={0}>
       <CardMedia
-        className="cardMedia"
+        className="searchCardMedia"
         image={court.searchPic}
         title="basketball court"
       />
       <CardContent>
-        <Typography color="textPrimary" gutterBottom>
+        <Typography color="textPrimary" gutterBottom className="searchLink">
           <Link
             key={court._id}
             href="/courts/[id]"
@@ -22,9 +22,14 @@ const SearchObject = ({ court }) => {
             {court.address}
           </Link>
         </Typography>
-        <Typography color="textSecondary">Surface: {court.surface}</Typography>
-        <Typography color="textSecondary">Place: {court.type}</Typography>
-        <Typography color="textSecondary">Baskets: {court.baskets}</Typography>
+        <Typography color="textSecondary">
+          {court.baskets === 1
+            ? `${court.baskets} basket`
+            : `${court.baskets} baskets`}
+          <Typography color="textSecondary" className="basketNumber">
+            {court.surface}
+          </Typography>
+        </Typography>
       </CardContent>
     </Card>
   );

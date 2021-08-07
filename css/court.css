@@ -6,6 +6,10 @@
   height: clamp(90%, 95%, 100%);
 }
 
+.searchObjectField {
+  height: clamp(90%, 95%, 100%);
+}
+
 .hoverPicture {
   position: absolute;
   transform: translateX(150px);
@@ -17,6 +21,10 @@
 }
 
 .cardMedia {
+  height: 140px;
+}
+.searchCardMedia {
+  width: 200px;
   height: 140px;
 }
 
@@ -52,6 +60,17 @@
 
 .sortFilterTitle {
   text-align: center;
+}
+
+.basketNumber::first-letter {
+  text-transform: capitalize;
+}
+
+.searchLink {
+  white-space: nowrap;
+  max-width: 170px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @media (max-width: 1300px) {
