@@ -93,7 +93,7 @@ const CourtList = ({ court }) => {
         </Button>
         <Button
           size="small"
-          href={"mailto:koripallopaikat@gmail.com"}
+          href={`mailto:koripallopaikat@gmail.com?subject=Issue%20with%20${court.address}%20court&body=Description%20of%20an%20issue:%20`}
           aria-label="report"
           title="Open in new tab"
           target="_blank"

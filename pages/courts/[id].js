@@ -6,6 +6,7 @@ import CircularProgress from "@material-ui/core/CircularProgress";
 import ImageOutlinedIcon from "@material-ui/icons/ImageOutlined";
 import LinkIcon from "@material-ui/icons/Link";
 import RoomOutlinedIcon from "@material-ui/icons/RoomOutlined";
+import ReportOutlinedIcon from "@material-ui/icons/ReportOutlined";
 import { connectToDatabase } from "../../util/mongodb";
 import distance from "../../util/distance";
 import Header from "../../components/Header";
@@ -46,6 +47,16 @@ const Page = ({ courts }) => {
             aria-label="google maps"
           >
             <RoomOutlinedIcon className="iconLink" />
+          </Button>
+          <Button
+            size="small"
+            href={`mailto:koripallopaikat@gmail.com?subject=Issue%20with%20${currentCourt.address}%20court&body=Description%20of%20an%20issue:%20`}
+            aria-label="report"
+            title="Open in new tab"
+            target="_blank"
+            rel="noopener"
+          >
+            <ReportOutlinedIcon className="iconLink" />
           </Button>
         </div>
         <Button
