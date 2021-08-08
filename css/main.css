@@ -7,9 +7,6 @@
 }
 
 .mainPageLink {
-  display: flex;
-  justify-content: center;
-  font-size: 2rem;
   margin-bottom: 20px;
 }
 
@@ -19,6 +16,16 @@
   justify-content: space-between;
   width: clamp(200px, 100%, 400px);
   height: clamp(90%, 125%, 100%);
+}
+
+.MuiBottomNavigationAction-label {
+  font-size: 1rem !important;
+}
+.mainPageLinkIcon:nth-child(even) {
+  font-size: 2.5rem;
+}
+.mainPageLinkIcon:nth-child(odd) {
+  font-size: 1.5rem;
 }
 
 @media (max-width: 1000px) {
