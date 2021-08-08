@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Card from "@material-ui/core/Card";
@@ -6,30 +6,13 @@ import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import CircularProgress from "@material-ui/core/CircularProgress";
 import ReportOutlinedIcon from "@material-ui/icons/ReportOutlined";
 import ImageOutlinedIcon from "@material-ui/icons/ImageOutlined";
 import LinkIcon from "@material-ui/icons/Link";
 import RoomOutlinedIcon from "@material-ui/icons/RoomOutlined";
-import distance from "../util/distanceMain";
 
-const Court = ({ court, geo }) => {
+const Court = ({ court }) => {
   const [isShown, setIsShown] = useState(false);
-  const [d, setD] = useState(10000);
-
-  const success = (pos) => {
-    let crd = pos.coords;
-    setD(distance(crd.latitude, crd.longitude, court.lat, court.lon));
-  };
-  const error = (err) => {
-    console.warn(`ERROR(${err.code}): ${err.message}`);
-  };
-  geo &&
-    navigator.geolocation.getCurrentPosition(success, error, {
-      enableHighAccuracy: true,
-      timeout: 50000,
-      maximumAge: 0,
-    });
 
   return (
     <Card className="basketballFieldMain">
@@ -43,9 +26,6 @@ const Court = ({ court, geo }) => {
           >
             {court.address}
           </Link>
-        </Typography>
-        <Typography component={"span"} color="textSecondary">
-          Distance: {d > 1000 ? <CircularProgress size={15} /> : d} km
         </Typography>
         <Typography color="textSecondary">
           Surface: {court.surface}{" "}
