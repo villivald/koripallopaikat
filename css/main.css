@@ -21,6 +21,37 @@
   height: clamp(90%, 125%, 100%);
 }
 
+.geoLocation {
+  margin-top: 15px;
+  display: grid;
+  place-items: center;
+  animation: glowing 20s linear infinite;
+}
+
+.geoButton {
+  background: #1a4e55 !important;
+}
+
+.geoButton::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 6px solid #82c99b;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+.geoButton:hover::after,
+.geoButton:focus::after {
+  animation: none;
+  display: none;
+}
+
 @media (max-width: 1000px) {
   .container {
     grid-template-columns: repeat(3, 1fr);
@@ -36,5 +67,18 @@
 @media (max-width: 500px) {
   .container {
     grid-template-columns: 1fr;
+  }
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
   }
 }
