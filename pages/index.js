@@ -6,7 +6,7 @@ const SiteIntro = dynamic(() => import("../components/SiteIntro"));
 const Main = dynamic(() => import("../components/Main"));
 const Weather = dynamic(() => import("../components/Weather"));
 
-const Home = ({ weather }) => {
+const Home = () => {
   return (
     <div>
       <Head>
@@ -18,7 +18,7 @@ const Home = ({ weather }) => {
       </Head>
       <Header />
       <SiteIntro />
-      <Weather weather={weather} />
+      <Weather />
       <Main />
     </div>
   );

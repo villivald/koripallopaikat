@@ -1,6 +1,9 @@
 import React from "react";
+import { useAppContext } from "../context/state";
 
-const Weather = ({ weather }) => {
+const Weather = () => {
+  const weather = useAppContext();
+
   return (
     <div>
       {weather && (
