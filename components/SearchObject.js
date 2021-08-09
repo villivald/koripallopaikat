@@ -26,9 +26,9 @@ const SearchObject = ({ court }) => {
           {court.baskets === 1
             ? `${court.baskets} basket`
             : `${court.baskets} baskets`}
-          <Typography color="textSecondary" className="basketNumber">
-            {court.surface}
-          </Typography>
+        </Typography>
+        <Typography color="textSecondary" className="basketNumber">
+          {court.surface}
         </Typography>
       </CardContent>
     </Card>

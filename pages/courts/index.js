@@ -5,8 +5,12 @@ import Pagination from "@material-ui/lab/Pagination";
 import { connectToDatabase } from "../../util/mongodb";
 import CourtList from "../../components/CourtList";
 import Header from "../../components/Header";
+import { useAppContext } from "../../context/state";
 
-const index = ({ courts }) => {
+const index = () => {
+  const state = useAppContext();
+  let courts = state.courts;
+
   const itemsPerPage = 8;
   const [page, setPage] = useState(1);
   const numberOfPages = Math.ceil(courts.length / itemsPerPage);

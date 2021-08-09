@@ -5,8 +5,12 @@ import SearchObject from "../components/SearchObject";
 import { Switch, TextField } from "@material-ui/core";
 import { connectToDatabase } from "../util/mongodb";
 import distance from "../util/distance";
+import { useAppContext } from "../context/state";
 
-export default function Search({ courts }) {
+export default function Search() {
+  const state = useAppContext();
+  let courts = state.courts;
+
   const [filter, setFilter] = useState("");
   const [sortByBaskets, setSortByBaskets] = useState(false);
   const [sortBySurface, setSortBySurface] = useState(false);

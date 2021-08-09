@@ -3,8 +3,8 @@ import { createContext, useContext } from "react";
 const AppContext = createContext();
 
 export function AppWrapper({ children }) {
-  let sharedState = children.props.weather;
-  console.log(children.props);
+  let sharedState = children.props;
+  //   console.log(children.props);
 
   return (
     <AppContext.Provider value={sharedState}>{children}</AppContext.Provider>
