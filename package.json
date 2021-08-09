@@ -14,7 +14,7 @@
     "@material-ui/lab": "^4.0.0-alpha.58",
     "mapbox-gl": "^2.3.1",
     "mongodb": "^3.5.9",
-    "mongoose": "^5.13.0",
+    "mongoose": "^5.13.3",
     "next": "latest",
     "nprogress": "^0.2.0",
     "react": "^17.0.2",
