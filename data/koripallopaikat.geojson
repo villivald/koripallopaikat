@@ -851,6 +851,42 @@
         "coordinates": [25.0148444, 60.2562217],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Hämeentie, 80",
+        "description": "School yard",
+        "link": "/courts/Hämeentie,%2080"
+      },
+      "geometry": {
+        "coordinates": [24.964166855774288, 60.193051361963356],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Karjuniitynkuja, 3",
+        "description": "Sports park",
+        "link": "/courts/Karjuniitynkuja,%203"
+      },
+      "geometry": {
+        "coordinates": [25.055363516677172, 60.26666963063259],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Koudanpolku, 4",
+        "description": "Sports park",
+        "link": "/courts/Koudanpolku,%204"
+      },
+      "geometry": {
+        "coordinates": [25.05344385654277, 60.26690593159191],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
