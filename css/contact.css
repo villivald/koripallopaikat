@@ -3,16 +3,26 @@
   justify-content: center;
   align-items: center;
   gap: 15px;
-  margin-top: 5%;
+  margin-top: 4%;
 }
 
 .link {
   display: flex;
 }
 
-.linkContainer {
+.contactLink {
   display: flex;
   gap: 3px;
+}
+
+.contactLink:hover,
+.contactLink:focus {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+.contactHeader {
+  text-align: center;
+  margin-top: 1rem;
 }
 
 @media (max-width: 800px) {

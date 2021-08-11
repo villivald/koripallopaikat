@@ -3,11 +3,12 @@
   place-items: center;
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
-  margin: 20px 40px 40px 40px;
+  margin: 20px 40px;
 }
 
 .mainPageLink {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  align-items: baseline;
 }
 
 .basketballFieldMain {

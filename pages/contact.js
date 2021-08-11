@@ -19,37 +19,35 @@ export default function Contact() {
         <link rel="icon" href="favicons/favicon.ico" />
       </Head>
       <Header />
+      <h1 className="contactHeader">Contact</h1>
       <div className="contactsContainer">
         <div className="link">
-          <a href="https://villivald.com" className="linkContainer">
+          <a href="https://villivald.com" className="contactLink">
             <Image alt="react logo" src={react} width={58} height={58} />
           </a>
         </div>
         <div className="link">
-          <a href="https://create-react-app.com" className="linkContainer">
+          <a href="https://create-react-app.com" className="contactLink">
             <Image alt="eleventy logo" src={eleventy} width={58} height={58} />
           </a>
         </div>
         <div className="link">
-          <a href="https://github.com/villivald" className="linkContainer">
+          <a href="https://github.com/villivald" className="contactLink">
             <Image alt="git logo" src={github} width={58} height={58} />
           </a>
         </div>
         <div className="link">
-          <a href="https://twitter.com/crapp_blog" className="linkContainer">
+          <a href="https://twitter.com/crapp_blog" className="contactLink">
             <Image alt="twitter logo" src={twitter} width={58} height={58} />
           </a>
         </div>
         <div className="link">
-          <a href="https://dev.to/villivald" className="linkContainer">
+          <a href="https://dev.to/villivald" className="contactLink">
             <Image alt="dev.to logo" src={dev} width={58} height={58} />
           </a>
         </div>
         <div className="link">
-          <a
-            href="https://hackernoon.com/u/villivald"
-            className="linkContainer"
-          >
+          <a href="https://hackernoon.com/u/villivald" className="contactLink">
             <Image
               alt="hackernoon logo"
               src={hackernoon}
@@ -59,17 +57,17 @@ export default function Contact() {
           </a>
         </div>
         <div className="link">
-          <a href="https://proj.ninja" className="linkContainer">
+          <a href="https://proj.ninja" className="contactLink">
             <Image alt="hashnode logo" src={hashnode} width={58} height={58} />
           </a>
         </div>
         <div className="link">
-          <a href="https://t.me/create_react_app" className="linkContainer">
+          <a href="https://t.me/create_react_app" className="contactLink">
             <Image alt="telegram logo" src={telegram} width={58} height={58} />
           </a>
         </div>
         <div className="link">
-          <a href="mailto:koripallopaikat@gmail.com" className="linkContainer">
+          <a href="mailto:koripallopaikat@gmail.com" className="contactLink">
             <Image alt="gmail logo" src={gmail} width={58} height={58} />
           </a>
         </div>
