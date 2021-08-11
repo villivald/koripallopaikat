@@ -59,6 +59,7 @@ const CourtList = ({ court }) => {
         )}
         <Typography color="textSecondary">Place: {court.type}</Typography>
         <Typography color="textSecondary">Baskets: {court.baskets}</Typography>
+        {court.info && <Typography color="error">{court.info}</Typography>}
       </CardContent>
       <CardActions className="iconLinks">
         <Button
