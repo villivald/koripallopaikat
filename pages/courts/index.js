@@ -3,7 +3,7 @@ import Head from "next/head";
 import { Box } from "@material-ui/core";
 import Pagination from "@material-ui/lab/Pagination";
 import { connectToDatabase } from "../../util/mongodb";
-import CourtList from "../../components/CourtList";
+import Court from "../../components/Court";
 import Header from "../../components/Header";
 import { useAppContext } from "../../context/state";
 
@@ -31,7 +31,7 @@ const index = () => {
         {courts
           .slice((page - 1) * itemsPerPage, page * itemsPerPage)
           .map((court) => (
-            <CourtList court={court} key={court._id} />
+            <Court court={court} key={court._id} />
           ))}
       </div>
       <Box component="span" className="pagination">

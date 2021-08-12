@@ -73,6 +73,10 @@
   text-overflow: ellipsis;
 }
 
+.searchForm {
+  width: 100px;
+}
+
 @media (max-width: 1300px) {
   .MuiCardActions-spacing > :not(:first-child) {
     margin-left: -10px !important;

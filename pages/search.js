@@ -2,7 +2,14 @@ import React, { useState } from "react";
 import Head from "next/head";
 import Header from "../components/Header";
 import SearchObject from "../components/SearchObject";
-import { Switch, TextField } from "@material-ui/core";
+import {
+  Switch,
+  TextField,
+  InputLabel,
+  MenuItem,
+  FormControl,
+  Select,
+} from "@material-ui/core";
 import { connectToDatabase } from "../util/mongodb";
 import distance from "../util/distance";
 import { useAppContext } from "../context/state";
@@ -26,6 +33,17 @@ export default function Search() {
     distance: distance(court.lat, court.lon) / 1000,
   }));
 
+  const [city, setCity] = useState("");
+  const handleChangeForm = (event) => {
+    setCity(event.target.value);
+  };
+
+  if (city === "" || city === "All") {
+    courts = courts;
+  } else {
+    courts = courts.filter((court) => court.city === city);
+  }
+
   return (
     <div>
       <Head>
@@ -42,6 +60,16 @@ export default function Search() {
             placeholder="Merimiehenkatu, 9"
             label="Address"
           />
+          <FormControl className="searchForm">
+            <InputLabel>City</InputLabel>
+            <Select value={city} onChange={handleChangeForm}>
+              <MenuItem value={"All"}>All</MenuItem>
+              <MenuItem value={"Helsinki"}>Helsinki</MenuItem>
+              <MenuItem value={"Espoo"}>Espoo</MenuItem>
+              <MenuItem value={"Vantaa"}>Vantaa</MenuItem>
+              <MenuItem value={"Turku"}>Turku</MenuItem>
+            </Select>
+          </FormControl>
         </div>
         <h2 className="sortFilterTitle">Sort by</h2>
         <div className="sortFilter sort">
