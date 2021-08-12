@@ -55,7 +55,7 @@ const map = () => {
   useEffect(() => {
     map.current.on("click", function (e) {
       var features = map.current.queryRenderedFeatures(e.point, {
-        layers: ["koripallopaikat100821"],
+        layers: ["koripallopaikat120821"],
       });
       if (!features.length) {
         return;
