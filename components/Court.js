@@ -21,7 +21,7 @@ const CourtList = ({ court }) => {
     <Card className="basketballField">
       <CardMedia
         className="cardMedia"
-        image={court.pic}
+        image={court.listPic}
         title="basketball court"
       />
       <CardContent>
