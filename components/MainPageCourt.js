@@ -16,7 +16,12 @@ const Court = ({ court }) => {
 
   return (
     <Card className="basketballFieldMain">
-      <Image className="cardMedia" src={court.pic} alt={court.address} />
+      <Image
+        className="cardMedia"
+        src={court.pic}
+        alt={court.address}
+        placeholder="blur"
+      />
       <CardContent>
         <Typography color="textPrimary" gutterBottom>
           <Link
