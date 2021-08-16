@@ -1,6 +1,11 @@
+import { useState } from "react";
 import Header from "../components/Header";
 import Image from "next/image";
 import Head from "next/head";
+import TextField from "@material-ui/core/TextField";
+import TextareaAutosize from "@material-ui/core/TextareaAutosize";
+import Button from "@material-ui/core/Button";
+import SendIcon from "@material-ui/icons/Send";
 import react from "../public/icons/react.svg";
 import telegram from "../public/icons/telegram.svg";
 import twitter from "../public/icons/twitter.svg";
@@ -12,6 +17,22 @@ import dev from "../public/icons/dev-badge.svg";
 import eleventy from "../public/icons/11ty.webp";
 
 export default function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const data = {
+      name,
+      email,
+      message,
+    };
+    fetch("/api/contact", {
+      method: "post",
+      body: JSON.stringify(data),
+    });
+  };
   return (
     <>
       <Head>
@@ -71,6 +92,38 @@ export default function Contact() {
             <Image alt="gmail logo" src={gmail} width={58} height={58} />
           </a>
         </div>
+      </div>
+      <div className="form">
+        <form onSubmit={handleSubmit}>
+          <div className="input">
+            <TextField
+              label="Name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              variant="outlined"
+            ></TextField>
+            <TextField
+              label="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              variant="outlined"
+            ></TextField>
+            <TextareaAutosize
+              placeholder="Message"
+              value={message}
+              minRows={5}
+              onChange={(e) => setMessage(e.target.value)}
+            ></TextareaAutosize>
+            <Button
+              startIcon={<SendIcon />}
+              variant="contained"
+              color="primary"
+              type="submit"
+            >
+              Send
+            </Button>
+          </div>
+        </form>
       </div>
     </>
   );
