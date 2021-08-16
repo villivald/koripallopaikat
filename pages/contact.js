@@ -28,7 +28,7 @@ export default function Contact() {
       email,
       message,
     };
-    fetch("/api/contact", {
+    fetch("https://koripallopaikat.com/api/contact", {
       method: "post",
       body: JSON.stringify(data),
     });
