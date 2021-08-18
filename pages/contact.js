@@ -4,6 +4,8 @@ import Image from "next/image";
 import Head from "next/head";
 import TextField from "@material-ui/core/TextField";
 import TextareaAutosize from "@material-ui/core/TextareaAutosize";
+import Snackbar from "@material-ui/core/Snackbar";
+import Alert from "@material-ui/lab/Alert";
 import Button from "@material-ui/core/Button";
 import SendIcon from "@material-ui/icons/Send";
 import react from "../public/icons/react.svg";
@@ -21,6 +23,15 @@ export default function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
+  const [visible, setVisible] = useState(false);
+
+  const handleClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+    setVisible(false);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const data = {
@@ -32,6 +43,14 @@ export default function Contact() {
       method: "post",
       body: JSON.stringify(data),
     });
+
+    setVisible(true);
+    setName("");
+    setEmail("");
+    setMessage("");
+    setTimeout(() => {
+      setVisible(false);
+    }, 10000);
   };
   return (
     <>
@@ -125,6 +144,19 @@ export default function Contact() {
           </div>
         </form>
       </div>
+      {visible && (
+        <>
+          <h2 className="successHeader">
+            Thank you for your message 👋. I will get back to you as soon as
+            possible.
+          </h2>
+          <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+            <Alert onClose={handleClose} severity="success">
+              Success!
+            </Alert>
+          </Snackbar>
+        </>
+      )}
     </>
   );
 }

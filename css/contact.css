@@ -33,6 +33,11 @@ textarea {
   font-family: Roboto, Helvetica, Arial, sans-serif;
 }
 
+.successHeader {
+  text-align: center;
+  margin-top: 1%;
+}
+
 @media (max-width: 800px) {
   .contactsContainer {
     display: grid;
