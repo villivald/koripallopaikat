@@ -899,6 +899,42 @@
         "coordinates": [22.268087074843507, 60.44564073438159],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Laivastokuja, 2",
+        "description": "Sports field",
+        "link": "/courts/Laivastokuja,%202"
+      },
+      "geometry": {
+        "coordinates": [24.97050544912946, 60.16669204220364],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Kontulankaari, 13",
+        "description": "Sports park",
+        "link": "/courts/Kontulankaari,%2013"
+      },
+      "geometry": {
+        "coordinates": [25.08180555036805, 60.244634076483635],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Säilätie, 31",
+        "description": "Sports park",
+        "link": "/courts/Säilätie,%2031"
+      },
+      "geometry": {
+        "coordinates": [25.108448027060746, 60.248940168752725],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
