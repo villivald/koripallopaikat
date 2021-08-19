@@ -25,7 +25,7 @@ const CourtList = ({ court }) => {
         title="basketball court"
       />
       <CardContent>
-        <Typography color="textPrimary" gutterBottom>
+        <Typography color="textPrimary">
           <Link
             key={court._id}
             href="/courts/[id]"
@@ -33,6 +33,9 @@ const CourtList = ({ court }) => {
           >
             {court.address}
           </Link>
+        </Typography>
+        <Typography color="textPrimary" gutterBottom>
+          {court.district}
         </Typography>
         <Typography component={"span"} color="textSecondary">
           Distance: {d > 1000 ? <CircularProgress size={15} /> : d} km
