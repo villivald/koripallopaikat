@@ -87,7 +87,7 @@ const CourtList = ({ court }) => {
         </Button>
         <Button
           size="small"
-          href={`https://www.google.com/maps/place/${court.address}+Helsinki`}
+          href={`https://www.google.com/maps/place/${court.address}+${court.city}`}
           aria-label="google maps"
           title="Open in new tab"
           target="_blank"
