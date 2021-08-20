@@ -935,6 +935,42 @@
         "coordinates": [25.108448027060746, 60.248940168752725],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Kadetintie, 2",
+        "description": "Sports park",
+        "link": "/courts/Kadetintie,%202"
+      },
+      "geometry": {
+        "coordinates": [24.87548298546698, 60.19584842298076],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Solnantie, 18",
+        "description": "Sports park",
+        "link": "/courts/Solnantie,%2018"
+      },
+      "geometry": {
+        "coordinates": [24.876232076658727, 60.19615301909755],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Kangaspellontie, 4",
+        "description": "Sports park",
+        "link": "/courts/Kangaspellontie,%204"
+      },
+      "geometry": {
+        "coordinates": [24.88453197996326, 60.20894910979233],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
