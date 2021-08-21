@@ -13,7 +13,7 @@ const SearchObject = ({ court }) => {
         title="basketball court"
       />
       <CardContent>
-        <Typography color="textPrimary" gutterBottom className="searchLink">
+        <Typography color="textPrimary" className="searchLink">
           <Link
             key={court._id}
             href="/courts/[id]"
@@ -21,6 +21,9 @@ const SearchObject = ({ court }) => {
           >
             {court.address}
           </Link>
+        </Typography>
+        <Typography color="textPrimary" gutterBottom>
+          {court.district}
         </Typography>
         <Typography color="textSecondary">
           {court.baskets === 1

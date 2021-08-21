@@ -85,8 +85,10 @@ export default function Search() {
       </div>
       <div className="listCourt search">
         {courts
-          .filter((court) =>
-            court.address.toLowerCase().includes(filter.toLowerCase())
+          .filter(
+            (court) =>
+              court.address.toLowerCase().includes(filter.toLowerCase()) ||
+              court.district.toLowerCase().includes(filter.toLowerCase())
           )
           .sort((a, b) => sortByDistance && (a.distance > b.distance ? 1 : -1))
           .sort((max, min) => sortByBaskets && min.baskets - max.baskets)

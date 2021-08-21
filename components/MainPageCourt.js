@@ -23,7 +23,7 @@ const Court = ({ court }) => {
         placeholder="blur"
       />
       <CardContent>
-        <Typography color="textPrimary" gutterBottom>
+        <Typography color="textPrimary">
           <Link
             key={court._id}
             href="/courts/[id]"
@@ -31,6 +31,9 @@ const Court = ({ court }) => {
           >
             {court.address}
           </Link>
+        </Typography>
+        <Typography color="textPrimary" gutterBottom>
+          {court.district}
         </Typography>
         <Typography color="textSecondary">
           Surface: {court.surface}{" "}
