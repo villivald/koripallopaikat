@@ -72,6 +72,23 @@ export default function Search() {
           </FormControl>
         </div>
         <h2 className="sortFilterTitle">Sort by</h2>
+        <svg
+          viewBox="0 0 200 200"
+          xmlns="http://www.w3.org/2000/svg"
+          width="150"
+          className="amount"
+        >
+          <g>
+            <path
+              fill="#82c99b"
+              d="M39.7,-51.1C50.6,-38.1,58.2,-24.8,62.9,-9.5C67.5,5.9,69.1,23.3,63.4,39.7C57.6,56,44.5,71.2,29.6,73C14.7,74.7,-2,63.1,-20.1,56.1C-38.3,49.2,-57.9,47,-70.4,35.6C-82.9,24.3,-88.4,3.9,-82,-11.3C-75.6,-26.6,-57.3,-36.6,-41.7,-48.8C-26.1,-60.9,-13,-75.3,0.7,-76.1C14.3,-76.9,28.7,-64.1,39.7,-51.1Z"
+              transform="translate(100 100)"
+            />
+            <text x="45" y="110">
+              {`${courts.length} ${courts.length === 1 ? "court" : "courts"}`}
+            </text>
+          </g>
+        </svg>
         <div className="sortFilter sort">
           Distance:
           <Switch onChange={() => setSortByDistance(!sortByDistance)} />
