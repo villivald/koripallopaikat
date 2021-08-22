@@ -3,7 +3,6 @@
   justify-content: center;
   align-items: center;
   gap: 15px;
-  margin-top: 2%;
   margin-bottom: 2%;
 }
 
@@ -21,9 +20,9 @@
   transform: scale(1.1) rotate(-5deg);
 }
 
-.contactHeader {
-  text-align: center;
-  margin-top: 1rem;
+.contactBlob {
+  display: grid;
+  place-items: center;
 }
 
 textarea {

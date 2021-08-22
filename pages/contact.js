@@ -17,6 +17,7 @@ import gmail from "../public/icons/gmail.svg";
 import github from "../public/icons/github-icon.svg";
 import dev from "../public/icons/dev-badge.svg";
 import eleventy from "../public/icons/11ty.webp";
+import { Grid } from "@material-ui/core";
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -59,7 +60,24 @@ export default function Contact() {
         <link rel="icon" href="favicons/favicon.ico" />
       </Head>
       <Header />
-      <h1 className="contactHeader">Contact</h1>
+      <div className="contactBlob">
+        <svg
+          viewBox="0 0 200 200"
+          xmlns="http://www.w3.org/2000/svg"
+          width="200"
+        >
+          <g>
+            <path
+              fill="#82C99B"
+              d="M38.2,-40.7C54.5,-31.7,76.4,-24.5,83.2,-11C89.9,2.5,81.5,22.4,68,33C54.4,43.5,35.6,44.8,19.7,48C3.8,51.1,-9.2,56.1,-22.4,54.4C-35.6,52.7,-49.1,44.4,-61.3,31.4C-73.4,18.4,-84.4,0.8,-79.5,-11.8C-74.6,-24.4,-53.9,-31.9,-38,-41C-22.1,-50,-11,-60.6,-0.1,-60.5C10.9,-60.4,21.8,-49.7,38.2,-40.7Z"
+              transform="translate(100 100)"
+            />
+            <text x="60" y="110" font-size="1.6rem">
+              Contact
+            </text>
+          </g>
+        </svg>
+      </div>
       <div className="contactsContainer">
         <div className="link">
           <a href="https://villivald.com" className="contactLink">
