@@ -5,6 +5,16 @@
   margin-left: 5px;
 }
 
+.underline {
+  background-image: linear-gradient(
+    transparent 0%,
+    transparent calc(50% - 9px),
+    #dbca2e calc(50% - 9px),
+    #dbca2e 100%
+  );
+  background-size: 50% 220%;
+}
+
 @media (max-width: 800px) {
   .amount {
     top: 20%;

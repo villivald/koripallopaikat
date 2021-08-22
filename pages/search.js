@@ -90,13 +90,13 @@ export default function Search() {
           </g>
         </svg>
         <div className="sortFilter sort">
-          Distance:
+          <p className="underline">Distance:</p>
           <Switch onChange={() => setSortByDistance(!sortByDistance)} />
-          Baskets:
+          <p className="underline">Baskets:</p>
           <Switch onChange={() => setSortByBaskets(!sortByBaskets)} />
-          Surface type:
+          <p className="underline">Surface type:</p>
           <Switch onChange={() => setSortBySurface(!sortBySurface)} />
-          Address:
+          <p className="underline">Address:</p>
           <Switch onChange={() => setSortByAddress(!sortByAddress)} />
         </div>
       </div>
