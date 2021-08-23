@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import Card from "@material-ui/core/Card";
-import CardMedia from "@material-ui/core/CardMedia";
-import CardActions from "@material-ui/core/CardActions";
-import CardContent from "@material-ui/core/CardContent";
-import Button from "@material-ui/core/Button";
-import Typography from "@material-ui/core/Typography";
-import CircularProgress from "@material-ui/core/CircularProgress";
+import {
+  Link as MUILink,
+  Card,
+  CardMedia,
+  CardActions,
+  CardContent,
+  Button,
+  Typography,
+  CircularProgress,
+} from "@material-ui/core";
 import ReportOutlinedIcon from "@material-ui/icons/ReportOutlined";
 import ImageOutlinedIcon from "@material-ui/icons/ImageOutlined";
 import LinkIcon from "@material-ui/icons/Link";
@@ -30,8 +33,9 @@ const CourtList = ({ court }) => {
             key={court._id}
             href="/courts/[id]"
             as={`/courts/${court.address}`}
+            passHref
           >
-            {court.address}
+            <MUILink>{court.address}</MUILink>
           </Link>
         </Typography>
         <Typography color="textPrimary" gutterBottom>

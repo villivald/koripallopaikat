@@ -1,8 +1,11 @@
 import Link from "next/link";
-import Card from "@material-ui/core/Card";
-import CardMedia from "@material-ui/core/CardMedia";
-import CardContent from "@material-ui/core/CardContent";
-import Typography from "@material-ui/core/Typography";
+import {
+  Link as MUILink,
+  Card,
+  CardMedia,
+  CardContent,
+  Typography,
+} from "@material-ui/core";
 
 const SearchObject = ({ court }) => {
   return (
@@ -18,8 +21,9 @@ const SearchObject = ({ court }) => {
             key={court._id}
             href="/courts/[id]"
             as={`/courts/${court.address}`}
+            passHref
           >
-            {court.address}
+            <MUILink>{court.address}</MUILink>
           </Link>
         </Typography>
         <Typography color="textPrimary" gutterBottom>

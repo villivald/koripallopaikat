@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import { Link as MUILink } from "@material-ui/core";
 import Image from "next/image";
 import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
@@ -28,8 +29,9 @@ const Court = ({ court }) => {
             key={court._id}
             href="/courts/[id]"
             as={`/courts/${court.address}`}
+            passHref
           >
-            {court.address}
+            <MUILink>{court.address}</MUILink>
           </Link>
         </Typography>
         <Typography color="textPrimary" gutterBottom>

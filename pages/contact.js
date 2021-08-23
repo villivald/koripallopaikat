@@ -17,7 +17,6 @@ import gmail from "../public/icons/gmail.svg";
 import github from "../public/icons/github-icon.svg";
 import dev from "../public/icons/dev-badge.svg";
 import eleventy from "../public/icons/11ty.webp";
-import { Grid } from "@material-ui/core";
 
 export default function Contact() {
   const [name, setName] = useState("");
