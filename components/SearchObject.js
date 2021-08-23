@@ -10,11 +10,13 @@ import {
 const SearchObject = ({ court }) => {
   return (
     <Card className="searchObjectField" elevation={0}>
-      <CardMedia
-        className="searchCardMedia"
-        image={court.searchPic}
-        title="basketball court"
-      />
+      <Link key={court._id} href="/courts/[id]" as={`/courts/${court.address}`}>
+        <CardMedia
+          className="searchCardMedia"
+          image={court.searchPic}
+          title="basketball court"
+        />
+      </Link>
       <CardContent>
         <Typography color="textPrimary" className="searchLink">
           <Link

@@ -22,11 +22,13 @@ const CourtList = ({ court }) => {
 
   return (
     <Card className="basketballField">
-      <CardMedia
-        className="cardMedia"
-        image={court.listPic}
-        title="basketball court"
-      />
+      <Link key={court._id} href="/courts/[id]" as={`/courts/${court.address}`}>
+        <CardMedia
+          className="cardMedia"
+          image={court.listPic}
+          title="basketball court"
+        />
+      </Link>
       <CardContent>
         <Typography color="textPrimary">
           <Link

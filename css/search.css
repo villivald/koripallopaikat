@@ -15,6 +15,14 @@
   background-size: 50% 220%;
 }
 
+.Mui-checked > span.MuiIconButton-label > span {
+  color: #1a4e55;
+}
+
+.MuiSwitch-colorSecondary.Mui-checked + span.MuiSwitch-track {
+  background-color: #82c99b;
+}
+
 @media (max-width: 800px) {
   .amount {
     top: 20%;

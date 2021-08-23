@@ -17,12 +17,14 @@ const Court = ({ court }) => {
 
   return (
     <Card className="basketballFieldMain">
-      <Image
-        className="cardMedia"
-        src={court.pic}
-        alt={court.address}
-        placeholder="blur"
-      />
+      <Link key={court._id} href="/courts/[id]" as={`/courts/${court.address}`}>
+        <Image
+          className="cardMedia"
+          src={court.pic}
+          alt={court.address}
+          placeholder="blur"
+        />
+      </Link>
       <CardContent>
         <Typography color="textPrimary">
           <Link
