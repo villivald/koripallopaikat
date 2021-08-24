@@ -971,6 +971,18 @@
         "coordinates": [24.88453197996326, 60.20894910979233],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Sepänkatu, 2",
+        "description": "Sports park",
+        "link": "/courts/Sepänkatu,%202"
+      },
+      "geometry": {
+        "coordinates": [24.940334806419344, 60.158789544348465],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
