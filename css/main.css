@@ -11,6 +11,12 @@
   align-items: baseline;
 }
 
+.mainPageLinkIcon:hover {
+  transform: scale(1.1);
+  color: #1a4e55;
+  transition: all 0.3s ease-in-out;
+}
+
 .basketballFieldMain {
   display: flex;
   flex-direction: column;
