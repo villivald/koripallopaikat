@@ -109,12 +109,22 @@
     margin-left: -10px !important;
   }
 }
+@media (max-width: 900px) {
+  .sortFilter.sort {
+    margin-top: 40px;
+  }
+}
 @media (max-width: 850px) {
   .listCourt {
     grid-template-columns: repeat(3, 1fr);
   }
   .listCourt.search {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 800px) {
+  .sortFilter.sort {
+    margin-top: 0px;
   }
 }
 @media (max-width: 650px) {

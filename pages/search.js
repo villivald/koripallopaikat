@@ -23,6 +23,7 @@ export default function Search() {
   const [sortBySurface, setSortBySurface] = useState(false);
   const [sortByAddress, setSortByAddress] = useState(false);
   const [sortByDistance, setSortByDistance] = useState(false);
+  const [sortByDistrict, setSortByDistrict] = useState(false);
 
   const handleFilterChange = (event) => {
     setFilter(event.target.value);
@@ -94,10 +95,12 @@ export default function Search() {
           <Switch onChange={() => setSortByDistance(!sortByDistance)} />
           <p className="underline">Baskets:</p>
           <Switch onChange={() => setSortByBaskets(!sortByBaskets)} />
-          <p className="underline">Surface type:</p>
+          <p className="underline">Surface:</p>
           <Switch onChange={() => setSortBySurface(!sortBySurface)} />
           <p className="underline">Address:</p>
           <Switch onChange={() => setSortByAddress(!sortByAddress)} />
+          <p className="underline">District:</p>
+          <Switch onChange={() => setSortByDistrict(!sortByDistrict)} />
         </div>
       </div>
       <div className="listCourt search">
@@ -111,6 +114,7 @@ export default function Search() {
           .sort((max, min) => sortByBaskets && min.baskets - max.baskets)
           .sort((a, b) => sortBySurface && (a.surface > b.surface ? 1 : -1))
           .sort((a, b) => sortByAddress && (a.address > b.address ? 1 : -1))
+          .sort((a, b) => sortByDistrict && (a.district > b.district ? 1 : -1))
           .map((court) => (
             <SearchObject court={court} key={court._id} />
           ))}
