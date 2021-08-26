@@ -77,7 +77,7 @@ export default function Contact() {
           </g>
         </svg>
       </div>
-      <h2 className="contactHeader">Connect with me on social 🤝</h2>
+      <h2 className="contactHeader">Connect with me on social 👋</h2>
       <div className="contactsContainer">
         <div className="link">
           <a href="https://villivald.com" className="contactLink">
@@ -130,7 +130,7 @@ export default function Contact() {
           </a>
         </div>
       </div>
-      <h2 className="contactHeader">Or send me an Email 👋</h2>
+      <h2 className="contactHeader">Or send an email ✉️</h2>
       <div className="form">
         <form onSubmit={handleSubmit}>
           <div className="input">

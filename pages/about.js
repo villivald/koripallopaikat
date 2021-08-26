@@ -12,8 +12,7 @@ export default function Books() {
       <Header />
       <div className="aboutContainer">
         <h2>
-          App live on{" "}
-          <Link href="https://koripallopaikat.vercel.app/">Vercel</Link>
+          App live on <Link href="https://koripallopaikat.com/">Vercel</Link>
         </h2>
         <h2>
           Source Code on{" "}
