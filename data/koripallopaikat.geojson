@@ -983,6 +983,18 @@
         "coordinates": [24.940334806419344, 60.158789544348465],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Toinen linja, 6",
+        "description": "Play park",
+        "link": "/courts/Toinen%20linja,%206"
+      },
+      "geometry": {
+        "coordinates": [24.94518382911096, 60.18260441976188],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
