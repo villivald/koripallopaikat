@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import {
   Link as MUILink,
   Card,
@@ -15,6 +16,10 @@ import ImageOutlinedIcon from "@material-ui/icons/ImageOutlined";
 import LinkIcon from "@material-ui/icons/Link";
 import RoomOutlinedIcon from "@material-ui/icons/RoomOutlined";
 import distance from "../util/distance";
+import asphalt from "../public/images/surfaces/asphalt.webp";
+import soft from "../public/images/surfaces/soft.webp";
+import gravel from "../public/images/surfaces/gravel.webp";
+import agrass from "../public/images/surfaces/agrass.webp";
 
 const CourtList = ({ court }) => {
   const [isShown, setIsShown] = useState(false);
@@ -53,13 +58,21 @@ const CourtList = ({ court }) => {
             onMouseLeave={() => setIsShown(false)}
             style={{ cursor: "pointer" }}
           >
-            ❓
+            ⚡️
           </span>
         </Typography>
         {isShown && (
           <div className="hoverPicture">
-            <img
-              src={court.surfacePic}
+            <Image
+              src={
+                court.surface === "asphalt"
+                  ? asphalt
+                  : court.surface === "gravel"
+                  ? gravel
+                  : court.surface === "artificial grass"
+                  ? agrass
+                  : soft
+              }
               alt="court surface"
               width={150}
               height={150}

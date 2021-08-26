@@ -46,7 +46,7 @@ const Court = ({ court }) => {
             onMouseLeave={() => setIsShown(false)}
             style={{ cursor: "pointer" }}
           >
-            ❓
+            ⚡️
           </span>
         </Typography>
         {isShown && (

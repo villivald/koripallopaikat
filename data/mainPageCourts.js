@@ -110,7 +110,7 @@ const mainPageCourts = [
     surface: "soft outdoor surface",
     type: "sports park",
     baskets: 2,
-    surfacePic: asphalt,
+    surfacePic: soft,
     link: "https://www.suomi.fi/palvelut/palvelupiste/ala-malmin-liikuntapuisto-koripallokentta-helsingin-kaupunki/9da29a87-4423-432b-a484-4c8c90d1f640",
     lat: 60.24816325484996,
     lon: 25.023472165732894,
