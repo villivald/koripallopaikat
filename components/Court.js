@@ -20,6 +20,7 @@ import asphalt from "../public/images/surfaces/asphalt.webp";
 import soft from "../public/images/surfaces/soft.webp";
 import gravel from "../public/images/surfaces/gravel.webp";
 import agrass from "../public/images/surfaces/agrass.webp";
+import stone from "../public/images/surfaces/stone.webp";
 
 const CourtList = ({ court }) => {
   const [isShown, setIsShown] = useState(false);
@@ -71,6 +72,8 @@ const CourtList = ({ court }) => {
                   ? gravel
                   : court.surface === "artificial grass"
                   ? agrass
+                  : court.surface === "stone tiles"
+                  ? stone
                   : soft
               }
               alt="court surface"
