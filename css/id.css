@@ -16,6 +16,11 @@
   border-radius: 5px;
 }
 
+.carousel .slide img {
+  width: clamp(100px, 538px, 100%) !important;
+  height: clamp(100px, 403px, 100%);
+}
+
 .idLinks {
   display: flex;
   margin-bottom: 10px;

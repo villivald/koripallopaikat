@@ -10,6 +10,8 @@ import ReportOutlinedIcon from "@material-ui/icons/ReportOutlined";
 import { connectToDatabase } from "../../util/mongodb";
 import distance from "../../util/distance";
 import Header from "../../components/Header";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const Page = ({ courts }) => {
   const router = useRouter();
@@ -27,7 +29,17 @@ const Page = ({ courts }) => {
       <Header />
       <div className="idContainer">
         <h1 className="idHeader">{currentCourt.address}</h1>
-        <img src={currentCourt.pic} className="idPic" />
+        {/* <img src={currentCourt.pic} className="idPic" /> */}
+        <Carousel
+          showThumbs={false}
+          showStatus={false}
+          useKeyboardArrows={true}
+          swipeable={true}
+        >
+          <img className="idPic" src={currentCourt.pic} />
+          <img className="idPic" src={currentCourt.pic} />
+          <img className="idPic" src={currentCourt.pic} />
+        </Carousel>
         <div className="idInfo">
           <p>Baskets: {currentCourt.baskets}</p>
           <p>Surface: {currentCourt.surface}</p>
