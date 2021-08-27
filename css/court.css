@@ -10,13 +10,13 @@
   height: clamp(90%, 95%, 100%);
 }
 
-.hoverPicture {
+.hoverPictureContainer {
   position: absolute;
   transform: translateX(150px);
   z-index: 1;
 }
 
-.hoverPicture > img {
+.hoverPicture {
   border-radius: 5px;
 }
 

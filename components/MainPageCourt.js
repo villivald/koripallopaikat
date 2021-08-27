@@ -50,12 +50,13 @@ const Court = ({ court }) => {
           </span>
         </Typography>
         {isShown && (
-          <div className="hoverPicture">
+          <div className="hoverPictureContainer">
             <Image
               src={court.surfacePic}
               alt="court surface"
               width={150}
               height={150}
+              className="hoverPicture"
             />
           </div>
         )}
