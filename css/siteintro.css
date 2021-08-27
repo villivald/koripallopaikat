@@ -1,9 +1,8 @@
 .intro {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   gap: 15px;
   background-color: #82c99c;
-  padding: 15px;
   font-size: clamp(1.8rem, 2.2vw, 2.8rem);
 }
 
@@ -15,6 +14,11 @@
   text-transform: uppercase;
   letter-spacing: 6px;
   font-weight: bold;
+}
+
+.introImage {
+  min-height: 120% !important;
+  min-width: 105% !important;
 }
 
 .spin {
