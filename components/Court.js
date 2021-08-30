@@ -52,7 +52,13 @@ const CourtList = ({ court }) => {
           {court.district}
         </Typography>
         <Typography component={"span"} color="textSecondary">
-          Distance: {d > 1000 ? <CircularProgress size={15} /> : d} km
+          Distance:{" "}
+          <MUILink
+            target="_blank"
+            href={`https://www.google.fi/maps/dir//${court.address}`}
+          >
+            {d > 1000 ? <CircularProgress size={15} /> : d} km
+          </MUILink>
         </Typography>
         <Typography color="textSecondary">
           <span className="cardTitle">Surface:</span>{" "}
@@ -87,7 +93,7 @@ const CourtList = ({ court }) => {
           </div>
         )}
         <Typography color="textSecondary">
-          <span className="cardTitle">Place:</span>
+          <span className="cardTitle">Place: </span>
           <span className="cardText">{court.type}</span>
         </Typography>
         <Typography color="textSecondary" className="courtBaskets">
