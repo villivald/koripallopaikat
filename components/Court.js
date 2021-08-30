@@ -43,7 +43,9 @@ const CourtList = ({ court }) => {
             as={`/courts/${court.address}`}
             passHref
           >
-            <MUILink>{court.address}</MUILink>
+            <MUILink>
+              <span className="cardText">{court.address}</span>
+            </MUILink>
           </Link>
         </Typography>
         <Typography color="textPrimary" gutterBottom>
@@ -53,11 +55,12 @@ const CourtList = ({ court }) => {
           Distance: {d > 1000 ? <CircularProgress size={15} /> : d} km
         </Typography>
         <Typography color="textSecondary">
-          Surface: {court.surface}{" "}
+          <span className="cardTitle">Surface:</span>{" "}
+          <span className="cardText">{court.surface}</span>
           <span
             onMouseEnter={() => setIsShown(true)}
             onMouseLeave={() => setIsShown(false)}
-            style={{ cursor: "pointer" }}
+            className="surfaceIcon"
           >
             ⚡️
           </span>
@@ -83,8 +86,18 @@ const CourtList = ({ court }) => {
             />
           </div>
         )}
-        <Typography color="textSecondary">Place: {court.type}</Typography>
-        <Typography color="textSecondary">Baskets: {court.baskets}</Typography>
+        <Typography color="textSecondary">
+          <span className="cardTitle">Place:</span>
+          <span className="cardText">{court.type}</span>
+        </Typography>
+        <Typography color="textSecondary" className="courtBaskets">
+          Baskets: {court.baskets}
+        </Typography>
+        <Typography color="textSecondary" className="courtBasketsMobile">
+          {court.baskets > 1
+            ? `${court.baskets} baskets`
+            : `${court.baskets} basket`}
+        </Typography>
         {court.info && <Typography color="error">{court.info}</Typography>}
       </CardContent>
       <CardActions className="iconLinks">

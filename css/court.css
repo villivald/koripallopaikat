@@ -79,6 +79,18 @@
   width: 100px;
 }
 
+.surfaceIcon {
+  cursor: pointer;
+}
+
+.courtBaskets {
+  display: block;
+}
+
+.courtBasketsMobile {
+  display: none;
+}
+
 @media (max-width: 1300px) {
   .MuiCardActions-spacing > :not(:first-child) {
     margin-left: -10px !important;
@@ -138,6 +150,30 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin-left: 100px;
+  }
+}
+@media (max-width: 500px) {
+  .surfaceIcon {
+    display: none;
+  }
+  .cardTitle {
+    display: none;
+  }
+  .cardText {
+    display: block;
+    white-space: nowrap;
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .cardText:first-letter {
+    text-transform: uppercase;
+  }
+  .courtBaskets {
+    display: none;
+  }
+  .courtBasketsMobile {
+    display: block;
   }
 }
 @media (max-width: 450px) {
