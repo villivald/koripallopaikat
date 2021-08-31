@@ -30,12 +30,30 @@
   animation-iteration-count: infinite;
 }
 
+.cat {
+  position: absolute;
+  transform: rotate(30deg);
+  margin-left: -50%;
+  cursor: pointer;
+}
+
+.cat:hover {
+  margin-left: -48%;
+  transition: all 0.5s ease-in-out;
+}
+
 @keyframes spin-animation {
   from {
     transform: rotate(0);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 600px) {
+  .cat {
+    margin-top: 9%;
   }
 }
 
