@@ -17,6 +17,28 @@
   transition: all 0.3s ease-in-out;
 }
 
+.MuiBottomNavigation-root.mainPageLink > a:nth-child(1) {
+  background-image: url("https://www.villivald.com/koripallopaikat/blob1.svg");
+  height: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.MuiBottomNavigation-root.mainPageLink > a:nth-child(2) {
+  background-image: url("https://www.villivald.com/koripallopaikat/blob2.svg");
+  height: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.MuiBottomNavigation-root.mainPageLink > a:nth-child(3) {
+  background-image: url("https://www.villivald.com/koripallopaikat/blob3.svg");
+  height: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .basketballFieldMain {
   display: flex;
   flex-direction: column;
@@ -28,11 +50,8 @@
 .MuiBottomNavigationAction-label {
   font-size: 1rem !important;
 }
-.mainPageLinkIcon:nth-child(even) {
-  font-size: 2.5rem;
-}
-.mainPageLinkIcon:nth-child(odd) {
-  font-size: 1.5rem;
+.mainPageLinkIcon {
+  font-size: 2rem;
 }
 
 @media (max-width: 1000px) {

@@ -1,7 +1,8 @@
 footer {
   height: 50px;
   background-color: #1b4e55;
-  padding-top: 10px;
+  padding-top: 50px;
+  margin-top: 100px;
 }
 
 @media (max-width: 600px) {
