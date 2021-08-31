@@ -1007,6 +1007,30 @@
         "coordinates": [24.929326953186987, 60.18961400818081],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Peltoniemenkuja, 3",
+        "description": "School yard",
+        "link": "/courts/Peltoniemenkuja,&203"
+      },
+      "geometry": {
+        "coordinates": [25.067371543495913, 60.31917051810787],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Eteläinen Rastitie, 14",
+        "description": "Youth center's yard",
+        "link": "/courts/Eteläinen%20Rastitie,%2014"
+      },
+      "geometry": {
+        "coordinates": [25.07002416213716, 60.32246434306286],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
