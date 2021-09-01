@@ -11,9 +11,14 @@
   align-items: baseline;
 }
 
+.mainPageLinkIcon {
+  font-size: 2rem;
+  color: #1a4e55 !important;
+}
+
 .mainPageLinkIcon:hover {
   transform: scale(1.1);
-  color: #1a4e55;
+  color: #212121 !important;
   transition: all 0.3s ease-in-out;
 }
 
@@ -49,9 +54,6 @@
 
 .MuiBottomNavigationAction-label {
   font-size: 1rem !important;
-}
-.mainPageLinkIcon {
-  font-size: 2rem;
 }
 
 @media (max-width: 1000px) {
