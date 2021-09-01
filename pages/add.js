@@ -7,6 +7,7 @@ import Snackbar from "@material-ui/core/Snackbar";
 import TextField from "@material-ui/core/TextField";
 import InputLabel from "@material-ui/core/InputLabel";
 import Button from "@material-ui/core/Button";
+import InputBase from "@material-ui/core/InputBase";
 import MuiAlert from "@material-ui/lab/Alert";
 import Chip from "@material-ui/core/Chip";
 import MenuItem from "@material-ui/core/MenuItem";
@@ -232,7 +233,7 @@ export default function Add() {
             >
               {showMap === "none" ? "Pick from the" : "Hide"} Map
             </Button>
-            <h3 className="addressString">{address}</h3>
+            <h2 className="addressString">{address}</h2>
             <TextField
               className={classes.input}
               select
@@ -271,10 +272,11 @@ export default function Add() {
               <InputLabel required={true} style={{ margin: "10px 0" }}>
                 Image
               </InputLabel>
-              <input
+              <InputBase
+                inputProps={{ "aria-label": "naked" }}
                 type="file"
                 onChange={(e) => setImage(e.target.files[0])}
-              ></input>
+              />
               <Button
                 className="uploadButton"
                 variant="contained"
