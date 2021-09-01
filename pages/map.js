@@ -81,7 +81,7 @@ const map = () => {
     });
   });
   return (
-    <div>
+    <main>
       <Head>
         <title>Koripallopaikat - Map</title>
         <link rel="icon" href="favicons/favicon.ico" />
@@ -93,7 +93,7 @@ const map = () => {
           Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
         </div>
       </footer>
-    </div>
+    </main>
   );
 };
 

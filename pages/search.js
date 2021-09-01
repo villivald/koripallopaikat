@@ -8,6 +8,7 @@ import {
   InputLabel,
   MenuItem,
   FormControl,
+  FormControlLabel,
   Select,
 } from "@material-ui/core";
 import { connectToDatabase } from "../util/mongodb";
@@ -91,16 +92,36 @@ export default function Search() {
           </g>
         </svg>
         <div className="sortFilter sort">
-          <p className="underline">Distance:</p>
-          <Switch onChange={() => setSortByDistance(!sortByDistance)} />
-          <p className="underline">Baskets:</p>
-          <Switch onChange={() => setSortByBaskets(!sortByBaskets)} />
-          <p className="underline">Surface:</p>
-          <Switch onChange={() => setSortBySurface(!sortBySurface)} />
-          <p className="underline">Address:</p>
-          <Switch onChange={() => setSortByAddress(!sortByAddress)} />
-          <p className="underline">District:</p>
-          <Switch onChange={() => setSortByDistrict(!sortByDistrict)} />
+          <FormControlLabel
+            control={
+              <Switch onChange={() => setSortByDistance(!sortByDistance)} />
+            }
+            label="Distance"
+          />
+          <FormControlLabel
+            control={
+              <Switch onChange={() => setSortByBaskets(!sortByBaskets)} />
+            }
+            label="Baskets"
+          />
+          <FormControlLabel
+            control={
+              <Switch onChange={() => setSortBySurface(!sortBySurface)} />
+            }
+            label="Surface"
+          />
+          <FormControlLabel
+            control={
+              <Switch onChange={() => setSortByAddress(!sortByAddress)} />
+            }
+            label="Address"
+          />
+          <FormControlLabel
+            control={
+              <Switch onChange={() => setSortByDistrict(!sortByDistrict)} />
+            }
+            label="District"
+          />
         </div>
       </div>
       <div className="listCourt search">

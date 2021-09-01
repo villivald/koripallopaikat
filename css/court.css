@@ -91,6 +91,10 @@
   display: none;
 }
 
+.MuiTypography-colorError {
+  color: #b7021a !important;
+}
+
 @media (max-width: 1300px) {
   .MuiCardActions-spacing > :not(:first-child) {
     margin-left: -10px !important;
@@ -148,8 +152,8 @@
   }
   .sortFilter.sort {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin-left: 100px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 80px;
   }
 }
 @media (max-width: 500px) {
@@ -190,6 +194,7 @@
     max-width: 35px;
   }
   .sortFilter.sort {
+    grid-template-columns: repeat(2, 1fr);
     margin-left: 50px;
   }
 }

@@ -21,7 +21,7 @@ const index = () => {
   };
 
   return (
-    <div>
+    <main>
       <Head>
         <title>Koripallopaikat - Courts</title>
         <link rel="icon" href="favicons/favicon.ico" />
@@ -46,7 +46,7 @@ const index = () => {
           showLastButton
         />
       </Box>
-    </div>
+    </main>
   );
 };
 
