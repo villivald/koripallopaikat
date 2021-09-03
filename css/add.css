@@ -1,3 +1,9 @@
+:root {
+  --color-1: #b72b38;
+  --color-2: #263a73;
+  --color-3: #051b2d;
+}
+
 .input {
   display: flex;
   flex-direction: column;
@@ -7,11 +13,6 @@
 .form {
   display: flex;
   justify-content: center;
-}
-
-.addHeader {
-  text-align: center;
-  margin: 20px 20px;
 }
 
 .imageUploading {
@@ -51,6 +52,40 @@
 .canvas-container {
   display: grid;
   place-items: center;
+}
+
+.colored {
+  padding: 45px;
+  line-height: 1;
+  display: grid;
+  place-items: center;
+  margin: 10px;
+  background-image: url("https://www.villivald.com/koripallopaikat/blob4.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 690px 690px;
+}
+
+h1 {
+  font-weight: 900;
+  width: min-content;
+  margin: auto;
+  font-size: 3vw;
+  text-transform: uppercase;
+  background: linear-gradient(
+    219deg,
+    var(--color-1) 39%,
+    transparent 39%,
+    transparent 40%,
+    var(--color-2) 40%,
+    var(--color-2) 69%,
+    transparent 69%,
+    transparent 70%,
+    var(--color-3) 70%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 @media (max-width: 500px) {

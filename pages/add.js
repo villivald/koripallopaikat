@@ -211,7 +211,9 @@ export default function Add() {
         <link rel="icon" href="favicons/favicon.ico" />
       </Head>
       <Header />
-      <h1 className="addHeader">Add a new basketball court</h1>
+      <div class="colored">
+        <h1>Add a new basketball court</h1>
+      </div>
       <div className="canvas-container">
         <div
           ref={mapContainer}
@@ -219,7 +221,6 @@ export default function Add() {
           style={{ display: showMap }}
         />
       </div>
-
       <div className="form">
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="input">
