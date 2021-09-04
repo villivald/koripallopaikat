@@ -13,3 +13,8 @@
   justify-items: center;
   gap: 15px;
 }
+
+.apiDockerLinks {
+  display: flex;
+  gap: 15%;
+}

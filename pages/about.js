@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Header from "../components/Header";
 import lighthouse from "../public/lighthouse.webp";
+import aboutLinks from "../data/aboutLinks";
 
 export default function Books() {
   return (
@@ -22,35 +23,24 @@ export default function Books() {
             GitHub
           </Link>
         </h2>
-        <h2>
-          <Link href="/api/savedCourts">API</Link>
-        </h2>
-        <h2>
-          <Link href="https://github.com/villivald/DevOps-with-Docker/blob/main/Part_1/15/15.md">
-            Docker
-          </Link>
-        </h2>
+
+        <div class="apiDockerLinks">
+          <h2>
+            <Link href="/api/savedCourts">API</Link>
+          </h2>
+
+          <h2>
+            <Link href="https://github.com/villivald/DevOps-with-Docker/blob/main/Part_1/15/15.md">
+              Docker
+            </Link>
+          </h2>
+        </div>
 
         <h2>Made with:</h2>
         <div className="aboutLinks">
-          <p>
-            <Link href="https://nextjs.org/">Next.js</Link>
-          </p>
-          <p>
-            <Link href="https://material-ui.com/">Material UI</Link>
-          </p>
-          <p>
-            <Link href="https://vercel.com/">Vercel</Link>
-          </p>
-          <p>
-            <Link href="https://www.mongodb.com/">MongoDB</Link>
-          </p>
-          <p>
-            <Link href="https://www.mapbox.com/mapbox-gljs">Mapbox GL JS</Link>
-          </p>
-          <p>
-            <Link href="https://react-hook-form.com/">React Hook Form</Link>
-          </p>
+          {aboutLinks.map((link) => (
+            <Link href={link.link}>{link.text}</Link>
+          ))}
         </div>
 
         <Image src={lighthouse} alt="lighthouse" width="350px" height="124px" />
