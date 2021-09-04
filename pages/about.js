@@ -1,6 +1,8 @@
 import Link from "@material-ui/core/Link";
 import Head from "next/head";
+import Image from "next/image";
 import Header from "../components/Header";
+import lighthouse from "../public/lighthouse.webp";
 
 export default function Books() {
   return (
@@ -50,6 +52,8 @@ export default function Books() {
             <Link href="https://react-hook-form.com/">React Hook Form</Link>
           </p>
         </div>
+
+        <Image src={lighthouse} alt="lighthouse" width="350px" height="124px" />
       </div>
     </div>
   );
