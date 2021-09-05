@@ -11,6 +11,7 @@ import SendIcon from "@material-ui/icons/Send";
 import react from "../public/icons/react.svg";
 import telegram from "../public/icons/telegram.svg";
 import twitter from "../public/icons/twitter.svg";
+import facebook from "../public/icons/facebook.svg";
 import hashnode from "../public/icons/hashnode.svg";
 import hackernoon from "../public/icons/hackernoon.svg";
 import gmail from "../public/icons/gmail.svg";
@@ -97,6 +98,14 @@ export default function Contact() {
         <div className="link">
           <a href="https://twitter.com/crapp_blog" className="contactLink">
             <Image alt="twitter logo" src={twitter} width={58} height={58} />
+          </a>
+        </div>
+        <div className="link">
+          <a
+            href="https://www.facebook.com/koripallopaikat"
+            className="contactLink"
+          >
+            <Image alt="facebook logo" src={facebook} width={58} height={58} />
           </a>
         </div>
         <div className="link">

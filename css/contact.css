@@ -51,8 +51,9 @@ textarea {
 @media (max-width: 800px) {
   .contactsContainer {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10%;
     place-items: center;
+    margin: 3%;
   }
 }
