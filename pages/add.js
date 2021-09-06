@@ -212,7 +212,7 @@ export default function Add() {
       </Head>
       <Header />
       <div class="colored">
-        <h1>Add a new basketball court</h1>
+        <h1 className="coloredText">Add a new basketball court</h1>
       </div>
       <div className="canvas-container">
         <div
