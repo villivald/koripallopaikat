@@ -12,6 +12,7 @@ import react from "../public/icons/react.svg";
 import telegram from "../public/icons/telegram.svg";
 import twitter from "../public/icons/twitter.svg";
 import facebook from "../public/icons/facebook.svg";
+import instagram from "../public/icons/instagram.svg";
 import hashnode from "../public/icons/hashnode.svg";
 import hackernoon from "../public/icons/hackernoon.svg";
 import gmail from "../public/icons/gmail.svg";
@@ -106,6 +107,19 @@ export default function Contact() {
             className="contactLink"
           >
             <Image alt="facebook logo" src={facebook} width={58} height={58} />
+          </a>
+        </div>
+        <div className="link">
+          <a
+            href="https://www.instagram.com/koripallopaikat/"
+            className="contactLink"
+          >
+            <Image
+              alt="instagram logo"
+              src={instagram}
+              width={58}
+              height={58}
+            />
           </a>
         </div>
         <div className="link">
