@@ -155,7 +155,7 @@ export default function Contact() {
       </div>
       <h2 className="contactHeader">Or send an email ✉️</h2>
       <div className="form">
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="contactForm">
           <div className="input">
             <TextField
               label="Name"
