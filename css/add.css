@@ -55,7 +55,7 @@
 }
 
 .colored {
-  padding: 45px;
+  padding: 50px;
   line-height: 1;
   display: grid;
   place-items: center;
@@ -63,14 +63,14 @@
   background-image: url("https://www.villivald.com/koripallopaikat/blob4.svg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 160% 160%;
+  background-size: 155% 155%;
 }
 
 .coloredText {
   font-weight: 900;
   width: min-content;
   margin: auto;
-  font-size: 3vw;
+  font-size: 2.6rem;
   text-transform: uppercase;
   background: linear-gradient(
     219deg,
@@ -88,6 +88,12 @@
   color: transparent;
 }
 
+@media (max-width: 700px) {
+  .coloredText {
+    font-size: 2.3rem;
+  }
+}
+
 @media (max-width: 500px) {
   .form {
     margin: 0 10px 10px 10px;
@@ -99,6 +105,14 @@
 
   .addChip {
     margin-top: 30px;
+  }
+
+  .coloredText {
+    font-size: 2rem;
+  }
+
+  .colored {
+    padding: 40px;
   }
 }
 
