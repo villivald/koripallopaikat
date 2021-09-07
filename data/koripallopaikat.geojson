@@ -1031,6 +1031,54 @@
         "coordinates": [25.07002416213716, 60.32246434306286],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Agronominkatu, 22",
+        "description": "School yard",
+        "link": "/courts/Agronominkatu,%2022"
+      },
+      "geometry": {
+        "coordinates": [25.037825090807086, 60.23239705336727],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Puotilan metrokatu, 2",
+        "description": "Sports park",
+        "link": "/courts/Puotilan%20metrokatu,%202"
+      },
+      "geometry": {
+        "coordinates": [25.096406134799288, 60.21553083545172],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Rusthollarintie, 6",
+        "description": "School yard",
+        "link": "/courts/Rusthollarintie,%206"
+      },
+      "geometry": {
+        "coordinates": [25.094402222243833, 60.21088402982613],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Rusthollarintie, 6",
+        "description": "School yard",
+        "link": "/courts/Rusthollarintie,%207"
+      },
+      "geometry": {
+        "coordinates": [25.098954313102894, 60.21403180285002],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
