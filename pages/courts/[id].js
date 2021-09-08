@@ -45,6 +45,9 @@ const Page = ({ courts }) => {
           <p>Type: {currentCourt.type}</p>
         </div>
         <h2>Distance: {d > 1000 ? <CircularProgress size={30} /> : d} km</h2>
+        {currentCourt.credentials && (
+          <h3>Added by {currentCourt.credentials}</h3>
+        )}
         <div className="idLinks">
           <Button size="small" href={currentCourt.link} aria-label="court link">
             <LinkIcon className="iconLink" />

@@ -119,6 +119,7 @@ export default function Add() {
       baskets: data.baskets,
       pic: url,
       link: data.link,
+      credentials: data.credentials,
     };
     postData(form);
   };
@@ -211,7 +212,7 @@ export default function Add() {
         <link rel="icon" href="favicons/favicon.ico" />
       </Head>
       <Header />
-      <div class="colored">
+      <div className="colored">
         <h1 className="coloredText">Add a new basketball court</h1>
       </div>
       <div className="canvas-container">
@@ -224,7 +225,7 @@ export default function Add() {
       <div className="form">
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="input">
-            <div id="geocoder">Address</div>
+            <div id="geocoder">Address *</div>
             <p className="or">OR</p>
             <Button
               variant="contained"
@@ -303,6 +304,12 @@ export default function Add() {
               label="Link"
               placeholder="https://nba.com"
               {...register("link")}
+            />
+            <TextField
+              className={classes.input}
+              label="Your name or link to your account"
+              placeholder="@koripallopaikat"
+              {...register("credentials")}
             />
           </div>
           {(errors.address || errors.baskets || errors.url) && (

@@ -22,6 +22,9 @@ const CourtSchema = new mongoose.Schema({
   link: {
     type: String,
   },
+  credentials: {
+    type: String,
+  },
 });
 
 export default mongoose.models.Court || mongoose.model("Court", CourtSchema);
