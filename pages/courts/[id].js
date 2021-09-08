@@ -29,7 +29,6 @@ const Page = ({ courts }) => {
       <Header />
       <div className="idContainer">
         <h1 className="idHeader">{currentCourt.address}</h1>
-        {/* <img src={currentCourt.pic} className="idPic" /> */}
         <Carousel
           showThumbs={false}
           showStatus={false}
@@ -37,8 +36,8 @@ const Page = ({ courts }) => {
           swipeable={true}
         >
           <img className="idPic" src={currentCourt.pic} />
-          <img className="idPic" src={currentCourt.pic} />
-          <img className="idPic" src={currentCourt.pic} />
+          <img className="idPic" src={currentCourt.pic1 || currentCourt.pic} />
+          <img className="idPic" src={currentCourt.pic2 || currentCourt.pic} />
         </Carousel>
         <div className="idInfo">
           <p>Baskets: {currentCourt.baskets}</p>
