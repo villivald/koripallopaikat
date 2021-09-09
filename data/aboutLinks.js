@@ -13,7 +13,7 @@ const aboutLinks = [
   },
   {
     link: "https://www.mongodb.com/",
-    text: "Vercel",
+    text: "MongoDB",
   },
   {
     link: "https://www.mapbox.com/mapbox-gljs",
