@@ -18,6 +18,7 @@ import hackernoon from "../public/icons/hackernoon.svg";
 import gmail from "../public/icons/gmail.svg";
 import github from "../public/icons/github-icon.svg";
 import dev from "../public/icons/dev-badge.svg";
+import buyme from "../public/icons/buyme.svg";
 import eleventy from "../public/icons/11ty.webp";
 
 export default function Contact() {
@@ -150,6 +151,19 @@ export default function Contact() {
         <div className="link">
           <a href="mailto:koripallopaikat@gmail.com" className="contactLink">
             <Image alt="gmail logo" src={gmail} width={58} height={58} />
+          </a>
+        </div>
+        <div className="link">
+          <a
+            href="https://www.buymeacoffee.com/villivald"
+            className="contactLink"
+          >
+            <Image
+              alt="buy me a coffee logo"
+              src={buyme}
+              width={58}
+              height={58}
+            />
           </a>
         </div>
       </div>
