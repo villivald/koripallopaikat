@@ -1071,12 +1071,24 @@
     {
       "type": "Feature",
       "properties": {
-        "title": "Rusthollarintie, 6",
+        "title": "Rusthollarintie, 7",
         "description": "School yard",
         "link": "/courts/Rusthollarintie,%207"
       },
       "geometry": {
         "coordinates": [25.098954313102894, 60.21403180285002],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Lastenkodinkuja, 8",
+        "description": "School yard",
+        "link": "/courts/Lastenkodinkuja,%208"
+      },
+      "geometry": {
+        "coordinates": [24.925207900578137, 60.166749247066626],
         "type": "Point"
       }
     }
