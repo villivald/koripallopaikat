@@ -43,3 +43,47 @@
   background-color: rgb(152, 211, 182);
   padding: 10px;
 }
+
+.projectText {
+  max-width: 350px;
+  font-family: "Mate" !important;
+}
+
+.projectLinks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 350px;
+}
+
+.projectLinks > svg > g > text > a {
+  text-decoration: underline;
+}
+
+.projectTextHighlight {
+  text-decoration: underline wavy #1a4e55;
+  text-underline-offset: 0.25em;
+}
+
+.aboutProjectContainer {
+  border-right: 4px solid black;
+}
+
+@media (max-width: 800px) {
+  .aboutProjectContainer {
+    border-right: none;
+  }
+}
+@media (max-width: 700px) {
+  .aboutBlob {
+    width: 150px;
+  }
+  .aboutProjectContainer {
+    padding-left: 2%;
+  }
+}
+@media (max-width: 550px) {
+  .projectLinks {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
