@@ -1091,6 +1091,18 @@
         "coordinates": [24.925207900578137, 60.166749247066626],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Laivuri Petterin kuja, 3",
+        "description": "Play park",
+        "link": "/courts/Laivuri%20Petterin kuja,%203"
+      },
+      "geometry": {
+        "coordinates": [25.032752935428846, 60.230226940452106],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
