@@ -81,9 +81,30 @@
     padding-left: 2%;
   }
 }
+@media (max-width: 600px) {
+  .techInfoSubHeader {
+    font-size: 1rem;
+  }
+  .aboutLinks {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+}
 @media (max-width: 550px) {
   .projectLinks {
     display: grid;
     grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .aboutLinks {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 400px) {
+  .projectInfoHeader,
+  .techInfoHeader {
+    padding: 5px;
+    font-size: 1.5rem;
   }
 }

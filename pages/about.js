@@ -38,8 +38,7 @@ export default function Books() {
                   transform="translate(100 100)"
                 />
                 <text x="23" y="110">
-                  Made by{" "}
-                  <Link href="https://github.com/villivald/">villivald</Link> 👨‍🏫
+                  Made by <Link href="https://villivald.com">villivald</Link> 👨‍🏫
                 </text>
               </g>
             </svg>
@@ -82,10 +81,10 @@ export default function Books() {
         </div>
         <div className="aboutTechContainer">
           <h1 className="techInfoHeader">Tech info</h1>
-          <h2>
+          <h2 className="techInfoSubHeader">
             App live on <Link href="https://koripallopaikat.com/">Vercel</Link>
           </h2>
-          <h2>
+          <h2 className="techInfoSubHeader">
             Source Code on{" "}
             <Link href="https://github.com/villivald/koripallopaikat">
               GitHub
@@ -93,18 +92,18 @@ export default function Books() {
           </h2>
 
           <div class="apiDockerLinks">
-            <h2>
+            <h2 className="techInfoSubHeader">
               <Link href="/api/savedCourts">API</Link>
             </h2>
 
-            <h2>
+            <h2 className="techInfoSubHeader">
               <Link href="https://github.com/villivald/DevOps-with-Docker/blob/main/Part_1/15/15.md">
                 Docker
               </Link>
             </h2>
           </div>
 
-          <h2>Made with:</h2>
+          <h2 className="techInfoSubHeader">Made with:</h2>
           <div className="aboutLinks">
             {aboutLinks.map((link) => (
               <Link href={link.link}>{link.text}</Link>
@@ -113,7 +112,7 @@ export default function Books() {
 
           <Image
             src={lighthouse}
-            alt="lighthouse"
+            alt="lighthouse score: Performance = 97, A11 = 100, Best Practices = 100, SEO = 100"
             width="350px"
             height="124px"
           />
