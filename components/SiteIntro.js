@@ -16,7 +16,7 @@ const SiteIntro = () => {
           />
         </Link>
         <Link href="https://villivald.com">
-          <span class="toolTipText">
+          <span className="toolTipText">
             Psst, Hey You. Wanna see where I came from?{" "}
           </span>
         </Link>
