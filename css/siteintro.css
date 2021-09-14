@@ -30,16 +30,49 @@
   animation-iteration-count: infinite;
 }
 
-.cat {
+.toolTipCat {
   position: absolute;
   transform: rotate(30deg);
-  margin-left: -50%;
+  margin-left: -100%;
   cursor: pointer;
+  z-index: 1;
 }
 
-.cat:hover {
+.toolTipText {
+  font-size: 1rem;
+}
+
+/* .toolTip:hover {
   margin-left: -48%;
   transition: all 0.5s ease-in-out;
+} */
+
+.toolTipText {
+  visibility: hidden;
+  width: 130px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 2px;
+  position: absolute;
+  top: -15%;
+  left: 70%;
+  transform: rotate(-30deg);
+}
+
+.toolTipText::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+.toolTipCat:hover .toolTipText {
+  visibility: visible;
 }
 
 @keyframes spin-animation {
