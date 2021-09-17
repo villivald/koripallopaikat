@@ -1103,6 +1103,66 @@
         "coordinates": [25.032752935428846, 60.230226940452106],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Mäkelänkatu, 74",
+        "description": "Sports park",
+        "link": "/courts/Mäkelänkatu,%2074"
+      },
+      "geometry": {
+        "coordinates": [24.943247034950154, 60.20549160741699],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Kanneltie, 1",
+        "description": "School yard",
+        "link": "/courts/Kanneltie,%201"
+      },
+      "geometry": {
+        "coordinates": [24.881631952217838, 60.24126038463571],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Kanneltie, 3",
+        "description": "School yard",
+        "link": "/courts/Kanneltie,%203"
+      },
+      "geometry": {
+        "coordinates": [24.880822623387846, 60.241421885198866],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Soittajanpolku, 9",
+        "description": "Sports park",
+        "link": "/courts/Soittajanpolku,%209"
+      },
+      "geometry": {
+        "coordinates": [24.87547798675897, 60.243647348841215],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Luutnantinpolku, 7",
+        "description": "Sports field",
+        "link": "/courts/Luutnantinpolku,%207"
+      },
+      "geometry": {
+        "coordinates": [24.86695458373118, 60.24691270876541],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
