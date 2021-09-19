@@ -95,6 +95,12 @@
   color: #b7021a !important;
 }
 
+.childrenAlert {
+  position: absolute;
+  margin-top: 7%;
+  margin-left: 17%;
+}
+
 @media (max-width: 1300px) {
   .MuiCardActions-spacing > :not(:first-child) {
     margin-left: -10px !important;
@@ -113,6 +119,15 @@
   .iconLinks.MuiCardActions-spacing > :first-child {
     margin-left: -10px !important;
   }
+  .childrenAlert {
+    margin-top: 8%;
+    margin-left: 12%;
+  }
+}
+@media (max-width: 1250px) {
+  .childrenAlert {
+    margin-left: 13%;
+  }
 }
 @media (max-width: 1050px) {
   .listCourt {
@@ -124,10 +139,18 @@
   .MuiCardActions-spacing > :first-child {
     margin-left: -10px !important;
   }
+  .childrenAlert {
+    margin-top: 10%;
+    margin-left: 15%;
+  }
 }
 @media (max-width: 900px) {
   .sortFilter.sort {
     margin-top: 40px;
+  }
+  .childrenAlert {
+    margin-top: 12%;
+    margin-left: 17%;
   }
 }
 @media (max-width: 850px) {
@@ -137,10 +160,20 @@
   .listCourt.search {
     grid-template-columns: repeat(3, 1fr);
   }
+  .childrenAlert {
+    margin-top: 12%;
+    margin-left: 20%;
+  }
 }
 @media (max-width: 800px) {
   .sortFilter.sort {
     margin-top: 0px;
+  }
+}
+@media (max-width: 700px) {
+  .childrenAlert {
+    margin-top: 15%;
+    margin-left: 23%;
   }
 }
 @media (max-width: 650px) {
@@ -154,6 +187,22 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-left: 80px;
+  }
+  .childrenAlert {
+    margin-top: 15%;
+    margin-left: 33%;
+  }
+}
+@media (max-width: 600px) {
+  .childrenAlert {
+    margin-top: 17%;
+    margin-left: 31%;
+  }
+}
+@media (max-width: 550px) {
+  .childrenAlert {
+    margin-top: 18%;
+    margin-left: 29%;
   }
 }
 @media (max-width: 500px) {
@@ -179,6 +228,10 @@
   .courtBasketsMobile {
     display: block;
   }
+  .childrenAlert {
+    margin-top: 20%;
+    margin-left: 32%;
+  }
 }
 @media (max-width: 450px) {
   .listCourt {
@@ -196,5 +249,9 @@
   .sortFilter.sort {
     grid-template-columns: repeat(2, 1fr);
     margin-left: 50px;
+  }
+  .childrenAlert {
+    margin-top: 22%;
+    margin-left: 28%;
   }
 }

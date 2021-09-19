@@ -35,6 +35,15 @@ const CourtList = ({ court }) => {
           title="basketball court"
         />
       </Link>
+      {court.childrenAlert && (
+        <img
+          src="../children.png"
+          alt="Warning, Children"
+          height={40}
+          width={40}
+          className="childrenAlert"
+        />
+      )}
       <CardContent>
         <Typography color="textPrimary">
           <Link
