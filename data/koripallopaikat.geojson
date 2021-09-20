@@ -1163,6 +1163,18 @@
         "coordinates": [24.86695458373118, 60.24691270876541],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Heteniityntie, 6",
+        "description": "Outdoor basketball court",
+        "link": "/courts/Heteniityntie,%206"
+      },
+      "geometry": {
+        "coordinates": [25.13855858872816, 60.21681123628741],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
