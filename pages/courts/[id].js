@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
+import Link from "@material-ui/core/Link";
 import Button from "@material-ui/core/Button";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import ImageOutlinedIcon from "@material-ui/icons/ImageOutlined";
@@ -47,14 +48,14 @@ const Page = ({ courts }) => {
         {currentCourt.credentials && (
           <h3>
             Added by{" "}
-            <a href={currentCourt.credentials}>
+            <Link href={currentCourt.credentials}>
               {currentCourt.credentials.includes("http")
                 ? currentCourt.credentials.slice(
                     currentCourt.credentials.indexOf(".com/") + 5,
                     currentCourt.credentials.length
                   )
                 : anonymous}
-            </a>{" "}
+            </Link>{" "}
             ⛹️
           </h3>
         )}
