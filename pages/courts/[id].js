@@ -1,4 +1,3 @@
-import React from "react";
 import { useRouter } from "next/router";
 import Head from "next/head";
 import Button from "@material-ui/core/Button";
@@ -46,7 +45,18 @@ const Page = ({ courts }) => {
         </div>
         <h2>Distance: {d > 1000 ? <CircularProgress size={30} /> : d} km</h2>
         {currentCourt.credentials && (
-          <h3>Added by {currentCourt.credentials}</h3>
+          <h3>
+            Added by{" "}
+            <a href={currentCourt.credentials}>
+              {currentCourt.credentials.includes("http")
+                ? currentCourt.credentials.slice(
+                    currentCourt.credentials.indexOf(".com/") + 5,
+                    currentCourt.credentials.length
+                  )
+                : anonymous}
+            </a>{" "}
+            ⛹️
+          </h3>
         )}
         <div className="idLinks">
           <Button size="small" href={currentCourt.link} aria-label="court link">
