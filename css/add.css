@@ -26,6 +26,10 @@
 .submitHeader {
   text-align: center;
   margin-top: 50px;
+}
+.submitTimeCounter {
+  text-align: center;
+  margin-top: 20px;
   margin-bottom: 120px;
 }
 

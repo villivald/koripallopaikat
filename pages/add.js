@@ -48,6 +48,8 @@ export default function Add() {
   const [placeType, setPlaceType] = useState("");
   const [address, setAddress] = useState("");
 
+  const [seconds, setSeconds] = useState(20);
+
   const handleSurfaceChange = (event) => {
     setSurface(event.target.value);
   };
@@ -103,7 +105,11 @@ export default function Add() {
       setTimeout(() => {
         setVisible(false);
         router.reload("/add");
-      }, 10000);
+      }, 20000);
+
+      setInterval(() => {
+        setSeconds((seconds) => seconds - 1);
+      }, 1000);
 
       console.log("New court is successfully added");
     } catch (error) {
@@ -222,120 +228,124 @@ export default function Add() {
           style={{ display: showMap }}
         />
       </div>
-      <div className="form">
-        <form onSubmit={handleSubmit(onSubmit)}>
-          <div className="input">
-            <div id="geocoder">Address *</div>
-            <p className="or">OR</p>
+      {!visible ? (
+        <div className="form">
+          <form onSubmit={handleSubmit(onSubmit)}>
+            <div className="input">
+              <div id="geocoder">Address *</div>
+              <p className="or">OR</p>
+              <Button
+                variant="contained"
+                color={showMap === "none" ? "primary" : "secondary"}
+                startIcon={<RoomIcon />}
+                onClick={handleHideMap}
+              >
+                {showMap === "none" ? "Pick from the" : "Hide"} Map
+              </Button>
+              <h2 className="addressString">{address}</h2>
+              <TextField
+                className={classes.input}
+                select
+                label="Surface"
+                value={surface}
+                onChange={handleSurfaceChange}
+              >
+                {surfaces.map((option) => (
+                  <MenuItem key={option.value} value={option.value}>
+                    {option.value}
+                  </MenuItem>
+                ))}
+              </TextField>
+              <TextField
+                className={classes.input}
+                select
+                label="Place type"
+                value={placeType}
+                onChange={handlePlaceTypeChange}
+              >
+                {placeTypes.map((option) => (
+                  <MenuItem key={option.value} value={option.value}>
+                    {option.value}
+                  </MenuItem>
+                ))}
+              </TextField>
+              <TextField
+                required
+                className={classes.input}
+                label="Baskets"
+                type="number"
+                placeholder="4"
+                {...register("baskets", { required: true })}
+              />
+              <div className="imageUploading">
+                <InputLabel required={true} style={{ margin: "10px 0" }}>
+                  Image
+                </InputLabel>
+                <InputBase
+                  inputProps={{ "aria-label": "naked" }}
+                  type="file"
+                  onChange={(e) => setImage(e.target.files[0])}
+                />
+                <Button
+                  className="uploadButton"
+                  variant="contained"
+                  color="primary"
+                  startIcon={<CloudUploadIcon />}
+                  onClick={uploadImage}
+                >
+                  Upload
+                </Button>
+              </div>
+              <div className="addChip">
+                {url && (
+                  <Chip
+                    label="Image was successfully loaded"
+                    color="primary"
+                    icon={<CheckIcon />}
+                    variant="outlined"
+                  />
+                )}
+              </div>
+              <TextField
+                className={classes.input}
+                label="Link"
+                placeholder="https://nba.com"
+                {...register("link")}
+              />
+              <TextField
+                className={classes.input}
+                label="Your name or link to your account"
+                placeholder="@koripallopaikat"
+                {...register("credentials")}
+              />
+            </div>
+            {(errors.address || errors.baskets || errors.url) && (
+              <Snackbar open={open}>
+                <Alert severity="error">
+                  Address, Baskets and Picture fields are required
+                </Alert>
+              </Snackbar>
+            )}
             <Button
               variant="contained"
-              color={showMap === "none" ? "primary" : "secondary"}
-              startIcon={<RoomIcon />}
-              onClick={handleHideMap}
+              color="primary"
+              type="submit"
+              className={classes.submit}
             >
-              {showMap === "none" ? "Pick from the" : "Hide"} Map
+              Submit
             </Button>
-            <h2 className="addressString">{address}</h2>
-            <TextField
-              className={classes.input}
-              select
-              label="Surface"
-              value={surface}
-              onChange={handleSurfaceChange}
-            >
-              {surfaces.map((option) => (
-                <MenuItem key={option.value} value={option.value}>
-                  {option.value}
-                </MenuItem>
-              ))}
-            </TextField>
-            <TextField
-              className={classes.input}
-              select
-              label="Place type"
-              value={placeType}
-              onChange={handlePlaceTypeChange}
-            >
-              {placeTypes.map((option) => (
-                <MenuItem key={option.value} value={option.value}>
-                  {option.value}
-                </MenuItem>
-              ))}
-            </TextField>
-            <TextField
-              required
-              className={classes.input}
-              label="Baskets"
-              type="number"
-              placeholder="4"
-              {...register("baskets", { required: true })}
-            />
-            <div className="imageUploading">
-              <InputLabel required={true} style={{ margin: "10px 0" }}>
-                Image
-              </InputLabel>
-              <InputBase
-                inputProps={{ "aria-label": "naked" }}
-                type="file"
-                onChange={(e) => setImage(e.target.files[0])}
-              />
-              <Button
-                className="uploadButton"
-                variant="contained"
-                color="primary"
-                startIcon={<CloudUploadIcon />}
-                onClick={uploadImage}
-              >
-                Upload
-              </Button>
-            </div>
-            <div className="addChip">
-              {url && (
-                <Chip
-                  label="Image was successfully loaded"
-                  color="primary"
-                  icon={<CheckIcon />}
-                  variant="outlined"
-                />
-              )}
-            </div>
-            <TextField
-              className={classes.input}
-              label="Link"
-              placeholder="https://nba.com"
-              {...register("link")}
-            />
-            <TextField
-              className={classes.input}
-              label="Your name or link to your account"
-              placeholder="@koripallopaikat"
-              {...register("credentials")}
-            />
-          </div>
-          {(errors.address || errors.baskets || errors.url) && (
-            <Snackbar open={open}>
-              <Alert severity="error">
-                Address, Baskets and Picture fields are required
-              </Alert>
-            </Snackbar>
-          )}
-          <Button
-            variant="contained"
-            color="primary"
-            type="submit"
-            className={classes.submit}
-          >
-            Submit
-          </Button>
-        </form>
-      </div>
-      {visible && (
+          </form>
+        </div>
+      ) : (
         <>
           <h2 className="submitHeader">
             Thank you for contribution. New Court is successfully added to a
             database and will be reviewed soon 👋.
           </h2>
-          <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+          <h2 className="submitTimeCounter">
+            This page will refresh in {seconds} seconds.
+          </h2>
+          <Snackbar open={open} onClose={handleClose}>
             <Alert onClose={handleClose} severity="success">
               Success!
             </Alert>
