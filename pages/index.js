@@ -14,7 +14,10 @@ const Home = () => {
         <link rel="icon" href="favicons/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="monetization" content="$ilp.uphold.com/jzMkjAp8m9FZ" />
-        <meta name="description" content="Helsingin koripallopaikat" />
+        <meta
+          name="description"
+          content="A curated collection of public basketball courts in the Helsinki Metropolitan Area. Everyone is welcome to submit their local court."
+        />
       </Head>
       <Header />
       <SiteIntro />
