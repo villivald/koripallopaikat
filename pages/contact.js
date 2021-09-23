@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Header from "../components/Header";
 import Image from "next/image";
 import Head from "next/head";
 import TextField from "@material-ui/core/TextField";
@@ -8,24 +7,13 @@ import Snackbar from "@material-ui/core/Snackbar";
 import Alert from "@material-ui/lab/Alert";
 import Button from "@material-ui/core/Button";
 import SendIcon from "@material-ui/icons/Send";
-import react from "../public/icons/react.svg";
-import telegram from "../public/icons/telegram.svg";
-import twitter from "../public/icons/twitter.svg";
-import facebook from "../public/icons/facebook.svg";
-import instagram from "../public/icons/instagram.svg";
-import hashnode from "../public/icons/hashnode.svg";
-import hackernoon from "../public/icons/hackernoon.svg";
-import gmail from "../public/icons/gmail.svg";
-import github from "../public/icons/github-icon.svg";
-import dev from "../public/icons/dev-badge.svg";
-import buyme from "../public/icons/buyme.svg";
-import eleventy from "../public/icons/11ty.webp";
+import Header from "../components/Header";
+import contactLinks from "../data/contactLinks";
 
 export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-
   const [visible, setVisible] = useState(false);
 
   const handleClose = (event, reason) => {
@@ -82,90 +70,18 @@ export default function Contact() {
       </div>
       <h2 className="contactHeader">Connect with me on social 👋</h2>
       <div className="contactsContainer">
-        <div className="link">
-          <a href="https://villivald.com" className="contactLink">
-            <Image alt="react logo" src={react} width={58} height={58} />
-          </a>
-        </div>
-        <div className="link">
-          <a href="https://create-react-app.com" className="contactLink">
-            <Image alt="eleventy logo" src={eleventy} width={58} height={58} />
-          </a>
-        </div>
-        <div className="link">
-          <a href="https://github.com/villivald" className="contactLink">
-            <Image alt="git logo" src={github} width={58} height={58} />
-          </a>
-        </div>
-        <div className="link">
-          <a href="https://twitter.com/crapp_blog" className="contactLink">
-            <Image alt="twitter logo" src={twitter} width={58} height={58} />
-          </a>
-        </div>
-        <div className="link">
-          <a
-            href="https://www.facebook.com/koripallopaikat"
-            className="contactLink"
-          >
-            <Image alt="facebook logo" src={facebook} width={58} height={58} />
-          </a>
-        </div>
-        <div className="link">
-          <a
-            href="https://www.instagram.com/koripallopaikat/"
-            className="contactLink"
-          >
-            <Image
-              alt="instagram logo"
-              src={instagram}
-              width={58}
-              height={58}
-            />
-          </a>
-        </div>
-        <div className="link">
-          <a href="https://dev.to/villivald" className="contactLink">
-            <Image alt="dev.to logo" src={dev} width={58} height={58} />
-          </a>
-        </div>
-        <div className="link">
-          <a href="https://hackernoon.com/u/villivald" className="contactLink">
-            <Image
-              alt="hackernoon logo"
-              src={hackernoon}
-              width={58}
-              height={58}
-            />
-          </a>
-        </div>
-        <div className="link">
-          <a href="https://proj.ninja" className="contactLink">
-            <Image alt="hashnode logo" src={hashnode} width={58} height={58} />
-          </a>
-        </div>
-        <div className="link">
-          <a href="https://t.me/create_react_app" className="contactLink">
-            <Image alt="telegram logo" src={telegram} width={58} height={58} />
-          </a>
-        </div>
-        <div className="link">
-          <a href="mailto:koripallopaikat@gmail.com" className="contactLink">
-            <Image alt="gmail logo" src={gmail} width={58} height={58} />
-          </a>
-        </div>
-        <div className="link">
-          <a
-            href="https://www.buymeacoffee.com/villivald"
-            className="contactLink"
-          >
-            <Image
-              alt="buy me a coffee logo"
-              src={buyme}
-              width={58}
-              height={58}
-            />
-          </a>
-        </div>
+        {contactLinks.map((contact) => (
+          <div className="link">
+            <a href={contact.link} className="contactLink">
+              <Image
+                alt={`${contact.alt} logo`}
+                src={contact.src}
+                width={58}
+                height={58}
+              />
+            </a>
+          </div>
+        ))}
       </div>
       <h2 className="contactHeader">Or send an email ✉️</h2>
       <div className="form">

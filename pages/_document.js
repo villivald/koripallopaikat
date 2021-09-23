@@ -13,6 +13,7 @@ class MyDocument extends Document {
             name="description"
             content="A curated collection of public basketball courts in the Helsinki Metropolitan Area. Everyone is welcome to submit their local court."
           />
+          <meta name="monetization" content="$ilp.uphold.com/jzMkjAp8m9FZ" />
 
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://koripallopaikat.com/" />
