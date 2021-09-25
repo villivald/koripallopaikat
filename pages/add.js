@@ -14,6 +14,7 @@ import MenuItem from "@material-ui/core/MenuItem";
 import CloudUploadIcon from "@material-ui/icons/CloudUpload";
 import CheckIcon from "@material-ui/icons/Check";
 import RoomIcon from "@material-ui/icons/Room";
+import PublishIcon from "@material-ui/icons/Publish";
 import Header from "../components/Header";
 import surfaces from "../data/surfaces";
 import placeTypes from "../data/placeTypes";
@@ -28,7 +29,7 @@ const useStyles = makeStyles(() => ({
   },
 
   submit: {
-    margin: "20px 0 10px 0",
+    margin: "21px 0 50px 0",
   },
 }));
 
@@ -308,7 +309,7 @@ export default function Add() {
               </div>
               <TextField
                 className={classes.input}
-                label="Link"
+                label="Court link"
                 placeholder="https://nba.com"
                 {...register("link")}
               />
@@ -331,6 +332,7 @@ export default function Add() {
               color="primary"
               type="submit"
               className={classes.submit}
+              startIcon={<PublishIcon />}
             >
               Submit
             </Button>
