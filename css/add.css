@@ -39,6 +39,10 @@ form {
   margin-bottom: -30px;
 }
 
+.imageUploadBar {
+  display: flex;
+}
+
 .addChip {
   margin-top: 15px;
 }
@@ -116,25 +120,24 @@ form {
   .coloredText {
     font-size: 2.3rem;
   }
+  div.imageUploading > div > div {
+    width: 70%;
+  }
 }
 
 @media (max-width: 500px) {
   .form {
     margin: 0 10px 10px 10px;
   }
-
   .uploadButton {
     margin-top: 15px !important;
   }
-
   .addChip {
     margin-top: 30px;
   }
-
   .coloredText {
     font-size: 2rem;
   }
-
   .colored {
     padding: 40px;
   }

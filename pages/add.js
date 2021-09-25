@@ -307,20 +307,22 @@ export default function Add() {
                 <InputLabel required={true} style={{ margin: "10px 0" }}>
                   Image
                 </InputLabel>
-                <InputBase
-                  inputProps={{ "aria-label": "naked" }}
-                  type="file"
-                  onChange={(e) => setImage(e.target.files[0])}
-                />
-                <UploadButton
-                  className="uploadButton"
-                  variant="contained"
-                  color="primary"
-                  startIcon={<CloudUploadIcon />}
-                  onClick={uploadImage}
-                >
-                  Upload
-                </UploadButton>
+                <div className="imageUploadBar">
+                  <InputBase
+                    inputProps={{ "aria-label": "naked" }}
+                    type="file"
+                    onChange={(e) => setImage(e.target.files[0])}
+                  />
+                  <UploadButton
+                    className="uploadButton"
+                    variant="contained"
+                    color="primary"
+                    startIcon={<CloudUploadIcon />}
+                    onClick={uploadImage}
+                  >
+                    Upload
+                  </UploadButton>
+                </div>
               </div>
               <div className="addChip">
                 {url && (
