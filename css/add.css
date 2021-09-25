@@ -129,17 +129,17 @@ form {
   .form {
     margin: 0 10px 10px 10px;
   }
-  .uploadButton {
-    margin-top: 15px !important;
-  }
   .addChip {
     margin-top: 30px;
   }
   .coloredText {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
   .colored {
     padding: 40px;
+  }
+  .imageUploading {
+    margin-bottom: -45px;
   }
 }
 
@@ -148,11 +148,9 @@ form {
     .form {
       margin: 0 10px 10px 10px;
     }
-
-    .uploadButton {
-      margin-top: 15px !important;
+    .coloredText {
+      font-size: 1.9rem;
     }
-
     .addChip {
       margin-top: 30px;
     }
