@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/router";
 import Head from "next/head";
 import { makeStyles } from "@material-ui/core/styles";
+import { styled } from "@material-ui/core/styles";
 import Snackbar from "@material-ui/core/Snackbar";
 import TextField from "@material-ui/core/TextField";
 import InputLabel from "@material-ui/core/InputLabel";
@@ -29,9 +30,33 @@ const useStyles = makeStyles(() => ({
   },
 
   submit: {
-    margin: "21px 0 50px 0",
+    margin: "20px 0 50px 0",
   },
 }));
+
+const MapButton = styled(Button)({
+  backgroundColor: "#82C99B",
+  color: "black",
+  "&:hover": {
+    backgroundColor: "#1A4E55",
+    color: "white",
+  },
+});
+const UploadButton = styled(Button)({
+  backgroundColor: "#DBCA2E",
+  color: "black",
+  "&:hover": {
+    backgroundColor: "#1A4E55",
+    color: "white",
+  },
+});
+const SubmitButton = styled(Button)({
+  backgroundColor: "#1A4E55",
+  color: "white",
+  "&:hover": {
+    backgroundColor: "#b72b38",
+  },
+});
 
 function Alert(props) {
   return <MuiAlert elevation={6} variant="filled" {...props} />;
@@ -235,14 +260,14 @@ export default function Add() {
             <div className="input">
               <div id="geocoder">Address *</div>
               <p className="or">OR</p>
-              <Button
+              <MapButton
                 variant="contained"
                 color={showMap === "none" ? "primary" : "secondary"}
                 startIcon={<RoomIcon />}
                 onClick={handleHideMap}
               >
                 {showMap === "none" ? "Pick from the" : "Hide"} Map
-              </Button>
+              </MapButton>
               <h2 className="addressString">{address}</h2>
               <TextField
                 className={classes.input}
@@ -287,7 +312,7 @@ export default function Add() {
                   type="file"
                   onChange={(e) => setImage(e.target.files[0])}
                 />
-                <Button
+                <UploadButton
                   className="uploadButton"
                   variant="contained"
                   color="primary"
@@ -295,7 +320,7 @@ export default function Add() {
                   onClick={uploadImage}
                 >
                   Upload
-                </Button>
+                </UploadButton>
               </div>
               <div className="addChip">
                 {url && (
@@ -327,15 +352,15 @@ export default function Add() {
                 </Alert>
               </Snackbar>
             )}
-            <Button
+            <SubmitButton
               variant="contained"
               color="primary"
               type="submit"
               className={classes.submit}
               startIcon={<PublishIcon />}
             >
-              Submit
-            </Button>
+              Submit Court
+            </SubmitButton>
           </form>
         </div>
       ) : (
