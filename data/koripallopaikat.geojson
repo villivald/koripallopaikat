@@ -1175,6 +1175,18 @@
         "coordinates": [25.13855858872816, 60.21681123628741],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Porvoonkatu 4",
+        "description": "Play park",
+        "link": "/courts/Porvoonkatu,%204"
+      },
+      "geometry": {
+        "coordinates": [24.949100424175402, 60.1890679904536],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
