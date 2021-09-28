@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import basket from "../public/blob.svg";
+import basketball from "../public/basketball.svg";
 
 const SiteIntro = () => {
   return (
@@ -29,7 +30,16 @@ const SiteIntro = () => {
           height={90}
           alt="site logo"
         />
-        Koripallopaikat <p className="spin">🏀</p>{" "}
+        Koripallopaikat{" "}
+        <p className="spin">
+          <Image
+            className="introImage"
+            src={basketball}
+            width={35}
+            height={35}
+            alt="picture of basketball"
+          />
+        </p>{" "}
       </h4>
     </div>
   );

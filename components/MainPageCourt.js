@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { Link as MUILink } from "@material-ui/core";
 import Image from "next/image";

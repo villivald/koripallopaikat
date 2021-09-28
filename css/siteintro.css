@@ -22,6 +22,8 @@
 }
 
 .spin {
+  display: grid;
+  place-items: center;
   animation: spin-animation 1.5s 1;
   cursor: pointer;
 }
