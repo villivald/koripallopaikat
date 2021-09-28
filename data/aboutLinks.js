@@ -23,6 +23,18 @@ const aboutLinks = [
     link: "https://react-hook-form.com/",
     text: "React Hook Form",
   },
+  {
+    link: "https://sendgrid.com/",
+    text: "SendGrid",
+  },
+  {
+    link: "https://openmoji.org/",
+    text: "OpenMoji",
+  },
+  {
+    link: "https://www.basketball-reference.com/players/c/carusal01.html",
+    text: "Goat",
+  },
 ];
 
 export default aboutLinks;

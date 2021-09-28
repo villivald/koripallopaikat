@@ -64,8 +64,8 @@
   text-underline-offset: 0.25em;
 }
 
-.aboutProjectContainer {
-  border-right: 4px solid black;
+.aboutTechContainer {
+  border-left: 4px solid black;
 }
 
 @media (max-width: 800px) {
@@ -88,6 +88,9 @@
   .aboutLinks {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+  }
+  .aboutLinks > a:nth-child(9) {
+    display: none;
   }
 }
 @media (max-width: 550px) {
