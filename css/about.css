@@ -69,8 +69,8 @@
 }
 
 @media (max-width: 800px) {
-  .aboutProjectContainer {
-    border-right: none;
+  .aboutTechContainer {
+    border-left: none;
   }
 }
 @media (max-width: 700px) {
