@@ -1179,12 +1179,24 @@
     {
       "type": "Feature",
       "properties": {
-        "title": "Porvoonkatu 4",
+        "title": "Porvoonkatu, 4",
         "description": "Play park",
         "link": "/courts/Porvoonkatu,%204"
       },
       "geometry": {
         "coordinates": [24.949100424175402, 60.1890679904536],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Työpajankatu, 2",
+        "description": "Playground",
+        "link": "/courts/Työpajankatu,%202"
+      },
+      "geometry": {
+        "coordinates": [24.97074741165267, 60.19038050323894],
         "type": "Point"
       }
     }
