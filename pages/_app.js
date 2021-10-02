@@ -12,6 +12,7 @@ import "../css/contact.css";
 import "../css/id.css";
 import "../css/weather.css";
 import "../css/search.css";
+import "../css/review.css";
 import "mapbox-gl/dist/mapbox-gl.css";
 
 import Router from "next/router";

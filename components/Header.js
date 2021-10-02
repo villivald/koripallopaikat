@@ -5,6 +5,7 @@ import MapOutlinedIcon from "@material-ui/icons/MapOutlined";
 import InfoOutlinedIcon from "@material-ui/icons/InfoOutlined";
 import PanToolOutlinedIcon from "@material-ui/icons/PanToolOutlined";
 import AddCircleOutlineIcon from "@material-ui/icons/AddCircleOutline";
+import ReviewIcon from "@material-ui/icons/AccessTimeOutlined";
 import ListIcon from "@material-ui/icons/List";
 import SearchIcon from "@material-ui/icons/Search";
 
@@ -49,6 +50,16 @@ const Header = () => {
           <a className={router.pathname == "/add" ? "active" : "linkContainer"}>
             <AddCircleOutlineIcon />
             Add
+          </a>
+        </Link>
+        <Link href="/review">
+          <a
+            className={
+              router.pathname == "/review" ? "active" : "linkContainer"
+            }
+          >
+            <ReviewIcon />
+            Review
           </a>
         </Link>
         <Link href="/about">

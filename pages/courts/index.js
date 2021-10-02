@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Head from "next/head";
 import { Box } from "@material-ui/core";
 import Pagination from "@material-ui/lab/Pagination";

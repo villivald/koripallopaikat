@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState } from "react";
 import Head from "next/head";
 import Header from "../components/Header";
 import mapboxgl from "!mapbox-gl";
