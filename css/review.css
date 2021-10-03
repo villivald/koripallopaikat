@@ -4,3 +4,14 @@
   place-items: center;
   margin: 1%;
 }
+
+@media (max-width: 1200px) {
+  .reviewContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 800px) {
+  .reviewContainer {
+    grid-template-columns: 1fr;
+  }
+}
