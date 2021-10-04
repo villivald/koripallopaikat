@@ -1199,6 +1199,18 @@
         "coordinates": [24.97074741165267, 60.19038050323894],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Maistraatintori, 1",
+        "description": "School yard",
+        "link": "/courts/Maistraatintori,%201"
+      },
+      "geometry": {
+        "coordinates": [24.923813851174017, 60.198686913053095],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
