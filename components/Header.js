@@ -9,7 +9,7 @@ const Header = () => {
       <nav>
         {headerData.map((item) => {
           return (
-            <Link href={item.link}>
+            <Link key={item.text} href={item.link}>
               <a
                 className={
                   router.pathname == item.link ? "active" : "linkContainer"
