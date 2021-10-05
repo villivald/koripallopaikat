@@ -21,7 +21,7 @@ const InReview = ({ courtsInReview }) => {
   );
 };
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   await dbConnect();
   const paikat = await Court.find({});
 
