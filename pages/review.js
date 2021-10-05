@@ -12,6 +12,7 @@ const InReview = ({ courtsInReview }) => {
         <link rel="icon" href="favicons/favicon.ico" />
       </Head>
       <Header />
+      <h1 className="reviewHeader">Courts in Review</h1>
       <div className="reviewContainer">
         {courtsInReview.map((court) => (
           <CourtInReview court={court} key={court._id} />

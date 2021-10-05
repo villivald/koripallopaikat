@@ -5,6 +5,19 @@
   margin: 1%;
 }
 
+.reviewField {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: clamp(200px, 90%, 400px);
+  height: clamp(90%, 95%, 100%);
+}
+
+.reviewHeader {
+  text-align: center;
+  margin: 15px;
+}
+
 @media (max-width: 1200px) {
   .reviewContainer {
     grid-template-columns: repeat(2, 1fr);
@@ -13,5 +26,11 @@
 @media (max-width: 800px) {
   .reviewContainer {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  .reviewField {
+    width: clamp(350px, 50%, 400px);
   }
 }

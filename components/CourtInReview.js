@@ -2,7 +2,7 @@ import { Card, CardMedia, CardContent, Typography } from "@material-ui/core";
 
 const CourtInReview = ({ court }) => {
   return (
-    <Card className="basketballField">
+    <Card className="reviewField">
       <CardMedia
         className="cardMedia"
         image={court.pic}
