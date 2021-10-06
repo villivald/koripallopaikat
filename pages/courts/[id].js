@@ -28,7 +28,18 @@ const Page = ({ courts }) => {
       </Head>
       <Header />
       <div className="idContainer">
-        <h1 className="idHeader">{currentCourt.address}</h1>
+        <div className="idHeaderContainer">
+          <h1 className="idHeader">{currentCourt.address}</h1>
+          {currentCourt.childrenAlert && (
+            <img
+              src="../children.png"
+              alt="Warning, Children"
+              height={40}
+              width={40}
+            />
+          )}
+        </div>
+
         <Carousel
           showThumbs={false}
           showStatus={false}
