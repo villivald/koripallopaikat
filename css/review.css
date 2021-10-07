@@ -18,6 +18,13 @@
   margin: 15px;
 }
 
+.reviewBlob {
+  display: grid;
+  place-items: center;
+  margin-top: -4%;
+  margin-bottom: -5%;
+}
+
 @media (max-width: 1200px) {
   .reviewContainer {
     grid-template-columns: repeat(2, 1fr);
@@ -27,10 +34,16 @@
   .reviewContainer {
     grid-template-columns: 1fr;
   }
+  .reviewBlob {
+    margin-top: -8%;
+  }
 }
 
 @media (max-width: 450px) {
   .reviewField {
     width: clamp(350px, 50%, 400px);
+  }
+  .reviewBlob {
+    margin-top: -14%;
   }
 }

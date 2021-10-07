@@ -12,7 +12,24 @@ const InReview = ({ courtsInReview }) => {
         <link rel="icon" href="favicons/favicon.ico" />
       </Head>
       <Header />
-      <h1 className="reviewHeader">Courts in Review</h1>
+      <div className="reviewBlob">
+        <svg
+          viewBox="0 0 200 200"
+          xmlns="http://www.w3.org/2000/svg"
+          width="300"
+        >
+          <g>
+            <path
+              fill="#82C99B"
+              d="M43,-45.6C54.8,-41.3,63,-26.9,65.6,-11.6C68.1,3.6,65.2,19.8,55.2,26.8C45.1,33.8,27.9,31.7,15.9,30.4C3.8,29,-3.2,28.4,-18.8,31.5C-34.4,34.5,-58.7,41.2,-73.2,33.7C-87.7,26.3,-92.3,4.6,-83.2,-9.1C-74.2,-22.8,-51.4,-28.4,-35.2,-32C-19.1,-35.6,-9.5,-37,3,-40.6C15.6,-44.2,31.1,-49.9,43,-45.6Z"
+              transform="translate(100 100)"
+            />
+            <text x="20" y="107" font-size="1.2rem" font-weight="bold">
+              Courts in Review
+            </text>
+          </g>
+        </svg>
+      </div>
       <div className="reviewContainer">
         {courtsInReview.map((court) => (
           <CourtInReview court={court} key={court._id} />
