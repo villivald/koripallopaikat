@@ -1211,6 +1211,42 @@
         "coordinates": [24.923813851174017, 60.198686913053095],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Prinssintie, 1",
+        "description": "Youth center's yard",
+        "link": "/courts/Prinssintie,%201"
+      },
+      "geometry": {
+        "coordinates": [25.062259638072284, 60.203154250802186],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Vuorenpeikontie, 7",
+        "description": "School yard",
+        "link": "/courts/Vuorenpeikontie,%207"
+      },
+      "geometry": {
+        "coordinates": [25.051737548136526, 60.198254072978855],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Tuhkimontie, 10",
+        "description": "Play park",
+        "link": "/courts/Tuhkimontie,%2010"
+      },
+      "geometry": {
+        "coordinates": [25.053607367180284, 60.200939638950125],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
