@@ -320,7 +320,7 @@ export default function Add() {
                     startIcon={<CloudUploadIcon />}
                     onClick={uploadImage}
                   >
-                    Upload
+                    Upload Image
                   </UploadButton>
                 </div>
               </div>
