@@ -1,4 +1,5 @@
 import { useAppContext } from "../context/state";
+import Image from "next/image";
 
 const Weather = () => {
   const state = useAppContext();
@@ -13,7 +14,7 @@ const Weather = () => {
             {weather.main.temp > 273.15 && "+"}
             {(weather.main.temp - 273.15).toFixed(2)} °​C
           </h2>
-          <img
+          <Image
             className="weatherPic"
             alt={weather.weather[0].description}
             src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}

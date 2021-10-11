@@ -1,5 +1,6 @@
 import dynamic from "next/dynamic";
 import Head from "next/head";
+import Script from "next/script";
 
 const Header = dynamic(() => import("../components/Header"));
 const SiteIntro = dynamic(() => import("../components/SiteIntro"));
@@ -22,6 +23,19 @@ const Home = () => {
       <SiteIntro />
       <Weather />
       <Main />
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=UA-203458424-1"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-203458424-1');
+        `}
+      </Script>
     </div>
   );
 };

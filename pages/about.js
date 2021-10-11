@@ -91,7 +91,7 @@ export default function Books() {
             </Link>
           </h2>
 
-          <div class="apiDockerLinks">
+          <div className="apiDockerLinks">
             <h2 className="techInfoSubHeader">
               <Link href="/api/savedCourts">API</Link>
             </h2>
@@ -106,7 +106,9 @@ export default function Books() {
           <h2 className="techInfoSubHeader">Made with:</h2>
           <div className="aboutLinks">
             {aboutLinks.map((link) => (
-              <Link href={link.link}>{link.text}</Link>
+              <Link key={link.text} href={link.link}>
+                {link.text}
+              </Link>
             ))}
           </div>
 

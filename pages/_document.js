@@ -40,10 +40,6 @@ class MyDocument extends Document {
           />
 
           <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=UA-203458424-1"
-          />
-          <script
             dangerouslySetInnerHTML={{
               __html: `
               window.dataLayer = window.dataLayer || [];
