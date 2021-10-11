@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { useState } from "react";
 import Head from "next/head";
 import { Box } from "@material-ui/core";
