@@ -4,6 +4,6 @@ module.exports = withMDX({
   productionBrowserSourceMaps: true,
   pageExtensions: ["mdx", "md", "jsx", "js", "tsx", "ts"],
   images: {
-    domains: ["openweathermap.org"],
+    domains: ["openweathermap.org", "villivald.com"],
   },
 });

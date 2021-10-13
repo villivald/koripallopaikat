@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
+import Image from "next/image";
 import Link from "@material-ui/core/Link";
 import Button from "@material-ui/core/Button";
 import CircularProgress from "@material-ui/core/CircularProgress";
@@ -31,24 +32,41 @@ const Page = ({ courts }) => {
         <div className="idHeaderContainer">
           <h1 className="idHeader">{currentCourt.address}</h1>
           {currentCourt.childrenAlert && (
-            <img
-              src="../children.png"
+            <Image
+              src="/children.png"
               alt="Warning, Children"
               height={40}
               width={40}
             />
           )}
         </div>
-
         <Carousel
           showThumbs={false}
           showStatus={false}
           useKeyboardArrows={true}
           swipeable={true}
         >
-          <img className="idPic" src={currentCourt.pic} />
-          <img className="idPic" src={currentCourt.pic1 || currentCourt.pic} />
-          <img className="idPic" src={currentCourt.pic2 || currentCourt.pic} />
+          <Image
+            className="idPic"
+            src={currentCourt.pic}
+            width={538}
+            height={403}
+            alt="Cover image of a court"
+          />
+          <Image
+            className="idPic"
+            src={currentCourt.pic1 || currentCourt.pic}
+            width={538}
+            height={403}
+            alt="Second image of a court"
+          />
+          <Image
+            className="idPic"
+            src={currentCourt.pic2 || currentCourt.pic}
+            width={538}
+            height={403}
+            alt="Third image of a court"
+          />
         </Carousel>
         <div className="idInfo">
           <p>Baskets: {currentCourt.baskets}</p>
