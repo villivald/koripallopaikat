@@ -28,7 +28,12 @@ const CourtList = ({ court }) => {
 
   return (
     <Card className="basketballField">
-      <Link key={court._id} href="/courts/[id]" as={`/courts/${court.address}`}>
+      <Link
+        key={court._id}
+        href="/courts/[id]"
+        as={`/courts/${court.address}`}
+        passHref
+      >
         <CardMedia
           className="cardMedia"
           image={court.listPic}
@@ -36,8 +41,9 @@ const CourtList = ({ court }) => {
         />
       </Link>
       {court.childrenAlert && (
+        // eslint-disable-next-line @next/next/no-img-element
         <img
-          src="../children.png"
+          src="/children.png"
           alt="Warning, Children"
           height={40}
           width={40}
