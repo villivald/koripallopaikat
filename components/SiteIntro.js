@@ -7,8 +7,8 @@ const SiteIntro = () => {
   return (
     <div className="intro">
       <div className="toolTipCat">
-        <Link href="https://villivald.com">
-          <img
+        <Link href="https://villivald.com" passHref>
+          <Image
             src="https://villivald.com/static/media/dc2.d57757c1.webp"
             alt="cat logo"
             width={200}
@@ -16,7 +16,7 @@ const SiteIntro = () => {
             className="cat"
           />
         </Link>
-        <Link href="https://villivald.com">
+        <Link href="https://villivald.com" passHref>
           <span className="toolTipText">
             Psst, Hey You. Wanna see where I came from?{" "}
           </span>

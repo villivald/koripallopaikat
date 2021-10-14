@@ -10,7 +10,12 @@ import {
 const SearchObject = ({ court }) => {
   return (
     <Card className="searchObjectField" elevation={0}>
-      <Link key={court._id} href="/courts/[id]" as={`/courts/${court.address}`}>
+      <Link
+        key={court._id}
+        href="/courts/[id]"
+        as={`/courts/${court.address}`}
+        passHref
+      >
         <CardMedia
           className="searchCardMedia"
           image={court.searchPic}
