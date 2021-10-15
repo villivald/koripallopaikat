@@ -75,7 +75,7 @@ const map = () => {
             '<a title="Open in new tab" target="_blank" href=' +
             feature.properties.link +
             ">" +
-            "Link" +
+            "Go to the court page" +
             "</a>"
         )
         .addTo(map.current);

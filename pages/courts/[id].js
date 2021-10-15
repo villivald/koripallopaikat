@@ -117,6 +117,7 @@ const Page = ({ courts }) => {
           variant="contained"
           color="secondary"
           onClick={() => router.back()}
+          className="backButton"
         >
           Back
         </Button>
