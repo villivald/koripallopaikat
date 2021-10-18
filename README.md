@@ -1,5 +1,7 @@
 ## App live on [Vercel](https://koripallopaikat.com)
 
+![](https://i.imgur.com/SB8mMqU.png)
+
 ### Made with:
 
 - [Next.js](https://nextjs.org/)
