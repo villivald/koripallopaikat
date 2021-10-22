@@ -46,4 +46,7 @@
   .reviewBlob {
     margin-top: -14%;
   }
+  .reviewBlobText {
+    font-size: 1.1rem;
+  }
 }
