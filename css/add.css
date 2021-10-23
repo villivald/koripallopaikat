@@ -1,21 +1,23 @@
+::-webkit-file-upload-button {
+  background: #dbca2e;
+  color: black;
+  border: 1px solid black;
+  border-radius: 3px;
+  box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%),
+    0 1px 5px 0 rgb(0 0 0 / 12%);
+}
+
 :root {
   --color-1: #b72b38;
   --color-2: #263a73;
   --color-3: #051b2d;
 }
 
-::-webkit-file-upload-button {
-  background: #dbca2e;
-  color: black;
-  border: 1px solid black;
-  border-radius: 3px;
-  box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%),
-    0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
-}
 ::-webkit-file-upload-button:hover {
   background: #cab727;
   transform: scale(1.01);
 }
+
 ::-webkit-file-upload-button:active {
   transform: translateY(1px);
 }
@@ -52,6 +54,7 @@ form {
   text-align: center;
   margin-top: 50px;
 }
+
 .submitTimeCounter {
   text-align: center;
   margin-top: 20px;
@@ -121,6 +124,7 @@ form {
   .coloredText {
     font-size: 2.3rem;
   }
+
   div.imageUploading > div > div {
     width: 70%;
   }
@@ -130,15 +134,19 @@ form {
   .form {
     margin: 0 10px 10px 10px;
   }
+
   .addChip {
     margin-top: 30px;
   }
+
   .coloredText {
     font-size: 1.9rem;
   }
+
   .colored {
     padding: 40px;
   }
+
   .imageUploading {
     margin-bottom: -45px;
   }
@@ -149,9 +157,11 @@ form {
     .form {
       margin: 0 10px 10px 10px;
     }
+
     .coloredText {
       font-size: 1.9rem;
     }
+
     .addChip {
       margin-top: 30px;
     }

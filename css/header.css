@@ -25,6 +25,7 @@ nav > a {
 nav > a:hover {
   transform: scale(1.1);
 }
+
 nav > a:active {
   transform: scale(1);
 }
@@ -50,52 +51,63 @@ nav > a:active {
     gap: 20px;
   }
 }
+
 @media (max-width: 1100px) {
   header nav {
     gap: 10px;
   }
 }
+
 @media (max-width: 1000px) {
   header nav {
     gap: 8px;
   }
+
   nav > a {
     padding: 5px;
   }
 }
+
 @media (max-width: 900px) {
   header nav {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 50px;
   }
+
   nav > a {
     padding: 10px;
   }
 }
+
 @media (max-width: 800px) {
   header nav {
     gap: 30px;
   }
 }
+
 @media (max-width: 500px) {
   header {
     padding: 10px;
   }
+
   header nav {
     padding: 10px;
     gap: 10px;
   }
+
   header nav > a {
     min-width: 100px;
     text-align: center;
   }
 }
+
 @media (max-width: 450px) {
   header nav {
     padding: 10px;
     gap: 10px;
   }
+
   header nav > a {
     min-width: 50px;
     text-align: center;

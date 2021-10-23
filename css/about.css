@@ -11,6 +11,7 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+  border-left: 4px solid black;
 }
 
 .aboutProjectContainer {
@@ -46,7 +47,7 @@
 
 .projectText {
   max-width: 350px;
-  font-family: "Mate" !important;
+  font-family: "Mate", serif !important;
 }
 
 .projectLinks {
@@ -64,46 +65,50 @@
   text-underline-offset: 0.25em;
 }
 
-.aboutTechContainer {
-  border-left: 4px solid black;
-}
-
 @media (max-width: 800px) {
   .aboutTechContainer {
     border-left: none;
   }
 }
+
 @media (max-width: 700px) {
   .aboutBlob {
     width: 150px;
   }
+
   .aboutProjectContainer {
     padding-left: 2%;
   }
 }
+
 @media (max-width: 600px) {
   .techInfoSubHeader {
     font-size: 1rem;
   }
+
   .aboutLinks {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
   }
+
   .aboutLinks > a:nth-child(9) {
     display: none;
   }
 }
+
 @media (max-width: 550px) {
   .projectLinks {
     display: grid;
     grid-template-columns: 1fr;
   }
 }
+
 @media (max-width: 500px) {
   .aboutLinks {
     grid-template-columns: 1fr;
   }
 }
+
 @media (max-width: 400px) {
   .projectInfoHeader,
   .techInfoHeader {
