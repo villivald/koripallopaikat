@@ -41,10 +41,6 @@
   transition: transform 0.5s;
 }
 
-.toolTipText {
-  font-size: 1rem;
-}
-
 .toolTipCat:hover {
   transform: translateX(14%) rotate(30deg);
 }
@@ -54,6 +50,7 @@
   width: 130px;
   background-color: black;
   color: #fff;
+  font-size: 1rem;
   text-align: center;
   border-radius: 5px;
   padding: 5px 2px;
@@ -73,6 +70,7 @@
   border-style: solid;
   border-color: transparent black transparent transparent;
 }
+
 .toolTipCat:hover .toolTipText {
   visibility: visible;
 }
@@ -81,6 +79,7 @@
   from {
     transform: rotate(0);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -97,11 +96,13 @@
     padding: 10px;
   }
 }
+
 @media (max-width: 420px) {
   .intro {
     font-size: 1.4rem;
   }
 }
+
 @media (max-width: 350px) {
   .intro {
     font-size: 1.2rem;

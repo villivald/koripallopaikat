@@ -28,16 +28,19 @@
     top: 20%;
   }
 }
+
 @media (max-width: 550px) {
   .amount {
     width: 100px;
   }
 }
+
 @media (max-width: 450px) {
   .amount {
     width: 80px;
   }
 }
+
 @media (max-width: 420px) {
   .amount {
     top: 16%;

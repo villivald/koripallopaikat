@@ -30,10 +30,12 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 @media (max-width: 800px) {
   .reviewContainer {
     grid-template-columns: 1fr;
   }
+
   .reviewBlob {
     margin-top: -8%;
   }
@@ -43,9 +45,11 @@
   .reviewField {
     width: clamp(350px, 50%, 400px);
   }
+
   .reviewBlob {
     margin-top: -14%;
   }
+
   .reviewBlobText {
     font-size: 1.1rem;
   }

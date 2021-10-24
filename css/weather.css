@@ -16,6 +16,7 @@
     padding: 6.5px;
   }
 }
+
 @media (max-width: 420px) {
   .weather {
     padding: 1.5px;
