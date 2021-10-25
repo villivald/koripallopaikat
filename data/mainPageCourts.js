@@ -1,6 +1,5 @@
 import pic1 from "../public/images/1.webp";
 import pic2 from "../public/images/2.webp";
-import pic3 from "../public/images/3.webp";
 import pic4 from "../public/images/4.webp";
 import pic5 from "../public/images/5.webp";
 import pic6 from "../public/images/6.webp";
@@ -40,19 +39,6 @@ const mainPageCourts = [
   },
   {
     _id: 3,
-    pic: pic3,
-    address: "Kevätkatu, 2",
-    surface: "asphalt",
-    type: "high school yard",
-    baskets: 2,
-    surfacePic: asphalt,
-    link: "https://www.google.com/maps/place/Kev%C3%A4tkatu+2,+00790+Helsinki/@60.2279812,25.0277728,3a,75y,137.8h,79.84t/data=!3m6!1e1!3m4!1sGlcvSFWDXaPilUh0Wh6NIA!2e0!7i13312!8i6656!4m5!3m4!1s0x469208e43548c4bd:0x2317ac0e0f681107!8m2!3d60.2278631!4d25.0291309",
-    lat: 60.227948320653596,
-    lon: 25.029163085148415,
-    district: "Latokartano",
-  },
-  {
-    _id: 4,
     pic: pic4,
     address: "Eero Erkon katu",
     surface: "soft outdoor surface",
@@ -65,7 +51,7 @@ const mainPageCourts = [
     district: "Kluuvi",
   },
   {
-    _id: 5,
+    _id: 4,
     pic: pic5,
     address: "Salpausseläntie, 3",
     surface: "soft outdoor surface",
@@ -78,7 +64,7 @@ const mainPageCourts = [
     district: "Pihlajisto",
   },
   {
-    _id: 6,
+    _id: 5,
     pic: pic6,
     address: "Käskynhaltijantie, 11",
     surface: "asphalt",
@@ -91,7 +77,7 @@ const mainPageCourts = [
     district: "Patola",
   },
   {
-    _id: 7,
+    _id: 6,
     pic: pic7,
     address: "Kontulankaari, 15",
     surface: "asphalt",
@@ -104,7 +90,7 @@ const mainPageCourts = [
     district: "Kontula",
   },
   {
-    _id: 8,
+    _id: 7,
     pic: pic8,
     address: "Kellaritie, 14",
     surface: "soft outdoor surface",

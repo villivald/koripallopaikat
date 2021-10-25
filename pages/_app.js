@@ -13,6 +13,7 @@ import "../css/id.css";
 import "../css/weather.css";
 import "../css/search.css";
 import "../css/review.css";
+import "../css/news.css";
 import "mapbox-gl/dist/mapbox-gl.css";
 
 import Router from "next/router";

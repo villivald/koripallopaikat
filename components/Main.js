@@ -5,11 +5,13 @@ import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
 import FormatListBulletedIcon from "@material-ui/icons/FormatListBulleted";
 import AddCircleOutlineIcon from "@material-ui/icons/AddCircleOutline";
 import MapOutlinedIcon from "@material-ui/icons/MapOutlined";
+import News from "./News";
 
 const main = () => {
   return (
     <>
       <div className="container">
+        <News />
         {mainPageCourts.map((court) => (
           <MainPageCourt court={court} key={court._id} />
         ))}

@@ -1,0 +1,35 @@
+.newsCard {
+  width: clamp(200px, 100%, 400px);
+  height: clamp(90%, 125%, 100%);
+}
+
+.newsHeader {
+  text-align: center;
+  background-color: #194d55;
+}
+
+.newsCard::before {
+  content: "";
+  display: block;
+  background-color: #82c89b;
+  height: 5px;
+}
+
+.newsHeaderText.newsHeaderText {
+  color: #fefffe;
+  font-family: "Mate", serif;
+}
+
+.newsContainer {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 3fr;
+  gap: 10px;
+  padding: 10px;
+}
+
+.newsDate {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
