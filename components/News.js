@@ -14,13 +14,15 @@ const News = () => {
         </Link>
       </Typography>
       <div className="newsList">
-        {newsData.map((item) => (
+        {newsData.slice(0, 3).map((item) => (
           <p key={item.alt}>
             <h5 className="newsDate">{item.date}</h5>
             <div className="newsContainer">
               <Image src={item.image} alt={item.alt} width="80" height="80" />
               <Typography color="textPrimary">
-                <Link href={item.link}>{item.linkText}</Link>
+                <Link href={item.link} passHref>
+                  <MUILink>{item.linkText}</MUILink>
+                </Link>
                 {item.text}
               </Typography>
             </div>

@@ -56,11 +56,7 @@
   height: 135px;
 }
 
-div.newsPageContainer
-  > div
-  > div.MuiCardContent-root.newsCardContent
-  > div
-  > svg {
+div.MuiCardContent-root.newsCardContent > div > svg {
   color: #051b2d;
 }
 
