@@ -1247,6 +1247,30 @@
         "coordinates": [25.053607367180284, 60.200939638950125],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Urheilukalastajankuja, 1",
+        "description": "Outdoor basketball court",
+        "link": "/courts/Urheilukalastajankuja,%201"
+      },
+      "geometry": {
+        "coordinates": [25.16078, 60.20299],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Aurinkotuulenkatu, 11",
+        "description": "School yard",
+        "link": "/courts/Aurinkotuulenkatu,%2011"
+      },
+      "geometry": {
+        "coordinates": [25.15747436857437, 60.20493568688866],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
