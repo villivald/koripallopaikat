@@ -1,8 +1,7 @@
 import Card from "@material-ui/core/Card";
 import Link from "next/link";
 import Image from "next/image";
-import { Link as MUILink } from "@material-ui/core";
-import Typography from "@material-ui/core/Typography";
+import { Link as MUILink, Typography } from "@material-ui/core";
 import newsData from "../data/newsData";
 
 const News = () => {
