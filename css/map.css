@@ -1,19 +1,10 @@
 .map-container {
-  height: 81vh;
+  height: 87.5vh;
 }
 
 .map-container-small {
   height: 41vh;
   width: 56vh;
-}
-
-.sidebar {
-  background-color: rgba(35, 55, 75, 0.9);
-  color: #fff;
-  padding: 6px 12px;
-  font-family: monospace;
-  border-radius: 4px;
-  width: clamp(350px, 70%, 450px);
 }
 
 .mapboxgl-ctrl-geocoder {

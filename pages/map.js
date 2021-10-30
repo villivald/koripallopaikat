@@ -13,8 +13,8 @@ const map = () => {
   const mapContainer = useRef(null);
   const map = useRef(null);
   const [lng, setLng] = useState(24.96);
-  const [lat, setLat] = useState(60.2);
-  const [zoom, setZoom] = useState(10);
+  const [lat, setLat] = useState(60.23);
+  const [zoom, setZoom] = useState(10.1);
 
   useEffect(() => {
     if (map.current) return; // initialize map only once
@@ -89,11 +89,6 @@ const map = () => {
       </Head>
       <Header />
       <div ref={mapContainer} className="map-container" />
-      <footer>
-        <div className="sidebar">
-          Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
-        </div>
-      </footer>
     </main>
   );
 };
