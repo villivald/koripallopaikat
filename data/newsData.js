@@ -1,5 +1,14 @@
 const newsData = [
   {
+    date: "30-10-2021",
+    image: "https://villivald.com/koripallopaikat/searchPics/107.webp",
+    largeImage: "https://villivald.com/koripallopaikat/listPics/107.webp",
+    alt: "Merikannontie, 6",
+    text: " court was added.",
+    link: "https://koripallopaikat.com/courts/Merikannontie,%206",
+    linkText: "Merikannontie, 6",
+  },
+  {
     date: "27-10-2021",
     image: "https://villivald.com/koripallopaikat/searchPics/106.webp",
     largeImage: "https://villivald.com/koripallopaikat/listPics/106.webp",
