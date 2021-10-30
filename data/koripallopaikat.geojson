@@ -1271,6 +1271,18 @@
         "coordinates": [25.15747436857437, 60.20493568688866],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Merikannontie, 6",
+        "description": "Sports field",
+        "link": "/courts/Merikannontie,%206"
+      },
+      "geometry": {
+        "coordinates": [24.912308904263973, 60.178358487511424],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
