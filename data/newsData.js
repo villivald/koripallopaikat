@@ -1,5 +1,14 @@
 const newsData = [
   {
+    date: "01-11-2021",
+    image: "https://villivald.com/koripallopaikat/searchPics/108.webp",
+    largeImage: "https://villivald.com/koripallopaikat/listPics/108.webp",
+    alt: "Lutherinkatu, 18",
+    text: " court was added. Next week I plan to add about 7 more courts.",
+    link: "https://koripallopaikat.com/courts/Lutherinkatu,%2018",
+    linkText: "Lutherinkatu, 18",
+  },
+  {
     date: "30-10-2021",
     image: "https://villivald.com/koripallopaikat/searchPics/107.webp",
     largeImage: "https://villivald.com/koripallopaikat/listPics/107.webp",
