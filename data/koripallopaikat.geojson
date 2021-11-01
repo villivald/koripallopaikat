@@ -1283,6 +1283,18 @@
         "coordinates": [24.912308904263973, 60.178358487511424],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Lutherinkatu, 18",
+        "description": "Outdoor basketball court",
+        "link": "/courts/Lutherinkatu,%2018"
+      },
+      "geometry": {
+        "coordinates": [24.921736673425332, 60.17276205310652],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
