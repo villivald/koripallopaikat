@@ -1295,6 +1295,18 @@
         "coordinates": [24.921736673425332, 60.17276205310652],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Prinsessantie, 2",
+        "description": "Outdoor basketball court",
+        "link": "/courts/Prinsessantie,%202"
+      },
+      "geometry": {
+        "coordinates": [25.0619088515422, 60.207264774800365],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
