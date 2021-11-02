@@ -1,5 +1,14 @@
 const newsData = [
   {
+    date: "02-11-2021",
+    image: "https://villivald.com/koripallopaikat/searchPics/109.webp",
+    largeImage: "https://villivald.com/koripallopaikat/listPics/109.webp",
+    alt: "Prinsessantie, 2",
+    text: " court was added",
+    link: "https://koripallopaikat.com/courts/Prinsessantie,%202",
+    linkText: "Prinsessantie, 2",
+  },
+  {
     date: "01-11-2021",
     image: "https://villivald.com/koripallopaikat/searchPics/108.webp",
     largeImage: "https://villivald.com/koripallopaikat/listPics/108.webp",
