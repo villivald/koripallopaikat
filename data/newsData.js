@@ -1,10 +1,19 @@
 const newsData = [
   {
+    date: "04-11-2021",
+    image: "https://villivald.com/koripallopaikat/searchPics/110.webp",
+    largeImage: "https://villivald.com/koripallopaikat/listPics/110.webp",
+    alt: "Kauppakartanonkatu, 28",
+    text: " court was added.",
+    link: "https://koripallopaikat.com/courts/Kauppakartanonkatu,%2028",
+    linkText: "Kauppakartanonkatu, 28",
+  },
+  {
     date: "02-11-2021",
     image: "https://villivald.com/koripallopaikat/searchPics/109.webp",
     largeImage: "https://villivald.com/koripallopaikat/listPics/109.webp",
     alt: "Prinsessantie, 2",
-    text: " court was added",
+    text: " court was added.",
     link: "https://koripallopaikat.com/courts/Prinsessantie,%202",
     linkText: "Prinsessantie, 2",
   },
