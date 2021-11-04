@@ -1307,6 +1307,18 @@
         "coordinates": [25.0619088515422, 60.207264774800365],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Kauppakartanonkatu, 28",
+        "description": "Sports field",
+        "link": "/courts/Kauppakartanonkatu,%2028"
+      },
+      "geometry": {
+        "coordinates": [25.077086711485748, 60.206066886226814],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
