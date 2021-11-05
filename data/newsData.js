@@ -1,5 +1,14 @@
 const newsData = [
   {
+    date: "05-11-2021",
+    image: "https://villivald.com/koripallopaikat/searchPics/111.webp",
+    largeImage: "https://villivald.com/koripallopaikat/listPics/111.webp",
+    alt: "Prammikuja, 3",
+    text: " court was added.",
+    link: "https://koripallopaikat.com/courts/Prammikuja,%203",
+    linkText: "Prammikuja, 3",
+  },
+  {
     date: "04-11-2021",
     image: "https://villivald.com/koripallopaikat/searchPics/110.webp",
     largeImage: "https://villivald.com/koripallopaikat/listPics/110.webp",
