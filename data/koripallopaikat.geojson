@@ -1319,6 +1319,18 @@
         "coordinates": [25.077086711485748, 60.206066886226814],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Prammikuja, 3",
+        "description": "Play park",
+        "link": "/courts/Prammikuja,%203"
+      },
+      "geometry": {
+        "coordinates": [25.1216083, 60.20205],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
