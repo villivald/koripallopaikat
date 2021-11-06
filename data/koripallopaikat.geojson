@@ -1331,6 +1331,18 @@
         "coordinates": [25.1216083, 60.20205],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Kallahdenraitti, 3",
+        "description": "Sports park",
+        "link": "/courts/Kallahdenraitti,%203"
+      },
+      "geometry": {
+        "coordinates": [25.131060456391097, 60.20039695350183],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
