@@ -1,5 +1,14 @@
 const newsData = [
   {
+    date: "06-11-2021",
+    image: "https://villivald.com/koripallopaikat/searchPics/112.webp",
+    largeImage: "https://villivald.com/koripallopaikat/listPics/112.webp",
+    alt: "Kallahdenraitti, 3",
+    text: " court was added.",
+    link: "https://koripallopaikat.com/courts/Kallahdenraitti,%203",
+    linkText: "Kallahdenraitti, 3",
+  },
+  {
     date: "05-11-2021",
     image: "https://villivald.com/koripallopaikat/searchPics/111.webp",
     largeImage: "https://villivald.com/koripallopaikat/listPics/111.webp",
