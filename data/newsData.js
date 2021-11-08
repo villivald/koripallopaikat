@@ -1,5 +1,14 @@
 const newsData = [
   {
+    date: "08-11-2021",
+    image: "https://villivald.com/koripallopaikat/searchPics/113.webp",
+    largeImage: "https://villivald.com/koripallopaikat/listPics/113.webp",
+    alt: "Kallvikinniementie, 1",
+    text: " court was added.",
+    link: "https://koripallopaikat.com/courts/Kallvikinniementie,%201",
+    linkText: "Kallvikinniementie, 1",
+  },
+  {
     date: "06-11-2021",
     image: "https://villivald.com/koripallopaikat/searchPics/112.webp",
     largeImage: "https://villivald.com/koripallopaikat/listPics/112.webp",
