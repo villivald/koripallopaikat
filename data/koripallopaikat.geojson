@@ -1343,6 +1343,18 @@
         "coordinates": [25.131060456391097, 60.20039695350183],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Kallvikinniementie, 1",
+        "description": "School yard",
+        "link": "/courts/Kallvikinniementie,%201"
+      },
+      "geometry": {
+        "coordinates": [25.13196952801363, 60.201154425349124],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
