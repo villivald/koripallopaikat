@@ -1,5 +1,14 @@
 const newsData = [
   {
+    date: "09-11-2021",
+    image: "https://villivald.com/koripallopaikat/searchPics/114.webp",
+    largeImage: "https://villivald.com/koripallopaikat/listPics/114.webp",
+    alt: "Leikosaarentie, 16",
+    text: " court was added.",
+    link: "https://koripallopaikat.com/courts/Leikosaarentie,%2016",
+    linkText: "Leikosaarentie, 16",
+  },
+  {
     date: "08-11-2021",
     image: "https://villivald.com/koripallopaikat/searchPics/113.webp",
     largeImage: "https://villivald.com/koripallopaikat/listPics/113.webp",
