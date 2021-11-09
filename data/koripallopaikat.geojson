@@ -1355,6 +1355,18 @@
         "coordinates": [25.13196952801363, 60.201154425349124],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Leikosaarentie, 16",
+        "description": "Sports field",
+        "link": "/courts/Leikosaarentie,%2016"
+      },
+      "geometry": {
+        "coordinates": [25.14213118003107, 60.20341526458206],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
