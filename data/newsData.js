@@ -1,5 +1,14 @@
 const newsData = [
   {
+    date: "10-11-2021",
+    image: "https://villivald.com/koripallopaikat/searchPics/6.webp",
+    largeImage: "https://villivald.com/koripallopaikat/listPics/6.webp",
+    alt: "Ylästöntie, 3",
+    text: " is updated. Basketball field has been completely redone.",
+    link: "https://koripallopaikat.com/courts/Ylästöntie,%203",
+    linkText: "Ylästöntie, 3",
+  },
+  {
     date: "09-11-2021",
     image: "https://villivald.com/koripallopaikat/searchPics/114.webp",
     largeImage: "https://villivald.com/koripallopaikat/listPics/114.webp",
