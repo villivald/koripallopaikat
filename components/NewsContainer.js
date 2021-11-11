@@ -18,7 +18,7 @@ const StyledChip = styled(Chip)({
 
 const NewsContainer = ({ item }) => {
   return (
-    <Card className="reviewField">
+    <Card className="newsCardContainer">
       <CardMedia
         className="newsCardImage"
         image={item.largeImage}
@@ -28,7 +28,7 @@ const NewsContainer = ({ item }) => {
         <StyledChip icon={<TodayIcon />} label={item.date} />
         <Typography color="textPrimary">
           <Link href={item.link}>{item.linkText}</Link>
-          {item.text}
+          {item.longText ? item.longText : item.text}
         </Typography>
       </CardContent>
     </Card>

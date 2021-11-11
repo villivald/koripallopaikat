@@ -48,12 +48,13 @@
   margin: 1%;
 }
 
-.newsCardImage {
-  height: 140px;
+.newsCardContainer {
+  width: clamp(200px, 90%, 400px);
+  height: clamp(90%, 95%, 100%);
 }
 
-.newsCardContent {
-  height: 135px;
+.newsCardImage {
+  min-height: 140px;
 }
 
 div.MuiCardContent-root.newsCardContent > div > svg {

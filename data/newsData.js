@@ -5,6 +5,8 @@ const newsData = [
     largeImage: "https://villivald.com/koripallopaikat/listPics/6.webp",
     alt: "Ylästöntie, 3",
     text: " is updated. Basketball field has been completely redone.",
+    longText:
+      " is updated. Basketball field has been completely redone, now it has 2 baskets and an artificial grass surface.",
     link: "https://koripallopaikat.com/courts/Ylästöntie,%203",
     linkText: "Ylästöntie, 3",
   },
