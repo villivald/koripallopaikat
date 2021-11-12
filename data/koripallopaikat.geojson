@@ -1367,6 +1367,18 @@
         "coordinates": [25.14213118003107, 60.20341526458206],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Iiluodonpiha, 1",
+        "description": "School yard",
+        "link": "/courts/Iiluodonpiha,%201"
+      },
+      "geometry": {
+        "coordinates": [25.145058987273295, 60.20302983102099],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
