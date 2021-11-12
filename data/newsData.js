@@ -1,5 +1,14 @@
 const newsData = [
   {
+    date: "12-11-2021",
+    image: "https://villivald.com/koripallopaikat/searchPics/115.webp",
+    largeImage: "https://villivald.com/koripallopaikat/listPics/115.webp",
+    alt: "Iiluodonpiha, 1",
+    text: " court was added.",
+    link: "https://koripallopaikat.com/courts/Iiluodonpiha,%201",
+    linkText: "Iiluodonpiha, 1",
+  },
+  {
     date: "10-11-2021",
     image: "https://villivald.com/koripallopaikat/searchPics/6.webp",
     largeImage: "https://villivald.com/koripallopaikat/listPics/6.webp",
