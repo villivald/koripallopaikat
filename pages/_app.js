@@ -14,6 +14,8 @@ import "../css/weather.css";
 import "../css/search.css";
 import "../css/review.css";
 import "../css/news.css";
+import "../css/app.css";
+
 import "mapbox-gl/dist/mapbox-gl.css";
 import {
   KBarProvider,
@@ -53,14 +55,14 @@ const RenderResults = () => {
       items={flattened.filter((i) => i !== NO_GROUP)}
       onRender={({ item, active }) =>
         typeof item === "string" ? (
-          <div>{item}</div>
+          <div>Navigation</div>
         ) : (
-          <div
-            style={{
-              background: active ? "#eee" : "transparent",
-            }}
-          >
-            {item.name}
+          <div className={`kbar ${active ? "activeBar" : ""}`}>
+            <div className="kbar-item">
+              {item.name}
+              <p>{item.keywords}</p>
+            </div>
+            <span>{item.shortcut}</span>
           </div>
         )
       }
@@ -81,23 +83,44 @@ export default function MyApp({ Component, pageProps }) {
       id: "blog",
       name: "Map",
       shortcut: ["b"],
-      keywords: "map",
+      keywords: "courts on map",
       perform: () => (window.location.pathname = "map"),
     },
     {
-      id: "contact",
+      id: "list",
       name: "List",
-      shortcut: ["c"],
-      keywords: "list of courts",
+      shortcut: ["l"],
+      keywords: "full list of courts",
       perform: () => (window.location.pathname = "courts"),
+    },
+    {
+      id: "search",
+      name: "Search",
+      shortcut: ["s"],
+      keywords: "search court (filter, sort)",
+      perform: () => (window.location.pathname = "search"),
+    },
+    {
+      id: "add",
+      name: "Add",
+      shortcut: ["a"],
+      keywords: "add new court",
+      perform: () => (window.location.pathname = "add"),
+    },
+    {
+      id: "contact",
+      name: "Contact",
+      shortcut: ["c"],
+      keywords: "contact (email, social, support)",
+      perform: () => (window.location.pathname = "contact"),
     },
   ];
   return (
     <KBarProvider actions={actions}>
       <KBarPortal>
         <KBarPositioner>
-          <KBarAnimator>
-            <KBarSearch />
+          <KBarAnimator className="kbarContainer">
+            <KBarSearch className="kbarInput" />
             <RenderResults />
           </KBarAnimator>
         </KBarPositioner>
