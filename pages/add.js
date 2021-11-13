@@ -27,7 +27,7 @@ import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css";
 const useStyles = makeStyles(() => ({
   input: {
     minWidth: "280px",
-    backgroundColor: "#feffff",
+    backgroundColor: "#feffff !important",
   },
 
   submit: {
