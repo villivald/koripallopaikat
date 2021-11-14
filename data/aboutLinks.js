@@ -32,8 +32,8 @@ const aboutLinks = [
     text: "OpenMoji",
   },
   {
-    link: "https://www.basketball-reference.com/players/c/carusal01.html",
-    text: "Goat",
+    link: "https://github.com/timc1/kbar",
+    text: "kbar",
   },
 ];
 

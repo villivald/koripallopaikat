@@ -1,5 +1,14 @@
 const newsData = [
   {
+    date: "14-11-2021",
+    image: "/kbar.webp",
+    largeImage: "/kbarLarge.webp",
+    alt: "Kbar",
+    text: " command+k interface was added to the site. Try it out – press cmd/ctrl and k.",
+    link: "https://github.com/timc1/kbar",
+    linkText: "Kbar",
+  },
+  {
     date: "12-11-2021",
     image: "https://villivald.com/koripallopaikat/searchPics/115.webp",
     largeImage: "https://villivald.com/koripallopaikat/listPics/115.webp",
