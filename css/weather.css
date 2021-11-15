@@ -11,6 +11,38 @@
   transform: scale(1.1);
 }
 
+.commandPic {
+  position: absolute;
+  margin-left: 80%;
+  display: flex;
+  align-items: center;
+}
+
+.commandPicIcon {
+  margin-top: 11% !important;
+}
+
+.commandPic span:first-of-type {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.commandPic span:nth-of-type(2) {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.commandPic span:nth-of-type(3) {
+  font-size: 1.7rem;
+  margin-left: 5%;
+}
+
+@media (max-width: 700px) {
+  .commandPic {
+    display: none;
+  }
+}
+
 @media (max-width: 500px) {
   .weather {
     padding: 6.5px;

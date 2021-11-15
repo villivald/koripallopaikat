@@ -22,6 +22,26 @@ const Weather = () => {
             height={50}
             width={50}
           />
+          <div className="commandPic">
+            <Image
+              className="commandPicIcon"
+              alt="command button"
+              src="/command.svg"
+              title="command button"
+              height={50}
+              width={50}
+            />
+            <span>/</span>
+            <Image
+              alt="ctrl button"
+              src="/ctrl.svg"
+              title="ctrl button"
+              height={35}
+              width={35}
+            />
+            <span>＋</span>
+            <span>K</span>
+          </div>
         </div>
       )}
     </div>
