@@ -1,5 +1,14 @@
 const newsData = [
   {
+    date: "16-11-2021",
+    image: "https://villivald.com/koripallopaikat/searchPics/116.webp",
+    largeImage: "https://villivald.com/koripallopaikat/listPics/116.webp",
+    alt: "Rajakentäntie, 1",
+    text: " court was added.",
+    link: "https://koripallopaikat.com/courts/Rajakentäntie,%201",
+    linkText: "Rajakentäntie, 1",
+  },
+  {
     date: "14-11-2021",
     image: "/kbar.webp",
     largeImage: "/kbarLarge.webp",
