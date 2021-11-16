@@ -1379,6 +1379,18 @@
         "coordinates": [25.145058987273295, 60.20302983102099],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Rajakentäntie, 1",
+        "description": "Sports park",
+        "link": "/courts/Rajakentäntie,%201"
+      },
+      "geometry": {
+        "coordinates": [25.11120891080657, 60.248010328710954],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
