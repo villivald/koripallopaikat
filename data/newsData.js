@@ -1,5 +1,14 @@
 const newsData = [
   {
+    date: "19-11-2021",
+    image: "https://villivald.com/koripallopaikat/searchPics/117.webp",
+    largeImage: "https://villivald.com/koripallopaikat/listPics/117.webp",
+    alt: "Kuntokatu, 17",
+    text: " court was added.",
+    link: "https://koripallopaikat.com/courts/Kuntokatu,%2017",
+    linkText: "Kuntokatu, 17",
+  },
+  {
     date: "16-11-2021",
     image: "https://villivald.com/koripallopaikat/searchPics/116.webp",
     largeImage: "https://villivald.com/koripallopaikat/listPics/116.webp",
