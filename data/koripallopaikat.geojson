@@ -1391,6 +1391,18 @@
         "coordinates": [25.11120891080657, 60.248010328710954],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Kuntokatu, 17",
+        "description": "Sports park",
+        "link": "/courts/Kuntokatu,%2017"
+      },
+      "geometry": {
+        "coordinates": [23.809316938027795, 61.5079065999959],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
