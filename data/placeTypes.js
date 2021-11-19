@@ -15,6 +15,9 @@ const placeTypes = [
     value: "Outdoor basketball court",
   },
   {
+    value: "Indoor basketball court",
+  },
+  {
     value: "School yard",
   },
   {

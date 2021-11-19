@@ -21,6 +21,9 @@ const surfaces = [
     value: "Sand",
   },
   {
+    value: "Wood",
+  },
+  {
     value: "Other",
   },
 ];
