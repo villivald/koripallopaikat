@@ -1,3 +1,6 @@
+/* stylelint-disable value-list-comma-newline-after */
+/* stylelint-disable declaration-colon-newline-after */
+
 ::-webkit-file-upload-button {
   background: #dbca2e;
   color: black;
