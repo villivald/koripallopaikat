@@ -82,7 +82,7 @@ export default function MyApp({ Component, pageProps }) {
     {
       id: "blog",
       name: "Map",
-      shortcut: ["b"],
+      shortcut: ["m"],
       keywords: "courts on map",
       perform: () => (window.location.pathname = "map"),
     },
