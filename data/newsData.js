@@ -1,5 +1,15 @@
 const newsData = [
   {
+    date: "26-11-2021",
+    image: "https://villivald.com/koripallopaikat/searchPics/46.webp",
+    largeImage: "https://villivald.com/koripallopaikat/listPics/46.webp",
+    alt: "Jengipolku, 8",
+    text: " is updated. New pictures are added.",
+    longText: " is updated. New pictures are added.",
+    link: "https://koripallopaikat.com/courts/Jengipolku,%208",
+    linkText: "Jengipolku, 8",
+  },
+  {
     date: "19-11-2021",
     image: "https://villivald.com/koripallopaikat/searchPics/117.webp",
     largeImage: "https://villivald.com/koripallopaikat/listPics/117.webp",
