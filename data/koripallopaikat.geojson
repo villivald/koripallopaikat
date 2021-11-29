@@ -1403,6 +1403,18 @@
         "coordinates": [23.809316938027795, 61.5079065999959],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Pihlajistontie, 1",
+        "description": "School yard",
+        "link": "/courts/Pihlajistontie,%201"
+      },
+      "geometry": {
+        "coordinates": [25.00634455109925, 60.231374360716785],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
