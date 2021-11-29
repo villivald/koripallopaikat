@@ -1,5 +1,14 @@
 const newsData = [
   {
+    date: "29-11-2021",
+    image: "https://villivald.com/koripallopaikat/searchPics/118.webp",
+    largeImage: "https://villivald.com/koripallopaikat/listPics/118.webp",
+    alt: "Pihlajistontie, 1",
+    text: " court was added.",
+    link: "https://koripallopaikat.com/courts/Pihlajistontie,%201",
+    linkText: "Pihlajistontie, 1",
+  },
+  {
     date: "26-11-2021",
     image: "https://villivald.com/koripallopaikat/searchPics/46.webp",
     largeImage: "https://villivald.com/koripallopaikat/listPics/46.webp",
