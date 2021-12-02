@@ -1415,6 +1415,18 @@
         "coordinates": [25.00634455109925, 60.231374360716785],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Mikkolankuja, 3",
+        "description": "School yard",
+        "link": "/courts/Mikkolankuja,%203"
+      },
+      "geometry": {
+        "coordinates": [24.96591814826698, 60.241239279407615],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
