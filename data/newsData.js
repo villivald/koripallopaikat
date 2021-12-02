@@ -1,5 +1,14 @@
 const newsData = [
   {
+    date: "02-12-2021",
+    image: "https://villivald.com/koripallopaikat/searchPics/119.webp",
+    largeImage: "https://villivald.com/koripallopaikat/listPics/119.webp",
+    alt: "Mikkolankuja, 3",
+    text: " court was added.",
+    link: "https://koripallopaikat.com/courts/Mikkolankuja,%203",
+    linkText: "Mikkolankuja, 3",
+  },
+  {
     date: "29-11-2021",
     image: "https://villivald.com/koripallopaikat/searchPics/118.webp",
     largeImage: "https://villivald.com/koripallopaikat/listPics/118.webp",
