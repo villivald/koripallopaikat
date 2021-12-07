@@ -1,5 +1,14 @@
 const newsData = [
   {
+    date: "07-12-2021",
+    image: "https://villivald.com/koripallopaikat/searchPics/120.webp",
+    largeImage: "https://villivald.com/koripallopaikat/listPics/120.webp",
+    alt: "Siltavoudintie, 24",
+    text: " court was added.",
+    link: "https://koripallopaikat.com/courts/Siltavoudintie,%2024",
+    linkText: "Siltavoudintie, 24",
+  },
+  {
     date: "02-12-2021",
     image: "https://villivald.com/koripallopaikat/searchPics/119.webp",
     largeImage: "https://villivald.com/koripallopaikat/listPics/119.webp",
