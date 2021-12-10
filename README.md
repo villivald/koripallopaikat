@@ -1,6 +1,6 @@
 ## App live on [Vercel](https://koripallopaikat.com)
 
-![](https://i.imgur.com/meTSVhH.png)
+![](https://i.imgur.com/0eTBeHs.png)
 
 ### Made with:
 
