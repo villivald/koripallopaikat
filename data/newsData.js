@@ -1,5 +1,15 @@
 const newsData = [
   {
+    date: "10-12-2021",
+    image: "https://villivald.com/koripallopaikat/searchPics/19.webp",
+    largeImage: "https://villivald.com/koripallopaikat/listPics/19.webp",
+    alt: "Moreenitie, 2",
+    text: " is updated. New pictures are added.",
+    longText: " is updated. New pictures are added.",
+    link: "https://koripallopaikat.com/courts/Moreenitie,%202",
+    linkText: "Moreenitie, 2",
+  },
+  {
     date: "07-12-2021",
     image: "https://villivald.com/koripallopaikat/searchPics/120.webp",
     largeImage: "https://villivald.com/koripallopaikat/listPics/120.webp",
