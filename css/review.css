@@ -23,6 +23,7 @@
   place-items: center;
   margin-top: -4%;
   margin-bottom: -5%;
+  pointer-events: none;
 }
 
 @media (max-width: 1200px) {
