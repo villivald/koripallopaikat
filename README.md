@@ -2,16 +2,12 @@
 
 ![](https://i.imgur.com/0eTBeHs.png)
 
-### Made with:
+### Made with
 
-- [Next.js](https://nextjs.org/)
-- [Material UI](https://material-ui.com/)
-- [MongoDB](https://www.mongodb.com/)
-- [Mapbox GL JS](https://www.mapbox.com/mapbox-gljs)
-- [React Hook Form](https://react-hook-form.com/)
-- [SendGrid](https://sendgrid.com/)
-- [OpenMoji](https://openmoji.org/)
-- [kbar](https://github.com/timc1/kbar)
+| __[Next.js](https://nextjs.org/)__  | __[Material UI](https://material-ui.com/)__ | __[MongoDB](https://www.mongodb.com/)__  |  __[Mapbox GL JS](https://www.mapbox.com/mapbox-gljs)__ |
+|:-|:-|:-|:-|
+| __[React Hook Form](https://react-hook-form.com/)__ | __[SendGrid](https://sendgrid.com/)__ | __[OpenMoji](https://openmoji.org/)__ | __[kbar](https://github.com/timc1/kbar)__
+
 
 ### Run locally
 
