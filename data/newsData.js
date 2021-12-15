@@ -1,5 +1,14 @@
 const newsData = [
   {
+    date: "15-12-2021",
+    image: "https://villivald.com/koripallopaikat/searchPics/121.webp",
+    largeImage: "https://villivald.com/koripallopaikat/listPics/121.webp",
+    alt: "Teinintie, 12",
+    text: " court was added.",
+    link: "https://koripallopaikat.com/courts/Teinintie,%2012",
+    linkText: "Teinintie, 12",
+  },
+  {
     date: "13-12-2021",
     image: "https://villivald.com/koripallopaikat/searchPics/20.webp",
     largeImage: "https://villivald.com/koripallopaikat/listPics/20.webp",
