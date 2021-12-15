@@ -1439,6 +1439,18 @@
         "coordinates": [24.96356583538945, 60.23567591667458],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Teinintie, 12",
+        "description": "School yard",
+        "link": "/courts/Teinintie,%2012"
+      },
+      "geometry": {
+        "coordinates": [24.960818170377014, 60.23189676661762],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
