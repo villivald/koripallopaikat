@@ -1451,6 +1451,18 @@
         "coordinates": [24.960818170377014, 60.23189676661762],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Pikkukoskentie, 23",
+        "description": "Sports field",
+        "link": "/courts/Pikkukoskentie,%2023"
+      },
+      "geometry": {
+        "coordinates": [24.98190620321381, 60.227861351266604],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
