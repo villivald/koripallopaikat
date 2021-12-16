@@ -1,5 +1,14 @@
 const newsData = [
   {
+    date: "16-12-2021",
+    image: "https://villivald.com/koripallopaikat/searchPics/122.webp",
+    largeImage: "https://villivald.com/koripallopaikat/listPics/122.webp",
+    alt: "Pikkukoskentie, 23",
+    text: " court was added.",
+    link: "https://koripallopaikat.com/courts/Pikkukoskentie,%2023",
+    linkText: "Pikkukoskentie, 23",
+  },
+  {
     date: "15-12-2021",
     image: "https://villivald.com/koripallopaikat/searchPics/121.webp",
     largeImage: "https://villivald.com/koripallopaikat/listPics/121.webp",
