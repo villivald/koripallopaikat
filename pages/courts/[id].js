@@ -11,8 +11,10 @@ import ReportOutlinedIcon from "@material-ui/icons/ReportOutlined";
 import { connectToDatabase } from "../../util/mongodb";
 import distance from "../../util/distance";
 import Header from "../../components/Header";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+// import { Carousel } from "react-responsive-carousel";
+// import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import "@splidejs/splide/dist/css/splide.min.css";
 
 const Page = ({ courts }) => {
   const router = useRouter();
@@ -40,34 +42,42 @@ const Page = ({ courts }) => {
             />
           )}
         </div>
-        <Carousel
-          showThumbs={false}
-          showStatus={false}
-          useKeyboardArrows={true}
-          swipeable={true}
+        <Splide
+          options={{
+            rewind: true,
+            width: 538,
+            gap: "1rem",
+            rewindSpeed: 1000,
+          }}
         >
-          <Image
-            className="idPic"
-            src={currentCourt.pic}
-            width={538}
-            height={403}
-            alt="Cover image of a court"
-          />
-          <Image
-            className="idPic"
-            src={currentCourt.pic1 || currentCourt.pic}
-            width={538}
-            height={403}
-            alt="Second image of a court"
-          />
-          <Image
-            className="idPic"
-            src={currentCourt.pic2 || currentCourt.pic}
-            width={538}
-            height={403}
-            alt="Third image of a court"
-          />
-        </Carousel>
+          <SplideSlide>
+            <Image
+              className="idPic"
+              src={currentCourt.pic}
+              width={538}
+              height={403}
+              alt="Cover image of a court"
+            />
+          </SplideSlide>
+          <SplideSlide>
+            <Image
+              className="idPic"
+              src={currentCourt.pic1 || currentCourt.pic}
+              width={538}
+              height={403}
+              alt="Second image of a court"
+            />
+          </SplideSlide>
+          <SplideSlide>
+            <Image
+              className="idPic"
+              src={currentCourt.pic2 || currentCourt.pic}
+              width={538}
+              height={403}
+              alt="Third image of a court"
+            />
+          </SplideSlide>
+        </Splide>
         <div className="idInfo">
           <p>Baskets: {currentCourt.baskets}</p>
           <p>Surface: {currentCourt.surface}</p>
