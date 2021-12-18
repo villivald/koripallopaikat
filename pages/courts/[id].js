@@ -11,8 +11,6 @@ import ReportOutlinedIcon from "@material-ui/icons/ReportOutlined";
 import { connectToDatabase } from "../../util/mongodb";
 import distance from "../../util/distance";
 import Header from "../../components/Header";
-// import { Carousel } from "react-responsive-carousel";
-// import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
 
