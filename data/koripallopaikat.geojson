@@ -1463,6 +1463,18 @@
         "coordinates": [24.98190620321381, 60.227861351266604],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Veräjäpellonkatu, 2",
+        "description": "School yard",
+        "link": "/courts/Veräjäpellonkatu,%202"
+      },
+      "geometry": {
+        "coordinates": [24.80924571506082, 60.22411603612831],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
