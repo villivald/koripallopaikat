@@ -1,12 +1,23 @@
 const newsData = [
   {
+    date: "21-12-2021",
+    image: "https://villivald.com/koripallopaikat/searchPics/123.webp",
+    largeImage: "https://villivald.com/koripallopaikat/listPics/123.webp",
+    alt: "Veräjäpellonkatu, 2",
+    text: " court was added.",
+    longText:
+      " court was added. There are going to be a few more courts from Leppävaara soon.",
+    link: "https://koripallopaikat.com/courts/Veräjäpellonkatu,%202",
+    linkText: "Veräjäpellonkatu, 2",
+  },
+  {
     date: "16-12-2021",
     image: "https://villivald.com/koripallopaikat/searchPics/122.webp",
     largeImage: "https://villivald.com/koripallopaikat/listPics/122.webp",
-    alt: "Pikkukoskentie, 23",
+    alt: "Veräjäpellonkatu, 2",
     text: " court was added.",
     link: "https://koripallopaikat.com/courts/Pikkukoskentie,%2023",
-    linkText: "Pikkukoskentie, 23",
+    linkText: "Veräjäpellonkatu, 2",
   },
   {
     date: "15-12-2021",
