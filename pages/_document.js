@@ -40,6 +40,12 @@ class MyDocument extends Document {
           />
 
           <script
+            data-goatcounter="https://villivald.goatcounter.com/count"
+            async
+            src="//gc.zgo.at/count.js"
+          ></script>
+
+          <script
             dangerouslySetInnerHTML={{
               __html: `
               window.dataLayer = window.dataLayer || [];
