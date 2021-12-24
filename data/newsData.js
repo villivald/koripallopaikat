@@ -1,5 +1,14 @@
 const newsData = [
   {
+    date: "24-12-2021",
+    image: "https://villivald.com/koripallopaikat/searchPics/124.webp",
+    largeImage: "https://villivald.com/koripallopaikat/listPics/124.webp",
+    alt: "Veräjävahdinpolku",
+    text: " court was added.",
+    link: "https://koripallopaikat.com/courts/Veräjävahdinpolku",
+    linkText: "Veräjävahdinpolku",
+  },
+  {
     date: "21-12-2021",
     image: "https://villivald.com/koripallopaikat/searchPics/123.webp",
     largeImage: "https://villivald.com/koripallopaikat/listPics/123.webp",
