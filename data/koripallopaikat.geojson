@@ -1475,6 +1475,18 @@
         "coordinates": [24.80924571506082, 60.22411603612831],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Veräjävahdinpolku",
+        "description": "School yard",
+        "link": "/courts/Veräjävahdinpolku"
+      },
+      "geometry": {
+        "coordinates": [24.80938345506911, 60.22434003820827],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
