@@ -1,5 +1,14 @@
 const newsData = [
   {
+    date: "01-01-2022",
+    image: "https://villivald.com/koripallopaikat/searchPics/126.webp",
+    largeImage: "https://villivald.com/koripallopaikat/listPics/126.webp",
+    alt: "Loviselundinpolku",
+    text: " court was added.",
+    link: "https://koripallopaikat.com/courts/Loviselundinpolku",
+    linkText: "Loviselundinpolku",
+  },
+  {
     date: "28-12-2021",
     image: "https://villivald.com/koripallopaikat/searchPics/125.webp",
     largeImage: "https://villivald.com/koripallopaikat/listPics/125.webp",

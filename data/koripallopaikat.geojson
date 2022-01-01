@@ -1503,9 +1503,9 @@
     {
       "type": "Feature",
       "properties": {
-        "title": "Loviselundunpolku",
+        "title": "Loviselundinpolku",
         "description": "Play park",
-        "link": "/courts/Loviselundunpolku"
+        "link": "/courts/Loviselundinpolku"
       },
       "geometry": {
         "coordinates": [24.805004756469337, 60.224602686765415],
