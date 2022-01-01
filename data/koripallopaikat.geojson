@@ -1499,6 +1499,18 @@
         "coordinates": [24.80773939064012, 60.225040836492084],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Loviselundunpolku",
+        "description": "Play park",
+        "link": "/courts/Loviselundunpolku"
+      },
+      "geometry": {
+        "coordinates": [24.805004756469337, 60.224602686765415],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
