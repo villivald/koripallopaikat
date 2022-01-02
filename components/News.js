@@ -15,7 +15,7 @@ const News = () => {
       <div className="newsList">
         {newsData.slice(0, 3).map((item) => (
           <p key={item.alt}>
-            <h5 className="newsDate">{item.date}</h5>
+            <p className="newsDate">{item.date}</p>
             <div className="newsContainer">
               <Image src={item.image} alt={item.alt} width="80" height="80" />
               <Typography color="textPrimary">

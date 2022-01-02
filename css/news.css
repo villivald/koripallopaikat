@@ -30,6 +30,8 @@
 
 .newsDate {
   text-align: center;
+  font-size: 0.825rem;
+  font-weight: bold;
   margin-top: 10px;
   margin-bottom: -5px;
 }
