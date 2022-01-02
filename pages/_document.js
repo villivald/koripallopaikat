@@ -61,7 +61,7 @@ class MyDocument extends Document {
           <link
             rel="preload"
             as="image"
-            href="/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fpublic%2Fimages%2F1.4c0ce015901e9e41811654393844f48d.webp&w=1080&q=75"
+            href="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F1.7eb55a88.webp&w=1080&q=75"
           />
 
           <Main />
