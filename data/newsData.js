@@ -1,5 +1,16 @@
 const newsData = [
   {
+    date: "10-01-2022",
+    image: "https://villivald.com/koripallopaikat/9/1.webp",
+    largeImage: "https://villivald.com/koripallopaikat/9/2.webp",
+    alt: "Berliininkatu, 4",
+    text: " is updated as well as Arabianpolku, 2 & Arabianpolku, 3.",
+    longText:
+      " is updated as well as Arabianpolku, 2 & Arabianpolku, 3. New pictures are added.",
+    link: "https://koripallopaikat.com/courts/Berliininkatu,%204",
+    linkText: "Berliininkatu, 4",
+  },
+  {
     date: "03-01-2022",
     image: "https://villivald.com/koripallopaikat/searchPics/127.webp",
     largeImage: "https://villivald.com/koripallopaikat/listPics/127.webp",
