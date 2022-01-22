@@ -1,5 +1,16 @@
 const newsData = [
   {
+    date: "22-01-2022",
+    image: "https://villivald.com/koripallopaikat/13/2.webp",
+    largeImage: "https://villivald.com/koripallopaikat/12/2.webp",
+    alt: "Neljäs linja, 11",
+    text: " is updated as well as Lastenkodinkatu, 2-10.",
+    longText:
+      " is updated as well as Lastenkodinkatu, 2-10 (Baana). New pictures are added.",
+    link: "https://koripallopaikat.com/courts/Neljäs%20linja,%2011",
+    linkText: "Neljäs linja, 11",
+  },
+  {
     date: "10-01-2022",
     image: "https://villivald.com/koripallopaikat/9/1.webp",
     largeImage: "https://villivald.com/koripallopaikat/9/2.webp",
