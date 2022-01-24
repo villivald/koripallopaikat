@@ -1,5 +1,14 @@
 const newsData = [
   {
+    date: "24-01-2022",
+    image: "https://villivald.com/koripallopaikat/searchPics/128.webp",
+    largeImage: "https://villivald.com/koripallopaikat/listPics/128.webp",
+    alt: "Rionkatu, 10",
+    text: " court was added.",
+    link: "https://koripallopaikat.com/courts/Rionkatu,%2010",
+    linkText: "Rionkatu, 10",
+  },
+  {
     date: "22-01-2022",
     image: "https://villivald.com/koripallopaikat/13/2.webp",
     largeImage: "https://villivald.com/koripallopaikat/12/2.webp",
