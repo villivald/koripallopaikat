@@ -1523,6 +1523,18 @@
         "coordinates": [24.804115849053243, 60.22534937422722],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Rionkatu, 10",
+        "description": "School yard",
+        "link": "/courts/Rionkatu,%2010"
+      },
+      "geometry": {
+        "coordinates": [24.919586844614876, 60.15642546855075],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
