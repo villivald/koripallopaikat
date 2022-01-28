@@ -1,5 +1,15 @@
 const newsData = [
   {
+    date: "28-01-2022",
+    image: "https://villivald.com/koripallopaikat/33/2.webp",
+    largeImage: "https://villivald.com/koripallopaikat/33/1.webp",
+    alt: "Hyväntoivonkatu, 5",
+    text: " is updated. New pictures are added.",
+    longText: " is updated. New pictures are added.",
+    link: "https://koripallopaikat.com/courts/Hyv%C3%A4ntoivonkatu,%205",
+    linkText: "Hyväntoivonkatu, 5",
+  },
+  {
     date: "24-01-2022",
     image: "https://villivald.com/koripallopaikat/searchPics/128.webp",
     largeImage: "https://villivald.com/koripallopaikat/listPics/128.webp",
