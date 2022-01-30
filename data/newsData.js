@@ -1,5 +1,16 @@
 const newsData = [
   {
+    date: "30-01-2022",
+    image: "https://villivald.com/koripallopaikat/16/1.webp",
+    largeImage: "https://villivald.com/koripallopaikat/16/2.webp",
+    alt: "Sturenkatu, 6",
+    text: " is updated as well as Mäkelänkatu, 72 & Kullervonkatu, 11.",
+    longText:
+      " is updated as well as Mäkelänkatu, 72 & Kullervonkatu, 11. New pictures are added.",
+    link: "https://koripallopaikat.com/courts/Sturenkatu,%206",
+    linkText: "Sturenkatu, 6",
+  },
+  {
     date: "28-01-2022",
     image: "https://villivald.com/koripallopaikat/33/2.webp",
     largeImage: "https://villivald.com/koripallopaikat/33/1.webp",
