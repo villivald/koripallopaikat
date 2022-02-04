@@ -4,6 +4,13 @@ on:
   push:
     branches: [ master ]
 
+env:
+  ACCESS_TOKEN: ${{secrets.ACCESS_TOKEN}}
+  API_KEY: ${{secrets.API_KEY}}
+  MONGODB_DB: ${{secrets.MONGODB_DB}}
+  MONGODB_URI: ${{secrets.MONGODB_URI}}
+  SENDGRID_API_KEY: ${{secrets.SENDGRID_API_KEY}}
+
 jobs:
 
   build:
