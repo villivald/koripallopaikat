@@ -1,5 +1,15 @@
 const newsData = [
   {
+    date: "10-02-2022",
+    image: "https://villivald.com/koripallopaikat/18/1.webp",
+    largeImage: "https://villivald.com/koripallopaikat/18/2.webp",
+    alt: "Lucina Hagmanin polku",
+    text: " was updated as well as Leikkikuja, 4.",
+    longText: " was updated as well as Leikkikuja, 4. New pictures are added.",
+    link: "https://koripallopaikat.com/courts/Lucina%20Hagmanin%20polku",
+    linkText: "Lucina Hagmanin polku",
+  },
+  {
     date: "30-01-2022",
     image: "https://villivald.com/koripallopaikat/16/1.webp",
     largeImage: "https://villivald.com/koripallopaikat/16/2.webp",
