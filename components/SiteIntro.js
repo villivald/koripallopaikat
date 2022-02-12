@@ -9,7 +9,7 @@ const SiteIntro = () => {
       <div className="toolTipCat">
         <Link href="https://villivald.com" passHref>
           <Image
-            src="https://villivald.com/static/media/dc2.d57757c1.webp"
+            src="https://villivald.com/static/media/dc2.d57757c1ff1ad961b5a9.webp"
             alt="cat logo"
             width={200}
             height={150}
