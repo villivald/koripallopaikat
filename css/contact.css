@@ -29,7 +29,7 @@
 
 textarea {
   padding: 0.88rem;
-  color: rgba(0, 0, 0, 0.87);
+  color: rgba(0 0 0 87%);
   line-height: 19px;
   font-family: Roboto, Helvetica, Arial, sans-serif;
 }
@@ -58,7 +58,7 @@ textarea {
     grid-template-columns: repeat(4, 1fr);
     gap: 10%;
     place-items: center;
-    margin: 3% 1% 10% 1%;
+    margin: 3% 1% 10%;
   }
 
   .contactForm {

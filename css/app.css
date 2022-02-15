@@ -32,7 +32,7 @@
 .kbarInput {
   padding: 12px 18px;
   font-size: 1rem;
-  font-family: "Roboto", "Helvetica Neue", sans-serif;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
   width: 150%;
   box-sizing: border-box;
   outline: none;
@@ -42,10 +42,10 @@
 }
 
 #kbar-listbox-item-0 {
-  text-rendering: optimizeSpeed;
+  text-rendering: optimizespeed;
   line-height: 1.6;
   color: rgb(28 28 29);
-  font-family: "Roboto", "Helvetica Neue", sans-serif;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
   box-sizing: border-box;
   padding: 8px 18px;
   font-size: 0.625rem;
@@ -54,7 +54,7 @@
 }
 
 .kbar span {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0 0 0 10%);
   border-radius: 3px;
   font-size: 1.5rem;
   padding: 4px 6px;

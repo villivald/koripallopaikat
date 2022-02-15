@@ -119,7 +119,6 @@ form {
     var(--color-3) 70%
   );
   background-clip: text;
-  -webkit-background-clip: text;
   color: transparent;
 }
 
@@ -135,7 +134,7 @@ form {
 
 @media (max-width: 500px) {
   .form {
-    margin: 0 10px 10px 10px;
+    margin: 0 10px 10px;
   }
 
   .addChip {
@@ -158,7 +157,7 @@ form {
 @media not all and (min-resolution: 0.001dpcm) {
   @media (max-width: 500px) {
     .form {
-      margin: 0 10px 10px 10px;
+      margin: 0 10px 10px;
     }
 
     .coloredText {

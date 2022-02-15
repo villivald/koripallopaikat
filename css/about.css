@@ -36,18 +36,18 @@
 }
 
 .techInfoHeader {
-  background-color: rgb(230, 160, 80);
+  background-color: hsl(32deg 75% 61%);
   padding: 10px;
 }
 
 .projectInfoHeader {
-  background-color: rgb(152, 211, 182);
+  background-color: hsl(141deg 39% 65%);
   padding: 10px;
 }
 
 .projectText {
   max-width: 350px;
-  font-family: "Mate", serif !important;
+  font-family: Mate, serif !important;
 }
 
 .projectLinks {
