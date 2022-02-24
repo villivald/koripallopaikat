@@ -1,5 +1,16 @@
 const newsData = [
   {
+    date: "24-02-2022",
+    image: "https://villivald.com/koripallopaikat/84/1.webp",
+    largeImage: "https://villivald.com/koripallopaikat/84/2.webp",
+    alt: "Hammarskjöldintie, 5",
+    text: " was updated as well as Puotilan metrokatu, 2.",
+    longText:
+      " was updated as well as Puotilan metrokatu, 2. New pictures are added.",
+    link: "https://koripallopaikat.com/courts/Hammarskj%C3%B6ldintie,%205",
+    linkText: "Hammarskjöldintie, 5",
+  },
+  {
     date: "10-02-2022",
     image: "https://villivald.com/koripallopaikat/18/1.webp",
     largeImage: "https://villivald.com/koripallopaikat/18/2.webp",
