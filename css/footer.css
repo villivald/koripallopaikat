@@ -10,7 +10,7 @@
 }
 
 .MuiBottomNavigation-root.mainPageLink > a:nth-child(1) {
-  background-image: url("https://www.villivald.com/koripallopaikat/blob1.svg");
+  background-image: url("https://www.koripallopaikat.com/koripallopaikat/blob1.svg");
   height: 150px;
   background-position: center;
   background-repeat: no-repeat;
@@ -18,7 +18,7 @@
 }
 
 .MuiBottomNavigation-root.mainPageLink > a:nth-child(2) {
-  background-image: url("https://www.villivald.com/koripallopaikat/blob2.svg");
+  background-image: url("https://www.koripallopaikat.com/koripallopaikat/blob2.svg");
   height: 150px;
   background-position: center;
   background-repeat: no-repeat;
@@ -26,7 +26,7 @@
 }
 
 .MuiBottomNavigation-root.mainPageLink > a:nth-child(3) {
-  background-image: url("https://www.villivald.com/koripallopaikat/blob3.svg");
+  background-image: url("https://www.koripallopaikat.com/koripallopaikat/blob3.svg");
   height: 150px;
   background-position: center;
   background-repeat: no-repeat;

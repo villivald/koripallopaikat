@@ -24,7 +24,7 @@ class MyDocument extends Document {
           />
           <meta
             property="og:image"
-            content="https://villivald.com/koripallopaikat/Brand/IMG_2626.jpg"
+            content="https://koripallopaikat.com/koripallopaikat/Brand/IMG_2626.jpg"
           />
 
           <meta property="twitter:card" content="summary_large_image" />
@@ -36,7 +36,7 @@ class MyDocument extends Document {
           />
           <meta
             property="twitter:image"
-            content="https://villivald.com/koripallopaikat/Brand/IMG_2626.jpg"
+            content="https://koripallopaikat.com/koripallopaikat/Brand/IMG_2626.jpg"
           />
 
           <script

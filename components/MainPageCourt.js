@@ -81,7 +81,7 @@ const Court = ({ court }) => {
         </Button>
         <Button
           size="small"
-          href={`https://villivald.com/koripallopaikat/${court._id}.webp`}
+          href={`https://koripallopaikat.com/koripallopaikat/${court._id}.webp`}
           aria-label="court image"
           title="Open in new tab"
           target="_blank"
