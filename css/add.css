@@ -95,7 +95,7 @@ form {
   display: grid;
   place-items: center;
   margin: 10px;
-  background-image: url("https://www.koripallopaikat.com/koripallopaikat/blob4.svg");
+  background-image: url("/public/koripallopaikat/blob4.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 155% 155%;

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import basket from "../public/blob.svg";
 import basketball from "../public/basketball.svg";
+import cat from "../public/cat.webp";
 
 const SiteIntro = () => {
   return (
@@ -9,7 +10,7 @@ const SiteIntro = () => {
       <div className="toolTipCat">
         <Link href="https://villivald.com" passHref>
           <Image
-            src="https://villivald.com/static/media/dc2.d57757c1ff1ad961b5a9.webp"
+            src={cat}
             alt="cat logo"
             width={200}
             height={150}
