@@ -1,5 +1,16 @@
 const newsData = [
   {
+    date: "19-03-2022",
+    image: "https://koripallopaikat.com/koripallopaikat/27/1.webp",
+    largeImage: "https://koripallopaikat.com/koripallopaikat/89/1.webp",
+    alt: "Porttitie, 5",
+    text: " was updated as well as Rusthollarintie, 7 & Rusthollarintie, 6.",
+    longText:
+      " was updated as well as Rusthollarintie, 7 & Rusthollarintie, 6. New pictures are added.",
+    link: "https://koripallopaikat.com/courts/Porttitie,%205",
+    linkText: "Porttitie, 5",
+  },
+  {
     date: "24-02-2022",
     image: "https://koripallopaikat.com/koripallopaikat/84/1.webp",
     largeImage: "https://koripallopaikat.com/koripallopaikat/84/2.webp",
