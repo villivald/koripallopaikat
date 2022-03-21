@@ -1,5 +1,16 @@
 const newsData = [
   {
+    date: "21-03-2022",
+    image: "https://koripallopaikat.com/koripallopaikat/72/1.webp",
+    largeImage: "https://koripallopaikat.com/koripallopaikat/72/1.webp",
+    alt: "Hämeentie, 80",
+    text: " was updated as well as Laivastokuja, 2.",
+    longText:
+      " was updated as well as Laivastokuja, 2. New pictures are added.",
+    link: "https://koripallopaikat.com/courts/Hämeentie,%2080",
+    linkText: "Hämeentie, 80",
+  },
+  {
     date: "19-03-2022",
     image: "https://koripallopaikat.com/koripallopaikat/27/1.webp",
     largeImage: "https://koripallopaikat.com/koripallopaikat/89/1.webp",
