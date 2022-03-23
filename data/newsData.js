@@ -1,5 +1,15 @@
 const newsData = [
   {
+    date: "23-03-2022",
+    image: "https://koripallopaikat.com/koripallopaikat/34/1.webp",
+    largeImage: "https://koripallopaikat.com/koripallopaikat/34/1.webp",
+    alt: "Messitytönkatu, 4",
+    text: " was updated as well as Ahmatie, 1.",
+    longText: " was updated as well as Ahmatie, 1. New pictures are added.",
+    link: "https://koripallopaikat.com/courts/Messitytönkatu,%204",
+    linkText: "Messitytönkatu, 4",
+  },
+  {
     date: "21-03-2022",
     image: "https://koripallopaikat.com/koripallopaikat/72/1.webp",
     largeImage: "https://koripallopaikat.com/koripallopaikat/72/1.webp",
