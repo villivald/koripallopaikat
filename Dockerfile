@@ -1,11 +1,9 @@
-FROM node:12-alpine
+FROM node:14-alpine
 WORKDIR /usr/src/app
 
 COPY . ./
 
-# building the app
 RUN npm i
 RUN npm run build
 
-# Running the app
 CMD [ "npm", "start" ]
