@@ -1,5 +1,16 @@
 const newsData = [
   {
+    date: "02-04-2022",
+    image: "https://koripallopaikat.com/koripallopaikat/129/1.webp",
+    largeImage: "https://koripallopaikat.com/koripallopaikat/129/1.webp",
+    alt: "Edelfeltin Bulevardi, 2",
+    text: " court was added.",
+    longText:
+      " court was added. I will add more courts from Porvoo in the next couple of days.",
+    link: "https://koripallopaikat.com/courts/Edelfeltin%20Bulevardi,%202",
+    linkText: "Edelfeltin Bulevardi, 2",
+  },
+  {
     date: "23-03-2022",
     image: "https://koripallopaikat.com/koripallopaikat/34/1.webp",
     largeImage: "https://koripallopaikat.com/koripallopaikat/34/1.webp",
