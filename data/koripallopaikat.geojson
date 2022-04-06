@@ -1547,6 +1547,18 @@
         "coordinates": [25.67476106681364, 60.391105625320975],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Piispankatu, 3-7",
+        "description": "School yard",
+        "link": "/courts/Piispankatu,%3-7"
+      },
+      "geometry": {
+        "coordinates": [25.6687309, 60.3881896],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"

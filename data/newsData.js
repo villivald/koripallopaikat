@@ -1,5 +1,15 @@
 const newsData = [
   {
+    date: "06-04-2022",
+    image: "https://koripallopaikat.com/koripallopaikat/130/1.webp",
+    largeImage: "https://koripallopaikat.com/koripallopaikat/130/1.webp",
+    alt: "Piispankatu, 3-7",
+    text: " court was added.",
+    longText: " court was added.",
+    link: "https://koripallopaikat.com/courts/Piispankatu,%203-7",
+    linkText: "Piispankatu, 3-7",
+  },
+  {
     date: "02-04-2022",
     image: "https://koripallopaikat.com/koripallopaikat/129/1.webp",
     largeImage: "https://koripallopaikat.com/koripallopaikat/129/1.webp",
