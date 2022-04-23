@@ -1,5 +1,16 @@
 const newsData = [
   {
+    date: "23-04-2022",
+    image: "https://koripallopaikat.com/koripallopaikat/131/1.webp",
+    largeImage: "https://koripallopaikat.com/koripallopaikat/131/1.webp",
+    alt: "Vuorikatu, 29",
+    text: " court was added.",
+    longText:
+      " court was added. I will add another court from Lahti in the next couple of days.",
+    link: "https://koripallopaikat.com/courts/Vuorikatu,%2029",
+    linkText: "Vuorikatu, 29",
+  },
+  {
     date: "06-04-2022",
     image: "https://koripallopaikat.com/koripallopaikat/130/1.webp",
     largeImage: "https://koripallopaikat.com/koripallopaikat/130/1.webp",
@@ -176,10 +187,10 @@ const newsData = [
     date: "16-12-2021",
     image: "https://koripallopaikat.com/koripallopaikat/searchPics/122.webp",
     largeImage: "https://koripallopaikat.com/koripallopaikat/listPics/122.webp",
-    alt: "Veräjäpellonkatu, 2",
+    alt: "Pikkukoskentie, 23",
     text: " court was added.",
     link: "https://koripallopaikat.com/courts/Pikkukoskentie,%2023",
-    linkText: "Veräjäpellonkatu, 2",
+    linkText: "Pikkukoskentie, 23",
   },
   {
     date: "15-12-2021",
