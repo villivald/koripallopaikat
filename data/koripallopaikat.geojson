@@ -1559,6 +1559,18 @@
         "coordinates": [25.6687309, 60.3881896],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Vuorikatu, 29",
+        "description": "School yard",
+        "link": "/courts/Vuorikatu,%2029"
+      },
+      "geometry": {
+        "coordinates": [25.656046149543506, 60.98088087462945],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
