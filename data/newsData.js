@@ -1,5 +1,16 @@
 const newsData = [
   {
+    date: "25-04-2022",
+    image: "https://koripallopaikat.com/koripallopaikat/132/1.webp",
+    largeImage: "https://koripallopaikat.com/koripallopaikat/132/1.webp",
+    alt: "Vuorikatu, 13",
+    text: " court was added.",
+    longText:
+      " court was added, that is all from Lahti for now. Next, there will be a few courts from Paloheinä & Töölö (Helsinki).",
+    link: "https://koripallopaikat.com/courts/Vuorikatu,%2013",
+    linkText: "Vuorikatu, 13",
+  },
+  {
     date: "23-04-2022",
     image: "https://koripallopaikat.com/koripallopaikat/131/1.webp",
     largeImage: "https://koripallopaikat.com/koripallopaikat/131/1.webp",
