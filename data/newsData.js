@@ -1,5 +1,15 @@
 const newsData = [
   {
+    date: "30-04-2022",
+    image: "https://koripallopaikat.com/koripallopaikat/133/1.webp",
+    largeImage: "https://koripallopaikat.com/koripallopaikat/133/1.webp",
+    alt: "Ylipalontie, 1",
+    text: " court was added.",
+    longText: " court was added.",
+    link: "https://koripallopaikat.com/courts/Ylipalontie,%201",
+    linkText: "Ylipalontie, 1",
+  },
+  {
     date: "25-04-2022",
     image: "https://koripallopaikat.com/koripallopaikat/132/1.webp",
     largeImage: "https://koripallopaikat.com/koripallopaikat/132/1.webp",
