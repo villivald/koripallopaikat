@@ -1583,6 +1583,18 @@
         "coordinates": [25.64969258044378, 60.98138861009587],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Ylipalontie, 1",
+        "description": "School yard",
+        "link": "/courts/Ylipalontie,%201"
+      },
+      "geometry": {
+        "coordinates": [24.9302326, 60.2548705],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
