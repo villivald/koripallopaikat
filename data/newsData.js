@@ -1,5 +1,15 @@
 const newsData = [
   {
+    date: "01-05-2022",
+    image: "https://koripallopaikat.com/koripallopaikat/134/1.webp",
+    largeImage: "https://koripallopaikat.com/koripallopaikat/134/1.webp",
+    alt: "Rakovalkeantie, 11",
+    text: " court was added.",
+    longText: " court was added.",
+    link: "https://koripallopaikat.com/courts/Rakovalkeantie,%2011",
+    linkText: "Rakovalkeantie, 11",
+  },
+  {
     date: "30-04-2022",
     image: "https://koripallopaikat.com/koripallopaikat/133/1.webp",
     largeImage: "https://koripallopaikat.com/koripallopaikat/133/1.webp",
