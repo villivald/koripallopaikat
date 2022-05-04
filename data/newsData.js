@@ -1,5 +1,15 @@
 const newsData = [
   {
+    date: "04-05-2022",
+    image: "https://koripallopaikat.com/koripallopaikat/5/1.webp",
+    largeImage: "https://koripallopaikat.com/koripallopaikat/5/1.webp",
+    alt: "Salpausseläntie, 3",
+    text: " was updated.",
+    longText: " was updated. New pictures are added.",
+    link: "https://koripallopaikat.com/courts/Salpausseläntie,%203",
+    linkText: "Salpausseläntie, 3",
+  },
+  {
     date: "01-05-2022",
     image: "https://koripallopaikat.com/koripallopaikat/134/1.webp",
     largeImage: "https://koripallopaikat.com/koripallopaikat/134/1.webp",
