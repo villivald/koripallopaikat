@@ -19,9 +19,10 @@ export default function Books() {
           <h1 className="projectInfoHeader">Project info</h1>
           <Typography className="projectText" variant="subtitle1">
             <span className="projectTextHighlight">Koripallopaikat</span> is a
-            curated collection of public basketball courts in the Helsinki
-            Metropolitan Area. Everyone is welcome to{" "}
-            <Link href="https://koripallopaikat.com/add">submit</Link> their
+            curated collection of public basketball courts in Finland. We
+            started from the Helsinki Metropolitan Area and now we have courts
+            from 7 different cities including Turku and Tampere. Feel free to{" "}
+            <Link href="https://koripallopaikat.com/add">submit</Link> your
             local court.
           </Typography>
           <section className="projectLinks">

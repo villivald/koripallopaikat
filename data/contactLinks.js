@@ -3,7 +3,6 @@ import telegram from "../public/icons/telegram.svg";
 import twitter from "../public/icons/twitter.svg";
 import facebook from "../public/icons/facebook.svg";
 import instagram from "../public/icons/instagram.svg";
-import hashnode from "../public/icons/hashnode.svg";
 import hackernoon from "../public/icons/hackernoon.svg";
 import gmail from "../public/icons/gmail.svg";
 import github from "../public/icons/github-icon.svg";
@@ -51,11 +50,6 @@ const contactLinks = [
     link: "https://hackernoon.com/u/villivald",
     alt: "hackernoon",
     src: hackernoon,
-  },
-  {
-    link: "https://proj.ninja",
-    alt: "hashnode",
-    src: hashnode,
   },
   {
     link: "https://t.me/create_react_app",
