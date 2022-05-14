@@ -1607,6 +1607,18 @@
         "coordinates": [24.935887284894577, 60.253798317180255],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Pohjoinen Hesperiankatu, 22",
+        "description": "Play park",
+        "link": "/courts/Pohjoinen%20Hesperiankatu,%2022"
+      },
+      "geometry": {
+        "coordinates": [24.919358400581803, 60.17670788863067],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
