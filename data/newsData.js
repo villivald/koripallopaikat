@@ -1,5 +1,15 @@
 const newsData = [
   {
+    date: "14-05-2022",
+    image: "https://koripallopaikat.com/koripallopaikat/135/1.webp",
+    largeImage: "https://koripallopaikat.com/koripallopaikat/135/1.webp",
+    alt: "Pohjoinen Hesperiankatu, 22",
+    text: " court was added.",
+    longText: " court was added.",
+    link: "https://koripallopaikat.com/courts/Pohjoinen%20Hesperiankatu,%2022",
+    linkText: "Pohjoinen Hesperiankatu, 22",
+  },
+  {
     date: "04-05-2022",
     image: "https://koripallopaikat.com/koripallopaikat/5/2.webp",
     largeImage: "https://koripallopaikat.com/koripallopaikat/5/2.webp",
