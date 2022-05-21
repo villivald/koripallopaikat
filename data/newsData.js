@@ -1,5 +1,16 @@
 const newsData = [
   {
+    date: "21-05-2022",
+    image: "https://koripallopaikat.com/koripallopaikat/136/1.webp",
+    largeImage: "https://koripallopaikat.com/koripallopaikat/136/1.webp",
+    alt: "Eteläinen Hesperiankatu, 38",
+    text: " court was added.",
+    longText:
+      " court was added. Next week I will try to add a few courts from Vantaa and one more from Taka-Töölö.",
+    link: "https://koripallopaikat.com/courts/Eteläinen%20Hesperiankatu,%2038",
+    linkText: "Eteläinen Hesperiankatu, 38",
+  },
+  {
     date: "14-05-2022",
     image: "https://koripallopaikat.com/koripallopaikat/135/1.webp",
     largeImage: "https://koripallopaikat.com/koripallopaikat/135/1.webp",
