@@ -108,9 +108,3 @@
     font-size: 1.2rem;
   }
 }
-
-@media not all and (min-resolution: 0.001dpcm) {
-  .toolTipCat {
-    margin-left: -50%;
-  }
-}
