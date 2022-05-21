@@ -1619,6 +1619,18 @@
         "coordinates": [24.919358400581803, 60.17670788863067],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Eteläinen Hesperiankatu, 38",
+        "description": "Play park",
+        "link": "/courts/Eteläinen%20Hesperiankatu,%2038"
+      },
+      "geometry": {
+        "coordinates": [24.917439234950596, 60.17541507213397],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
