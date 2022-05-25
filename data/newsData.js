@@ -1,5 +1,15 @@
 const newsData = [
   {
+    date: "25-05-2022",
+    image: "https://koripallopaikat.com/koripallopaikat/137/2.webp",
+    largeImage: "https://koripallopaikat.com/koripallopaikat/137/2.webp",
+    alt: "Rutarsinpolku, 2",
+    text: " court was added.",
+    longText: " court was added.",
+    link: "https://koripallopaikat.com/courts/Rutarsinpolku,%202",
+    linkText: "Rutarsinpolku, 2",
+  },
+  {
     date: "21-05-2022",
     image: "https://koripallopaikat.com/koripallopaikat/136/1.webp",
     largeImage: "https://koripallopaikat.com/koripallopaikat/136/1.webp",
