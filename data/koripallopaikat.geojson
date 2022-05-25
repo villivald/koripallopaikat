@@ -1624,11 +1624,23 @@
       "type": "Feature",
       "properties": {
         "title": "Eteläinen Hesperiankatu, 38",
-        "description": "Play park",
+        "description": "School yard",
         "link": "/courts/Eteläinen%20Hesperiankatu,%2038"
       },
       "geometry": {
         "coordinates": [24.917439234950596, 60.17541507213397],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Rutarsinpolku, 2",
+        "description": "School yard",
+        "link": "/courts/Rutarsinpolku,%202"
+      },
+      "geometry": {
+        "coordinates": [24.980854986719283, 60.28224170348714],
         "type": "Point"
       }
     }
