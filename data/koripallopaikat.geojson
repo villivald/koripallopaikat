@@ -1643,6 +1643,18 @@
         "coordinates": [24.980854986719283, 60.28224170348714],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Kirkonkyläntie, 99",
+        "description": "Play park",
+        "link": "/courts/Kirkonkyläntie,%2099"
+      },
+      "geometry": {
+        "coordinates": [24.979218177468397, 60.26838001424471],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
