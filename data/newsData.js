@@ -1,5 +1,15 @@
 const newsData = [
   {
+    date: "27-05-2022",
+    image: "https://koripallopaikat.com/koripallopaikat/138/2.webp",
+    largeImage: "https://koripallopaikat.com/koripallopaikat/138/2.webp",
+    alt: "Kirkonkyläntie, 99",
+    text: " court was added.",
+    longText: " court was added.",
+    link: "https://koripallopaikat.com/courts/Kirkonkyläntie,%2099",
+    linkText: "Kirkonkyläntie, 99",
+  },
+  {
     date: "25-05-2022",
     image: "https://koripallopaikat.com/koripallopaikat/137/2.webp",
     largeImage: "https://koripallopaikat.com/koripallopaikat/137/2.webp",
