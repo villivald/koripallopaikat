@@ -1,5 +1,15 @@
 const newsData = [
   {
+    date: "19-06-2022",
+    image: "https://koripallopaikat.com/koripallopaikat/139/2.webp",
+    largeImage: "https://koripallopaikat.com/koripallopaikat/139/2.webp",
+    alt: "Töölönkatu, 41",
+    text: " court was added.",
+    longText: " court was added.",
+    link: "https://koripallopaikat.com/courts/Töölönkatu,%2041",
+    linkText: "Töölönkatu, 41",
+  },
+  {
     date: "27-05-2022",
     image: "https://koripallopaikat.com/koripallopaikat/138/2.webp",
     largeImage: "https://koripallopaikat.com/koripallopaikat/138/2.webp",
