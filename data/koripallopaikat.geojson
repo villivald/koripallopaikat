@@ -1667,6 +1667,18 @@
         "coordinates": [24.921925100406465, 60.18286120182496],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Rahakamarinkatu, 2",
+        "description": "Outdoor basketball court",
+        "link": "/courts/Rahakamarinkatu,%202"
+      },
+      "geometry": {
+        "coordinates": [24.917316779530413, 60.20052811475838],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
