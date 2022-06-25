@@ -1,5 +1,15 @@
 const newsData = [
   {
+    date: "25-06-2022",
+    image: "https://koripallopaikat.com/koripallopaikat/140/2.webp",
+    largeImage: "https://koripallopaikat.com/koripallopaikat/140/2.webp",
+    alt: "Rahakamarinkatu, 2",
+    text: " court was added.",
+    longText: " court was added.",
+    link: "https://koripallopaikat.com/courts/Rahakamarinkatu,%202",
+    linkText: "Rahakamarinkatu, 2 (Keskuspuisto)",
+  },
+  {
     date: "19-06-2022",
     image: "https://koripallopaikat.com/koripallopaikat/139/2.webp",
     largeImage: "https://koripallopaikat.com/koripallopaikat/139/2.webp",
