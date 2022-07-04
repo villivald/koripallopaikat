@@ -1,5 +1,15 @@
 const newsData = [
   {
+    date: "04-07-2022",
+    image: "https://koripallopaikat.com/koripallopaikat/141/2.webp",
+    largeImage: "https://koripallopaikat.com/koripallopaikat/141/2.webp",
+    alt: "Osmontie, 47",
+    text: " court was added.",
+    longText: " court was added.",
+    link: "https://koripallopaikat.com/courts/Osmontie,%2047",
+    linkText: "Osmontie, 47",
+  },
+  {
     date: "25-06-2022",
     image: "https://koripallopaikat.com/koripallopaikat/140/2.webp",
     largeImage: "https://koripallopaikat.com/koripallopaikat/140/2.webp",
