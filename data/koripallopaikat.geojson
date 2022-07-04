@@ -1679,6 +1679,18 @@
         "coordinates": [24.917316779530413, 60.20052811475838],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Osmontie, 47",
+        "description": "Outdoor basketball court",
+        "link": "/courts/Osmontie,%2047"
+      },
+      "geometry": {
+        "coordinates": [24.948345859818144, 60.21956489168627],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
