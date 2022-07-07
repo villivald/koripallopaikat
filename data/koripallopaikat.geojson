@@ -1691,6 +1691,18 @@
         "coordinates": [24.948345859818144, 60.21956489168627],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Nallitie, 3",
+        "description": "School yard",
+        "link": "/courts/Nallitie,%203"
+      },
+      "geometry": {
+        "coordinates": [25.06162644569021, 60.235268377739935],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
