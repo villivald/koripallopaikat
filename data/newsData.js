@@ -1,5 +1,15 @@
 const newsData = [
   {
+    date: "07-07-2022",
+    image: "https://koripallopaikat.com/koripallopaikat/142/1.webp",
+    largeImage: "https://koripallopaikat.com/koripallopaikat/142/1.webp",
+    alt: "Nallitie, 3",
+    text: " court was added.",
+    longText: " court was added.",
+    link: "https://koripallopaikat.com/courts/Nallitie,%203",
+    linkText: "Nallitie, 3",
+  },
+  {
     date: "04-07-2022",
     image: "https://koripallopaikat.com/koripallopaikat/141/2.webp",
     largeImage: "https://koripallopaikat.com/koripallopaikat/141/2.webp",
