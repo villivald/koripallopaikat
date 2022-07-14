@@ -1703,6 +1703,18 @@
         "coordinates": [25.06162644569021, 60.235268377739935],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Kivikonkaari, 31",
+        "description": "Play park",
+        "link": "/courts/Kivikonkaari,%2031"
+      },
+      "geometry": {
+        "coordinates": [25.06311086256854, 60.2361207178431],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
