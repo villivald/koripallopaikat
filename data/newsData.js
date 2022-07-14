@@ -1,5 +1,15 @@
 const newsData = [
   {
+    date: "14-07-2022",
+    image: "https://koripallopaikat.com/koripallopaikat/143/1.webp",
+    largeImage: "https://koripallopaikat.com/koripallopaikat/143/1.webp",
+    alt: "Kivikonkaari, 31",
+    text: " court was added.",
+    longText: " court was added.",
+    link: "https://koripallopaikat.com/courts/Kivikonkaari,%2031",
+    linkText: "Kivikonkaari, 31",
+  },
+  {
     date: "07-07-2022",
     image: "https://koripallopaikat.com/koripallopaikat/142/1.webp",
     largeImage: "https://koripallopaikat.com/koripallopaikat/142/1.webp",
