@@ -1,5 +1,15 @@
 const newsData = [
   {
+    date: "17-07-2022",
+    image: "https://koripallopaikat.com/koripallopaikat/144/1.webp",
+    largeImage: "https://koripallopaikat.com/koripallopaikat/144/1.webp",
+    alt: "Naulakalliontie, 1",
+    text: " court was added.",
+    longText: " court was added.",
+    link: "https://koripallopaikat.com/courts/Naulakalliontie,%201",
+    linkText: "Naulakalliontie, 1",
+  },
+  {
     date: "14-07-2022",
     image: "https://koripallopaikat.com/koripallopaikat/143/1.webp",
     largeImage: "https://koripallopaikat.com/koripallopaikat/143/1.webp",
