@@ -1,5 +1,16 @@
 const newsData = [
   {
+    date: "24-07-2022",
+    image: "https://koripallopaikat.com/koripallopaikat/145/1.webp",
+    largeImage: "https://koripallopaikat.com/koripallopaikat/145/1.webp",
+    alt: "Talvelantie, 1",
+    text: " court was added.",
+    longText:
+      " court was added. Next week I will add a couple of courts from Fiskars and Lohja.",
+    link: "https://koripallopaikat.com/courts/Talvelantie,%201",
+    linkText: "Talvelantie, 1",
+  },
+  {
     date: "17-07-2022",
     image: "https://koripallopaikat.com/koripallopaikat/144/1.webp",
     largeImage: "https://koripallopaikat.com/koripallopaikat/144/1.webp",
