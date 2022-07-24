@@ -1727,6 +1727,18 @@
         "coordinates": [25.108847326175802, 60.236950307824756],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Talvelantie, 1",
+        "description": "Other",
+        "link": "/courts/Talvelantie,%201"
+      },
+      "geometry": {
+        "coordinates": [24.999717500305668, 60.25489394293956],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
