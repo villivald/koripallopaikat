@@ -1,5 +1,15 @@
 const newsData = [
   {
+    date: "30-07-2022",
+    image: "https://koripallopaikat.com/koripallopaikat/55/2.webp",
+    largeImage: "https://koripallopaikat.com/koripallopaikat/55/2.webp",
+    alt: "Bernhardinkatu, 7",
+    text: " was updated.",
+    longText: " was updated. New pictures are added.",
+    link: "https://koripallopaikat.com/courts/Bernhardinkatu,%207",
+    linkText: "Bernhardinkatu, 7",
+  },
+  {
     date: "24-07-2022",
     image: "https://koripallopaikat.com/koripallopaikat/145/1.webp",
     largeImage: "https://koripallopaikat.com/koripallopaikat/145/1.webp",
