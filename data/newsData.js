@@ -1,5 +1,15 @@
 const newsData = [
   {
+    date: "19-08-2022",
+    image: "https://koripallopaikat.com/koripallopaikat/146/1.webp",
+    largeImage: "https://koripallopaikat.com/koripallopaikat/146/1.webp",
+    alt: "Opintie, 5",
+    text: " court was added.",
+    longText: " court was added.",
+    link: "https://koripallopaikat.com/courts/Opintie,%205",
+    linkText: "Opintie, 5",
+  },
+  {
     date: "30-07-2022",
     image: "https://koripallopaikat.com/koripallopaikat/55/2.webp",
     largeImage: "https://koripallopaikat.com/koripallopaikat/55/2.webp",
