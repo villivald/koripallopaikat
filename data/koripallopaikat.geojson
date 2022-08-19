@@ -1732,11 +1732,23 @@
       "type": "Feature",
       "properties": {
         "title": "Talvelantie, 1",
-        "description": "Other",
+        "description": "School yard",
         "link": "/courts/Talvelantie,%201"
       },
       "geometry": {
         "coordinates": [24.999717500305668, 60.25489394293956],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Opintie, 5",
+        "description": "School yard",
+        "link": "/courts/Opintie,%205"
+      },
+      "geometry": {
+        "coordinates": [23.551910817864375, 60.12880444447484],
         "type": "Point"
       }
     }
