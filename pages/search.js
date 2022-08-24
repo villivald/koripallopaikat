@@ -73,6 +73,7 @@ export default function Search() {
               <MenuItem value={"Tampere"}>Tampere</MenuItem>
               <MenuItem value={"Porvoo"}>Porvoo</MenuItem>
               <MenuItem value={"Lahti"}>Lahti</MenuItem>
+              <MenuItem value={"Lohja"}>Lohja</MenuItem>
               <MenuItem value={"Fiskars"}>Fiskars</MenuItem>
             </Select>
           </FormControl>
