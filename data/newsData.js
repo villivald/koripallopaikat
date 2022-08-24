@@ -1,5 +1,15 @@
 const newsData = [
   {
+    date: "24-08-2022",
+    image: "https://koripallopaikat.com/koripallopaikat/147/1.webp",
+    largeImage: "https://koripallopaikat.com/koripallopaikat/147/1.webp",
+    alt: "Asemakatu, 1",
+    text: " court was added.",
+    longText: " court was added.",
+    link: "https://koripallopaikat.com/courts/Asemakatu,%201",
+    linkText: "Asemakatu, 1",
+  },
+  {
     date: "19-08-2022",
     image: "https://koripallopaikat.com/koripallopaikat/146/1.webp",
     largeImage: "https://koripallopaikat.com/koripallopaikat/146/1.webp",
