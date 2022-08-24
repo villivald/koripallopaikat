@@ -1751,6 +1751,18 @@
         "coordinates": [23.551910817864375, 60.12880444447484],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Asemakatu, 1",
+        "description": "School yard",
+        "link": "/courts/Asemakatu,%201"
+      },
+      "geometry": {
+        "coordinates": [24.065906604042794, 60.25499326845776],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
