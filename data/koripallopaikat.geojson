@@ -1763,6 +1763,18 @@
         "coordinates": [24.065906604042794, 60.25499326845776],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Päivärinne",
+        "description": "School yard",
+        "link": "/courts/Päivärinne"
+      },
+      "geometry": {
+        "coordinates": [24.0647662553641, 60.254613242810116],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
