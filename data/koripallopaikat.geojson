@@ -1775,6 +1775,18 @@
         "coordinates": [24.0647662553641, 60.254613242810116],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Linnaistenkatu, 9",
+        "description": "School yard",
+        "link": "/courts/Linnaistenkatu,%209"
+      },
+      "geometry": {
+        "coordinates": [24.0616928116439, 60.2527354727551],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
