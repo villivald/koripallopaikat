@@ -1,5 +1,15 @@
 const newsData = [
   {
+    date: "12-09-2022",
+    image: "https://koripallopaikat.com/koripallopaikat/149/1.webp",
+    largeImage: "https://koripallopaikat.com/koripallopaikat/149/1.webp",
+    alt: "Linnaistenkatu, 9",
+    text: " court was added.",
+    longText: " court was added.",
+    link: "https://koripallopaikat.com/courts/Linnaistenkatu,%209",
+    linkText: "Linnaistenkatu, 9",
+  },
+  {
     date: "27-08-2022",
     image: "https://koripallopaikat.com/koripallopaikat/148/1.webp",
     largeImage: "https://koripallopaikat.com/koripallopaikat/148/1.webp",
