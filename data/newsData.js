@@ -1,5 +1,15 @@
 const newsData = [
   {
+    date: "14-09-2022",
+    image: "https://koripallopaikat.com/koripallopaikat/150/1.webp",
+    largeImage: "https://koripallopaikat.com/koripallopaikat/150/1.webp",
+    alt: "Telamäenkuja, 3",
+    text: " court was added.",
+    longText: " court was added.",
+    link: "https://koripallopaikat.com/courts/Telamäenkuja,%203",
+    linkText: "Telamäenkuja, 3",
+  },
+  {
     date: "12-09-2022",
     image: "https://koripallopaikat.com/koripallopaikat/149/1.webp",
     largeImage: "https://koripallopaikat.com/koripallopaikat/149/1.webp",
