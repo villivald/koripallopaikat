@@ -1787,6 +1787,18 @@
         "coordinates": [24.0616928116439, 60.2527354727551],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Telamäenkuja, 3",
+        "description": "Outdoor basketball court",
+        "link": "/courts/Telamäenkuja,%203"
+      },
+      "geometry": {
+        "coordinates": [24.76440269319307, 60.166456891755324],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
