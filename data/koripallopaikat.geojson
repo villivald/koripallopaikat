@@ -1799,6 +1799,18 @@
         "coordinates": [24.76440269319307, 60.166456891755324],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Telamäenkuja, 5",
+        "description": "Outdoor basketball court",
+        "link": "/courts/Telamäenkuja,%205"
+      },
+      "geometry": {
+        "coordinates": [24.763438387483767, 60.16626880880571],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
