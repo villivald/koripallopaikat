@@ -1,5 +1,15 @@
 const newsData = [
   {
+    date: "19-09-2022",
+    image: "https://koripallopaikat.com/koripallopaikat/152/1.webp",
+    largeImage: "https://koripallopaikat.com/koripallopaikat/152/1.webp",
+    alt: "Matinsyrjä, 5",
+    text: " court was added.",
+    longText: " court was added.",
+    link: "https://koripallopaikat.com/courts/Matinsyrjä,%205",
+    linkText: "Matinsyrjä, 5",
+  },
+  {
     date: "16-09-2022",
     image: "https://koripallopaikat.com/koripallopaikat/151/1.webp",
     largeImage: "https://koripallopaikat.com/koripallopaikat/151/1.webp",
