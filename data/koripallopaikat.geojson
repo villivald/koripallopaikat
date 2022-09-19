@@ -1811,6 +1811,18 @@
         "coordinates": [24.763438387483767, 60.16626880880571],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Matinsyrjä, 5",
+        "description": "School yard",
+        "link": "/courts/Matinsyrjä,%205"
+      },
+      "geometry": {
+        "coordinates": [24.75093331997153, 60.16478648316024],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
