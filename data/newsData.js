@@ -1,5 +1,15 @@
 const newsData = [
   {
+    date: "23-09-2022",
+    image: "https://koripallopaikat.com/koripallopaikat/153/1.webp",
+    largeImage: "https://koripallopaikat.com/koripallopaikat/153/1.webp",
+    alt: "Nuottapolku, 11",
+    text: " court was added.",
+    longText: " court was added.",
+    link: "https://koripallopaikat.com/courts/Nuottapolku,%2011",
+    linkText: "Nuottapolku, 11",
+  },
+  {
     date: "19-09-2022",
     image: "https://koripallopaikat.com/koripallopaikat/152/1.webp",
     largeImage: "https://koripallopaikat.com/koripallopaikat/152/1.webp",
