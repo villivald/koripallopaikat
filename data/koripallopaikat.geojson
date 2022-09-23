@@ -1823,6 +1823,18 @@
         "coordinates": [24.75093331997153, 60.16478648316024],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Nuottapolku, 11",
+        "description": "Sports park",
+        "link": "/courts/Nuottapolku,%2011"
+      },
+      "geometry": {
+        "coordinates": [24.872018822213317, 60.19973103057429],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
