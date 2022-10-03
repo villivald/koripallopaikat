@@ -1835,6 +1835,18 @@
         "coordinates": [24.872018822213317, 60.19973103057429],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Runoratsunkatu, 2",
+        "description": "Sports field",
+        "link": "/courts/Runoratsunkatu,%202"
+      },
+      "geometry": {
+        "coordinates": [24.829946664252976, 60.215286619017114],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
