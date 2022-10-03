@@ -1,5 +1,15 @@
 const newsData = [
   {
+    date: "03-10-2022",
+    image: "https://koripallopaikat.com/koripallopaikat/154/1.webp",
+    largeImage: "https://koripallopaikat.com/koripallopaikat/154/1.webp",
+    alt: "Runoratsunkatu, 2",
+    text: " court was added.",
+    longText: " court was added.",
+    link: "https://koripallopaikat.com/courts/Runoratsunkatu,%202",
+    linkText: "Runoratsunkatu, 2",
+  },
+  {
     date: "23-09-2022",
     image: "https://koripallopaikat.com/koripallopaikat/153/1.webp",
     largeImage: "https://koripallopaikat.com/koripallopaikat/153/1.webp",
