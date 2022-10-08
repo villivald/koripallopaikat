@@ -1,5 +1,15 @@
 const newsData = [
   {
+    date: "08-10-2022",
+    image: "https://koripallopaikat.com/koripallopaikat/155/1.webp",
+    largeImage: "https://koripallopaikat.com/koripallopaikat/155/1.webp",
+    alt: "Haukilahdenkatu, 4",
+    text: " court was added.",
+    longText: " court was added.",
+    link: "https://koripallopaikat.com/courts/Haukilahdenkatu,%204",
+    linkText: "Haukilahdenkatu, 4",
+  },
+  {
     date: "03-10-2022",
     image: "https://koripallopaikat.com/koripallopaikat/154/1.webp",
     largeImage: "https://koripallopaikat.com/koripallopaikat/154/1.webp",
