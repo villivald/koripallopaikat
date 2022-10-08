@@ -1847,6 +1847,18 @@
         "coordinates": [24.829946664252976, 60.215286619017114],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Haukilahdenkatu, 4",
+        "description": "Outdoor basketball court",
+        "link": "/courts/Haukilahdenkatu,%204"
+      },
+      "geometry": {
+        "coordinates": [24.778954506003302, 60.16226432676986],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
