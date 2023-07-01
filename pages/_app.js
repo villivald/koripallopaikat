@@ -31,7 +31,7 @@ import "mapbox-gl/dist/mapbox-gl.css";
 
 import RenderResults from "../util/kbar";
 import actions from "../util/kbarActions";
-import { AppWrapper } from "../context/state";
+import { AppContext } from "../context";
 
 Router.events.on("routeChangeStart", () => NProgress.start());
 Router.events.on("routeChangeComplete", () => NProgress.done());
@@ -49,10 +49,10 @@ export default function MyApp({ Component, pageProps }) {
         </KBarPositioner>
       </KBarPortal>
 
-      <AppWrapper>
+      <AppContext.Provider value={pageProps}>
         <Component {...pageProps} />
         <Analytics />
-      </AppWrapper>
+      </AppContext.Provider>
     </KBarProvider>
   );
 }

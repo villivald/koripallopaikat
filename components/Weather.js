@@ -1,10 +1,6 @@
-import { useAppContext } from "../context/state";
 import Image from "next/image";
 
-const Weather = () => {
-  const state = useAppContext();
-  const weather = state.weather;
-
+const Weather = ({ weather }) => {
   return (
     <div>
       {weather && (

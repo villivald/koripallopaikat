@@ -7,7 +7,7 @@ const SiteIntro = dynamic(() => import("../components/SiteIntro"));
 const Main = dynamic(() => import("../components/Main"));
 const Weather = dynamic(() => import("../components/Weather"));
 
-const Home = () => {
+const Home = ({ weather }) => {
   return (
     <div>
       <Head>
@@ -21,7 +21,7 @@ const Home = () => {
       </Head>
       <Header />
       <SiteIntro />
-      <Weather />
+      <Weather weather={weather} />
       <Main />
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=UA-203458424-1"
