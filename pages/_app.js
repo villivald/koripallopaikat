@@ -1,4 +1,5 @@
 import Router from "next/router";
+import { Analytics } from "@vercel/analytics/react";
 import NProgress from "nprogress";
 import {
   KBarProvider,
@@ -50,6 +51,7 @@ export default function MyApp({ Component, pageProps }) {
 
       <AppWrapper>
         <Component {...pageProps} />
+        <Analytics />
       </AppWrapper>
     </KBarProvider>
   );
