@@ -1,5 +1,15 @@
 const newsData = [
   {
+    date: "24-07-2023",
+    image: "https://koripallopaikat.com/koripallopaikat/news/museum.webp",
+    largeImage:
+      "https://koripallopaikat.com/koripallopaikat/news/large/museum.webp",
+    alt: "After almost a year break, Koripallopaikat.com is back.",
+    text: "After almost a year break, Koripallopaikat.com is back. There are some improvements coming soon, as well as new courts.",
+    link: "https://koripallopaikat.com/news",
+    linkText: "Breaking news! ",
+  },
+  {
     date: "12-10-2022",
     image: "https://koripallopaikat.com/koripallopaikat/156/1.webp",
     largeImage: "https://koripallopaikat.com/koripallopaikat/156/1.webp",
