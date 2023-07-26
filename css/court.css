@@ -39,8 +39,17 @@
   margin: 20px 40px 40px;
 }
 
-.listCourt.search {
-  grid-template-columns: repeat(6, 1fr);
+.listCourt.search > div > div > div {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+}
+
+.listCourt.search > div {
+  width: 95vw;
+  height: 100vh !important;
+  margin-top: 3rem;
 }
 
 .iconLink {
@@ -113,8 +122,8 @@
     grid-template-columns: repeat(5, 1fr);
   }
 
-  .listCourt.search {
-    grid-template-columns: repeat(5, 1fr);
+  .listCourt.search > div > div > div {
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .iconLinks.MuiCardActions-spacing > :not(:first-child) {
@@ -142,8 +151,8 @@
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .listCourt.search {
-    grid-template-columns: repeat(4, 1fr);
+  .listCourt.search > div > div > div {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .MuiCardActions-spacing > :first-child {
@@ -172,8 +181,8 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .listCourt.search {
-    grid-template-columns: repeat(3, 1fr);
+  .listCourt.search > div > div > div {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .childrenAlert {
@@ -200,8 +209,8 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .listCourt.search {
-    grid-template-columns: repeat(2, 1fr);
+  .listCourt.search > div > div > div {
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .sortFilter.sort {

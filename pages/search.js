@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import Head from "next/head";
-import Header from "../components/Header";
-import SearchObject from "../components/SearchObject";
+import { VirtuosoGrid } from "react-virtuoso";
+
 import {
   Switch,
   TextField,
@@ -11,6 +11,10 @@ import {
   FormControlLabel,
   Select,
 } from "@material-ui/core";
+
+import Header from "../components/Header";
+import SearchObject from "../components/SearchObject";
+
 import { connectToDatabase } from "../util/mongodb";
 import distance from "../util/distance";
 
@@ -41,6 +45,28 @@ export default function Search({ courts }) {
   } else {
     courts = courts.filter((court) => court.city === city);
   }
+
+  const sortedCourts = useMemo(() => {
+    return courts
+      .filter(
+        (court) =>
+          court.address.toLowerCase().includes(filter.toLowerCase()) ||
+          court.district.toLowerCase().includes(filter.toLowerCase())
+      )
+      .sort((a, b) => sortByDistance && (a.distance > b.distance ? 1 : -1))
+      .sort((max, min) => sortByBaskets && min.baskets - max.baskets)
+      .sort((a, b) => sortBySurface && (a.surface > b.surface ? 1 : -1))
+      .sort((a, b) => sortByAddress && (a.address > b.address ? 1 : -1))
+      .sort((a, b) => sortByDistrict && (a.district > b.district ? 1 : -1));
+  }, [
+    courts,
+    filter,
+    sortByDistance,
+    sortByBaskets,
+    sortBySurface,
+    sortByAddress,
+    sortByDistrict,
+  ]);
 
   return (
     <div>
@@ -126,20 +152,12 @@ export default function Search({ courts }) {
         </div>
       </div>
       <div className="listCourt search">
-        {courts
-          .filter(
-            (court) =>
-              court.address.toLowerCase().includes(filter.toLowerCase()) ||
-              court.district.toLowerCase().includes(filter.toLowerCase())
-          )
-          .sort((a, b) => sortByDistance && (a.distance > b.distance ? 1 : -1))
-          .sort((max, min) => sortByBaskets && min.baskets - max.baskets)
-          .sort((a, b) => sortBySurface && (a.surface > b.surface ? 1 : -1))
-          .sort((a, b) => sortByAddress && (a.address > b.address ? 1 : -1))
-          .sort((a, b) => sortByDistrict && (a.district > b.district ? 1 : -1))
-          .map((court) => (
+        <VirtuosoGrid
+          data={sortedCourts}
+          itemContent={(_index, court) => (
             <SearchObject court={court} key={court._id} />
-          ))}
+          )}
+        />
       </div>
     </div>
   );
