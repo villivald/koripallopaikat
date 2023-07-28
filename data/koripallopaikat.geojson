@@ -1871,6 +1871,18 @@
         "coordinates": [24.778215539356793, 60.16219931818215],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Westendintie, 37",
+        "description": "Outdoor basketball court",
+        "link": "/courts/Westendintie,%2037"
+      },
+      "geometry": {
+        "coordinates": [24.801313312226377, 60.16274410679797],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
