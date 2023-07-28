@@ -1,5 +1,15 @@
 const newsData = [
   {
+    date: "28-07-2023",
+    image: "https://koripallopaikat.com/koripallopaikat/157/1.webp",
+    largeImage: "https://koripallopaikat.com/koripallopaikat/157/1.webp",
+    alt: "Westendintie, 37",
+    text: " court was added.",
+    longText: " court was added.",
+    link: "https://koripallopaikat.com/courts/Westendintie,%2037",
+    linkText: "Westendintie, 37",
+  },
+  {
     date: "24-07-2023",
     image: "https://koripallopaikat.com/koripallopaikat/news/museum.webp",
     largeImage:
