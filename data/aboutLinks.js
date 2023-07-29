@@ -32,8 +32,8 @@ const aboutLinks = [
     text: "OpenMoji",
   },
   {
-    link: "https://github.com/timc1/kbar",
-    text: "kbar",
+    link: "https://virtuoso.dev/",
+    text: "React Virtuoso",
   },
 ];
 

@@ -1,9 +1,7 @@
-const withMDX = require("@next/mdx")();
-
-module.exports = withMDX({
+module.exports = {
   productionBrowserSourceMaps: true,
-  pageExtensions: ["mdx", "md", "jsx", "js", "tsx", "ts"],
+  pageExtensions: ["jsx", "js", "tsx", "ts"],
   images: {
     domains: ["openweathermap.org", "villivald.com", "koripallopaikat.com"],
   },
-});
+};

@@ -1,7 +1,7 @@
 import MainPageCourt from "./MainPageCourt";
-import mainPageCourts from "../data/mainPageCourts";
 import News from "./News";
-import Footer from "./Footer";
+
+import mainPageCourts from "../data/mainPageCourts";
 
 const main = () => {
   return (
@@ -12,7 +12,6 @@ const main = () => {
           <MainPageCourt court={court} key={court._id} />
         ))}
       </div>
-      <Footer />
     </>
   );
 };

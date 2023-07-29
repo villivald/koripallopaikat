@@ -38,23 +38,6 @@ class MyDocument extends Document {
             property="twitter:image"
             content="https://koripallopaikat.com/koripallopaikat/Brand/IMG_2626.jpg"
           />
-
-          <script
-            data-goatcounter="https://villivald.goatcounter.com/count"
-            async
-            src="//gc.zgo.at/count.js"
-          ></script>
-
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'UA-203458424-1', { page_path: window.location.pathname });
-            `,
-            }}
-          />
         </Head>
 
         <body>
