@@ -1,39 +1,34 @@
-import { useForm } from "react-hook-form";
 import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/router";
 import Head from "next/head";
-import { makeStyles } from "@material-ui/core/styles";
-import { styled } from "@material-ui/core/styles";
-import Snackbar from "@material-ui/core/Snackbar";
-import TextField from "@material-ui/core/TextField";
-import InputLabel from "@material-ui/core/InputLabel";
-import Button from "@material-ui/core/Button";
-import InputBase from "@material-ui/core/InputBase";
-import MuiAlert from "@material-ui/lab/Alert";
-import Chip from "@material-ui/core/Chip";
-import MenuItem from "@material-ui/core/MenuItem";
-import CloudUploadIcon from "@material-ui/icons/CloudUpload";
-import CheckIcon from "@material-ui/icons/Check";
-import RoomIcon from "@material-ui/icons/Room";
-import PublishIcon from "@material-ui/icons/Publish";
-import Header from "../components/Header";
-import surfaces from "../data/surfaces";
-import placeTypes from "../data/placeTypes";
+import { useForm } from "react-hook-form";
 import mapboxgl from "!mapbox-gl";
 import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
 import MapboxClient from "@mapbox/mapbox-sdk/services/geocoding";
+
+import { styled } from "@mui/material/styles";
+
+import {
+  Snackbar,
+  TextField,
+  InputLabel,
+  Button,
+  InputBase,
+  Chip,
+  MenuItem,
+  Alert as MuiAlert,
+} from "@mui/material";
+
+import CloudUploadIcon from "@mui/icons-material/CloudUpload";
+import CheckIcon from "@mui/icons-material/Check";
+import RoomIcon from "@mui/icons-material/Room";
+import PublishIcon from "@mui/icons-material/Publish";
+
+import Header from "../components/Header";
+import surfaces from "../data/surfaces";
+import placeTypes from "../data/placeTypes";
+
 import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css";
-
-const useStyles = makeStyles(() => ({
-  input: {
-    minWidth: "280px",
-    backgroundColor: "#feffff !important",
-  },
-
-  submit: {
-    margin: "20px 0 50px 0",
-  },
-}));
 
 const MapButton = styled(Button)({
   backgroundColor: "#82C99B",
@@ -64,7 +59,6 @@ function Alert(props) {
 }
 
 export default function Add() {
-  const classes = useStyles();
   const router = useRouter();
   const [visible, setVisible] = useState(false);
 
@@ -271,7 +265,7 @@ export default function Add() {
               </MapButton>
               <h2 className="addressString">{address}</h2>
               <TextField
-                className={classes.input}
+                className="inputField"
                 select
                 label="Surface"
                 value={surface}
@@ -284,7 +278,7 @@ export default function Add() {
                 ))}
               </TextField>
               <TextField
-                className={classes.input}
+                className="inputField"
                 select
                 label="Place type"
                 value={placeType}
@@ -298,7 +292,7 @@ export default function Add() {
               </TextField>
               <TextField
                 required
-                className={classes.input}
+                className="inputField"
                 label="Baskets"
                 type="number"
                 placeholder="4"
@@ -336,13 +330,13 @@ export default function Add() {
                 )}
               </div>
               <TextField
-                className={classes.input}
+                className="inputField"
                 label="Court link"
                 placeholder="https://nba.com"
                 {...register("link")}
               />
               <TextField
-                className={classes.input}
+                className="inputField"
                 label="Your name or link to your account"
                 placeholder="@koripallopaikat"
                 {...register("credentials")}
@@ -359,7 +353,7 @@ export default function Add() {
               variant="contained"
               color="primary"
               type="submit"
-              className={classes.submit}
+              className="submitButton"
               startIcon={<PublishIcon />}
             >
               Submit Court

@@ -1,11 +1,12 @@
 import Link from "next/link";
+
 import {
   Link as MUILink,
   Card,
   CardMedia,
   CardContent,
   Typography,
-} from "@material-ui/core";
+} from "@mui/material";
 
 const SearchObject = ({ court }) => {
   return (

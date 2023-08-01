@@ -1,6 +1,7 @@
 import { useGeolocation } from "react-use";
 
 const distance = (lat2, lon2) => {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const state = useGeolocation();
   const lat1 = state.latitude;
   const lon1 = state.longitude;

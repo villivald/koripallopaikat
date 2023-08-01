@@ -1,8 +1,9 @@
 /* eslint-disable */
 import { useState } from "react";
 import Head from "next/head";
-import { Box } from "@material-ui/core";
-import Pagination from "@material-ui/lab/Pagination";
+
+import { Box, Pagination } from "@mui/material";
+
 import { connectToDatabase } from "../../util/mongodb";
 import Court from "../../components/Court";
 import Header from "../../components/Header";

@@ -1,12 +1,17 @@
 import { useState } from "react";
 import Image from "next/image";
 import Head from "next/head";
-import TextField from "@material-ui/core/TextField";
-import TextareaAutosize from "@material-ui/core/TextareaAutosize";
-import Snackbar from "@material-ui/core/Snackbar";
-import Alert from "@material-ui/lab/Alert";
-import Button from "@material-ui/core/Button";
-import SendIcon from "@material-ui/icons/Send";
+
+import {
+  TextField,
+  TextareaAutosize,
+  Snackbar,
+  Alert,
+  Button,
+} from "@mui/material";
+
+import SendIcon from "@mui/icons-material/Send";
+
 import Header from "../components/Header";
 import contactLinks from "../data/contactLinks";
 

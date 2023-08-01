@@ -1,16 +1,20 @@
 import { useState } from "react";
 import Link from "next/link";
-import { Link as MUILink } from "@material-ui/core";
 import Image from "next/image";
-import Card from "@material-ui/core/Card";
-import CardActions from "@material-ui/core/CardActions";
-import CardContent from "@material-ui/core/CardContent";
-import Button from "@material-ui/core/Button";
-import Typography from "@material-ui/core/Typography";
-import ReportOutlinedIcon from "@material-ui/icons/ReportOutlined";
-import ImageOutlinedIcon from "@material-ui/icons/ImageOutlined";
-import LinkIcon from "@material-ui/icons/Link";
-import RoomOutlinedIcon from "@material-ui/icons/RoomOutlined";
+
+import {
+  Link as MUILink,
+  Card,
+  CardActions,
+  CardContent,
+  Button,
+  Typography,
+} from "@mui/material";
+
+import ReportOutlinedIcon from "@mui/icons-material/ReportOutlined";
+import ImageOutlinedIcon from "@mui/icons-material/ImageOutlined";
+import LinkIcon from "@mui/icons-material/Link";
+import RoomOutlinedIcon from "@mui/icons-material/RoomOutlined";
 
 const Court = ({ court }) => {
   const [isShown, setIsShown] = useState(false);

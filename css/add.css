@@ -122,6 +122,15 @@ form {
   color: transparent;
 }
 
+.inputField {
+  min-width: 280px;
+  background-color: #feffff !important;
+}
+
+.submitButton {
+  margin: 20px 0 50px;
+}
+
 @media (max-width: 700px) {
   .coloredText {
     font-size: 2.3rem;

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+
 import basket from "../public/blob.svg";
 import basketball from "../public/basketball.svg";
 import cat from "../public/cat.webp";

@@ -1,9 +1,11 @@
 /* eslint-disable */
 import { useRef, useEffect, useState } from "react";
 import Head from "next/head";
-import Header from "../components/Header";
 import mapboxgl from "!mapbox-gl";
 import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
+
+import Header from "../components/Header";
+
 import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css";
 
 mapboxgl.accessToken =

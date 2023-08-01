@@ -1,10 +1,11 @@
-import Link from "@material-ui/core/Link";
 import Head from "next/head";
 import Image from "next/image";
+
+import { Link, Typography } from "@mui/material";
+
 import Header from "../components/Header";
 import lighthouse from "../public/lighthouse.webp";
 import aboutLinks from "../data/aboutLinks";
-import Typography from "@material-ui/core/Typography";
 
 export default function Books() {
   return (

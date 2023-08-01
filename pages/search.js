@@ -10,7 +10,7 @@ import {
   FormControl,
   FormControlLabel,
   Select,
-} from "@material-ui/core";
+} from "@mui/material";
 
 import Header from "../components/Header";
 import SearchObject from "../components/SearchObject";

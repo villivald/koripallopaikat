@@ -1,17 +1,19 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
 import Image from "next/image";
-import Link from "@material-ui/core/Link";
-import Button from "@material-ui/core/Button";
-import CircularProgress from "@material-ui/core/CircularProgress";
-import ImageOutlinedIcon from "@material-ui/icons/ImageOutlined";
-import LinkIcon from "@material-ui/icons/Link";
-import RoomOutlinedIcon from "@material-ui/icons/RoomOutlined";
-import ReportOutlinedIcon from "@material-ui/icons/ReportOutlined";
-import { connectToDatabase } from "../../util/mongodb";
-import distance from "../../util/distance";
-import Header from "../../components/Header";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
+
+import { Link, Button, CircularProgress } from "@mui/material";
+
+import ImageOutlinedIcon from "@mui/icons-material/ImageOutlined";
+import LinkIcon from "@mui/icons-material/Link";
+import RoomOutlinedIcon from "@mui/icons-material/RoomOutlined";
+import ReportOutlinedIcon from "@mui/icons-material/ReportOutlined";
+
+import Header from "../../components/Header";
+import distance from "../../util/distance";
+import { connectToDatabase } from "../../util/mongodb";
+
 import "@splidejs/splide/dist/css/splide.min.css";
 
 const Page = ({ courts }) => {

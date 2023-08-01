@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+
 import {
   Link as MUILink,
   Card,
@@ -10,12 +11,15 @@ import {
   Button,
   Typography,
   CircularProgress,
-} from "@material-ui/core";
-import ReportOutlinedIcon from "@material-ui/icons/ReportOutlined";
-import ImageOutlinedIcon from "@material-ui/icons/ImageOutlined";
-import LinkIcon from "@material-ui/icons/Link";
-import RoomOutlinedIcon from "@material-ui/icons/RoomOutlined";
+} from "@mui/material";
+
+import ReportOutlinedIcon from "@mui/icons-material/ReportOutlined";
+import ImageOutlinedIcon from "@mui/icons-material/ImageOutlined";
+import LinkIcon from "@mui/icons-material/Link";
+import RoomOutlinedIcon from "@mui/icons-material/RoomOutlined";
+
 import distance from "../util/distance";
+
 import asphalt from "../public/images/surfaces/asphalt.webp";
 import soft from "../public/images/surfaces/soft.webp";
 import gravel from "../public/images/surfaces/gravel.webp";

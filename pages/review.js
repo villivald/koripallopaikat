@@ -1,8 +1,10 @@
 import Head from "next/head";
+
 import Header from "../components/Header";
-import dbConnect from "../util/dbConnect";
 import Court from "../models/Court";
 import CourtInReview from "../components/CourtInReview";
+
+import dbConnect from "../util/dbConnect";
 
 const InReview = ({ courtsInReview }) => {
   return (

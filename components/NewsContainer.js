@@ -1,13 +1,8 @@
 import Link from "next/link";
-import {
-  Card,
-  CardMedia,
-  CardContent,
-  Typography,
-  Chip,
-} from "@material-ui/core";
-import { styled } from "@material-ui/core/styles";
-import TodayIcon from "@material-ui/icons/Today";
+
+import { Card, CardMedia, CardContent, Typography, Chip } from "@mui/material";
+import { styled } from "@mui/material/styles";
+import TodayIcon from "@mui/icons-material/Today";
 
 const StyledChip = styled(Chip)({
   backgroundColor: "#daca2e",

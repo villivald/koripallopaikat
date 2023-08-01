@@ -1,4 +1,4 @@
-import { Card, CardMedia, CardContent, Typography } from "@material-ui/core";
+import { Card, CardMedia, CardContent, Typography } from "@mui/material";
 
 const CourtInReview = ({ court }) => {
   return (

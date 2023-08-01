@@ -1,11 +1,11 @@
-import HomeOutlinedIcon from "@material-ui/icons/HomeOutlined";
-import MapOutlinedIcon from "@material-ui/icons/MapOutlined";
-import InfoOutlinedIcon from "@material-ui/icons/InfoOutlined";
-import PanToolOutlinedIcon from "@material-ui/icons/PanToolOutlined";
-import AddCircleOutlineIcon from "@material-ui/icons/AddCircleOutline";
-import ReviewIcon from "@material-ui/icons/AccessTimeOutlined";
-import ListIcon from "@material-ui/icons/List";
-import SearchIcon from "@material-ui/icons/Search";
+import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
+import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
+import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
+import PanToolOutlinedIcon from "@mui/icons-material/PanToolOutlined";
+import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
+import ReviewIcon from "@mui/icons-material/AccessTimeOutlined";
+import ListIcon from "@mui/icons-material/List";
+import SearchIcon from "@mui/icons-material/Search";
 
 const headerData = [
   {

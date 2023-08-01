@@ -1,4 +1,5 @@
 import Head from "next/head";
+
 import Header from "../components/Header";
 import newsData from "../data/newsData";
 import NewsContainer from "../components/NewsContainer";
