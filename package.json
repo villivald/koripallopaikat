@@ -1,6 +1,6 @@
 {
   "name": "koripallopaikat",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "license": "MIT",
   "scripts": {
     "dev": "next dev -p 8888",
@@ -18,8 +18,8 @@
     "@sendgrid/mail": "^7.7.0",
     "@splidejs/react-splide": "^0.7.12",
     "mapbox-gl": "^2.15.0",
-    "mongodb": "^3.7.4",
-    "mongoose": "^5.13.20",
+    "mongodb": "^5.7.0",
+    "mongoose": "^7.4.1",
     "next": "^13.4.12",
     "nprogress": "^0.2.0",
     "react": "^18.2.0",
