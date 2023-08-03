@@ -1,12 +1,6 @@
 import Link from "next/link";
 
-import {
-  Link as MUILink,
-  Card,
-  CardMedia,
-  CardContent,
-  Typography,
-} from "@mui/material";
+import { Card, CardMedia, CardContent, Typography } from "@mui/material";
 
 const SearchObject = ({ court }) => {
   return (
@@ -31,7 +25,7 @@ const SearchObject = ({ court }) => {
             as={`/courts/${court.address}`}
             passHref
           >
-            <MUILink>{court.address}</MUILink>
+            {court.address}
           </Link>
         </Typography>
         <Typography color="textPrimary" gutterBottom>

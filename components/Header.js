@@ -10,15 +10,15 @@ const Header = () => {
       <nav>
         {headerData.map((item) => {
           return (
-            <Link key={item.text} href={item.link}>
-              <a
-                className={
-                  router.pathname == item.link ? "active" : "linkContainer"
-                }
-              >
-                {item.icon}
-                {item.text}
-              </a>
+            <Link
+              key={item.text}
+              href={item.link}
+              className={
+                router.pathname == item.link ? "active" : "linkContainer"
+              }
+            >
+              {item.icon}
+              {item.text}
             </Link>
           );
         })}

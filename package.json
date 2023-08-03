@@ -12,7 +12,7 @@
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mapbox/mapbox-gl-geocoder": "^5.0.1",
-    "@mapbox/mapbox-sdk": "^0.15.2",
+    "@mapbox/mapbox-sdk": "^0.15.3",
     "@mui/icons-material": "^5.14.3",
     "@mui/material": "^5.14.3",
     "@sendgrid/mail": "^7.7.0",
@@ -20,10 +20,10 @@
     "mapbox-gl": "^2.15.0",
     "mongodb": "^3.7.4",
     "mongoose": "^5.13.20",
-    "next": "^12.3.4",
+    "next": "^13.4.12",
     "nprogress": "^0.2.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-hook-form": "^7.45.2",
     "react-use": "^17.4.0",
     "react-virtuoso": "^4.4.2"
@@ -31,7 +31,7 @@
   "devDependencies": {
     "eslint": "^8.46.0",
     "eslint-config-next": "^13.4.12",
-    "eslint-config-prettier": "^8.9.0",
+    "eslint-config-prettier": "^8.10.0",
     "stylelint": "^15.10.2",
     "stylelint-config-standard": "^34.0.0"
   }

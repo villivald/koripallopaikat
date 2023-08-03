@@ -15,9 +15,11 @@ const newsData = [
     largeImage:
       "https://koripallopaikat.com/koripallopaikat/news/large/museum.webp",
     alt: "After almost a year break, Koripallopaikat.com is back.",
-    text: "After almost a year break, Koripallopaikat.com is back. There are some improvements coming soon, as well as new courts.",
+    text: " After almost a year break, we are back.",
+    longText:
+      "After almost a year break, Koripallopaikat.com is back. There are some improvements coming soon, as well as new courts.",
     link: "https://koripallopaikat.com/news",
-    linkText: "Breaking news! ",
+    linkText: "Breaking news!",
   },
   {
     date: "12-10-2022",

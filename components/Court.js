@@ -62,9 +62,7 @@ const CourtList = ({ court }) => {
             as={`/courts/${court.address}`}
             passHref
           >
-            <MUILink>
-              <span className="cardText">{court.address}</span>
-            </MUILink>
+            <span className="cardText">{court.address}</span>
           </Link>
         </Typography>
         <Typography color="textPrimary" gutterBottom>

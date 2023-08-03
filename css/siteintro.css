@@ -17,8 +17,8 @@
 }
 
 .introImage {
-  min-height: 120% !important;
-  min-width: 105% !important;
+  min-height: 3rem;
+  min-width: 3rem;
 }
 
 .spin {

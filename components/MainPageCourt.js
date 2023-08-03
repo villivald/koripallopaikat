@@ -3,7 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 import {
-  Link as MUILink,
   Card,
   CardActions,
   CardContent,
@@ -42,7 +41,7 @@ const Court = ({ court }) => {
             as={`/courts/${court.address}`}
             passHref
           >
-            <MUILink>{court.address}</MUILink>
+            {court.address}
           </Link>
         </Typography>
         <Typography color="textPrimary" gutterBottom>
