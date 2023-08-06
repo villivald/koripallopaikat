@@ -110,12 +110,7 @@ export default function Contact() {
               minRows={5}
               onChange={(e) => setMessage(e.target.value)}
             ></TextareaAutosize>
-            <Button
-              startIcon={<SendIcon />}
-              variant="contained"
-              color="primary"
-              type="submit"
-            >
+            <Button startIcon={<SendIcon />} variant="contained" type="submit">
               Send
             </Button>
           </div>

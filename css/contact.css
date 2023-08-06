@@ -52,13 +52,23 @@ textarea {
   width: 30%;
 }
 
-@media (max-width: 800px) {
+.contactForm button {
+  background-color: #82c99b;
+  color: black;
+}
+
+.contactForm button:hover {
+  background-color: #1a4e55;
+  color: white;
+}
+
+@media (width < 800px) {
   .contactForm {
     width: 60%;
   }
 }
 
-@media (max-width: 600px) {
+@media (width < 600px) {
   .contactForm {
     width: 80%;
   }

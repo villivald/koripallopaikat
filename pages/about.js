@@ -117,8 +117,8 @@ export default function Books() {
           <Image
             src={lighthouse}
             alt="lighthouse score: Performance = 97, A11 = 100, Best Practices = 100, SEO = 100"
-            width="350px"
-            height="124px"
+            width={350}
+            height={124}
           />
         </div>
       </div>

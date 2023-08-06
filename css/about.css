@@ -30,6 +30,10 @@
   gap: 15px;
 }
 
+.aboutWrapper a {
+  color: #1a4e55;
+}
+
 .apiDockerLinks {
   display: flex;
   gap: 15%;
@@ -65,13 +69,17 @@
   text-underline-offset: 0.25em;
 }
 
-@media (max-width: 800px) {
+@media (width < 800px) {
   .aboutTechContainer {
     border-left: none;
   }
+
+  .aboutWrapper {
+    grid-template-columns: 1fr;
+  }
 }
 
-@media (max-width: 700px) {
+@media (width < 700px) {
   .aboutBlob {
     width: 150px;
   }
@@ -81,7 +89,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (width < 600px) {
   .techInfoSubHeader {
     font-size: 1rem;
   }
@@ -96,20 +104,20 @@
   }
 }
 
-@media (max-width: 550px) {
+@media (width < 550px) {
   .projectLinks {
     display: grid;
     grid-template-columns: 1fr;
   }
 }
 
-@media (max-width: 500px) {
+@media (width < 500px) {
   .aboutLinks {
     grid-template-columns: 1fr;
   }
 }
 
-@media (max-width: 400px) {
+@media (width < 400px) {
   .projectInfoHeader,
   .techInfoHeader {
     padding: 5px;
