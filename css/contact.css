@@ -23,8 +23,7 @@
 .contactBlob {
   display: grid;
   place-items: center;
-  margin-top: -2%;
-  margin-bottom: -1%;
+  margin: -1%;
 }
 
 textarea {

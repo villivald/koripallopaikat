@@ -19,19 +19,19 @@
   height: clamp(90%, 125%, 100%);
 }
 
-@media (max-width: 1000px) {
+@media (width < 1000px) {
   .container {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media (max-width: 700px) {
+@media (width < 700px) {
   .container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 500px) {
+@media (width < 500px) {
   .container {
     grid-template-columns: 1fr;
   }

@@ -7,7 +7,6 @@ import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
 import MapboxClient from "@mapbox/mapbox-sdk/services/geocoding";
 
 import { styled } from "@mui/material/styles";
-
 import {
   Snackbar,
   TextField,

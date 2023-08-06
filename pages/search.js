@@ -69,14 +69,14 @@ export default function Search({ courts }) {
   ]);
 
   return (
-    <div>
+    <div className="searchWrapper">
       <Head>
         <title>Koripallopaikat - About</title>
         <link rel="icon" href="favicons/favicon.ico" />
       </Head>
       <Header />
       <div>
-        <h2 className="sortFilterTitle">Filter by</h2>
+        <h2 className="sortFilterTitle">Search or filter by</h2>
         <div className="sortFilter">
           <TextField
             onChange={handleFilterChange}
@@ -86,7 +86,7 @@ export default function Search({ courts }) {
           />
           <FormControl className="searchForm">
             <InputLabel>City</InputLabel>
-            <Select value={city} onChange={handleChangeForm}>
+            <Select value={city} onChange={handleChangeForm} label="City">
               <MenuItem value={"All"}>All</MenuItem>
               <MenuItem value={"Helsinki"}>Helsinki</MenuItem>
               <MenuItem value={"Espoo"}>Espoo</MenuItem>

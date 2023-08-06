@@ -1,4 +1,9 @@
-/* stylelint-disable declaration-colon-newline-after */
+.searchWrapper > div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem;
+}
 
 .amount {
   position: absolute;
@@ -25,25 +30,25 @@
   background-color: #82c99b;
 }
 
-@media (max-width: 800px) {
+@media (width < 800px) {
   .amount {
     top: 20%;
   }
 }
 
-@media (max-width: 550px) {
+@media (width < 550px) {
   .amount {
     width: 100px;
   }
 }
 
-@media (max-width: 450px) {
+@media (width < 450px) {
   .amount {
     width: 80px;
   }
 }
 
-@media (max-width: 420px) {
+@media (width < 420px) {
   .amount {
     top: 16%;
   }

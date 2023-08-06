@@ -1,9 +1,8 @@
 .basketballField {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  grid-template-rows: 0.5fr 1fr 0.25fr;
   width: clamp(200px, 100%, 400px);
-  height: clamp(90%, 95%, 100%);
+  height: clamp(200px, 100%, 450px);
 }
 
 .searchObjectField {
@@ -35,8 +34,14 @@
   display: grid;
   place-items: center;
   grid-template-columns: repeat(4, 1fr);
-  gap: 50px;
-  margin: 20px 40px 40px;
+  gap: 3rem;
+  margin: 2.5rem;
+}
+
+.listCourt.search > div {
+  width: 95vw;
+  height: 100vh !important;
+  margin-top: 3rem;
 }
 
 .listCourt.search > div > div > div {
@@ -44,12 +49,6 @@
   place-items: center;
   grid-template-columns: repeat(5, 1fr);
   gap: 2rem;
-}
-
-.listCourt.search > div {
-  width: 95vw;
-  height: 100vh !important;
-  margin-top: 3rem;
 }
 
 .iconLink {
@@ -60,6 +59,14 @@
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
+}
+
+.pagination button {
+  color: #1a4e55;
+}
+
+.pagination button[aria-current="true"] {
+  background-color: #82c99b;
 }
 
 .sortFilter {
@@ -111,13 +118,13 @@
   margin-left: 17%;
 }
 
-@media (max-width: 1300px) {
+@media (width < 1300px) {
   .MuiCardActions-spacing > :not(:first-child) {
     margin-left: -10px !important;
   }
 }
 
-@media (max-width: 1250px) {
+@media (width < 1250px) {
   .listCourt {
     grid-template-columns: repeat(5, 1fr);
   }
@@ -140,13 +147,7 @@
   }
 }
 
-@media (max-width: 1250px) {
-  .childrenAlert {
-    margin-left: 13%;
-  }
-}
-
-@media (max-width: 1050px) {
+@media (width < 1050px) {
   .listCourt {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -165,7 +166,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (width < 900px) {
   .sortFilter.sort {
     margin-top: 40px;
   }
@@ -176,7 +177,7 @@
   }
 }
 
-@media (max-width: 850px) {
+@media (width < 850px) {
   .listCourt {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -191,20 +192,20 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (width < 800px) {
   .sortFilter.sort {
     margin-top: 0;
   }
 }
 
-@media (max-width: 700px) {
+@media (width < 700px) {
   .childrenAlert {
     margin-top: 15%;
     margin-left: 23%;
   }
 }
 
-@media (max-width: 650px) {
+@media (width < 650px) {
   .listCourt {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -225,21 +226,21 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (width < 600px) {
   .childrenAlert {
     margin-top: 17%;
     margin-left: 31%;
   }
 }
 
-@media (max-width: 550px) {
+@media (width < 550px) {
   .childrenAlert {
     margin-top: 18%;
     margin-left: 29%;
   }
 }
 
-@media (max-width: 500px) {
+@media (width < 500px) {
   .surfaceIcon {
     display: none;
   }
@@ -274,7 +275,7 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (width < 450px) {
   .listCourt {
     margin: 10px 20px 20px;
   }

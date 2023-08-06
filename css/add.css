@@ -1,6 +1,3 @@
-/* stylelint-disable value-list-comma-newline-after */
-/* stylelint-disable declaration-colon-newline-after */
-
 ::-webkit-file-upload-button {
   background: #dbca2e;
   color: black;
@@ -94,7 +91,7 @@ form {
   line-height: 1;
   display: grid;
   place-items: center;
-  margin: 10px;
+  margin: 1rem;
   background-image: url("https://koripallopaikat.com/koripallopaikat/blob4.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -129,9 +126,16 @@ form {
 
 .submitButton {
   margin: 20px 0 50px;
+  background-color: #82c99b;
+  color: black;
 }
 
-@media (max-width: 700px) {
+.submitButton:hover {
+  background-color: #1a4e55;
+  color: white;
+}
+
+@media (width < 700px) {
   .coloredText {
     font-size: 2.3rem;
   }
@@ -141,7 +145,7 @@ form {
   }
 }
 
-@media (max-width: 500px) {
+@media (width < 500px) {
   .form {
     margin: 0 10px 10px;
   }
@@ -163,8 +167,8 @@ form {
   }
 }
 
-@media not all and (min-resolution: 0.001dpcm) {
-  @media (max-width: 500px) {
+@media not all and (resolution > 0.001dpcm) {
+  @media (width < 500px) {
     .form {
       margin: 0 10px 10px;
     }
