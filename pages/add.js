@@ -6,7 +6,6 @@ import mapboxgl from "!mapbox-gl";
 import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
 import MapboxClient from "@mapbox/mapbox-sdk/services/geocoding";
 
-import { styled } from "@mui/material/styles";
 import {
   Snackbar,
   TextField,
@@ -16,6 +15,7 @@ import {
   Chip,
   MenuItem,
   Alert as MuiAlert,
+  CircularProgress,
 } from "@mui/material";
 
 import CloudUploadIcon from "@mui/icons-material/CloudUpload";
@@ -28,30 +28,6 @@ import surfaces from "../data/surfaces";
 import placeTypes from "../data/placeTypes";
 
 import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css";
-
-const MapButton = styled(Button)({
-  backgroundColor: "#82C99B",
-  color: "black",
-  "&:hover": {
-    backgroundColor: "#1A4E55",
-    color: "white",
-  },
-});
-const UploadButton = styled(Button)({
-  backgroundColor: "#DBCA2E",
-  color: "black",
-  "&:hover": {
-    backgroundColor: "#1A4E55",
-    color: "white",
-  },
-});
-const SubmitButton = styled(Button)({
-  backgroundColor: "#1A4E55",
-  color: "white",
-  "&:hover": {
-    backgroundColor: "#b72b38",
-  },
-});
 
 function Alert(props) {
   return <MuiAlert elevation={6} variant="filled" {...props} />;
@@ -70,6 +46,8 @@ export default function Add() {
 
   const [seconds, setSeconds] = useState(20);
 
+  const [uploadingImage, setUploadingImage] = useState(false);
+
   const handleSurfaceChange = (event) => {
     setSurface(event.target.value);
   };
@@ -79,9 +57,11 @@ export default function Add() {
 
   const uploadImage = () => {
     const data = new FormData();
+    setUploadingImage(true);
     data.append("file", image);
     data.append("upload_preset", "villivald");
     data.append("cloud_name", "villivald");
+
     fetch("https://api.cloudinary.com/v1_1/villivald/image/upload", {
       method: "post",
       body: data,
@@ -89,8 +69,12 @@ export default function Add() {
       .then((resp) => resp.json())
       .then((data) => {
         setUrl(data.url);
+        setUploadingImage(false);
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        console.log(err);
+        setUploadingImage(false);
+      });
   };
 
   const handleClose = (event, reason) => {
@@ -232,7 +216,7 @@ export default function Add() {
   };
 
   return (
-    <div>
+    <div className="addWrapper">
       <Head>
         <title>Koripallopaikat - Add new court</title>
         <link rel="icon" href="favicons/favicon.ico" />
@@ -254,14 +238,15 @@ export default function Add() {
             <div className="input">
               <div id="geocoder">Address *</div>
               <p className="or">OR</p>
-              <MapButton
+              <Button
+                className="greenButton"
                 variant="contained"
                 color={showMap === "none" ? "primary" : "secondary"}
                 startIcon={<RoomIcon />}
                 onClick={handleHideMap}
               >
                 {showMap === "none" ? "Pick from the" : "Hide"} Map
-              </MapButton>
+              </Button>
               <h2 className="addressString">{address}</h2>
               <TextField
                 className="inputField"
@@ -303,25 +288,31 @@ export default function Add() {
                 </InputLabel>
                 <div className="imageUploadBar">
                   <InputBase
-                    inputProps={{ "aria-label": "naked" }}
+                    inputProps={{ "aria-label": "upload image file" }}
                     type="file"
                     onChange={(e) => setImage(e.target.files[0])}
                   />
-                  <UploadButton
+                  <Button
                     className="uploadButton"
                     variant="contained"
                     color="primary"
                     startIcon={<CloudUploadIcon />}
                     onClick={uploadImage}
+                    disabled={!image}
                   >
-                    Upload Image
-                  </UploadButton>
+                    {uploadingImage ? (
+                      <CircularProgress size={48} />
+                    ) : (
+                      "Upload Image"
+                    )}
+                  </Button>
                 </div>
               </div>
               <div className="addChip">
                 {url && (
                   <Chip
-                    label="Image was successfully loaded"
+                    className="successChip"
+                    label="Image was successfully uploaded"
                     color="primary"
                     icon={<CheckIcon />}
                     variant="outlined"
@@ -343,20 +334,22 @@ export default function Add() {
             </div>
             {(errors.address || errors.baskets || errors.url) && (
               <Snackbar open={open}>
-                <Alert severity="error">
-                  Address, Baskets and Picture fields are required
-                </Alert>
+                <div>
+                  <Alert severity="error">
+                    Address, Baskets and Picture fields are required
+                  </Alert>
+                </div>
               </Snackbar>
             )}
-            <SubmitButton
+            <Button
               variant="contained"
               color="primary"
               type="submit"
-              className="submitButton"
+              className="greenButton"
               startIcon={<PublishIcon />}
             >
               Submit Court
-            </SubmitButton>
+            </Button>
           </form>
         </div>
       ) : (
@@ -369,9 +362,11 @@ export default function Add() {
             This page will refresh in {seconds} seconds.
           </h2>
           <Snackbar open={open} onClose={handleClose}>
-            <Alert onClose={handleClose} severity="success">
-              Success!
-            </Alert>
+            <div>
+              <Alert onClose={handleClose} severity="success">
+                Success!
+              </Alert>
+            </div>
           </Snackbar>
         </>
       )}

@@ -3,6 +3,7 @@
   color: black;
   border: 1px solid black;
   border-radius: 3px;
+  padding: 5px 10px;
   box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%),
     0 1px 5px 0 rgb(0 0 0 / 12%);
 }
@@ -46,6 +47,19 @@ form {
   display: flex;
 }
 
+.imageUploadBar input {
+  height: 2rem;
+}
+
+.imageUploadBar button {
+  background-color: #dbca2e;
+  color: black;
+}
+
+.imageUploadBar button:hover {
+  background-color: #cab727;
+}
+
 .addChip {
   margin-top: 15px;
 }
@@ -66,12 +80,20 @@ form {
   font-family: Roboto, Helvetica, Arial, sans-serif;
 }
 
-.mapboxgl-ctrl-geocoder.mapboxgl-ctrl {
-  width: 393.98px !important;
-  max-width: 460px !important;
-  box-shadow: none !important;
-  border-bottom: 1px solid #747272;
-  border-radius: 0 !important;
+.addWrapper .mapboxgl-map {
+  width: 400px !important;
+  height: 300px !important;
+  margin-bottom: 1rem;
+}
+
+.addWrapper .mapboxgl-ctrl-bottom-left,
+.addWrapper .mapboxgl-ctrl-bottom-right {
+  display: none;
+}
+
+.addWrapper .mapboxgl-ctrl-geocoder {
+  width: 400px !important;
+  max-width: 400px !important;
 }
 
 .addressString {
@@ -124,15 +146,25 @@ form {
   background-color: #feffff !important;
 }
 
-.submitButton {
-  margin: 20px 0 50px;
+.greenButton {
   background-color: #82c99b;
   color: black;
 }
 
-.submitButton:hover {
+.greenButton:last-of-type {
+  margin-top: 1rem;
+}
+
+.greenButton:hover {
   background-color: #1a4e55;
   color: white;
+}
+
+.successChip {
+  background-color: #82c99b;
+  color: black;
+  width: 400px;
+  margin-top: 1rem;
 }
 
 @media (width < 700px) {
