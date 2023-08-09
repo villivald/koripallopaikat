@@ -45,7 +45,7 @@ const Page = ({ courts }) => {
         <Splide
           options={{
             rewind: true,
-            width: 538,
+            width: "54rem",
             gap: "1rem",
             rewindSpeed: 1000,
           }}
