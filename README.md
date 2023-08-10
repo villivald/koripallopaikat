@@ -20,6 +20,4 @@ yarn install
 yarn dev
 ```
 
-Your app should be up and running on [http://localhost:3000](http://localhost:3000)
-
-![Visualization of the codebase](./diagram.svg)
+Your app should be up and running on [http://localhost:8888](http://localhost:8888)
