@@ -5,6 +5,10 @@
   height: clamp(200px, 100%, 450px);
 }
 
+.basketballField > div:first-of-type {
+  position: relative;
+}
+
 .searchObjectField {
   height: clamp(90%, 95%, 100%);
 }
@@ -33,7 +37,7 @@
 .listCourt {
   display: grid;
   place-items: center;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 45ch), 1fr));
   gap: 3rem;
   margin: 2.5rem;
 }
@@ -81,7 +85,7 @@
   text-align: center;
 }
 
-.basketNumber::first-letter {
+.courtSurface::first-letter {
   text-transform: capitalize;
 }
 
@@ -100,22 +104,14 @@
   cursor: pointer;
 }
 
-.courtBaskets {
-  display: block;
-}
-
-.courtBasketsMobile {
-  display: none;
-}
-
 .MuiTypography-colorError {
   color: #b7021a !important;
 }
 
 .childrenAlert {
   position: absolute;
-  margin-top: 7%;
-  margin-left: 17%;
+  right: 2%;
+  top: 71%;
 }
 
 @media (width < 1300px) {
@@ -125,10 +121,6 @@
 }
 
 @media (width < 1250px) {
-  .listCourt {
-    grid-template-columns: repeat(5, 1fr);
-  }
-
   .listCourt.search > div > div > div {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -140,18 +132,9 @@
   .iconLinks.MuiCardActions-spacing > :first-child {
     margin-left: -10px !important;
   }
-
-  .childrenAlert {
-    margin-top: 8%;
-    margin-left: 12%;
-  }
 }
 
 @media (width < 1050px) {
-  .listCourt {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
   .listCourt.search > div > div > div {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -159,36 +142,17 @@
   .MuiCardActions-spacing > :first-child {
     margin-left: -10px !important;
   }
-
-  .childrenAlert {
-    margin-top: 10%;
-    margin-left: 15%;
-  }
 }
 
 @media (width < 900px) {
   .sortFilter.sort {
     margin-top: 40px;
   }
-
-  .childrenAlert {
-    margin-top: 12%;
-    margin-left: 17%;
-  }
 }
 
 @media (width < 850px) {
-  .listCourt {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
   .listCourt.search > div > div > div {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .childrenAlert {
-    margin-top: 12%;
-    margin-left: 20%;
   }
 }
 
@@ -198,18 +162,7 @@
   }
 }
 
-@media (width < 700px) {
-  .childrenAlert {
-    margin-top: 15%;
-    margin-left: 23%;
-  }
-}
-
 @media (width < 650px) {
-  .listCourt {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .listCourt.search > div > div > div {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -219,69 +172,11 @@
     grid-template-columns: repeat(3, 1fr);
     margin-left: 80px;
   }
-
-  .childrenAlert {
-    margin-top: 15%;
-    margin-left: 33%;
-  }
-}
-
-@media (width < 600px) {
-  .childrenAlert {
-    margin-top: 17%;
-    margin-left: 31%;
-  }
-}
-
-@media (width < 550px) {
-  .childrenAlert {
-    margin-top: 18%;
-    margin-left: 29%;
-  }
-}
-
-@media (width < 500px) {
-  .surfaceIcon {
-    display: none;
-  }
-
-  .cardTitle {
-    display: none;
-  }
-
-  .cardText {
-    display: block;
-    white-space: nowrap;
-    max-width: 150px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .cardText::first-letter {
-    text-transform: uppercase;
-  }
-
-  .courtBaskets {
-    display: none;
-  }
-
-  .courtBasketsMobile {
-    display: block;
-  }
-
-  .childrenAlert {
-    margin-top: 20%;
-    margin-left: 32%;
-  }
 }
 
 @media (width < 450px) {
   .listCourt {
     margin: 10px 20px 20px;
-  }
-
-  .basketballField {
-    width: clamp(170px, 50%, 400px);
   }
 
   .iconLinks {
@@ -295,10 +190,5 @@
   .sortFilter.sort {
     grid-template-columns: repeat(2, 1fr);
     margin-left: 50px;
-  }
-
-  .childrenAlert {
-    margin-top: 22%;
-    margin-left: 28%;
   }
 }

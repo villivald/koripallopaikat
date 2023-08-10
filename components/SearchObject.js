@@ -36,7 +36,7 @@ const SearchObject = ({ court }) => {
             ? `${court.baskets} basket`
             : `${court.baskets} baskets`}
         </Typography>
-        <Typography color="textSecondary" className="basketNumber">
+        <Typography color="textSecondary" className="courtSurface">
           {court.surface}
         </Typography>
       </CardContent>

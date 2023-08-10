@@ -146,16 +146,16 @@ form {
   background-color: #feffff !important;
 }
 
-.greenButton {
+.form .greenButton {
   background-color: #82c99b;
   color: black;
 }
 
-.greenButton:last-of-type {
+.form .greenButton:last-of-type {
   margin-top: 1rem;
 }
 
-.greenButton:hover {
+.form .greenButton:hover {
   background-color: #1a4e55;
   color: white;
 }

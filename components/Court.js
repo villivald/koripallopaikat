@@ -32,28 +32,30 @@ const CourtList = ({ court }) => {
 
   return (
     <Card className="basketballField">
-      <Link
-        key={court._id}
-        href="/courts/[id]"
-        as={`/courts/${court.address}`}
-        passHref
-      >
-        <CardMedia
-          className="cardMedia"
-          image={court.listPic}
-          title="basketball court"
-        />
-      </Link>
-      {court.childrenAlert && (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img
-          src="/children.png"
-          alt="Warning, Children"
-          height={40}
-          width={40}
-          className="childrenAlert"
-        />
-      )}
+      <div>
+        <Link
+          key={court._id}
+          href="/courts/[id]"
+          as={`/courts/${court.address}`}
+          passHref
+        >
+          <CardMedia
+            className="cardMedia"
+            image={court.listPic}
+            title="basketball court"
+          />
+        </Link>
+        {court.childrenAlert && (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src="/children.png"
+            alt="Warning, Children"
+            height={40}
+            width={40}
+            className="childrenAlert"
+          />
+        )}
+      </div>
       <CardContent>
         <Typography color="textPrimary">
           <Link
@@ -110,17 +112,10 @@ const CourtList = ({ court }) => {
           </div>
         )}
         <Typography color="textSecondary">
-          <span className="cardTitle">Place: </span>
-          <span className="cardText">{court.type}</span>
+          <span>Place: </span>
+          <span>{court.type}</span>
         </Typography>
-        <Typography color="textSecondary" className="courtBaskets">
-          Baskets: {court.baskets}
-        </Typography>
-        <Typography color="textSecondary" className="courtBasketsMobile">
-          {court.baskets > 1
-            ? `${court.baskets} baskets`
-            : `${court.baskets} basket`}
-        </Typography>
+        <Typography color="textSecondary">Baskets: {court.baskets}</Typography>
         {court.info && <Typography color="error">{court.info}</Typography>}
       </CardContent>
       <CardActions className="iconLinks">

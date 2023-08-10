@@ -10,24 +10,16 @@ const CourtInReview = ({ court }) => {
       />
       <CardContent>
         <Typography color="textPrimary">
-          <span className="cardText">{court.address}</span>
+          <span>{court.address}</span>
         </Typography>
         <Typography color="textSecondary">
-          <span className="cardTitle">Surface:</span>{" "}
-          <span className="cardText">{court.surface}</span>
+          <span>Surface:</span> <span>{court.surface}</span>
         </Typography>
         <Typography color="textSecondary">
-          <span className="cardTitle">Place: </span>
-          <span className="cardText">{court.type}</span>
+          <span>Place: </span>
+          <span>{court.type}</span>
         </Typography>
-        <Typography color="textSecondary" className="courtBaskets">
-          Baskets: {court.baskets}
-        </Typography>
-        <Typography color="textSecondary" className="courtBasketsMobile">
-          {court.baskets > 1
-            ? `${court.baskets} baskets`
-            : `${court.baskets} basket`}
-        </Typography>
+        <Typography color="textSecondary">Baskets: {court.baskets}</Typography>
       </CardContent>
     </Card>
   );
