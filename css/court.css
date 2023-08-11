@@ -5,6 +5,14 @@
   height: clamp(200px, 100%, 450px);
 }
 
+.basketballField a {
+  text-decoration: none;
+}
+
+.basketballField a:hover {
+  text-decoration: underline;
+}
+
 .basketballField > div:first-of-type {
   position: relative;
 }
@@ -57,6 +65,7 @@
 
 .iconLink {
   width: 24px;
+  color: #1a4e55;
 }
 
 .pagination {
@@ -94,6 +103,14 @@
   max-width: 170px;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.searchLink a {
+  text-decoration: none;
+}
+
+.searchLink a:hover {
+  text-decoration: underline;
 }
 
 .searchForm {

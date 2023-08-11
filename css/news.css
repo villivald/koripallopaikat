@@ -18,6 +18,11 @@
 .newsHeaderText.newsHeaderText {
   color: #fefffe;
   font-family: Mate, serif;
+  text-decoration: none;
+}
+
+.newsHeaderText.newsHeaderText:hover {
+  text-decoration: underline;
 }
 
 .newsContainer {
@@ -27,6 +32,14 @@
   gap: 10px;
   padding: 10px;
   text-align: left;
+}
+
+.newsContainer a {
+  text-decoration: none;
+}
+
+.newsContainer a:hover {
+  text-decoration: underline;
 }
 
 .newsDate {
@@ -56,6 +69,14 @@
   height: clamp(90%, 95%, 100%);
 }
 
+.newsCardContainer a {
+  text-decoration: none;
+}
+
+.newsCardContainer a:hover {
+  text-decoration: underline;
+}
+
 .newsCardImage {
   min-height: 140px;
 }
@@ -64,19 +85,19 @@ div.MuiCardContent-root.newsCardContent > div > svg {
   color: #051b2d;
 }
 
-@media (max-width: 850px) {
+@media (width < 850px) {
   .newsPageContainer {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media (max-width: 650px) {
+@media (width < 650px) {
   .newsPageContainer {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 450px) {
+@media (width < 450px) {
   .newsPageContainer {
     grid-template-columns: 1fr;
   }

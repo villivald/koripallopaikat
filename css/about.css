@@ -61,6 +61,11 @@
 }
 
 .projectLinks > svg > g > text > a {
+  text-decoration: none;
+  fill: hsl(240deg 100% 47%);
+}
+
+.projectLinks > svg > g > text > a:hover {
   text-decoration: underline;
 }
 

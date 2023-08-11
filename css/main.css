@@ -19,6 +19,14 @@
   height: clamp(90%, 125%, 100%);
 }
 
+.basketballFieldMain a {
+  text-decoration: none;
+}
+
+.basketballFieldMain a:hover {
+  text-decoration: underline;
+}
+
 @media (width < 1000px) {
   .container {
     grid-template-columns: repeat(3, 1fr);

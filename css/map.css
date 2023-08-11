@@ -11,6 +11,14 @@
   width: clamp(15vw, 25vw, 150%) !important;
 }
 
+.mapboxgl-popup-content a {
+  text-decoration: none;
+}
+
+.mapboxgl-popup-content a:hover {
+  text-decoration: underline;
+}
+
 .or {
   text-align: center;
   font-weight: bold;
@@ -20,19 +28,19 @@ h3 {
   padding-top: 10px;
 }
 
-@media (max-width: 700px) {
+@media (width < 700px) {
   .map-container-small {
     width: 70%;
   }
 }
 
-@media (max-width: 600px) {
+@media (width < 600px) {
   .map-container-small {
     width: 80%;
   }
 }
 
-@media (max-width: 500px) {
+@media (width < 500px) {
   .map-container-small {
     width: 90%;
   }

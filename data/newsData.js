@@ -17,7 +17,7 @@ const newsData = [
     alt: "After almost a year break, Koripallopaikat.com is back.",
     text: " After almost a year break, we are back.",
     longText:
-      "After almost a year break, Koripallopaikat.com is back. There are some improvements coming soon, as well as new courts.",
+      " After almost a year break, Koripallopaikat.com is back. There are some improvements coming soon, as well as new courts.",
     link: "https://koripallopaikat.com/news",
     linkText: "Breaking news!",
   },
