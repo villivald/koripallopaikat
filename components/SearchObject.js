@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import { Card, CardMedia, CardContent, Typography } from "@mui/material";
 
-const SearchObject = ({ court }) => {
+export default function SearchObject({ court }) {
   return (
     <Card className="searchObjectField" elevation={0}>
       <Link
@@ -42,6 +42,4 @@ const SearchObject = ({ court }) => {
       </CardContent>
     </Card>
   );
-};
-
-export default SearchObject;
+}

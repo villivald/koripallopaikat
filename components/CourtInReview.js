@@ -1,10 +1,12 @@
 import { Card, CardMedia, CardContent, Typography } from "@mui/material";
 
-const CourtInReview = ({ court }) => {
+import styles from "../css/Review.module.css";
+
+export default function CourtInReview({ court }) {
   return (
-    <Card className="reviewField">
+    <Card className={styles.reviewField}>
       <CardMedia
-        className="cardMedia"
+        className={styles.cardMedia}
         image={court.pic}
         title="basketball court"
       />
@@ -23,6 +25,4 @@ const CourtInReview = ({ court }) => {
       </CardContent>
     </Card>
   );
-};
-
-export default CourtInReview;
+}

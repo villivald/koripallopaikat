@@ -26,7 +26,7 @@ import gravel from "../public/images/surfaces/gravel.webp";
 import agrass from "../public/images/surfaces/agrass.webp";
 import stone from "../public/images/surfaces/stone.webp";
 
-const CourtList = ({ court }) => {
+export default function CourtList({ court }) {
   const [isShown, setIsShown] = useState(false);
   const d = distance(court.lat, court.lon);
 
@@ -162,6 +162,4 @@ const CourtList = ({ court }) => {
       </CardActions>
     </Card>
   );
-};
-
-export default CourtList;
+}

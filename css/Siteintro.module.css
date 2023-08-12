@@ -85,25 +85,34 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (width < 600px) {
   .cat {
     margin-top: 9%;
   }
 }
 
-@media (max-width: 500px) {
+@media (width < 500px) {
   .intro {
     padding: 10px;
   }
+
+  .introImage {
+    min-height: 2rem;
+    min-width: 2rem;
+  }
+
+  .introText {
+    font-size: 1.5rem;
+  }
 }
 
-@media (max-width: 420px) {
+@media (width < 420px) {
   .intro {
     font-size: 1.4rem;
   }
 }
 
-@media (max-width: 350px) {
+@media (width < 350px) {
   .intro {
     font-size: 1.2rem;
   }

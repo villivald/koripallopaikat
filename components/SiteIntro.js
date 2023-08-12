@@ -5,37 +5,39 @@ import basket from "../public/blob.svg";
 import basketball from "../public/basketball.svg";
 import cat from "../public/cat.webp";
 
-const SiteIntro = () => {
+import styles from "../css/Siteintro.module.css";
+
+export default function SiteIntro() {
   return (
-    <div className="intro">
-      <div className="toolTipCat">
+    <div className={styles.intro}>
+      <div className={styles.toolTipCat}>
         <Link href="https://villivald.com" passHref>
           <Image
             src={cat}
             alt="cat logo"
             width={200}
             height={150}
-            className="cat"
+            className={styles.cat}
           />
         </Link>
         <Link href="https://villivald.com" passHref>
-          <span className="toolTipText">
+          <span className={styles.toolTipText}>
             Psst, Hey You. Wanna see where I came from?{" "}
           </span>
         </Link>
       </div>
-      <h4 className="introText">
+      <h4 className={styles.introText}>
         <Image
-          className="introImage"
+          className={styles.introImage}
           src={basket}
           width={90}
           height={90}
           alt="site logo"
         />
         Koripallopaikat{" "}
-        <p className="spin">
+        <p className={styles.spin}>
           <Image
-            className="introImage"
+            className={styles.introImage}
             src={basketball}
             width={35}
             height={35}
@@ -45,6 +47,4 @@ const SiteIntro = () => {
       </h4>
     </div>
   );
-};
-
-export default SiteIntro;
+}

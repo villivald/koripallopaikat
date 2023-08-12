@@ -4,7 +4,9 @@ import Head from "next/head";
 import Header from "../components/Header";
 import error from "../public/error.svg";
 
-const ErrorPage = () => {
+import styles from "../css/ErrorPage.module.css";
+
+export default function ErrorPage() {
   return (
     <div>
       <Head>
@@ -12,11 +14,9 @@ const ErrorPage = () => {
         <link rel="icon" href="favicons/favicon.ico" />
       </Head>
       <Header />
-      <div className="errorPage">
+      <div className={styles.errorPage}>
         <Image src={error} alt="404 page" width={600} height={600} />
       </div>
     </div>
   );
-};
-
-export default ErrorPage;
+}

@@ -15,6 +15,8 @@ import SendIcon from "@mui/icons-material/Send";
 import Header from "../components/Header";
 import contactLinks from "../data/contactLinks";
 
+import styles from "../css/Contact.module.css";
+
 export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -55,7 +57,7 @@ export default function Contact() {
         <link rel="icon" href="favicons/favicon.ico" />
       </Head>
       <Header />
-      <div className="contactBlob">
+      <div className={styles.contactBlob}>
         <svg
           viewBox="0 0 200 200"
           xmlns="http://www.w3.org/2000/svg"
@@ -73,11 +75,11 @@ export default function Contact() {
           </g>
         </svg>
       </div>
-      <h2 className="contactHeader">Connect with me on social 👋</h2>
-      <div className="contactsContainer">
+      <h2 className={styles.contactHeader}>Connect with me on social 👋</h2>
+      <div className={styles.contactsContainer}>
         {contactLinks.map((contact) => (
-          <div key={contact.link} className="link">
-            <a href={contact.link} className="contactLink">
+          <div key={contact.link} className={styles.link}>
+            <a href={contact.link} className={styles.contactLink}>
               <Image
                 alt={`${contact.alt} logo`}
                 src={contact.src}
@@ -88,10 +90,10 @@ export default function Contact() {
           </div>
         ))}
       </div>
-      <h2 className="contactHeader">Or send an email ✉️</h2>
-      <div className="form">
-        <form onSubmit={handleSubmit} className="contactForm">
-          <div className="input">
+      <h2 className={styles.contactHeader}>Or send an email ✉️</h2>
+      <div className={styles.form}>
+        <form onSubmit={handleSubmit} className={styles.contactForm}>
+          <div className={styles.input}>
             <TextField
               label="Name"
               value={name}
@@ -118,7 +120,7 @@ export default function Contact() {
       </div>
       {visible && (
         <>
-          <h2 className="successHeader">
+          <h2 className={styles.successHeader}>
             Thank you for your message 👋. I will get back to you as soon as
             possible.
           </h2>

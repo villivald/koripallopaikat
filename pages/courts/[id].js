@@ -16,6 +16,8 @@ import { connectToDatabase } from "../../util/mongodb";
 
 import "@splidejs/splide/dist/css/splide.min.css";
 
+import styles from "../../css/Id.module.css";
+
 const Page = ({ courts }) => {
   const router = useRouter();
   const { id } = router.query;
@@ -30,9 +32,9 @@ const Page = ({ courts }) => {
         <link rel="icon" href="../../favicons/favicon.ico" />
       </Head>
       <Header />
-      <div className="idContainer">
-        <div className="idHeaderContainer">
-          <h1 className="idHeader">{currentCourt.address}</h1>
+      <div className={styles.idContainer}>
+        <div className={styles.idHeaderContainer}>
+          <h1 className={styles.idHeader}>{currentCourt.address}</h1>
           {currentCourt.childrenAlert && (
             <Image
               src="/children.png"
@@ -52,7 +54,7 @@ const Page = ({ courts }) => {
         >
           <SplideSlide>
             <Image
-              className="idPic"
+              className={styles.idPic}
               src={currentCourt.pic}
               width={538}
               height={403}
@@ -61,7 +63,7 @@ const Page = ({ courts }) => {
           </SplideSlide>
           <SplideSlide>
             <Image
-              className="idPic"
+              className={styles.idPic}
               src={currentCourt.pic1 || currentCourt.pic}
               width={538}
               height={403}
@@ -70,7 +72,7 @@ const Page = ({ courts }) => {
           </SplideSlide>
           <SplideSlide>
             <Image
-              className="idPic"
+              className={styles.idPic}
               src={currentCourt.pic2 || currentCourt.pic}
               width={538}
               height={403}
@@ -78,7 +80,7 @@ const Page = ({ courts }) => {
             />
           </SplideSlide>
         </Splide>
-        <div className="idInfo">
+        <div className={styles.idInfo}>
           <p>Baskets: {currentCourt.baskets}</p>
           <p>Surface: {currentCourt.surface}</p>
           <p>Type: {currentCourt.type}</p>
@@ -98,7 +100,7 @@ const Page = ({ courts }) => {
             ⛹️
           </h3>
         )}
-        <div className="idLinks">
+        <div className={styles.idLinks}>
           <Button size="small" href={currentCourt.link} aria-label="court link">
             <LinkIcon className="iconLink" />
           </Button>
@@ -127,7 +129,7 @@ const Page = ({ courts }) => {
           variant="contained"
           color="secondary"
           onClick={() => router.back()}
-          className="backButton"
+          className={styles.backButton}
         >
           Back
         </Button>

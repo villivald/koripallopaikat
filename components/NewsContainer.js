@@ -11,15 +11,17 @@ const StyledChip = styled(Chip)({
   color: "#051b2d",
 });
 
-const NewsContainer = ({ item }) => {
+import styles from "../css/News.module.css";
+
+export default function NewsContainer({ item }) {
   return (
-    <Card className="newsCardContainer">
+    <Card className={styles.newsCardContainer}>
       <CardMedia
-        className="newsCardImage"
+        className={styles.newsCardImage}
         image={item.largeImage}
         title="news image"
       />
-      <CardContent className="newsCardContent">
+      <CardContent className={styles.newsCardContent}>
         <StyledChip icon={<TodayIcon />} label={item.date} />
         <Typography color="textPrimary">
           <Link href={item.link}>{item.linkText}</Link>
@@ -28,6 +30,4 @@ const NewsContainer = ({ item }) => {
       </CardContent>
     </Card>
   );
-};
-
-export default NewsContainer;
+}

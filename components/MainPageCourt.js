@@ -15,11 +15,13 @@ import ImageOutlinedIcon from "@mui/icons-material/ImageOutlined";
 import LinkIcon from "@mui/icons-material/Link";
 import RoomOutlinedIcon from "@mui/icons-material/RoomOutlined";
 
-const Court = ({ court }) => {
+import styles from "../css/Main.module.css";
+
+export default function Court({ court }) {
   const [isShown, setIsShown] = useState(false);
 
   return (
-    <Card className="basketballFieldMain">
+    <Card className={styles.basketballFieldMain}>
       <Link
         key={court._id}
         href="/courts/[id]"
@@ -27,7 +29,7 @@ const Court = ({ court }) => {
         passHref
       >
         <Image
-          className="mainPageCardMedia"
+          className={styles.mainPageCardMedia}
           src={`https://koripallopaikat.com/koripallopaikat/${court.pic}.webp`}
           width={300}
           height={200}
@@ -59,13 +61,13 @@ const Court = ({ court }) => {
           </span>
         </Typography>
         {isShown && (
-          <div className="hoverPictureContainer">
+          <div className={styles.hoverPictureContainer}>
             <Image
               src={court.surfacePic}
               alt="court surface"
               width={150}
               height={150}
-              className="hoverPicture"
+              className={styles.hoverPicture}
             />
           </div>
         )}
@@ -81,7 +83,7 @@ const Court = ({ court }) => {
           target="_blank"
           rel="noopener"
         >
-          <LinkIcon className="iconLink" />
+          <LinkIcon className={styles.iconLink} />
         </Button>
         <Button
           size="small"
@@ -91,7 +93,7 @@ const Court = ({ court }) => {
           target="_blank"
           rel="noopener"
         >
-          <ImageOutlinedIcon className="iconLink" />
+          <ImageOutlinedIcon className={styles.iconLink} />
         </Button>
         <Button
           size="small"
@@ -101,7 +103,7 @@ const Court = ({ court }) => {
           target="_blank"
           rel="noopener"
         >
-          <RoomOutlinedIcon className="iconLink" />
+          <RoomOutlinedIcon className={styles.iconLink} />
         </Button>
         <Button
           size="small"
@@ -111,11 +113,9 @@ const Court = ({ court }) => {
           target="_blank"
           rel="noopener"
         >
-          <ReportOutlinedIcon className="iconLink" />
+          <ReportOutlinedIcon className={styles.iconLink} />
         </Button>
       </CardActions>
     </Card>
   );
-};
-
-export default Court;
+}

@@ -1,4 +1,4 @@
-header {
+.header header {
   display: flex;
   justify-content: space-evenly;
   gap: 15px;
@@ -6,12 +6,12 @@ header {
   padding: 22px;
 }
 
-header nav {
+.header header nav {
   display: flex;
   gap: 50px;
 }
 
-nav > a {
+.header nav > a {
   color: white;
   text-decoration-line: none;
   text-transform: uppercase;
@@ -22,11 +22,11 @@ nav > a {
   min-width: 100px;
 }
 
-nav > a:hover {
+.header nav > a:hover {
   transform: scale(1.1);
 }
 
-nav > a:active {
+.header nav > a:active {
   transform: scale(1);
 }
 
@@ -37,7 +37,7 @@ nav > a:active {
   gap: 5px;
 }
 
-.active {
+.active.active {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,69 +46,69 @@ nav > a:active {
   gap: 5px;
 }
 
-@media (max-width: 1300px) {
-  header nav {
+@media (width < 1300px) {
+  .header header nav {
     gap: 20px;
   }
 }
 
-@media (max-width: 1100px) {
-  header nav {
+@media (width < 1100px) {
+  .header header nav {
     gap: 10px;
   }
 }
 
-@media (max-width: 1000px) {
-  header nav {
+@media (width < 1000px) {
+  .header header nav {
     gap: 8px;
   }
 
-  nav > a {
+  .header nav > a {
     padding: 5px;
   }
 }
 
-@media (max-width: 900px) {
-  header nav {
+@media (width < 900px) {
+  .header header nav {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 50px;
   }
 
-  nav > a {
+  .header nav > a {
     padding: 10px;
   }
 }
 
-@media (max-width: 800px) {
-  header nav {
+@media (width < 800px) {
+  .header header nav {
     gap: 30px;
   }
 }
 
-@media (max-width: 500px) {
-  header {
+@media (width < 500px) {
+  .header header {
     padding: 10px;
   }
 
-  header nav {
+  .header header nav {
     padding: 10px;
     gap: 10px;
   }
 
-  header nav > a {
+  .header header nav > a {
     min-width: 100px;
     text-align: center;
   }
 }
 
-@media (max-width: 450px) {
-  header nav {
+@media (width < 450px) {
+  .header header nav {
     padding: 10px;
     gap: 10px;
   }
 
-  header nav > a {
+  .header header nav > a {
     min-width: 50px;
     text-align: center;
     font-size: 0.7rem;

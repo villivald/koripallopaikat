@@ -59,7 +59,7 @@
   border-radius: 0.25rem;
 }
 
-.splide__arrows .splide__arrow,
-.splide__pagination .splide__pagination__page {
+.idContainer > div > div > button,
+.idContainer > div > ul > li > button {
   opacity: 1;
 }

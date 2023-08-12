@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/router";
 import Head from "next/head";
 import { useForm } from "react-hook-form";
+
 import mapboxgl from "!mapbox-gl";
 import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
 import MapboxClient from "@mapbox/mapbox-sdk/services/geocoding";
@@ -28,6 +29,8 @@ import surfaces from "../data/surfaces";
 import placeTypes from "../data/placeTypes";
 
 import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css";
+
+import styles from "../css/Add.module.css";
 
 function Alert(props) {
   return <MuiAlert elevation={6} variant="filled" {...props} />;
@@ -216,30 +219,32 @@ export default function Add() {
   };
 
   return (
-    <div className="addWrapper">
+    <div className={styles.addWrapper}>
       <Head>
         <title>Koripallopaikat - Add new court</title>
         <link rel="icon" href="favicons/favicon.ico" />
       </Head>
       <Header />
-      <div className="colored">
-        <h1 className="coloredText">Add a new basketball court</h1>
+      <div className={styles.colored}>
+        <h1 className={styles.coloredText}>Add a new basketball court</h1>
       </div>
-      <div className="canvas-container">
+      <div className={styles["canvas-container"]}>
         <div
           ref={mapContainer}
-          className="map-container-small"
+          className={styles["map-container-small"]}
           style={{ display: showMap }}
         />
       </div>
       {!visible ? (
-        <div className="form">
+        <div className={styles.form}>
           <form onSubmit={handleSubmit(onSubmit)}>
-            <div className="input">
-              <div id="geocoder">Address *</div>
-              <p className="or">OR</p>
+            <div className={styles.input}>
+              <div id="geocoder" className={styles.addressField}>
+                Address *
+              </div>
+              <p className={styles.or}>OR</p>
               <Button
-                className="greenButton"
+                className={styles.greenButton}
                 variant="contained"
                 color={showMap === "none" ? "primary" : "secondary"}
                 startIcon={<RoomIcon />}
@@ -247,9 +252,9 @@ export default function Add() {
               >
                 {showMap === "none" ? "Pick from the" : "Hide"} Map
               </Button>
-              <h2 className="addressString">{address}</h2>
+              <h2 className={styles.addressString}>{address}</h2>
               <TextField
-                className="inputField"
+                className={styles.inputField}
                 select
                 label="Surface"
                 value={surface}
@@ -262,7 +267,7 @@ export default function Add() {
                 ))}
               </TextField>
               <TextField
-                className="inputField"
+                className={styles.inputField}
                 select
                 label="Place type"
                 value={placeType}
@@ -276,24 +281,24 @@ export default function Add() {
               </TextField>
               <TextField
                 required
-                className="inputField"
+                className={styles.inputField}
                 label="Baskets"
                 type="number"
                 placeholder="4"
                 {...register("baskets", { required: true })}
               />
-              <div className="imageUploading">
+              <div className={styles.imageUploading}>
                 <InputLabel required={true} style={{ margin: "10px 0" }}>
                   Image
                 </InputLabel>
-                <div className="imageUploadBar">
+                <div className={styles.imageUploadBar}>
                   <InputBase
                     inputProps={{ "aria-label": "upload image file" }}
                     type="file"
                     onChange={(e) => setImage(e.target.files[0])}
                   />
                   <Button
-                    className="uploadButton"
+                    className={styles.uploadButton}
                     variant="contained"
                     color="primary"
                     startIcon={<CloudUploadIcon />}
@@ -308,10 +313,10 @@ export default function Add() {
                   </Button>
                 </div>
               </div>
-              <div className="addChip">
+              <div className={styles.addChip}>
                 {url && (
                   <Chip
-                    className="successChip"
+                    className={styles.successChip}
                     label="Image was successfully uploaded"
                     color="primary"
                     icon={<CheckIcon />}
@@ -320,13 +325,13 @@ export default function Add() {
                 )}
               </div>
               <TextField
-                className="inputField"
+                className={styles.inputField}
                 label="Court link"
                 placeholder="https://nba.com"
                 {...register("link")}
               />
               <TextField
-                className="inputField"
+                className={styles.inputField}
                 label="Your name or link to your account"
                 placeholder="@koripallopaikat"
                 {...register("credentials")}
@@ -345,7 +350,7 @@ export default function Add() {
               variant="contained"
               color="primary"
               type="submit"
-              className="greenButton"
+              className={styles.greenButton}
               startIcon={<PublishIcon />}
             >
               Submit Court
@@ -354,11 +359,11 @@ export default function Add() {
         </div>
       ) : (
         <>
-          <h2 className="submitHeader">
+          <h2 className={styles.submitHeader}>
             Thank you for contribution. New Court is successfully added to a
             database and will be reviewed soon 👋.
           </h2>
-          <h2 className="submitTimeCounter">
+          <h2 className={styles.submitTimeCounter}>
             This page will refresh in {seconds} seconds.
           </h2>
           <Snackbar open={open} onClose={handleClose}>

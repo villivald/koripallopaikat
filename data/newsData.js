@@ -574,8 +574,9 @@ const newsData = [
   },
   {
     date: "14-11-2021",
-    image: "/kbar.webp",
-    largeImage: "/kbarLarge.webp",
+    image: "https://koripallopaikat.com/koripallopaikat/news/news.webp",
+    largeImage:
+      "https://koripallopaikat.com/koripallopaikat/news/large/news.webp",
     alt: "Kbar",
     text: " command+k interface was added to the site. Try it out – press cmd/ctrl and k.",
     link: "https://github.com/timc1/kbar",

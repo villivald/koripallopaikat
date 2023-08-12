@@ -1,4 +1,4 @@
-::-webkit-file-upload-button {
+.addWrapper ::-webkit-file-upload-button {
   background: #dbca2e;
   color: black;
   border: 1px solid black;
@@ -8,18 +8,12 @@
     0 1px 5px 0 rgb(0 0 0 / 12%);
 }
 
-:root {
-  --color-1: #b72b38;
-  --color-2: #263a73;
-  --color-3: #051b2d;
-}
-
-::-webkit-file-upload-button:hover {
+.addWrapper ::-webkit-file-upload-button:hover {
   background: #cab727;
   transform: scale(1.01);
 }
 
-::-webkit-file-upload-button:active {
+.addWrapper ::-webkit-file-upload-button:active {
   transform: translateY(1px);
 }
 
@@ -29,7 +23,7 @@
   gap: 10px;
 }
 
-form {
+.addWrapper form {
   display: grid;
   max-width: 400px;
 }
@@ -91,9 +85,9 @@ form {
   display: none;
 }
 
-.addWrapper .mapboxgl-ctrl-geocoder {
+.addressField > div {
   width: 400px !important;
-  max-width: 400px !important;
+  max-width: 400px;
 }
 
 .addressString {
@@ -106,6 +100,11 @@ form {
 .canvas-container {
   display: grid;
   place-items: center;
+}
+
+.or {
+  text-align: center;
+  font-weight: bold;
 }
 
 .colored {
@@ -128,14 +127,14 @@ form {
   text-transform: uppercase;
   background: linear-gradient(
     219deg,
-    var(--color-1) 39%,
+    #b72b38 39%,
     transparent 39%,
     transparent 40%,
-    var(--color-2) 40%,
-    var(--color-2) 69%,
+    #263a73 40%,
+    #263a73 69%,
     transparent 69%,
     transparent 70%,
-    var(--color-3) 70%
+    #051b2d 70%
   );
   background-clip: text;
   color: transparent;

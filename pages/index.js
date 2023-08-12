@@ -6,7 +6,7 @@ const SiteIntro = dynamic(() => import("../components/SiteIntro"));
 const Main = dynamic(() => import("../components/Main"));
 const Weather = dynamic(() => import("../components/Weather"));
 
-const Home = ({ weather }) => {
+export default function Home({ weather }) {
   return (
     <div>
       <Head>
@@ -24,7 +24,7 @@ const Home = ({ weather }) => {
       <Main />
     </div>
   );
-};
+}
 
 export const getServerSideProps = async () => {
   const res = await fetch(
@@ -38,5 +38,3 @@ export const getServerSideProps = async () => {
     },
   };
 };
-
-export default Home;

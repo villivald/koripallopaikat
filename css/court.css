@@ -17,10 +17,6 @@
   position: relative;
 }
 
-.searchObjectField {
-  height: clamp(90%, 95%, 100%);
-}
-
 .hoverPictureContainer {
   position: absolute;
   transform: translateX(150px);
@@ -32,12 +28,6 @@
 }
 
 .cardMedia {
-  height: 140px;
-  cursor: pointer;
-}
-
-.searchCardMedia {
-  width: 200px;
   height: 140px;
   cursor: pointer;
 }
@@ -82,35 +72,8 @@
   background-color: #82c99b;
 }
 
-.sortFilter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  margin-bottom: 10px;
-}
-
-.sortFilterTitle {
-  text-align: center;
-}
-
 .courtSurface::first-letter {
   text-transform: capitalize;
-}
-
-.searchLink {
-  white-space: nowrap;
-  max-width: 170px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.searchLink a {
-  text-decoration: none;
-}
-
-.searchLink a:hover {
-  text-decoration: underline;
 }
 
 .searchForm {

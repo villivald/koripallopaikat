@@ -4,7 +4,9 @@ import Header from "../components/Header";
 import newsData from "../data/newsData";
 import NewsContainer from "../components/NewsContainer";
 
-const News = () => {
+import styles from "../css/News.module.css";
+
+export default function News() {
   return (
     <div>
       <Head>
@@ -12,7 +14,7 @@ const News = () => {
         <link rel="icon" href="favicons/favicon.ico" />
       </Head>
       <Header />
-      <div className="newsBlob">
+      <div className={styles.newsBlob}>
         <svg
           viewBox="0 0 200 200"
           width="250"
@@ -30,13 +32,11 @@ const News = () => {
           </g>
         </svg>
       </div>
-      <div className="newsPageContainer">
+      <div className={styles.newsPageContainer}>
         {newsData.map((item) => (
           <NewsContainer item={item} key={item.alt} />
         ))}
       </div>
     </div>
   );
-};
-
-export default News;
+}

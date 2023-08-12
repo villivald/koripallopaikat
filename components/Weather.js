@@ -1,17 +1,19 @@
 import Image from "next/image";
 
-const Weather = ({ weather }) => {
+import styles from "../css/Weather.module.css";
+
+export default function Weather({ weather }) {
   return (
     <div>
       {weather && (
-        <div className="weather">
+        <div className={styles.weather}>
           <h2>{weather.name}</h2>
           <h2>
             {weather.main.temp > 273.15 && "+"}
             {(weather.main.temp - 273.15).toFixed(2)} °​C
           </h2>
           <Image
-            className="weatherPic"
+            className={styles.weatherPic}
             alt={weather.weather[0].description}
             src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}
             title={weather.weather[0].description}
@@ -22,6 +24,4 @@ const Weather = ({ weather }) => {
       )}
     </div>
   );
-};
-
-export default Weather;
+}

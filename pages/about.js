@@ -7,6 +7,8 @@ import Header from "../components/Header";
 import lighthouse from "../public/lighthouse.webp";
 import aboutLinks from "../data/aboutLinks";
 
+import styles from "../css/About.module.css";
+
 export default function Books() {
   return (
     <div>
@@ -15,23 +17,23 @@ export default function Books() {
         <link rel="icon" href="favicons/favicon.ico" />
       </Head>
       <Header />
-      <div className="aboutWrapper">
-        <div className="aboutProjectContainer">
-          <h1 className="projectInfoHeader">Project info</h1>
-          <Typography className="projectText" variant="subtitle1">
-            <span className="projectTextHighlight">Koripallopaikat</span> is a
-            curated collection of public basketball courts in Finland. We
+      <div className={styles.aboutWrapper}>
+        <div className={styles.aboutProjectContainer}>
+          <h1 className={styles.projectInfoHeader}>Project info</h1>
+          <Typography className={styles.projectText} variant="subtitle1">
+            <span className={styles.projectTextHighlight}>Koripallopaikat</span>{" "}
+            is a curated collection of public basketball courts in Finland. We
             started from the Helsinki Metropolitan Area and now we have courts
             from 7 different cities including Turku and Tampere. Feel free to{" "}
             <Link href="https://koripallopaikat.com/add">submit</Link> your
             local court.
           </Typography>
-          <section className="projectLinks">
+          <section className={styles.projectLinks}>
             <svg
               viewBox="0 0 200 200"
               xmlns="http://www.w3.org/2000/svg"
               width="180"
-              className="aboutBlob"
+              className={styles.aboutBlob}
             >
               <g>
                 <path
@@ -48,7 +50,7 @@ export default function Books() {
               viewBox="0 0 200 200"
               xmlns="http://www.w3.org/2000/svg"
               width="180"
-              className="aboutBlob"
+              className={styles.aboutBlob}
             >
               <g>
                 <path
@@ -67,7 +69,7 @@ export default function Books() {
             </svg>
           </section>
           <section>
-            <Typography className="projectText" variant="subtitle1">
+            <Typography className={styles.projectText} variant="subtitle1">
               If you like this project, you can support it by giving it a star
               on{" "}
               <Link href="https://github.com/villivald/koripallopaikat">
@@ -81,32 +83,32 @@ export default function Books() {
             </Typography>
           </section>
         </div>
-        <div className="aboutTechContainer">
-          <h1 className="techInfoHeader">Tech info</h1>
-          <h2 className="techInfoSubHeader">
+        <div className={styles.aboutTechContainer}>
+          <h1 className={styles.techInfoHeader}>Tech info</h1>
+          <h2 className={styles.techInfoSubHeader}>
             App live on <Link href="https://koripallopaikat.com/">Vercel</Link>
           </h2>
-          <h2 className="techInfoSubHeader">
+          <h2 className={styles.techInfoSubHeader}>
             Source Code on{" "}
             <Link href="https://github.com/villivald/koripallopaikat">
               GitHub
             </Link>
           </h2>
 
-          <div className="apiDockerLinks">
-            <h2 className="techInfoSubHeader">
+          <div className={styles.apiDockerLinks}>
+            <h2 className={styles.techInfoSubHeader}>
               <Link href="/api/savedCourts">API</Link>
             </h2>
 
-            <h2 className="techInfoSubHeader">
+            <h2 className={styles.techInfoSubHeader}>
               <Link href="https://github.com/villivald/DevOps-with-Docker/blob/main/Part_1/15/15.md">
                 Docker
               </Link>
             </h2>
           </div>
 
-          <h2 className="techInfoSubHeader">Made with:</h2>
-          <div className="aboutLinks">
+          <h2 className={styles.techInfoSubHeader}>Made with:</h2>
+          <div className={styles.aboutLinks}>
             {aboutLinks.map((link) => (
               <Link key={link.text} href={link.link}>
                 {link.text}

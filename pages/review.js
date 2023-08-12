@@ -6,7 +6,9 @@ import CourtInReview from "../components/CourtInReview";
 
 import dbConnect from "../util/dbConnect";
 
-const InReview = ({ courtsInReview }) => {
+import styles from "../css/Review.module.css";
+
+export default function InReview({ courtsInReview }) {
   return (
     <div>
       <Head>
@@ -14,7 +16,7 @@ const InReview = ({ courtsInReview }) => {
         <link rel="icon" href="favicons/favicon.ico" />
       </Head>
       <Header />
-      <div className="reviewBlob">
+      <div className={styles.reviewBlob}>
         <svg
           viewBox="0 0 200 200"
           xmlns="http://www.w3.org/2000/svg"
@@ -31,21 +33,21 @@ const InReview = ({ courtsInReview }) => {
               y="107"
               fontSize="1.2rem"
               fontWeight="bold"
-              className="reviewBlobText"
+              className={styles.reviewBlobText}
             >
               Courts in Review
             </text>
           </g>
         </svg>
       </div>
-      <div className="reviewContainer">
+      <div className={styles.reviewContainer}>
         {courtsInReview.map((court) => (
           <CourtInReview court={court} key={court._id} />
         ))}
       </div>
     </div>
   );
-};
+}
 
 export async function getServerSideProps() {
   await dbConnect();
@@ -57,5 +59,3 @@ export async function getServerSideProps() {
     },
   };
 }
-
-export default InReview;

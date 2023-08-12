@@ -25,6 +25,11 @@
   pointer-events: none;
 }
 
+.cardMedia {
+  height: 140px;
+  cursor: pointer;
+}
+
 @media (width < 1200px) {
   .reviewContainer {
     grid-template-columns: repeat(2, 1fr);

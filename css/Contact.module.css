@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 1rem;
   margin-bottom: 3%;
 }
 
@@ -26,7 +26,7 @@
   margin: -1%;
 }
 
-textarea {
+.input textarea {
   padding: 0.88rem;
   color: rgba(0 0 0 87%);
   line-height: 19px;
@@ -43,8 +43,16 @@ textarea {
   margin-bottom: 1%;
 }
 
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .form {
   margin-bottom: 1%;
+  display: flex;
+  justify-content: center;
 }
 
 .contactForm {
@@ -70,5 +78,15 @@ textarea {
 @media (width < 600px) {
   .contactForm {
     width: 80%;
+  }
+}
+
+@media (width < 500px) {
+  .contactsContainer {
+    padding: 0 0.5rem;
+  }
+
+  .contactLink img {
+    width: 90%;
   }
 }

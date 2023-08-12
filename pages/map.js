@@ -1,4 +1,3 @@
-/* eslint-disable */
 import { useRef, useEffect, useState } from "react";
 import Head from "next/head";
 import mapboxgl from "!mapbox-gl";
@@ -11,12 +10,13 @@ import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css";
 mapboxgl.accessToken =
   "pk.eyJ1IjoidmlsbGl2YWxkIiwiYSI6ImNrcWNnYjRvdDFqaTUyd212NHQzdGN5cGkifQ.Y98cfsnc0_V4f1-6El0Mhw";
 
-const map = () => {
+export default function Map() {
   const mapContainer = useRef(null);
   const map = useRef(null);
-  const [lng, setLng] = useState(24.96);
+
+  const [lng, setLng] = useState(24.92);
   const [lat, setLat] = useState(60.23);
-  const [zoom, setZoom] = useState(10.1);
+  const [zoom, setZoom] = useState(10.5);
 
   useEffect(() => {
     if (map.current) return; // initialize map only once
@@ -83,6 +83,7 @@ const map = () => {
         .addTo(map.current);
     });
   });
+
   return (
     <main>
       <Head>
@@ -93,6 +94,4 @@ const map = () => {
       <div ref={mapContainer} className="map-container" />
     </main>
   );
-};
-
-export default map;
+}
