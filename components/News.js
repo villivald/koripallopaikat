@@ -14,11 +14,11 @@ const News = () => {
         </Link>
       </Typography>
       <div className="newsList">
-        {newsData.slice(0, 3).map((item) => (
+        {newsData.slice(0, 6).map((item) => (
           <div key={item.alt}>
             <p className="newsDate">{item.date}</p>
             <div className="newsContainer">
-              <Image src={item.image} alt={item.alt} width="80" height="80" />
+              <Image src={item.image} alt={item.alt} width="110" height="110" />
               <Typography color="textPrimary">
                 <Link href={item.link} passHref>
                   {item.linkText}

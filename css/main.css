@@ -1,22 +1,49 @@
 .container {
   display: grid;
   place-items: center;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
-  margin: 20px 40px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  gap: 2.5rem;
+  padding: 1.5rem 2.5rem;
 }
 
-.mainPageLink {
-  margin-bottom: 30px;
-  align-items: baseline;
+.container > div:nth-child(1) {
+  grid-area: 1 / 1 / 7 / 3;
+}
+
+.container > div:nth-child(2) {
+  grid-area: 7 / 1 / 10 / 3;
+}
+
+.container > div:nth-child(3) {
+  grid-area: 1 / 3 / 4 / 5;
+}
+
+.container > div:nth-child(4) {
+  grid-area: 4 / 3 / 7 / 5;
+}
+
+.container > div:nth-child(5) {
+  grid-area: 7 / 3 / 10 / 5;
+}
+
+.container > div:nth-child(6) {
+  grid-area: 1 / 5 / 4 / 7;
+}
+
+.container > div:nth-child(7) {
+  grid-area: 4 / 5 / 7 / 7;
+}
+
+.container > div:nth-child(8) {
+  grid-area: 7 / 5 / 10 / 7;
 }
 
 .basketballFieldMain {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: clamp(200px, 100%, 400px);
-  height: clamp(90%, 125%, 100%);
+  width: 100%;
 }
 
 .basketballFieldMain a {
@@ -27,20 +54,72 @@
   text-decoration: underline;
 }
 
-@media (width < 1000px) {
+.mainPageCardMedia {
+  width: 100%;
+  height: clamp(13rem, 16vw, 25rem);
+}
+
+@media (width < 1200px) {
   .container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+  }
+
+  .container > div:nth-child(1) {
+    grid-area: 1 / 1 / 3 / 5;
+  }
+
+  .container > div:nth-child(2) {
+    grid-area: 3 / 1 / 5 / 3;
+  }
+
+  .container > div:nth-child(3) {
+    grid-area: 3 / 3 / 5 / 5;
+  }
+
+  .container > div:nth-child(4) {
+    grid-area: 5 / 1 / 7 / 3;
+  }
+
+  .container > div:nth-child(5) {
+    grid-area: 5 / 3 / 7 / 5;
+  }
+
+  .container > div:nth-child(6) {
+    grid-area: 7 / 1 / 9 / 3;
+  }
+
+  .container > div:nth-child(7) {
+    grid-area: 7 / 3 / 9 / 5;
+  }
+
+  .container > div:nth-child(8) {
+    display: none;
+  }
+
+  .mainPageCardMedia {
+    height: clamp(13rem, 23vw, 25rem);
   }
 }
 
-@media (width < 700px) {
+@media (width < 900px) {
   .container {
-    grid-template-columns: repeat(2, 1fr);
+    row-gap: 0;
   }
 }
 
-@media (width < 500px) {
+@media (width < 600px) {
   .container {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .container > div {
+    width: 90vw;
+  }
+
+  .container > div:nth-child(8) {
+    display: block;
   }
 }

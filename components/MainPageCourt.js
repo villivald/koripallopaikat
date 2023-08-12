@@ -27,10 +27,11 @@ const Court = ({ court }) => {
         passHref
       >
         <Image
-          className="cardMedia"
-          src={court.pic}
+          className="mainPageCardMedia"
+          src={`https://koripallopaikat.com/koripallopaikat/${court.pic}.webp`}
+          width={300}
+          height={200}
           alt={court.address}
-          placeholder="blur"
         />
       </Link>
       <CardContent>

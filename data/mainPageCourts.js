@@ -1,11 +1,3 @@
-import pic1 from "../public/images/1.webp";
-import pic2 from "../public/images/2.webp";
-import pic4 from "../public/images/4.webp";
-import pic5 from "../public/images/5.webp";
-import pic6 from "../public/images/6.webp";
-import pic7 from "../public/images/7.webp";
-import pic8 from "../public/images/8.webp";
-
 import asphalt from "../public/images/surfaces/asphalt.webp";
 import soft from "../public/images/surfaces/soft.webp";
 import gravel from "../public/images/surfaces/gravel.webp";
@@ -13,7 +5,7 @@ import gravel from "../public/images/surfaces/gravel.webp";
 const mainPageCourts = [
   {
     _id: 1,
-    pic: pic1,
+    pic: 1,
     address: "Harakkamyllyntie, 2",
     surface: "gravel",
     type: "sports field",
@@ -26,7 +18,7 @@ const mainPageCourts = [
   },
   {
     _id: 2,
-    pic: pic2,
+    pic: 2,
     address: "Agronominkatu, 24",
     surface: "artificial grass",
     type: "outdoor sports park",
@@ -39,7 +31,7 @@ const mainPageCourts = [
   },
   {
     _id: 3,
-    pic: pic4,
+    pic: 4,
     address: "Eero Erkon katu",
     surface: "soft outdoor surface",
     type: "sports field",
@@ -52,7 +44,7 @@ const mainPageCourts = [
   },
   {
     _id: 4,
-    pic: pic5,
+    pic: 5,
     address: "Salpausseläntie, 3",
     surface: "soft outdoor surface",
     type: "school yard",
@@ -65,7 +57,7 @@ const mainPageCourts = [
   },
   {
     _id: 5,
-    pic: pic6,
+    pic: 17,
     address: "Käskynhaltijantie, 11",
     surface: "asphalt",
     type: "sports park",
@@ -78,7 +70,7 @@ const mainPageCourts = [
   },
   {
     _id: 6,
-    pic: pic7,
+    pic: 22,
     address: "Kontulankaari, 15",
     surface: "asphalt",
     type: "sports park",
@@ -91,7 +83,7 @@ const mainPageCourts = [
   },
   {
     _id: 7,
-    pic: pic8,
+    pic: 42,
     address: "Kellaritie, 14",
     surface: "soft outdoor surface",
     type: "sports park",
