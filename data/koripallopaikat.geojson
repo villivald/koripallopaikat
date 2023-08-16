@@ -1883,6 +1883,18 @@
         "coordinates": [24.801313312226377, 60.16274410679797],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Espoonlahdentie, 2-4",
+        "description": "Sports park",
+        "link": "/courts/Espoonlahdentie,%202-4"
+      },
+      "geometry": {
+        "coordinates": [24.661922597764853, 60.146175047973436],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
