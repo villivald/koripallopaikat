@@ -1,5 +1,15 @@
 const newsData = [
   {
+    date: "16-08-2023",
+    image: "https://koripallopaikat.com/koripallopaikat/158/1.webp",
+    largeImage: "https://koripallopaikat.com/koripallopaikat/158/1.webp",
+    alt: "Espoonlahdentie, 2-4",
+    text: " court was added.",
+    longText: " court was added.",
+    link: "https://koripallopaikat.com/courts/Espoonlahdentie,%202-4",
+    linkText: "Espoonlahdentie, 2-4",
+  },
+  {
     date: "28-07-2023",
     image: "https://koripallopaikat.com/koripallopaikat/157/1.webp",
     largeImage: "https://koripallopaikat.com/koripallopaikat/157/1.webp",
