@@ -21,7 +21,7 @@
 .reviewBlob {
   display: grid;
   place-items: center;
-  margin: -3%;
+  height: 12rem;
   pointer-events: none;
 }
 
@@ -40,19 +40,11 @@
   .reviewContainer {
     grid-template-columns: 1fr;
   }
-
-  .reviewBlob {
-    margin-top: -8%;
-  }
 }
 
 @media (width < 450px) {
   .reviewField {
     width: clamp(350px, 50%, 400px);
-  }
-
-  .reviewBlob {
-    margin-top: -14%;
   }
 
   .reviewBlobText {
