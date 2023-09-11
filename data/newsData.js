@@ -1,5 +1,15 @@
 const newsData = [
   {
+    date: "11-09-2023",
+    image: "https://koripallopaikat.com/koripallopaikat/159/1.webp",
+    largeImage: "https://koripallopaikat.com/koripallopaikat/159/1.webp",
+    alt: "Hiomotie, 5",
+    text: " court was added.",
+    longText: " court was added.",
+    link: "https://koripallopaikat.com/courts/Hiomotie,%205",
+    linkText: "Hiomotie, 5",
+  },
+  {
     date: "16-08-2023",
     image: "https://koripallopaikat.com/koripallopaikat/158/1.webp",
     largeImage: "https://koripallopaikat.com/koripallopaikat/158/1.webp",
