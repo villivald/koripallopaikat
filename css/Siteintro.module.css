@@ -107,13 +107,19 @@
 }
 
 @media (width < 420px) {
-  .intro {
+  .introText {
     font-size: 1.4rem;
   }
 }
 
-@media (width < 350px) {
-  .intro {
+@media (width < 400px) {
+  .introText {
     font-size: 1.2rem;
+  }
+}
+
+@media (width < 350px) {
+  .introText {
+    font-size: 1.1rem;
   }
 }

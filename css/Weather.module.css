@@ -10,3 +10,21 @@
 .weatherPic:hover {
   transform: scale(1.1);
 }
+
+@media (width < 420px) {
+  .weather h2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (width < 400px) {
+  .weather h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (width < 350px) {
+  .weather h2 {
+    font-size: 1.1rem;
+  }
+}
